@@ -857,7 +857,7 @@ def SELL_EXE(pivot,lot):
 
             print(f'ltp=',a['close'],'                                     ')
 
-            f()
+        
              
             RR=float(RR)
             takeprofit=float(lastval-(sl*RR))
