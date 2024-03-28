@@ -69,7 +69,7 @@ def get_last_traded_price(data):
 # Example usage
 if __name__ == "__main__":
     
-    stocks = ['AAPL', 'GOOG', 'MSFT', 'AMZN']
+    stocks = ['INDHOTEL.NS']
     ranked_stocks = rank_stocks_by_ema_difference(stocks)
     print("Ranked stocks based on EMA difference:")
     for rank, (symbol, difference) in enumerate(ranked_stocks, start=1):

@@ -32,6 +32,7 @@ class MidcapAlgorithm:
         for stock in ranked_stocks:
             self.stock_list.append(stock[0])
             
+        print(self.stock_list)
         return self.stock_list
     
     def filter_stocks(self):
@@ -53,8 +54,13 @@ class MidcapAlgorithm:
             ema = calculate_ema(data)
             last_traded_price = data['Close'].iloc[-1]
             supertrend = calculate_supertrend(data)
+            print(ema.iloc[-1])
+            print(last_traded_price)
+            print(supertrend.iloc[-1])
             if last_traded_price > 1.03 * ema.iloc[-1] and last_traded_price > supertrend.iloc[-1]:
                 filtered_stocks.append(symbol)
+                
+    
         return filtered_stocks
 
 

@@ -12,7 +12,6 @@ def fetch_stock_data(symbol):
         pandas.DataFrame: Historical stock data.
     """
     stock_data = yf.download(symbol, period="200d", interval="1d")
-    # print(stock_data)
     return stock_data
 
 def get_last_traded_price(data):
