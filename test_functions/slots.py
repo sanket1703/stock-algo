@@ -2,34 +2,34 @@ import yfinance as yf
 import pandas as pd
 import pandas_ta as ta
 
-# Example usage
-if __name__ == "__main__":
-    
+
+def slot_fill(stocks):
     # Will come from Database
-    slots = set()
+    slots = set(['a'])
     
     max_slots = 13
-    total_available_slots = 13 - len(slots)
+    total_available_slots = max_slots - len(slots)
     
     if total_available_slots == 0:
-        print("stop")
+        return
     
     # Will come from the Filtered stocks
-    stocks = ['A','B','C']
     final_stocks = []
-    
     for stock in stocks:
         if stock not in slots:
             final_stocks.append(stock)
+            total_available_slots-=1
+            # Make a database entery
+            slots.add(stock)
+        
         if len(final_stocks) >= total_available_slots:
             break
-            
-        
-        
+
+    return (final_stocks,total_available_slots)
     
 
+# Example usage
+if __name__ == "__main__":  
     
-
-    filtered_stocks = filter_stocks(stocks)
-    print("Filtered stocks based on conditions:")
-    print(filtered_stocks)
+    stocks = ['a','b']
+    print(slot_fill(stocks))

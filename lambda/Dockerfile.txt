@@ -1,0 +1,20 @@
+# Use an appropriate base image
+FROM public.ecr.aws/lambda/python:3.9
+
+# Install dependencies
+RUN yum install -y gcc
+RUN python3.9 -m pip install --upgrade pip
+COPY requirements.txt /tmp/
+RUN python3.9 -m pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Set the location for the installed packages
+ARG PYTHON_VERSION="3.9"
+ARG SITE_PACKAGES="/opt/python/lib/python${PYTHON_VERSION}/site-packages"
+RUN mkdir -p /python/lib/python${PYTHON_VERSION}/site-packages
+RUN mv ${SITE_PACKAGES}/* /python/lib/python${PYTHON_VERSION}/site-packages/
+
+# Zip the installed packages
+RUN cd /python/lib/python${PYTHON_VERSION}/site-packages && zip -r9 /tmp/layer.zip .
+
+# Set the working directory
+WORKDIR /tmp
