@@ -1,14 +1,10 @@
-
-
-
-
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data
-
+from utils.helper import get_slots, update_slots
 
 class MidcapSellAlgorithm:
     def __init__(self):
-        self
+        self.slots = get_slots()
         
     def get_slots():
         return
@@ -25,20 +21,24 @@ class MidcapSellAlgorithm:
         
         return False
     
-    def sell_logic(self,slots):
-    # slots is a list of stocks
-    
+    def sell_logic(self):
+        # slots is a list of stocks
+        self.slots = get_slots()
         stocks_to_keep = []
         stocks_to_sell = []
-        for stock in slots:
+        for stock in self.slots:
             if self.should_sell(stock):
                 stocks_to_sell.append(stock)    
             else:
                 stocks_to_keep.append(stock)
                 
         # New Slots 
-        slots = stocks_to_keep
-        # Update in the database
-        
+        self.stocks_to_keep = stocks_to_keep
+        update_slots(self.stocks_to_keep)
+        print("Current Slots")
+        print(get_slots())
+        self.stocks_to_sell = stocks_to_sell
+        print("Sell the following stocks")
+        print(self.stocks_to_sell)
         return stocks_to_keep
     

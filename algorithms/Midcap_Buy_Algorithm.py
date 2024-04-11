@@ -1,5 +1,6 @@
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data, get_last_traded_price
+from utils.helper import update_slots,get_slots
 
 
 class MidcapBuyAlgorithm:
@@ -32,7 +33,8 @@ class MidcapBuyAlgorithm:
         
         for stock in ranked_stocks:
             self.ranked_stock_list.append(stock[0])
-            
+        
+        print("Ranked Stock by EMA Difference")
         print(self.ranked_stock_list)
         return self.ranked_stock_list
     
@@ -61,34 +63,39 @@ class MidcapBuyAlgorithm:
             if last_traded_price > 1.03 * ema.iloc[-1] and last_traded_price > supertrend.iloc[-1]:
                 filtered_stocks.append(symbol)
                 
+        print("Final Buy Stocks")
         self.filtered_stocks = filtered_stocks
-        return filtered_stocks
-    
+        print(self.filtered_stocks)
+        return self.filtered_stocks
     
     def slot_fill(self):
+        
         # Will come from Database
-        slots = set(['a'])
+        slots = get_slots()
+        buy_stocks = self.filtered_stocks
+        max_slots = 5
+        total_available_slots_before_buy = max_slots - len(slots)
         
-        max_slots = 13
-        total_available_slots = max_slots - len(slots)
-        
-        if total_available_slots == 0:
+        if total_available_slots_before_buy == 0:
+            print("There are not available slots.")
             return
         
         # Will come from the Filtered stocks
-        final_stocks = []
-        for stock in self.filtered_stocks:
+        final_buy_stocks = []
+        for stock in buy_stocks:
             if stock not in slots:
-                final_stocks.append(stock)
-                # Make a database entery
-                slots.add(stock)
+                final_buy_stocks.append(stock)
+                slots.append(stock)
             
-            if len(final_stocks) >= total_available_slots:
+            if len(final_buy_stocks) + len(slots) > max_slots:
                 break
-        self.stocks_to_buy = final_stocks
-        self.total_available_slots = total_available_slots
         
-        return (final_stocks,total_available_slots)
+        update_slots(list(slots))
+        total_available_slots_after_buy =  max_slots - len(slots)
+        
+        print("Final Buy signal to Algo Baba, Now total Available slots")
+        print((final_buy_stocks,total_available_slots_before_buy))
+        return (final_buy_stocks,total_available_slots_before_buy)    
 
 
 # Example usage
