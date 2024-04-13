@@ -1,0 +1,745 @@
+[
+    {
+        "label": "calculate_ema",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_ema",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_ema",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "pandas_ta",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas_ta",
+        "description": "pandas_ta",
+        "detail": "pandas_ta",
+        "documentation": {}
+    },
+    {
+        "label": "yfinance",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yfinance",
+        "description": "yfinance",
+        "detail": "yfinance",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapSellAlgorithm",
+        "importPath": "algorithms.Midcap_Sell_Algorithm",
+        "description": "algorithms.Midcap_Sell_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Sell_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "sell_algo",
+        "importPath": "test_functions.sell_algo",
+        "description": "test_functions.sell_algo",
+        "isExtraImport": true,
+        "detail": "test_functions.sell_algo",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Slots",
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "isExtraImport": true,
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "Slots",
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "isExtraImport": true,
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "kind": 6,
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n    def rank_stocks_by_ema_difference(self):\n        \"\"\"\n        Ranks stocks based on the difference between the 100-day EMA and the last traded price.\n        Args:\n            stocks (list): List of stock symbols.\n        Returns:",
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapSellAlgorithm",
+        "kind": 6,
+        "importPath": "algorithms.Midcap_Sell_Algorithm",
+        "description": "algorithms.Midcap_Sell_Algorithm",
+        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self):\n        self.slots = get_slots()\n    def get_slots():\n        return\n    def should_sell(self,stock):\n        data = fetch_stock_data(stock)\n        ema = calculate_ema(data).iloc[-1]\n        last_traded_price = data['Close'].iloc[-1]\n        supertrend = calculate_supertrend(data).iloc[-1]",
+        "detail": "algorithms.Midcap_Sell_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "kind": 2,
+        "importPath": "database.dao.slots",
+        "description": "database.dao.slots",
+        "peekOfCode": "def get_slots():\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    slots.update({'slots':['B']})\n    # slots.insert({'slots': ['A']})\n    print(slots.all())\n    print(db)\ndef update_slots(slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')",
+        "detail": "database.dao.slots",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "kind": 2,
+        "importPath": "database.dao.slots",
+        "description": "database.dao.slots",
+        "peekOfCode": "def update_slots(slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    slots.update({'slots':['B']})\n    # slots.insert({'slots': ['A']})\n    print(slots.all())\n    print(db)",
+        "detail": "database.dao.slots",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "kind": 6,
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "peekOfCode": "class Client:\n    def __init__(self,client_code, current_balance,daily_trade_log,holding):\n        self.client_code = client_code\n        self.current_balance = current_balance\n        self.daily_trade_log = daily_trade_log\n        self.holding = holding\nclass DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, charges, net, balance):\n        self.date = date\n        self.stock_name = stock_name",
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "kind": 6,
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "peekOfCode": "class DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, charges, net, balance):\n        self.date = date\n        self.stock_name = stock_name\n        self.direction = direction\n        self.price = price\n        self.charges = charges\n        self.net = net\n        self.balance = balance\nclass Holding:",
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "kind": 6,
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "peekOfCode": "class Holding:\n    def __init__(self, stock_name, qty, last_buy_time_stamps, last_buy_price):\n        self.stock_name = stock_name\n        self.qty = qty\n        self.last_buy_time_stamps = last_buy_time_stamps\n        self.last_buy_price = last_buy_price",
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Slots",
+        "kind": 6,
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "peekOfCode": "class Slots:\n    def __init__(self, stock_name, update_ts, price, qty):\n        self.stock_name = stock_name\n        self.update_ts = update_ts\n        self.price = price\n        self.qty = qty",
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_ema",
+        "kind": 2,
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "peekOfCode": "def calculate_ema(data, window=100):\n    \"\"\"\n    Calculates the Exponential Moving Average (EMA) for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for EMA calculation.\n    Returns:\n        pandas.Series: EMA values.\n    \"\"\"\n    ema = data['Close'].ewm(span=window, min_periods=window).mean()",
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "kind": 2,
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "peekOfCode": "def calculate_supertrend(data, window=7, multiplier=3):\n    \"\"\"\n    Calculates the Supertrend indicator for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for ATR calculation.\n        multiplier (int): Multiplier for ATR calculation.\n    Returns:\n        pandas.Series: Supertrend values.\n    \"\"\"",
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "kind": 2,
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "peekOfCode": "def fetch_stock_data(symbol):\n    \"\"\"\n    Fetches historical stock data from Yahoo Finance API for a given symbol.\n    Args:\n        symbol (str): Stock symbol.\n    Returns:\n        pandas.DataFrame: Historical stock data.\n    \"\"\"\n    stock_data = yf.download(symbol, period=\"200d\", interval=\"1d\")\n    return stock_data",
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "kind": 2,
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "peekOfCode": "def get_last_traded_price(data):\n    \"\"\"\n    Retrieves the last traded price from historical stock data.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n    Returns:\n        float: Last traded price.\n    \"\"\"\n    last_traded_price = data['Close'].iloc[-1]\n    return last_traded_price",
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_available_balance",
+        "kind": 2,
+        "importPath": "test_functions.position_sizing",
+        "description": "test_functions.position_sizing",
+        "peekOfCode": "def get_available_balance(client):\n    return 13000000\ndef reduce_balance(client,amount):\n    current_balance = get_available_balance(client)\n    current_balance -= amount\n    update_balance(client,current_balance)\ndef add_balance(client,amount):\n    current_balance = get_available_balance(client)\n    current_balance += amount\n    update_balance(client,current_balance)",
+        "detail": "test_functions.position_sizing",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_balance",
+        "kind": 2,
+        "importPath": "test_functions.position_sizing",
+        "description": "test_functions.position_sizing",
+        "peekOfCode": "def reduce_balance(client,amount):\n    current_balance = get_available_balance(client)\n    current_balance -= amount\n    update_balance(client,current_balance)\ndef add_balance(client,amount):\n    current_balance = get_available_balance(client)\n    current_balance += amount\n    update_balance(client,current_balance)\ndef update_balance(client,amount):\n    print(\"New Balance is\")",
+        "detail": "test_functions.position_sizing",
+        "documentation": {}
+    },
+    {
+        "label": "add_balance",
+        "kind": 2,
+        "importPath": "test_functions.position_sizing",
+        "description": "test_functions.position_sizing",
+        "peekOfCode": "def add_balance(client,amount):\n    current_balance = get_available_balance(client)\n    current_balance += amount\n    update_balance(client,current_balance)\ndef update_balance(client,amount):\n    print(\"New Balance is\")\ndef send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\ndef calculate_brokerage():",
+        "detail": "test_functions.position_sizing",
+        "documentation": {}
+    },
+    {
+        "label": "update_balance",
+        "kind": 2,
+        "importPath": "test_functions.position_sizing",
+        "description": "test_functions.position_sizing",
+        "peekOfCode": "def update_balance(client,amount):\n    print(\"New Balance is\")\ndef send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()",
+        "detail": "test_functions.position_sizing",
+        "documentation": {}
+    },
+    {
+        "label": "send_buy_order",
+        "kind": 2,
+        "importPath": "test_functions.position_sizing",
+        "description": "test_functions.position_sizing",
+        "peekOfCode": "def send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)",
+        "detail": "test_functions.position_sizing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_brokerage",
+        "kind": 2,
+        "importPath": "test_functions.position_sizing",
+        "description": "test_functions.position_sizing",
+        "peekOfCode": "def calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)\n        qty = math.floor(amount_to_invest/last_traded_price)\n        send_buy_order(buy_stock,qty,client)\n        turnover = (qty*last_traded_price + calculate_brokerage())",
+        "detail": "test_functions.position_sizing",
+        "documentation": {}
+    },
+    {
+        "label": "position_sizing",
+        "kind": 2,
+        "importPath": "test_functions.position_sizing",
+        "description": "test_functions.position_sizing",
+        "peekOfCode": "def position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)\n        qty = math.floor(amount_to_invest/last_traded_price)\n        send_buy_order(buy_stock,qty,client)\n        turnover = (qty*last_traded_price + calculate_brokerage())\n        reduce_balance(client,turnover)\n        total_available_slots_before_buy -=1",
+        "detail": "test_functions.position_sizing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_ema",
+        "kind": 2,
+        "importPath": "test_functions.ranking",
+        "description": "test_functions.ranking",
+        "peekOfCode": "def calculate_ema(data, window=100):\n    \"\"\"\n    Calculates the Exponential Moving Average (EMA) for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for EMA calculation.\n    Returns:\n        pandas.Series: EMA values.\n    \"\"\"\n    ema = data['Close'].ewm(span=window, min_periods=window).mean()",
+        "detail": "test_functions.ranking",
+        "documentation": {}
+    },
+    {
+        "label": "rank_stocks_by_ema_difference",
+        "kind": 2,
+        "importPath": "test_functions.ranking",
+        "description": "test_functions.ranking",
+        "peekOfCode": "def rank_stocks_by_ema_difference(stocks):\n        \"\"\"\n        Ranks stocks based on the difference between the 100-day EMA and the last traded price.\n        Args:\n            stocks (list): List of stock symbols.\n        Returns:\n            list: Ranked list of stocks based on EMA difference.\n        \"\"\"\n        ranked_stocks = []\n        for symbol in stocks:",
+        "detail": "test_functions.ranking",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "kind": 2,
+        "importPath": "test_functions.ranking",
+        "description": "test_functions.ranking",
+        "peekOfCode": "def fetch_stock_data(symbol):\n    \"\"\"\n    Fetches historical stock data from Yahoo Finance API for a given symbol.\n    Args:\n        symbol (str): Stock symbol.\n    Returns:\n        pandas.DataFrame: Historical stock data.\n    \"\"\"\n    stock_data = yf.download(symbol, period=\"200d\", interval=\"1d\")\n    # print(stock_data)",
+        "detail": "test_functions.ranking",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "kind": 2,
+        "importPath": "test_functions.ranking",
+        "description": "test_functions.ranking",
+        "peekOfCode": "def get_last_traded_price(data):\n    \"\"\"\n    Retrieves the last traded price from historical stock data.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n    Returns:\n        float: Last traded price.\n    \"\"\"\n    last_traded_price = data['Close'].iloc[-1]\n    return last_traded_price",
+        "detail": "test_functions.ranking",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "kind": 2,
+        "importPath": "test_functions.screening",
+        "description": "test_functions.screening",
+        "peekOfCode": "def fetch_stock_data(symbol):\n    \"\"\"\n    Fetches historical stock data from Yahoo Finance API for a given symbol.\n    Args:\n        symbol (str): Stock symbol.\n    Returns:\n        pandas.DataFrame: Historical stock data.\n    \"\"\"\n    stock_data = yf.download(symbol, period=\"200d\", interval=\"1d\")\n    # print(stock_data)",
+        "detail": "test_functions.screening",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_ema",
+        "kind": 2,
+        "importPath": "test_functions.screening",
+        "description": "test_functions.screening",
+        "peekOfCode": "def calculate_ema(data, window=100):\n    \"\"\"\n    Calculates the Exponential Moving Average (EMA) for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for EMA calculation.\n    Returns:\n        pandas.Series: EMA values.\n    \"\"\"\n    ema = data['Close'].ewm(span=window, min_periods=window).mean()",
+        "detail": "test_functions.screening",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "kind": 2,
+        "importPath": "test_functions.screening",
+        "description": "test_functions.screening",
+        "peekOfCode": "def calculate_supertrend(data, window=7, multiplier=3):\n    \"\"\"\n    Calculates the Supertrend indicator for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for ATR calculation.\n        multiplier (int): Multiplier for ATR calculation.\n    Returns:\n        pandas.Series: Supertrend values.\n    \"\"\"",
+        "detail": "test_functions.screening",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "kind": 2,
+        "importPath": "test_functions.screening",
+        "description": "test_functions.screening",
+        "peekOfCode": "def get_last_traded_price(data):\n    \"\"\"\n    Retrieves the last traded price from historical stock data.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n    Returns:\n        float: Last traded price.\n    \"\"\"\n    last_traded_price = data['Close'].iloc[-1]\n    return last_traded_price",
+        "detail": "test_functions.screening",
+        "documentation": {}
+    },
+    {
+        "label": "filter_stocks",
+        "kind": 2,
+        "importPath": "test_functions.screening",
+        "description": "test_functions.screening",
+        "peekOfCode": "def filter_stocks(stocks):\n    \"\"\"\n    Filters stocks based on specified conditions.\n    Args:\n        stocks (list): List of stock symbols.\n    Returns:\n        list: Filtered list of stocks.\n    \"\"\"\n    filtered_stocks = []\n    for symbol in stocks:",
+        "detail": "test_functions.screening",
+        "documentation": {}
+    },
+    {
+        "label": "sell_algo",
+        "kind": 2,
+        "importPath": "test_functions.sell_algo",
+        "description": "test_functions.sell_algo",
+        "peekOfCode": "def sell_algo(slots):\n    # slots is a list of stocks\n    stocks_to_keep = []\n    stocks_to_sell = []\n    for stock in slots:\n        if should_sell(stock):\n            stocks_to_sell.append(stock)    \n        else:\n            stocks_to_keep.append(stock)\n    # New Slots ",
+        "detail": "test_functions.sell_algo",
+        "documentation": {}
+    },
+    {
+        "label": "should_sell",
+        "kind": 2,
+        "importPath": "test_functions.sell_algo",
+        "description": "test_functions.sell_algo",
+        "peekOfCode": "def should_sell(stock):\n    data = fetch_stock_data(stock)\n    ema = calculate_ema(data).iloc[-1]\n    last_traded_price = data['Close'].iloc[-1]\n    supertrend = calculate_supertrend(data).iloc[-1]\n    if last_traded_price < supertrend or last_traded_price < ema:\n        return True\n    return False\nif __name__ == \"__main__\":\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','TRENT.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']",
+        "detail": "test_functions.sell_algo",
+        "documentation": {}
+    },
+    {
+        "label": "slot_fill",
+        "kind": 2,
+        "importPath": "test_functions.slots",
+        "description": "test_functions.slots",
+        "peekOfCode": "def slot_fill(buy_stocks):\n    # Will come from Database\n    slots = get_slots()\n    max_slots = 5\n    total_available_slots = max_slots - len(slots)\n    if total_available_slots == 0:\n        return\n    # Will come from the Filtered stocks\n    final_buy_stocks = []\n    for stock in buy_stocks:",
+        "detail": "test_functions.slots",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "kind": 2,
+        "importPath": "test_functions.slots",
+        "description": "test_functions.slots",
+        "peekOfCode": "def get_slots():\n    with open('slots.json', 'r') as f:\n        return json.load(f)\ndef update_slots(slots):\n    with open('slots.json', 'w') as f:\n        json.dump(slots, f)\n# Example usage\nif __name__ == \"__main__\":  \n    update_slots([])\n    # print(slot_fill(['a','b','c','d','e','f']))",
+        "detail": "test_functions.slots",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "kind": 2,
+        "importPath": "test_functions.slots",
+        "description": "test_functions.slots",
+        "peekOfCode": "def update_slots(slots):\n    with open('slots.json', 'w') as f:\n        json.dump(slots, f)\n# Example usage\nif __name__ == \"__main__\":  \n    update_slots([])\n    # print(slot_fill(['a','b','c','d','e','f']))",
+        "detail": "test_functions.slots",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "kind": 2,
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "peekOfCode": "def get_slots():\n    with open('slots.json', 'r') as f:\n        return json.load(f)\ndef update_slots(slots):\n    with open('slots.json', 'w') as f:\n        json.dump(slots, f)",
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "kind": 2,
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "peekOfCode": "def update_slots(slots):\n    with open('slots.json', 'w') as f:\n        json.dump(slots, f)",
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def test():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['INDHOTEL.NS']\n    # mid_cap_algo = MidcapAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    # print(mid_cap_algo.filter_stocks())\n    # print(mid_cap_algo.slot_fill())\n    print(sell_algo(stocks))\n    return \"2\" \n@app.route('/buy', methods=['GET'])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "buy",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    mid_cap_algo.slot_fill()\n    # print(sell_algo(stocks))\n    return \"buy\" \n@app.route('/sell', methods=['GET'])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sell",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def sell():\n    update_slots(['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','RECLTD.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    sell_algo.sell_logic()\n    return \"sell\" \nif __name__ == '__main__':\n    db = TinyDB('database/tinydb/db.json')\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)  # Allow CORS for all routes\n# Sample route to test CORS\n@app.route('/test', methods=['GET'])\ndef test():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['INDHOTEL.NS']\n    # mid_cap_algo = MidcapAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    # print(mid_cap_algo.filter_stocks())",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_handler",
+        "kind": 2,
+        "importPath": "handler",
+        "description": "handler",
+        "peekOfCode": "def lambda_handler(event, context):\n    stocks = [event['stock_list']]\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    print(mid_cap_algo.filter_stocks())\n    print(mid_cap_algo.slot_fill())\nif __name__ == \"__main__\":\n    lambda_handler(None,None)",
+        "detail": "handler",
+        "documentation": {}
+    },
+    {
+        "label": "convert_to_dict",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def convert_to_dict(obj):\n    # If obj is a class instance, convert its attributes to a dictionary\n    if isinstance(obj, (Client, Slots,DailyTradeLog, Holding)):\n        return {key: convert_to_dict(value) if isinstance(value, (Client, Slots,DailyTradeLog,Holding)) else value\n                for key, value in obj.__dict__.items()}\n    # If obj is a list, recursively convert each item in the list\n    elif isinstance(obj, list):\n        return [convert_to_dict(item) for item in obj]\n    else:\n        return obj",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_balance",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_client_balance()\nif __name__ == '__main__':\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    client_table = TinyDB.table(db,'clients')\n    daily_trade_log = DailyTradeLog(0,-1,100,10000,0,0,0)\n    holding = Holding(1,2,3,4)\n    client = Client(123,10000,daily_trade_log,holding)\n    print(convert_to_dict(client))\n    # client_table.insert(convert_to_dict(client))",
+        "detail": "testing",
+        "documentation": {}
+    }
+]

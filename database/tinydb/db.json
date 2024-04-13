@@ -1,0 +1,1 @@
+{"slots": {"1": {"slots": []}}, "clients": {"1": {"client_code": 123, "current_balance": 10000, "daily_trade_log": {"date": 0, "stock_name": -1, "direction": 100, "price": 10000, "charges": 0, "net": 0, "balance": 0}, "holding": {"stock_name": 1, "qty": 2, "last_buy_time_stamps": 3, "last_buy_price": 4}}}}
