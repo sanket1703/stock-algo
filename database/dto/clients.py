@@ -6,14 +6,16 @@ class Client:
         self.holding = holding
 
 class DailyTradeLog:
-    def __init__(self, date, stock_name, direction, price, charges, net, balance):
+    def __init__(self, date, stock_name, direction, price, qty,balance_before_trade):
         self.date = date
         self.stock_name = stock_name
         self.direction = direction
         self.price = price
-        self.charges = charges
-        self.net = net
-        self.balance = balance
+        self.qty = qty
+        self.balance_before_trade = balance_before_trade
+    def to_list(self):
+        return [self.date,self.stock_name,self.direction,self.price,self.qty,self.balance_before_trade]
+
      
 class Holding:
     def __init__(self, stock_name, qty, last_buy_time_stamps, last_buy_price):
@@ -21,3 +23,11 @@ class Holding:
         self.qty = qty
         self.last_buy_time_stamps = last_buy_time_stamps
         self.last_buy_price = last_buy_price
+        
+    def to_json(self):
+        return {
+            "stock_name" : self.stock_name,
+            "qty" : self.qty,
+            "last_buy_time_stamps" : self.last_buy_time_stamps,
+            "last_buy_price" : self.last_buy_price
+        }

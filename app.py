@@ -12,6 +12,7 @@ from tinydb import TinyDB, Query
 
 from database.dto.clients import Client, DailyTradeLog, Holding
 from database.dto.slots import Slots
+from algorithms.Position_Sizing_Buy import PositionSizingBuy
 
 app = Flask(__name__)
 CORS(app)  # Allow CORS for all routes
@@ -35,8 +36,13 @@ def buy():
     mid_cap_algo = MidcapBuyAlgorithm(stocks)
     mid_cap_algo.rank_stocks_by_ema_difference()
     mid_cap_algo.filter_stocks()
-    mid_cap_algo.slot_fill()
+    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()
     # print(sell_algo(stocks))
+    clients = [123]
+    
+    for client in clients:
+        client = PositionSizingBuy(client)
+        client.position_sizing(final_stocks_buy,slots_before_buy)
     return "buy" 
 
 @app.route('/sell', methods=['GET'])

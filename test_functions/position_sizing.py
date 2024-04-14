@@ -21,6 +21,8 @@ def update_balance(client,amount):
 def send_buy_order(buy_stock,qty,client):
     print("Order sent for: ")
     print(buy_stock,qty,client)
+    price_bought = 10
+    return price_bought
     
 def calculate_brokerage():
     return 10
@@ -33,11 +35,11 @@ def position_sizing(final_buy_stocks,total_available_slots_before_buy,client):
         
         last_traded_price = get_last_traded_price(buy_stock)
         qty = math.floor(amount_to_invest/last_traded_price)
-        send_buy_order(buy_stock,qty,client)
+        price = send_buy_order(buy_stock,qty,client)
         turnover = (qty*last_traded_price + calculate_brokerage())
+        print("Stock: {stock} Price_buy {price} Quantity {qty} Amount to Invest {amount_to_invest}")
         reduce_balance(client,turnover)
         total_available_slots_before_buy -=1
         
-
-
-        
+if __name__ == '__main__':
+    print

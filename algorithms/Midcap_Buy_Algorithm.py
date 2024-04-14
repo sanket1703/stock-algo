@@ -1,6 +1,8 @@
+import math
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data, get_last_traded_price
-from utils.helper import update_slots,get_slots
+from datetime import datetime
+from database.dao.slots_dao import * 
 
 
 class MidcapBuyAlgorithm:
@@ -70,7 +72,6 @@ class MidcapBuyAlgorithm:
     
     def slot_fill(self):
         
-        # Will come from Database
         slots = get_slots()
         buy_stocks = self.filtered_stocks
         max_slots = 5
@@ -78,7 +79,7 @@ class MidcapBuyAlgorithm:
         
         if total_available_slots_before_buy == 0:
             print("There are not available slots.")
-            return
+            return ([],total_available_slots_before_buy)
         
         # Will come from the Filtered stocks
         final_buy_stocks = []
@@ -86,16 +87,20 @@ class MidcapBuyAlgorithm:
             if stock not in slots:
                 final_buy_stocks.append(stock)
                 slots.append(stock)
+            else:
+                print(f"{stock} already present in the slots. Not Buying")
             
-            if len(final_buy_stocks) + len(slots) > max_slots:
+            if len(slots) >= max_slots:
                 break
         
         update_slots(list(slots))
         total_available_slots_after_buy =  max_slots - len(slots)
         
-        print("Final Buy signal to Algo Baba, Now total Available slots")
+        print("Final Buy signal to Algo Baba, Before total Available slots")
         print((final_buy_stocks,total_available_slots_before_buy))
-        return (final_buy_stocks,total_available_slots_before_buy)    
+        return (final_buy_stocks,total_available_slots_before_buy)
+    
+    
 
 
 # Example usage

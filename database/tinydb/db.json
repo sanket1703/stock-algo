@@ -1,1 +1,93 @@
-{"slots": {"1": {"slots": []}}, "clients": {"1": {"client_code": 123, "current_balance": 10000, "daily_trade_log": {"date": 0, "stock_name": -1, "direction": 100, "price": 10000, "charges": 0, "net": 0, "balance": 0}, "holding": {"stock_name": 1, "qty": 2, "last_buy_time_stamps": 3, "last_buy_price": 4}}}}
+{
+  "slots": {
+    "1": {
+      "slots": [
+        "AUROPHARMA.NS",
+        "INDHOTEL.NS",
+        "ZYDUSLIFE.NS",
+        "POLYCAB.NS",
+        "LTTS.NS"
+      ]
+    }
+  },
+  "clients": {
+    "1": {
+      "client_code": 123,
+      "current_balance": 1425.54052734375,
+      "daily_trade_log": [
+        [
+          "2024-04-14 11:32:43",
+          "AUROPHARMA.NS",
+          "Buy",
+          1088.449951171875,
+          238,
+          1300000
+        ],
+        [
+          "2024-04-14 11:32:43",
+          "INDHOTEL.NS",
+          "Buy",
+          607.4500122070312,
+          428,
+          1040948.9116210938
+        ],
+        [
+          "2024-04-14 11:32:43",
+          "ZYDUSLIFE.NS",
+          "Buy",
+          962.1500244140625,
+          270,
+          780960.3063964844
+        ],
+        [
+          "2024-04-14 11:32:44",
+          "POLYCAB.NS",
+          "Buy",
+          5302.35009765625,
+          49,
+          521179.7998046875
+        ],
+        [
+          "2024-04-14 11:32:44",
+          "LTTS.NS",
+          "Buy",
+          5650.85009765625,
+          46,
+          261364.64501953125
+        ]
+      ],
+      "holding": {
+        "AUROPHARMA.NS": {
+          "stock_name": "AUROPHARMA.NS",
+          "qty": 238,
+          "last_buy_time_stamps": "2024-04-14 11:32:43",
+          "last_buy_price": 1088.449951171875
+        },
+        "INDHOTEL.NS": {
+          "stock_name": "INDHOTEL.NS",
+          "qty": 428,
+          "last_buy_time_stamps": "2024-04-14 11:32:43",
+          "last_buy_price": 607.4500122070312
+        },
+        "ZYDUSLIFE.NS": {
+          "stock_name": "ZYDUSLIFE.NS",
+          "qty": 270,
+          "last_buy_time_stamps": "2024-04-14 11:32:43",
+          "last_buy_price": 962.1500244140625
+        },
+        "POLYCAB.NS": {
+          "stock_name": "POLYCAB.NS",
+          "qty": 49,
+          "last_buy_time_stamps": "2024-04-14 11:32:44",
+          "last_buy_price": 5302.35009765625
+        },
+        "LTTS.NS": {
+          "stock_name": "LTTS.NS",
+          "qty": 46,
+          "last_buy_time_stamps": "2024-04-14 11:32:44",
+          "last_buy_price": 5650.85009765625
+        }
+      }
+    }
+  }
+}

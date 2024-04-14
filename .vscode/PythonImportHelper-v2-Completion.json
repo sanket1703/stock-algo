@@ -1,5 +1,14 @@
 [
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "calculate_ema",
         "importPath": "stock_data.indicators",
         "description": "stock_data.indicators",
@@ -104,6 +113,94 @@
         "documentation": {}
     },
     {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
         "label": "update_slots",
         "importPath": "utils.helper",
         "description": "utils.helper",
@@ -120,14 +217,6 @@
         "documentation": {}
     },
     {
-        "label": "get_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
-        "isExtraImport": true,
-        "detail": "utils.helper",
-        "documentation": {}
-    },
-    {
         "label": "update_slots",
         "importPath": "utils.helper",
         "description": "utils.helper",
@@ -136,19 +225,27 @@
         "documentation": {}
     },
     {
-        "label": "get_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
         "isExtraImport": true,
-        "detail": "utils.helper",
+        "detail": "database.dao.client_dao",
         "documentation": {}
     },
     {
-        "label": "update_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
         "isExtraImport": true,
-        "detail": "utils.helper",
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
         "documentation": {}
     },
     {
@@ -189,6 +286,86 @@
         "description": "tinydb",
         "isExtraImport": true,
         "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
         "documentation": {}
     },
     {
@@ -219,21 +396,20 @@
         "documentation": {}
     },
     {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
-        "documentation": {}
-    },
-    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "json",
         "description": "json",
         "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -301,54 +477,6 @@
         "documentation": {}
     },
     {
-        "label": "Client",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "DailyTradeLog",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "Holding",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "Client",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "DailyTradeLog",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "Holding",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
         "label": "Slots",
         "importPath": "database.dto.slots",
         "description": "database.dto.slots",
@@ -362,6 +490,14 @@
         "description": "database.dto.slots",
         "isExtraImport": true,
         "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingBuy",
+        "importPath": "algorithms.Position_Sizing_Buy",
+        "description": "algorithms.Position_Sizing_Buy",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Buy",
         "documentation": {}
     },
     {
@@ -383,21 +519,84 @@
         "documentation": {}
     },
     {
+        "label": "PositionSizingBuy",
+        "kind": 6,
+        "importPath": "algorithms.Position_Sizing_Buy",
+        "description": "algorithms.Position_Sizing_Buy",
+        "peekOfCode": "class PositionSizingBuy:\n    def __init__(self,client_code):\n        self.client_code = client_code\n    def send_buy_order(self,buy_stock,qty,client,last_traded_price):\n        print(f\"Order sent for: Stock {buy_stock} for Qty {qty} for Client {client} at approx price {last_traded_price}\")\n        return last_traded_price\n    def position_sizing(self,final_buy_stocks,total_available_slots_before_buy):\n        for buy_stock in final_buy_stocks:\n            current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n            total_available_capital = get_client_balance(self.client_code)",
+        "detail": "algorithms.Position_Sizing_Buy",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def get_client_balance(client_code):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('current_balance')\n    db.close()\n    return client_balance\ndef update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_client_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    client_table.update({'current_balance': new_balance}, client.client_code == client_code)\n    db.close()\n    return new_balance\ndef update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_holding",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    holding[stock_name] = Holding(stock_name,qty,date,price).to_json()\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "add_trade_log",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    trade_log = result[0].get('daily_trade_log')\n    new_trade_log = DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list()\n    trade_log.append(new_trade_log)\n    client_table.update({'daily_trade_log': trade_log}, client.client_code == client_code)\n    db.close()",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def reduce_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance - amount\n    update_client_balance(client,new_balance)\ndef add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "add_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
         "label": "get_slots",
         "kind": 2,
-        "importPath": "database.dao.slots",
-        "description": "database.dao.slots",
-        "peekOfCode": "def get_slots():\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    slots.update({'slots':['B']})\n    # slots.insert({'slots': ['A']})\n    print(slots.all())\n    print(db)\ndef update_slots(slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')",
-        "detail": "database.dao.slots",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "peekOfCode": "def get_slots():\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    current_slots = slots.all()[0]['slots']\n    return current_slots\ndef update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots}) ",
+        "detail": "database.dao.slots_dao",
         "documentation": {}
     },
     {
         "label": "update_slots",
         "kind": 2,
-        "importPath": "database.dao.slots",
-        "description": "database.dao.slots",
-        "peekOfCode": "def update_slots(slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    slots.update({'slots':['B']})\n    # slots.insert({'slots': ['A']})\n    print(slots.all())\n    print(db)",
-        "detail": "database.dao.slots",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "peekOfCode": "def update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots}) \n    db.close()\n    return update_slots",
+        "detail": "database.dao.slots_dao",
         "documentation": {}
     },
     {
@@ -405,7 +604,7 @@
         "kind": 6,
         "importPath": "database.dto.clients",
         "description": "database.dto.clients",
-        "peekOfCode": "class Client:\n    def __init__(self,client_code, current_balance,daily_trade_log,holding):\n        self.client_code = client_code\n        self.current_balance = current_balance\n        self.daily_trade_log = daily_trade_log\n        self.holding = holding\nclass DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, charges, net, balance):\n        self.date = date\n        self.stock_name = stock_name",
+        "peekOfCode": "class Client:\n    def __init__(self,client_code, current_balance,daily_trade_log,holding):\n        self.client_code = client_code\n        self.current_balance = current_balance\n        self.daily_trade_log = daily_trade_log\n        self.holding = holding\nclass DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty,balance_before_trade):\n        self.date = date\n        self.stock_name = stock_name",
         "detail": "database.dto.clients",
         "documentation": {}
     },
@@ -414,7 +613,7 @@
         "kind": 6,
         "importPath": "database.dto.clients",
         "description": "database.dto.clients",
-        "peekOfCode": "class DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, charges, net, balance):\n        self.date = date\n        self.stock_name = stock_name\n        self.direction = direction\n        self.price = price\n        self.charges = charges\n        self.net = net\n        self.balance = balance\nclass Holding:",
+        "peekOfCode": "class DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty,balance_before_trade):\n        self.date = date\n        self.stock_name = stock_name\n        self.direction = direction\n        self.price = price\n        self.qty = qty\n        self.balance_before_trade = balance_before_trade\n    def to_list(self):\n        return [self.date,self.stock_name,self.direction,self.price,self.qty,self.balance_before_trade]",
         "detail": "database.dto.clients",
         "documentation": {}
     },
@@ -423,7 +622,7 @@
         "kind": 6,
         "importPath": "database.dto.clients",
         "description": "database.dto.clients",
-        "peekOfCode": "class Holding:\n    def __init__(self, stock_name, qty, last_buy_time_stamps, last_buy_price):\n        self.stock_name = stock_name\n        self.qty = qty\n        self.last_buy_time_stamps = last_buy_time_stamps\n        self.last_buy_price = last_buy_price",
+        "peekOfCode": "class Holding:\n    def __init__(self, stock_name, qty, last_buy_time_stamps, last_buy_price):\n        self.stock_name = stock_name\n        self.qty = qty\n        self.last_buy_time_stamps = last_buy_time_stamps\n        self.last_buy_price = last_buy_price\n    def to_json(self):\n        return {\n            \"stock_name\" : self.stock_name,\n            \"qty\" : self.qty,",
         "detail": "database.dto.clients",
         "documentation": {}
     },
@@ -495,7 +694,7 @@
         "kind": 2,
         "importPath": "test_functions.position_sizing",
         "description": "test_functions.position_sizing",
-        "peekOfCode": "def add_balance(client,amount):\n    current_balance = get_available_balance(client)\n    current_balance += amount\n    update_balance(client,current_balance)\ndef update_balance(client,amount):\n    print(\"New Balance is\")\ndef send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\ndef calculate_brokerage():",
+        "peekOfCode": "def add_balance(client,amount):\n    current_balance = get_available_balance(client)\n    current_balance += amount\n    update_balance(client,current_balance)\ndef update_balance(client,amount):\n    print(\"New Balance is\")\ndef send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\n    price_bought = 10",
         "detail": "test_functions.position_sizing",
         "documentation": {}
     },
@@ -504,7 +703,7 @@
         "kind": 2,
         "importPath": "test_functions.position_sizing",
         "description": "test_functions.position_sizing",
-        "peekOfCode": "def update_balance(client,amount):\n    print(\"New Balance is\")\ndef send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()",
+        "peekOfCode": "def update_balance(client,amount):\n    print(\"New Balance is\")\ndef send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\n    price_bought = 10\n    return price_bought\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):",
         "detail": "test_functions.position_sizing",
         "documentation": {}
     },
@@ -513,7 +712,7 @@
         "kind": 2,
         "importPath": "test_functions.position_sizing",
         "description": "test_functions.position_sizing",
-        "peekOfCode": "def send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)",
+        "peekOfCode": "def send_buy_order(buy_stock,qty,client):\n    print(\"Order sent for: \")\n    print(buy_stock,qty,client)\n    price_bought = 10\n    return price_bought\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()",
         "detail": "test_functions.position_sizing",
         "documentation": {}
     },
@@ -522,7 +721,7 @@
         "kind": 2,
         "importPath": "test_functions.position_sizing",
         "description": "test_functions.position_sizing",
-        "peekOfCode": "def calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)\n        qty = math.floor(amount_to_invest/last_traded_price)\n        send_buy_order(buy_stock,qty,client)\n        turnover = (qty*last_traded_price + calculate_brokerage())",
+        "peekOfCode": "def calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)\n        qty = math.floor(amount_to_invest/last_traded_price)\n        price = send_buy_order(buy_stock,qty,client)\n        turnover = (qty*last_traded_price + calculate_brokerage())",
         "detail": "test_functions.position_sizing",
         "documentation": {}
     },
@@ -531,7 +730,7 @@
         "kind": 2,
         "importPath": "test_functions.position_sizing",
         "description": "test_functions.position_sizing",
-        "peekOfCode": "def position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)\n        qty = math.floor(amount_to_invest/last_traded_price)\n        send_buy_order(buy_stock,qty,client)\n        turnover = (qty*last_traded_price + calculate_brokerage())\n        reduce_balance(client,turnover)\n        total_available_slots_before_buy -=1",
+        "peekOfCode": "def position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        total_available_capital = get_available_balance()\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(buy_stock)\n        qty = math.floor(amount_to_invest/last_traded_price)\n        price = send_buy_order(buy_stock,qty,client)\n        turnover = (qty*last_traded_price + calculate_brokerage())\n        print(\"Stock: {stock} Price_buy {price} Quantity {qty} Amount to Invest {amount_to_invest}\")\n        reduce_balance(client,turnover)",
         "detail": "test_functions.position_sizing",
         "documentation": {}
     },
@@ -662,6 +861,15 @@
         "documentation": {}
     },
     {
+        "label": "Signal",
+        "kind": 6,
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "peekOfCode": "class Signal(Enum):\n    BUY=\"Buy\"\n    SELL=\"Sell\"",
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
         "label": "get_slots",
         "kind": 2,
         "importPath": "utils.helper",
@@ -693,7 +901,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    mid_cap_algo.slot_fill()\n    # print(sell_algo(stocks))\n    return \"buy\" \n@app.route('/sell', methods=['GET'])",
+        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()\n    # print(sell_algo(stocks))\n    clients = [123]\n    for client in clients:",
         "detail": "app",
         "documentation": {}
     },
@@ -725,6 +933,24 @@
         "documentation": {}
     },
     {
+        "label": "get_slots",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_slots():\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    current_slots = slots.all()[0]['slots']\n    return current_slots\ndef update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots})  # Replace \"list_field_name\" with the name of the list field",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots})  # Replace \"list_field_name\" with the name of the list field\n    db.close()\n    return update_slots\ndef convert_to_dict(obj):\n    # If obj is a class instance, convert its attributes to a dictionary\n    if isinstance(obj, (Client, Slots,DailyTradeLog, Holding)):",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
         "label": "convert_to_dict",
         "kind": 2,
         "importPath": "testing",
@@ -738,7 +964,79 @@
         "kind": 2,
         "importPath": "testing",
         "description": "testing",
-        "peekOfCode": "def get_client_balance()\nif __name__ == '__main__':\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    client_table = TinyDB.table(db,'clients')\n    daily_trade_log = DailyTradeLog(0,-1,100,10000,0,0,0)\n    holding = Holding(1,2,3,4)\n    client = Client(123,10000,daily_trade_log,holding)\n    print(convert_to_dict(client))\n    # client_table.insert(convert_to_dict(client))",
+        "peekOfCode": "def get_client_balance(client_code):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('current_balance')\n    db.close()\n    return client_balance\ndef update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_client_balance",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    client_table.update({'current_balance': new_balance}, client.client_code == client_code)\n    db.close()\n    return new_balance\ndef update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_holding",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    holding[stock_name] = Holding(stock_name,qty,date,price).to_json()\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "add_trade_log",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    trade_log = result[0].get('daily_trade_log')\n    new_trade_log = DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list()\n    trade_log.append(new_trade_log)\n    client_table.update({'daily_trade_log': trade_log}, client.client_code == client_code)\n    db.close()",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_balance",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def reduce_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance - amount\n    update_client_balance(client,new_balance)\ndef add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)\ndef send_buy_order(buy_stock,qty,client,last_traded_price):\n    print(f\"Order sent for: Stock {buy_stock} for Qty {qty} for Client {client} at approx price {last_traded_price}\")",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "add_balance",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)\ndef send_buy_order(buy_stock,qty,client,last_traded_price):\n    print(f\"Order sent for: Stock {buy_stock} for Qty {qty} for Client {client} at approx price {last_traded_price}\")\n    return last_traded_price\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "send_buy_order",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def send_buy_order(buy_stock,qty,client,last_traded_price):\n    print(f\"Order sent for: Stock {buy_stock} for Qty {qty} for Client {client} at approx price {last_traded_price}\")\n    return last_traded_price\ndef calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        total_available_capital = get_client_balance(client)\n        amount_to_invest = total_available_capital/total_available_slots_before_buy",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_brokerage",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def calculate_brokerage():\n    return 10\ndef position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        total_available_capital = get_client_balance(client)\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(fetch_stock_data(buy_stock))\n        qty = math.floor(amount_to_invest/last_traded_price)\n        price = send_buy_order(buy_stock,qty,client,last_traded_price)",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "position_sizing",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        total_available_capital = get_client_balance(client)\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(fetch_stock_data(buy_stock))\n        qty = math.floor(amount_to_invest/last_traded_price)\n        price = send_buy_order(buy_stock,qty,client,last_traded_price)\n        turnover = (qty*last_traded_price + calculate_brokerage())\n        update_holding(client,buy_stock,qty,last_traded_price,current_datetime)",
         "detail": "testing",
         "documentation": {}
     }
