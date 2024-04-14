@@ -1,6 +1,15 @@
 from tinydb import TinyDB,Query
 from database.dto.clients import *
 
+def get_client_holding_stock(client_code,stock_name):
+    db = TinyDB('database/tinydb/db.json')
+    client_table = TinyDB.table(db,'clients')
+    client = Query()
+    result = client_table.search(client.client_code == client_code)
+    client_balance = result[0].get('holding')[stock_name]
+    db.close()
+    return client_balance
+
 def get_client_balance(client_code):
     
     db = TinyDB('database/tinydb/db.json')
@@ -26,6 +35,16 @@ def update_holding(client_code,stock_name,qty,price,date):
     result = client_table.search(client.client_code == client_code)
     holding = result[0].get('holding')
     holding[stock_name] = Holding(stock_name,qty,date,price).to_json()
+    client_table.update({'holding': holding}, client.client_code == client_code)
+    db.close()
+    
+def offload_holding(client_code,stock_name):
+    db = TinyDB('database/tinydb/db.json')
+    client_table = TinyDB.table(db,'clients')
+    client = Query()
+    result = client_table.search(client.client_code == client_code)
+    holding = result[0].get('holding')
+    del holding[stock_name]
     client_table.update({'holding': holding}, client.client_code == client_code)
     db.close()
     

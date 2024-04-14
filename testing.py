@@ -8,6 +8,16 @@ from database.dao.slots_dao import get_slots, update_slots
 from stock_data.price import fetch_stock_data, get_last_traded_price
 import math
 
+
+def get_client_holding_stock(client_code,stock_name):
+    db = TinyDB('database/tinydb/db.json')
+    client_table = TinyDB.table(db,'clients')
+    client = Query()
+    result = client_table.search(client.client_code == client_code)
+    client_balance = result[0].get('holding')[stock_name]
+    db.close()
+    return client_balance
+
 def get_slots():
     db = TinyDB('database/tinydb/db.json')
     slots = TinyDB.table(db,'slots')
@@ -109,11 +119,28 @@ def position_sizing(final_buy_stocks,total_available_slots_before_buy,client):
         print(f"Stock: {buy_stock} Price_buy {price} Quantity {qty} Amount to Invest {amount_to_invest}")
         reduce_balance(client,turnover)
         total_available_slots_before_buy -=1
+    
+def send_sell_order(stock_name,client_code):
+    holding = get_client_holding_stock(client_code,stock_name)
+    print(f"Sell Order placed for {holding['stock_name']}")
+    
+def offload_holding(client_code,stock_name):
+    db = TinyDB('database/tinydb/db.json')
+    client_table = TinyDB.table(db,'clients')
+    client = Query()
+    result = client_table.search(client.client_code == client_code)
+    holding = result[0].get('holding')
+    del holding[stock_name]
+    client_table.update({'holding': holding}, client.client_code == client_code)
+    db.close()
 
 if __name__ == '__main__':
-    current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']
-    position_sizing(stocks,13,123)
-    get_slots()
+    # current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']
+    # position_sizing(stocks,13,123)
+    # get_slots()
+    # print(send_sell_order('OFSS.NS',123))
+    # print(get_client_holding_stock(123,'OFSS.NS'))
+    offload_holding(123,'OFSS.NS')
 
     

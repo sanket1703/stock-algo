@@ -74,7 +74,7 @@ class MidcapBuyAlgorithm:
         
         slots = get_slots()
         buy_stocks = self.filtered_stocks
-        max_slots = 5
+        max_slots = 7
         total_available_slots_before_buy = max_slots - len(slots)
         
         if total_available_slots_before_buy == 0:

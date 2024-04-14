@@ -177,6 +177,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
         "label": "get_slots",
         "importPath": "database.dao.slots_dao",
         "description": "database.dao.slots_dao",
@@ -193,35 +201,11 @@
         "documentation": {}
     },
     {
-        "label": "get_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
         "isExtraImport": true,
-        "detail": "utils.helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
-        "isExtraImport": true,
-        "detail": "utils.helper",
-        "documentation": {}
-    },
-    {
-        "label": "get_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
-        "isExtraImport": true,
-        "detail": "utils.helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
-        "isExtraImport": true,
-        "detail": "utils.helper",
+        "detail": "database.dao.client_dao",
         "documentation": {}
     },
     {
@@ -249,67 +233,11 @@
         "documentation": {}
     },
     {
-        "label": "TinyDB",
-        "importPath": "tinydb",
-        "description": "tinydb",
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
         "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "TinyDB",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "TinyDB",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "TinyDB",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
+        "detail": "database.dto.clients",
         "documentation": {}
     },
     {
@@ -369,6 +297,95 @@
         "documentation": {}
     },
     {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "importPath": "flatted",
+        "description": "flatted",
+        "isExtraImport": true,
+        "detail": "flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "importPath": "flatted",
+        "description": "flatted",
+        "isExtraImport": true,
+        "detail": "flatted",
+        "documentation": {}
+    },
+    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -393,15 +410,6 @@
         "importPath": "yfinance",
         "description": "yfinance",
         "detail": "yfinance",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
         "documentation": {}
     },
     {
@@ -477,6 +485,22 @@
         "documentation": {}
     },
     {
+        "label": "get_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "importPath": "utils.helper",
+        "description": "utils.helper",
+        "isExtraImport": true,
+        "detail": "utils.helper",
+        "documentation": {}
+    },
+    {
         "label": "Slots",
         "importPath": "database.dto.slots",
         "description": "database.dto.slots",
@@ -498,6 +522,14 @@
         "description": "algorithms.Position_Sizing_Buy",
         "isExtraImport": true,
         "detail": "algorithms.Position_Sizing_Buy",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingSell",
+        "importPath": "algorithms.Position_Sizing_Sell",
+        "description": "algorithms.Position_Sizing_Sell",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Sell",
         "documentation": {}
     },
     {
@@ -528,6 +560,24 @@
         "documentation": {}
     },
     {
+        "label": "PositionSizingSell",
+        "kind": 6,
+        "importPath": "algorithms.Position_Sizing_Sell",
+        "description": "algorithms.Position_Sizing_Sell",
+        "peekOfCode": "class PositionSizingSell:\n    def __init__(self,client_code):\n        self.client_code = client_code\n    def send_sell_order(self,stock_name):\n        holding = get_client_holding_stock(self.client_code,stock_name)\n        print(f\"Sell Order placed for {holding['stock_name']} for qty {holding['qty']}\")\n    def off_load_stocks(self,stocks_sell):\n        for stock_sell in stocks_sell:\n            self.send_sell_order(self,stock_sell)\n            offload_holding(self.client_code,stock_sell)",
+        "detail": "algorithms.Position_Sizing_Sell",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding_stock",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def get_client_holding_stock(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('holding')[stock_name]\n    db.close()\n    return client_balance\ndef get_client_balance(client_code):\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
         "label": "get_client_balance",
         "kind": 2,
         "importPath": "database.dao.client_dao",
@@ -550,7 +600,16 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    holding[stock_name] = Holding(stock_name,qty,date,price).to_json()\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):",
+        "peekOfCode": "def update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    holding[stock_name] = Holding(stock_name,qty,date,price).to_json()\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef offload_holding(client_code,stock_name):",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "offload_holding",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def offload_holding(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    del holding[stock_name]\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -633,6 +692,177 @@
         "description": "database.dto.slots",
         "peekOfCode": "class Slots:\n    def __init__(self, stock_name, update_ts, price, qty):\n        self.stock_name = stock_name\n        self.update_ts = update_ts\n        self.price = price\n        self.qty = qty",
         "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "def stringify(value):\n    return _stringify(value, separators=(',', ':'))\nassert stringify([None, None]) == '[[null,null]]'\na = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "a = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['o']",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "b = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['one']",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['two']",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['three']",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['a']",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['test']",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['array']",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "a2",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "a2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o2",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "o2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "str = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "oo",
+        "kind": 5,
+        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
         "documentation": {}
     },
     {
@@ -901,7 +1131,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()\n    # print(sell_algo(stocks))\n    clients = [123]\n    for client in clients:",
+        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    input(\"Please Enter to continue: \")\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    input(\"Please Enter to continue: \")\n    mid_cap_algo.filter_stocks()\n    input(\"Please Enter to continue: \")\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()",
         "detail": "app",
         "documentation": {}
     },
@@ -910,7 +1140,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def sell():\n    update_slots(['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','RECLTD.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    sell_algo.sell_logic()\n    return \"sell\" \nif __name__ == '__main__':\n    db = TinyDB('database/tinydb/db.json')\n    app.run(debug=True)",
+        "peekOfCode": "def sell():\n    update_slots(['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','RECLTD.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [123]\n    for client in clients:\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"sell\" \nif __name__ == '__main__':",
         "detail": "app",
         "documentation": {}
     },
@@ -930,6 +1160,15 @@
         "description": "handler",
         "peekOfCode": "def lambda_handler(event, context):\n    stocks = [event['stock_list']]\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    print(mid_cap_algo.filter_stocks())\n    print(mid_cap_algo.slot_fill())\nif __name__ == \"__main__\":\n    lambda_handler(None,None)",
         "detail": "handler",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding_stock",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_client_holding_stock(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('holding')[stock_name]\n    db.close()\n    return client_balance\ndef get_slots():\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "testing",
         "documentation": {}
     },
     {
@@ -1037,6 +1276,24 @@
         "importPath": "testing",
         "description": "testing",
         "peekOfCode": "def position_sizing(final_buy_stocks,total_available_slots_before_buy,client):\n    for buy_stock in final_buy_stocks:\n        current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        total_available_capital = get_client_balance(client)\n        amount_to_invest = total_available_capital/total_available_slots_before_buy\n        last_traded_price = get_last_traded_price(fetch_stock_data(buy_stock))\n        qty = math.floor(amount_to_invest/last_traded_price)\n        price = send_buy_order(buy_stock,qty,client,last_traded_price)\n        turnover = (qty*last_traded_price + calculate_brokerage())\n        update_holding(client,buy_stock,qty,last_traded_price,current_datetime)",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "send_sell_order",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def send_sell_order(stock_name,client_code):\n    holding = get_client_holding_stock(client_code,stock_name)\n    print(f\"Sell Order placed for {holding['stock_name']}\")\ndef offload_holding(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    del holding[stock_name]",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "offload_holding",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def offload_holding(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    del holding[stock_name]\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\nif __name__ == '__main__':",
         "detail": "testing",
         "documentation": {}
     }

@@ -1,6 +1,6 @@
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data
-from utils.helper import get_slots, update_slots
+from database.dao.slots_dao import * 
 
 class MidcapSellAlgorithm:
     def __init__(self):
@@ -40,5 +40,5 @@ class MidcapSellAlgorithm:
         self.stocks_to_sell = stocks_to_sell
         print("Sell the following stocks")
         print(self.stocks_to_sell)
-        return stocks_to_keep
+        return self.stocks_to_sell
     
