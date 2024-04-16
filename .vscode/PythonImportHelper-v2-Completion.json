@@ -1,14 +1,5 @@
 [
     {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
-        "documentation": {}
-    },
-    {
         "label": "calculate_ema",
         "importPath": "stock_data.indicators",
         "description": "stock_data.indicators",
@@ -145,27 +136,19 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
         "isExtraImport": true,
-        "detail": "datetime",
+        "detail": "stock_data.price",
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
         "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
+        "detail": "stock_data.price",
         "documentation": {}
     },
     {
@@ -178,6 +161,14 @@
     },
     {
         "label": "*",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
         "importPath": "database.dao.slots_dao",
         "description": "database.dao.slots_dao",
         "isExtraImport": true,
@@ -201,6 +192,30 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
@@ -230,6 +245,23 @@
         "description": "utils.enums.signal",
         "isExtraImport": true,
         "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
         "documentation": {}
     },
     {
@@ -485,22 +517,6 @@
         "documentation": {}
     },
     {
-        "label": "get_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
-        "isExtraImport": true,
-        "detail": "utils.helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_slots",
-        "importPath": "utils.helper",
-        "description": "utils.helper",
-        "isExtraImport": true,
-        "detail": "utils.helper",
-        "documentation": {}
-    },
-    {
         "label": "Slots",
         "importPath": "database.dto.slots",
         "description": "database.dto.slots",
@@ -564,7 +580,7 @@
         "kind": 6,
         "importPath": "algorithms.Position_Sizing_Sell",
         "description": "algorithms.Position_Sizing_Sell",
-        "peekOfCode": "class PositionSizingSell:\n    def __init__(self,client_code):\n        self.client_code = client_code\n    def send_sell_order(self,stock_name):\n        holding = get_client_holding_stock(self.client_code,stock_name)\n        print(f\"Sell Order placed for {holding['stock_name']} for qty {holding['qty']}\")\n    def off_load_stocks(self,stocks_sell):\n        for stock_sell in stocks_sell:\n            self.send_sell_order(self,stock_sell)\n            offload_holding(self.client_code,stock_sell)",
+        "peekOfCode": "class PositionSizingSell:\n    def __init__(self,client_code):\n        self.client_code = client_code\n    def send_sell_order(self,stock_name):\n        holding = get_client_holding_stock(self.client_code,stock_name)\n        print(f\"Sell Order placed for {holding['stock_name']} for qty {holding['qty']}\")\n        return holding\n    def off_load_stocks(self,stocks_sell):\n        for stock_sell in stocks_sell:\n            current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")",
         "detail": "algorithms.Position_Sizing_Sell",
         "documentation": {}
     },
@@ -1140,7 +1156,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def sell():\n    update_slots(['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','RECLTD.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [123]\n    for client in clients:\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"sell\" \nif __name__ == '__main__':",
+        "peekOfCode": "def sell():\n    update_slots(['LUPIN.NS', 'PERSISTENT.NS', 'RECLTD.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [123]\n    for client in clients:\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"sell\" \nif __name__ == '__main__':",
         "detail": "app",
         "documentation": {}
     },

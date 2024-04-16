@@ -5,7 +5,7 @@ from flask_cors import CORS
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from algorithms.Midcap_Sell_Algorithm import MidcapSellAlgorithm
 from test_functions.sell_algo import sell_algo
-from utils.helper import get_slots,update_slots
+from database.dao.slots_dao import update_slots
 
 from tinydb import TinyDB, Query
 
@@ -52,7 +52,7 @@ def buy():
 
 @app.route('/sell', methods=['GET'])
 def sell():
-    update_slots(['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','RECLTD.NS'])
+    update_slots(['LUPIN.NS', 'PERSISTENT.NS', 'RECLTD.NS'])
     sell_algo = MidcapSellAlgorithm()
     stocks_to_sell = sell_algo.sell_logic()
     
@@ -60,9 +60,6 @@ def sell():
     for client in clients:
         client = PositionSizingSell(client)
         client.off_load_stocks(stocks_to_sell)
-        
-        
-    
     return "sell" 
 
 if __name__ == '__main__':

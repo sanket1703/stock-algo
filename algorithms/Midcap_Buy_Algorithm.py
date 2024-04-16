@@ -1,7 +1,5 @@
-import math
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data, get_last_traded_price
-from datetime import datetime
 from database.dao.slots_dao import * 
 
 
