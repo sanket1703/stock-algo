@@ -1,72 +1,53 @@
-from tinydb import TinyDB,Query
 from database.dto.clients import *
+import boto3
 
-def get_client_holding_stock(client_code,stock_name):
-    db = TinyDB('database/tinydb/db.json')
-    client_table = TinyDB.table(db,'clients')
-    client = Query()
-    result = client_table.search(client.client_code == client_code)
-    client_balance = result[0].get('holding')[stock_name]
-    db.close()
+def get_client_holding_stock(db, client_code,stock_name):
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    client_balance = response['Items'][0]['holding'][stock_name]
     return client_balance
 
-def get_client_balance(client_code):
+def get_client_balance(db,client_code):
     
-    db = TinyDB('database/tinydb/db.json')
-    client_table = TinyDB.table(db,'clients')
-    client = Query()
-    result = client_table.search(client.client_code == client_code)
-    client_balance = result[0].get('current_balance')
-    db.close()
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    client_balance = response['Items'][0]['current_balance']
     return client_balance
 
-def update_client_balance(client_code,new_balance):
-    db = TinyDB('database/tinydb/db.json')
-    client_table = TinyDB.table(db,'clients')
-    client = Query()
-    client_table.update({'current_balance': new_balance}, client.client_code == client_code)
-    db.close()
+def update_client_balance(db,client_code,new_balance):
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    response['Items'][0]['current_balance'] = new_balance
+    clients.put_item(Item=response['Items'][0])
     return new_balance
 
-def update_holding(client_code,stock_name,qty,price,date):
-    db = TinyDB('database/tinydb/db.json')
-    client_table = TinyDB.table(db,'clients')
-    client = Query()
-    result = client_table.search(client.client_code == client_code)
-    holding = result[0].get('holding')
-    holding[stock_name] = Holding(stock_name,qty,date,price).to_json()
-    client_table.update({'holding': holding}, client.client_code == client_code)
-    db.close()
+def update_holding(db,client_code,stock_name,qty,price,date):
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()
+    clients.put_item(Item=response['Items'][0])
     
-def offload_holding(client_code,stock_name):
-    db = TinyDB('database/tinydb/db.json')
-    client_table = TinyDB.table(db,'clients')
-    client = Query()
-    result = client_table.search(client.client_code == client_code)
-    holding = result[0].get('holding')
-    del holding[stock_name]
-    client_table.update({'holding': holding}, client.client_code == client_code)
-    db.close()
     
-def add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):
-    db = TinyDB('database/tinydb/db.json')
-    client_table = TinyDB.table(db,'clients')
-    client = Query()
-    result = client_table.search(client.client_code == client_code)
-    trade_log = result[0].get('daily_trade_log')
-    new_trade_log = DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list()
-    trade_log.append(new_trade_log)
-    client_table.update({'daily_trade_log': trade_log}, client.client_code == client_code)
-    db.close()
+def offload_holding(db,client_code,stock_name):
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    del response['Items'][0]['holding'][stock_name]
+    clients.put_item(Item=response['Items'][0])
+    
+def add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())
+    clients.put_item(Item=response['Items'][0])
 
 
-def reduce_balance(client,amount):
-    current_balance = get_client_balance(client)
+def reduce_balance(db,client,amount):
+    current_balance = get_client_balance(db,client)
     new_balance = current_balance - amount
-    update_client_balance(client,new_balance)
+    update_client_balance(db,client,new_balance)
     
-def add_balance(client,amount):
-    current_balance = get_client_balance(client)
+def add_balance(db,client,amount):
+    current_balance = get_client_balance(db,client)
     new_balance = current_balance + amount
-    update_client_balance(client,new_balance)
+    update_client_balance(db,client,new_balance)
 

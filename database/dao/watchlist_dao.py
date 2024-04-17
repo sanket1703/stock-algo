@@ -1,15 +1,15 @@
-from tinydb import TinyDB
-
-def get_watchlist():
-    db = TinyDB('database/tinydb/db.json')
-    watchlist = TinyDB.table(db,'watchlist')
-    cuurent_watchlist = watchlist.all()[0]['watchlist']
-    return cuurent_watchlist
+def get_watchlist(db):
+    watchlist = db.Table('watchlist')
+    curent_watchlist = watchlist.scan()['Items'][0]['watchlist']
+    return curent_watchlist
     
 
-def update_watchlist(update_watchlist):
-    db = TinyDB('database/tinydb/db.json')
-    watchlist = TinyDB.table(db,'watchlist')
-    watchlist.update({'watchlist': update_watchlist}) 
-    db.close()
+def update_watchlist(db,update_watchlist):
+
+    watchlist = db.Table('watchlist')
+    key = {"watchlist_id":"1"}
+    response = watchlist.get_item(Key=key)
+    print(response)
+    response['Item']['watchlist'] = update_watchlist
+    watchlist.put_item(Item = response['Item'])
     return update_watchlist

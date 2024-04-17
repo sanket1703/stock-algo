@@ -1,10 +1,12 @@
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data, get_last_traded_price
 from database.dao.slots_dao import * 
+from database.dynamodb import get_database
 
 
 class MidcapBuyAlgorithm:
     def __init__(self,stock_list):
+        self.db = get_database()
         self.stock_list = stock_list
         self.ranked_stock_list = []
 
@@ -70,7 +72,7 @@ class MidcapBuyAlgorithm:
     
     def slot_fill(self):
         
-        slots = get_slots()
+        slots = get_slots(self.db)
         buy_stocks = self.filtered_stocks
         max_slots = 7
         total_available_slots_before_buy = max_slots - len(slots)
@@ -91,7 +93,7 @@ class MidcapBuyAlgorithm:
             if len(slots) >= max_slots:
                 break
         
-        update_slots(list(slots))
+        update_slots(self.db,list(slots))
         total_available_slots_after_buy =  max_slots - len(slots)
         
         print("Final Buy signal to Algo Baba, Before total Available slots")

@@ -176,19 +176,35 @@
         "documentation": {}
     },
     {
-        "label": "get_slots",
-        "importPath": "database.dao.slots_dao",
-        "description": "database.dao.slots_dao",
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
         "isExtraImport": true,
-        "detail": "database.dao.slots_dao",
+        "detail": "database.dynamodb",
         "documentation": {}
     },
     {
-        "label": "update_slots",
-        "importPath": "database.dao.slots_dao",
-        "description": "database.dao.slots_dao",
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
         "isExtraImport": true,
-        "detail": "database.dao.slots_dao",
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "isExtraImport": true,
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -208,11 +224,20 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
+        "label": "decimal",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "datetime",
+        "importPath": "decimal",
+        "description": "decimal",
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
         "documentation": {}
     },
     {
@@ -229,6 +254,15 @@
         "description": "database.dao.client_dao",
         "isExtraImport": true,
         "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "boto3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "boto3",
+        "description": "boto3",
+        "detail": "boto3",
         "documentation": {}
     },
     {
@@ -281,6 +315,38 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
         "label": "Client",
         "importPath": "database.dto.clients",
         "description": "database.dto.clients",
@@ -401,28 +467,27 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "detail": "tinydb",
         "documentation": {}
     },
     {
-        "label": "stringify",
-        "importPath": "flatted",
-        "description": "flatted",
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
         "isExtraImport": true,
-        "detail": "flatted",
+        "detail": "tinydb",
         "documentation": {}
     },
     {
-        "label": "parse",
-        "importPath": "flatted",
-        "description": "flatted",
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
         "isExtraImport": true,
-        "detail": "flatted",
+        "detail": "tinydb",
         "documentation": {}
     },
     {
@@ -453,11 +518,28 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
         "isExtraImport": true,
         "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -485,6 +567,30 @@
         "documentation": {}
     },
     {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
         "label": "CORS",
         "importPath": "flask_cors",
         "description": "flask_cors",
@@ -509,11 +615,35 @@
         "documentation": {}
     },
     {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
         "label": "MidcapSellAlgorithm",
         "importPath": "algorithms.Midcap_Sell_Algorithm",
         "description": "algorithms.Midcap_Sell_Algorithm",
         "isExtraImport": true,
         "detail": "algorithms.Midcap_Sell_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapSellAlgorithm",
+        "importPath": "algorithms.Midcap_Sell_Algorithm",
+        "description": "algorithms.Midcap_Sell_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Sell_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "sell_algo",
+        "importPath": "test_functions.sell_algo",
+        "description": "test_functions.sell_algo",
+        "isExtraImport": true,
+        "detail": "test_functions.sell_algo",
         "documentation": {}
     },
     {
@@ -541,6 +671,22 @@
         "documentation": {}
     },
     {
+        "label": "Slots",
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "isExtraImport": true,
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingBuy",
+        "importPath": "algorithms.Position_Sizing_Buy",
+        "description": "algorithms.Position_Sizing_Buy",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Buy",
+        "documentation": {}
+    },
+    {
         "label": "PositionSizingBuy",
         "importPath": "algorithms.Position_Sizing_Buy",
         "description": "algorithms.Position_Sizing_Buy",
@@ -557,15 +703,55 @@
         "documentation": {}
     },
     {
-        "label": "get_watchlist",
-        "importPath": "database.dao.watchlist_dao",
-        "description": "database.dao.watchlist_dao",
+        "label": "PositionSizingSell",
+        "importPath": "algorithms.Position_Sizing_Sell",
+        "description": "algorithms.Position_Sizing_Sell",
         "isExtraImport": true,
-        "detail": "database.dao.watchlist_dao",
+        "detail": "algorithms.Position_Sizing_Sell",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "importPath": "database.dao_tiny.watchlist_dao",
+        "description": "database.dao_tiny.watchlist_dao",
+        "isExtraImport": true,
+        "detail": "database.dao_tiny.watchlist_dao",
         "documentation": {}
     },
     {
         "label": "*",
+        "importPath": "database.dao_tiny.watchlist_dao",
+        "description": "database.dao_tiny.watchlist_dao",
+        "isExtraImport": true,
+        "detail": "database.dao_tiny.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "importPath": "database.dao_tiny.slots_dao",
+        "description": "database.dao_tiny.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao_tiny.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "importPath": "database.dao_tiny.slots_dao",
+        "description": "database.dao_tiny.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao_tiny.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "importPath": "database.dao_tiny.slots_dao",
+        "description": "database.dao_tiny.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao_tiny.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
         "importPath": "database.dao.watchlist_dao",
         "description": "database.dao.watchlist_dao",
         "isExtraImport": true,
@@ -577,7 +763,7 @@
         "kind": 6,
         "importPath": "algorithms.Midcap_Buy_Algorithm",
         "description": "algorithms.Midcap_Buy_Algorithm",
-        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n    def rank_stocks_by_ema_difference(self):\n        \"\"\"\n        Ranks stocks based on the difference between the 100-day EMA and the last traded price.\n        Args:\n            stocks (list): List of stock symbols.\n        Returns:",
+        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n    def rank_stocks_by_ema_difference(self):\n        \"\"\"\n        Ranks stocks based on the difference between the 100-day EMA and the last traded price.\n        Args:\n            stocks (list): List of stock symbols.",
         "detail": "algorithms.Midcap_Buy_Algorithm",
         "documentation": {}
     },
@@ -586,7 +772,7 @@
         "kind": 6,
         "importPath": "algorithms.Midcap_Sell_Algorithm",
         "description": "algorithms.Midcap_Sell_Algorithm",
-        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self):\n        self.slots = get_slots()\n    def get_slots():\n        return\n    def should_sell(self,stock):\n        data = fetch_stock_data(stock)\n        ema = calculate_ema(data).iloc[-1]\n        last_traded_price = data['Close'].iloc[-1]\n        supertrend = calculate_supertrend(data).iloc[-1]",
+        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self):\n        self.db = get_database()\n        self.slots = get_slots(self.db)\n    def should_sell(self,stock):\n        data = fetch_stock_data(stock)\n        ema = calculate_ema(data).iloc[-1]\n        last_traded_price = data['Close'].iloc[-1]\n        supertrend = calculate_supertrend(data).iloc[-1]\n        if last_traded_price < supertrend or last_traded_price < ema:",
         "detail": "algorithms.Midcap_Sell_Algorithm",
         "documentation": {}
     },
@@ -595,7 +781,7 @@
         "kind": 6,
         "importPath": "algorithms.Position_Sizing_Buy",
         "description": "algorithms.Position_Sizing_Buy",
-        "peekOfCode": "class PositionSizingBuy:\n    def __init__(self,client_code):\n        self.client_code = client_code\n    def send_buy_order(self,buy_stock,qty,client,last_traded_price):\n        print(f\"Order sent for: Stock {buy_stock} for Qty {qty} for Client {client} at approx price {last_traded_price}\")\n        return last_traded_price\n    def position_sizing(self,final_buy_stocks,total_available_slots_before_buy):\n        for buy_stock in final_buy_stocks:\n            current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n            total_available_capital = get_client_balance(self.client_code)",
+        "peekOfCode": "class PositionSizingBuy:\n    def __init__(self,client_code):\n        self.client_code = client_code\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',",
         "detail": "algorithms.Position_Sizing_Buy",
         "documentation": {}
     },
@@ -604,7 +790,7 @@
         "kind": 6,
         "importPath": "algorithms.Position_Sizing_Sell",
         "description": "algorithms.Position_Sizing_Sell",
-        "peekOfCode": "class PositionSizingSell:\n    def __init__(self,client_code):\n        self.client_code = client_code\n    def send_sell_order(self,stock_name):\n        holding = get_client_holding_stock(self.client_code,stock_name)\n        print(f\"Sell Order placed for {holding['stock_name']} for qty {holding['qty']}\")\n        return holding\n    def off_load_stocks(self,stocks_sell):\n        for stock_sell in stocks_sell:\n            current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")",
+        "peekOfCode": "class PositionSizingSell:\n    def __init__(self,client_code):\n        self.client_code = client_code\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',",
         "detail": "algorithms.Position_Sizing_Sell",
         "documentation": {}
     },
@@ -613,7 +799,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def get_client_holding_stock(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('holding')[stock_name]\n    db.close()\n    return client_balance\ndef get_client_balance(client_code):\n    db = TinyDB('database/tinydb/db.json')",
+        "peekOfCode": "def get_client_holding_stock(db, client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['holding'][stock_name]\n    return client_balance\ndef get_client_balance(db,client_code):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['current_balance']\n    return client_balance",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -622,7 +808,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def get_client_balance(client_code):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('current_balance')\n    db.close()\n    return client_balance\ndef update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')",
+        "peekOfCode": "def get_client_balance(db,client_code):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['current_balance']\n    return client_balance\ndef update_client_balance(db,client_code,new_balance):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['current_balance'] = new_balance\n    clients.put_item(Item=response['Items'][0])",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -631,7 +817,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    client_table.update({'current_balance': new_balance}, client.client_code == client_code)\n    db.close()\n    return new_balance\ndef update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')",
+        "peekOfCode": "def update_client_balance(db,client_code,new_balance):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['current_balance'] = new_balance\n    clients.put_item(Item=response['Items'][0])\n    return new_balance\ndef update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -640,7 +826,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    holding[stock_name] = Holding(stock_name,qty,date,price).to_json()\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef offload_holding(client_code,stock_name):",
+        "peekOfCode": "def update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()\n    clients.put_item(Item=response['Items'][0])\ndef offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -649,7 +835,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def offload_holding(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    del holding[stock_name]\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):",
+        "peekOfCode": "def offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())\n    clients.put_item(Item=response['Items'][0])",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -658,7 +844,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    trade_log = result[0].get('daily_trade_log')\n    new_trade_log = DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list()\n    trade_log.append(new_trade_log)\n    client_table.update({'daily_trade_log': trade_log}, client.client_code == client_code)\n    db.close()",
+        "peekOfCode": "def add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())\n    clients.put_item(Item=response['Items'][0])\ndef reduce_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance - amount\n    update_client_balance(db,client,new_balance)\ndef add_balance(db,client,amount):",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -667,7 +853,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def reduce_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance - amount\n    update_client_balance(client,new_balance)\ndef add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)",
+        "peekOfCode": "def reduce_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance - amount\n    update_client_balance(db,client,new_balance)\ndef add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -676,7 +862,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)",
+        "peekOfCode": "def add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -685,7 +871,7 @@
         "kind": 2,
         "importPath": "database.dao.slots_dao",
         "description": "database.dao.slots_dao",
-        "peekOfCode": "def get_slots():\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    current_slots = slots.all()[0]['slots']\n    return current_slots\ndef update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots}) ",
+        "peekOfCode": "def get_slots(db):\n    slots = db.Table('stock_slots')\n    current_slots = slots.scan()['Items'][0]['stock_slots']\n    return current_slots\ndef update_slots(db,update_slots):\n    slots = db.Table('stock_slots')\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots",
         "detail": "database.dao.slots_dao",
         "documentation": {}
     },
@@ -694,7 +880,7 @@
         "kind": 2,
         "importPath": "database.dao.slots_dao",
         "description": "database.dao.slots_dao",
-        "peekOfCode": "def update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots}) \n    db.close()\n    return update_slots",
+        "peekOfCode": "def update_slots(db,update_slots):\n    slots = db.Table('stock_slots')\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots\n    slots.put_item(Item = response['Item'])\n    return update_slots",
         "detail": "database.dao.slots_dao",
         "documentation": {}
     },
@@ -703,7 +889,7 @@
         "kind": 2,
         "importPath": "database.dao.watchlist_dao",
         "description": "database.dao.watchlist_dao",
-        "peekOfCode": "def get_watchlist():\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    cuurent_watchlist = watchlist.all()[0]['watchlist']\n    return cuurent_watchlist\ndef update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()",
+        "peekOfCode": "def get_watchlist(db):\n    watchlist = db.Table('watchlist')\n    curent_watchlist = watchlist.scan()['Items'][0]['watchlist']\n    return curent_watchlist\ndef update_watchlist(db,update_watchlist):\n    watchlist = db.Table('watchlist')\n    key = {\"watchlist_id\":\"1\"}\n    response = watchlist.get_item(Key=key)\n    print(response)\n    response['Item']['watchlist'] = update_watchlist",
         "detail": "database.dao.watchlist_dao",
         "documentation": {}
     },
@@ -712,8 +898,116 @@
         "kind": 2,
         "importPath": "database.dao.watchlist_dao",
         "description": "database.dao.watchlist_dao",
-        "peekOfCode": "def update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()\n    return update_watchlist",
+        "peekOfCode": "def update_watchlist(db,update_watchlist):\n    watchlist = db.Table('watchlist')\n    key = {\"watchlist_id\":\"1\"}\n    response = watchlist.get_item(Key=key)\n    print(response)\n    response['Item']['watchlist'] = update_watchlist\n    watchlist.put_item(Item = response['Item'])\n    return update_watchlist",
         "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding_stock",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def get_client_holding_stock(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('holding')[stock_name]\n    db.close()\n    return client_balance\ndef get_client_balance(client_code):\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_balance",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def get_client_balance(client_code):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('current_balance')\n    db.close()\n    return client_balance\ndef update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_client_balance",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def update_client_balance(client_code,new_balance):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    client_table.update({'current_balance': new_balance}, client.client_code == client_code)\n    db.close()\n    return new_balance\ndef update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_holding",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def update_holding(client_code,stock_name,qty,price,date):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    holding[stock_name] = Holding(stock_name,qty,date,price).to_json()\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef offload_holding(client_code,stock_name):",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "offload_holding",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def offload_holding(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    del holding[stock_name]\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "add_trade_log",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def add_trade_log(client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    trade_log = result[0].get('daily_trade_log')\n    new_trade_log = DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list()\n    trade_log.append(new_trade_log)\n    client_table.update({'daily_trade_log': trade_log}, client.client_code == client_code)\n    db.close()",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_balance",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def reduce_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance - amount\n    update_client_balance(client,new_balance)\ndef add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "add_balance",
+        "kind": 2,
+        "importPath": "database.dao_tiny.client_dao",
+        "description": "database.dao_tiny.client_dao",
+        "peekOfCode": "def add_balance(client,amount):\n    current_balance = get_client_balance(client)\n    new_balance = current_balance + amount\n    update_client_balance(client,new_balance)",
+        "detail": "database.dao_tiny.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "kind": 2,
+        "importPath": "database.dao_tiny.slots_dao",
+        "description": "database.dao_tiny.slots_dao",
+        "peekOfCode": "def get_slots():\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    current_slots = slots.all()[0]['slots']\n    return current_slots\ndef update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots}) ",
+        "detail": "database.dao_tiny.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "kind": 2,
+        "importPath": "database.dao_tiny.slots_dao",
+        "description": "database.dao_tiny.slots_dao",
+        "peekOfCode": "def update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots}) \n    db.close()\n    return update_slots",
+        "detail": "database.dao_tiny.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "kind": 2,
+        "importPath": "database.dao_tiny.watchlist_dao",
+        "description": "database.dao_tiny.watchlist_dao",
+        "peekOfCode": "def get_watchlist():\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    cuurent_watchlist = watchlist.all()[0]['watchlist']\n    return cuurent_watchlist\ndef update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()",
+        "detail": "database.dao_tiny.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_watchlist",
+        "kind": 2,
+        "importPath": "database.dao_tiny.watchlist_dao",
+        "description": "database.dao_tiny.watchlist_dao",
+        "peekOfCode": "def update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()\n    return update_watchlist",
+        "detail": "database.dao_tiny.watchlist_dao",
         "documentation": {}
     },
     {
@@ -753,174 +1047,12 @@
         "documentation": {}
     },
     {
-        "label": "_Known",
-        "kind": 6,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "_String",
-        "kind": 6,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
+        "label": "get_database",
         "kind": 2,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "def stringify(value):\n    return _stringify(value, separators=(',', ':'))\nassert stringify([None, None]) == '[[null,null]]'\na = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "a = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['o']",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "b",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "b = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['one']",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['two']",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['three']",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['a']",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['test']",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o['array']",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "a2",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "a2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "o2",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "o2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "str",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "str = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "documentation": {}
-    },
-    {
-        "label": "oo",
-        "kind": 5,
-        "importPath": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "description": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
-        "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
-        "detail": "stock-algo-ui.mantis-free-react-admin-template.node_modules.flatted.python.test",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "peekOfCode": "def get_database():\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',\n            region_name='ap-south-1',\n            aws_access_key_id=aws_access_key_id,\n            aws_secret_access_key=aws_secret_access_key)\n        return dynamodb",
+        "detail": "database.dynamodb",
         "documentation": {}
     },
     {
@@ -1176,15 +1308,6 @@
         "documentation": {}
     },
     {
-        "label": "get_db_snapshot",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def get_db_snapshot():\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    slots_table = TinyDB.table(db,'slots')\n    snapshot = {}\n    snapshot[\"Slots\"] = slots_table.all()\n    snapshot[\"Clients\"] = client_table.all()\n    return snapshot\n# Sample route to test CORS\n@app.route('/test', methods=['GET'])",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
         "label": "test",
         "kind": 2,
         "importPath": "app",
@@ -1198,7 +1321,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    stocks =  get_watchlist()\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # input(\"Please Enter to continue: \")\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    # input(\"Please Enter to continue: \")\n    mid_cap_algo.filter_stocks()\n    # input(\"Please Enter to continue: \")",
+        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    # stocks =  get_watchlist()\n    # stocks = ['GUJGASLTD.NS']\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # input(\"Please Enter to continue: \")\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    # input(\"Please Enter to continue: \")\n    mid_cap_algo.filter_stocks()",
         "detail": "app",
         "documentation": {}
     },
@@ -1207,7 +1330,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def sell():\n    update_slots([ 'OFSS.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"Sanket\",\"Keyur\",\"Yasho\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    snapshot = get_db_snapshot()",
+        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"Sanket\",\"Keyur\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    # snapshot = get_db_snapshot()\n    return \"snapshot\"",
         "detail": "app",
         "documentation": {}
     },
@@ -1216,8 +1339,26 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\nCORS(app)  # Allow CORS for all routes\n@app.route('/snapshot', methods=['GET'])\ndef get_db_snapshot():\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    slots_table = TinyDB.table(db,'slots')\n    snapshot = {}\n    snapshot[\"Slots\"] = slots_table.all()\n    snapshot[\"Clients\"] = client_table.all()",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)  # Allow CORS for all routes\n# @app.route('/snapshot', methods=['GET'])\n# def get_db_snapshot():\n#     db = TinyDB('database/tinydb/db.json')\n#     client_table = TinyDB.table(db,'clients')\n#     slots_table = TinyDB.table(db,'slots')\n#     snapshot = {}\n#     snapshot[\"Slots\"] = slots_table.all()\n#     snapshot[\"Clients\"] = client_table.all()",
         "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "buy",
+        "kind": 2,
+        "importPath": "handler",
+        "description": "handler",
+        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()\n    clients = [\"Sanket\",\"Keyur\"]\n    for client in clients:",
+        "detail": "handler",
+        "documentation": {}
+    },
+    {
+        "label": "sell",
+        "kind": 2,
+        "importPath": "handler",
+        "description": "handler",
+        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"Sanket\",\"Keyur\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"Sell Algo Completed\"\ndef lambda_handler(event, context):",
+        "detail": "handler",
         "documentation": {}
     },
     {
@@ -1225,7 +1366,7 @@
         "kind": 2,
         "importPath": "handler",
         "description": "handler",
-        "peekOfCode": "def lambda_handler(event, context):\n    stocks = [event['stock_list']]\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    print(mid_cap_algo.filter_stocks())\n    print(mid_cap_algo.slot_fill())\nif __name__ == \"__main__\":\n    lambda_handler(None,None)",
+        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        return buy()\n    elif event[\"action\"] == \"Sell\":\n        return sell()\nif __name__ == \"__main__\":\n    event = {}\n    event[\"action\"] = \"Buy\"\n    print(lambda_handler(event,None))",
         "detail": "handler",
         "documentation": {}
     },
@@ -1387,7 +1528,124 @@
         "kind": 2,
         "importPath": "testing",
         "description": "testing",
-        "peekOfCode": "def update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()\n    return update_watchlist\nif __name__ == '__main__':\n    # current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    # position_sizing(stocks,13,123)",
+        "peekOfCode": "def update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()\n    return update_watchlist\nfrom tinydb import TinyDB\ndef get_watchlist():\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_watchlist():\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    cuurent_watchlist = watchlist.all()[0]['watchlist']\n    return cuurent_watchlist\ndef update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_watchlist",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()\n    return update_watchlist\ndef get_watchlist(db):\n    watchlist = db.Table('watchlist')\n    curent_watchlist = watchlist.scan()['Items'][0]['watchlist']\n    return curent_watchlist",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_watchlist(db):\n    watchlist = db.Table('watchlist')\n    curent_watchlist = watchlist.scan()['Items'][0]['watchlist']\n    return curent_watchlist\ndef update_watchlist(db,update_watchlist):\n    watchlist = db.Table('watchlist')\n    key = {\"watchlist_id\":\"1\"}\n    response = watchlist.get_item(Key=key)\n    print(response)\n    response['Item']['watchlist'] = update_watchlist",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_watchlist",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_watchlist(db,update_watchlist):\n    watchlist = db.Table('watchlist')\n    key = {\"watchlist_id\":\"1\"}\n    response = watchlist.get_item(Key=key)\n    print(response)\n    response['Item']['watchlist'] = update_watchlist\n    watchlist.put_item(Item = response['Item'])\ndef get_slots(db):\n    slots = db.Table('stock_slots')\n    current_slots = slots.scan()['Items'][0]['stock_slots']",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_slots(db):\n    slots = db.Table('stock_slots')\n    current_slots = slots.scan()['Items'][0]['stock_slots']\n    return current_slots\ndef update_slots(db,update_slots):\n    slots = db.Table('stock_slots')\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_slots(db,update_slots):\n    slots = db.Table('stock_slots')\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots\n    slots.put_item(Item = response['Item'])\n    return update_slots\ndef get_client_holding_stock(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding_stock",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_client_holding_stock(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    client_balance = result[0].get('holding')[stock_name]\n    db.close()\n    return client_balance\ndef get_client_balance(db,client_code):\n    clients = db.Table('clients')",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_balance",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_client_balance(db,client_code):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['current_balance']\n    return client_balance\ndef update_client_balance(db,client_code,new_balance):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['current_balance'] = new_balance\n    clients.put_item(Item=response['Items'][0])",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_client_balance",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_client_balance(db,client_code,new_balance):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['current_balance'] = new_balance\n    clients.put_item(Item=response['Items'][0])\n    return new_balance\ndef update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_holding",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()\n    clients.put_item(Item=response['Items'][0])\ndef offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "offload_holding",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())\n    clients.put_item(Item=response['Items'][0])",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "add_trade_log",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())\n    clients.put_item(Item=response['Items'][0])\ndef get_database():\n    aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n    aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n    # Create a DynamoDB resource object with your credentials\n    dynamodb = boto3.resource(",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_database():\n    aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n    aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n    # Create a DynamoDB resource object with your credentials\n    dynamodb = boto3.resource(\n        'dynamodb',\n        region_name='ap-south-1',\n        aws_access_key_id=aws_access_key_id,\n        aws_secret_access_key=aws_secret_access_key)\n    return dynamodb",
         "detail": "testing",
         "documentation": {}
     }

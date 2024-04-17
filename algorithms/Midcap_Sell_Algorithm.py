@@ -1,13 +1,12 @@
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data
 from database.dao.slots_dao import * 
+from database.dynamodb import get_database
 
 class MidcapSellAlgorithm:
     def __init__(self):
-        self.slots = get_slots()
-        
-    def get_slots():
-        return
+        self.db = get_database()
+        self.slots = get_slots(self.db)
 
     def should_sell(self,stock):
         
@@ -23,7 +22,7 @@ class MidcapSellAlgorithm:
     
     def sell_logic(self):
         # slots is a list of stocks
-        self.slots = get_slots()
+        self.slots = get_slots(self.db)
         stocks_to_keep = []
         stocks_to_sell = []
         for stock in self.slots:
@@ -34,9 +33,9 @@ class MidcapSellAlgorithm:
                 
         # New Slots 
         self.stocks_to_keep = stocks_to_keep
-        update_slots(self.stocks_to_keep)
+        update_slots(self.db,self.stocks_to_keep)
         print("Current Slots")
-        print(get_slots())
+        print(get_slots(self.db))
         self.stocks_to_sell = stocks_to_sell
         print("Sell the following stocks")
         print(self.stocks_to_sell)
