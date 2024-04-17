@@ -369,6 +369,14 @@
         "documentation": {}
     },
     {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
         "label": "Query",
         "importPath": "tinydb",
         "description": "tinydb",
@@ -549,6 +557,22 @@
         "documentation": {}
     },
     {
+        "label": "get_watchlist",
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
         "label": "MidcapBuyAlgorithm",
         "kind": 6,
         "importPath": "algorithms.Midcap_Buy_Algorithm",
@@ -672,6 +696,24 @@
         "description": "database.dao.slots_dao",
         "peekOfCode": "def update_slots(update_slots):\n    db = TinyDB('database/tinydb/db.json')\n    slots = TinyDB.table(db,'slots')\n    query = Query()\n    slots.update({'slots': update_slots}) \n    db.close()\n    return update_slots",
         "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "kind": 2,
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "peekOfCode": "def get_watchlist():\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    cuurent_watchlist = watchlist.all()[0]['watchlist']\n    return cuurent_watchlist\ndef update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()",
+        "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_watchlist",
+        "kind": 2,
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "peekOfCode": "def update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()\n    return update_watchlist",
+        "detail": "database.dao.watchlist_dao",
         "documentation": {}
     },
     {
@@ -1134,11 +1176,20 @@
         "documentation": {}
     },
     {
+        "label": "get_db_snapshot",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_db_snapshot():\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    slots_table = TinyDB.table(db,'slots')\n    snapshot = {}\n    snapshot[\"Slots\"] = slots_table.all()\n    snapshot[\"Clients\"] = client_table.all()\n    return snapshot\n# Sample route to test CORS\n@app.route('/test', methods=['GET'])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "test",
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def test():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['INDHOTEL.NS']\n    # mid_cap_algo = MidcapAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    # print(mid_cap_algo.filter_stocks())\n    # print(mid_cap_algo.slot_fill())\n    print(sell_algo(stocks))\n    return \"2\" \n@app.route('/buy', methods=['GET'])",
+        "peekOfCode": "def test():\n    stocks =  get_watchlist()\n    # mid_cap_algo = MidcapAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    # print(mid_cap_algo.filter_stocks())\n    # print(mid_cap_algo.slot_fill())\n    print(sell_algo(stocks))\n    return \"2\" \n@app.route('/buy', methods=['GET'])\ndef buy():",
         "detail": "app",
         "documentation": {}
     },
@@ -1147,7 +1198,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    input(\"Please Enter to continue: \")\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    input(\"Please Enter to continue: \")\n    mid_cap_algo.filter_stocks()\n    input(\"Please Enter to continue: \")\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()",
+        "peekOfCode": "def buy():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    stocks =  get_watchlist()\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # input(\"Please Enter to continue: \")\n    mid_cap_algo.rank_stocks_by_ema_difference()\n    # input(\"Please Enter to continue: \")\n    mid_cap_algo.filter_stocks()\n    # input(\"Please Enter to continue: \")",
         "detail": "app",
         "documentation": {}
     },
@@ -1156,7 +1207,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def sell():\n    update_slots(['LUPIN.NS', 'PERSISTENT.NS', 'RECLTD.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [123]\n    for client in clients:\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"sell\" \nif __name__ == '__main__':",
+        "peekOfCode": "def sell():\n    update_slots([ 'OFSS.NS'])\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"Sanket\",\"Keyur\",\"Yasho\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    snapshot = get_db_snapshot()",
         "detail": "app",
         "documentation": {}
     },
@@ -1165,7 +1216,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\nCORS(app)  # Allow CORS for all routes\n# Sample route to test CORS\n@app.route('/test', methods=['GET'])\ndef test():\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']\n    # stocks = ['INDHOTEL.NS']\n    # mid_cap_algo = MidcapAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    # print(mid_cap_algo.filter_stocks())",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)  # Allow CORS for all routes\n@app.route('/snapshot', methods=['GET'])\ndef get_db_snapshot():\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    slots_table = TinyDB.table(db,'slots')\n    snapshot = {}\n    snapshot[\"Slots\"] = slots_table.all()\n    snapshot[\"Clients\"] = client_table.all()",
         "detail": "app",
         "documentation": {}
     },
@@ -1309,7 +1360,34 @@
         "kind": 2,
         "importPath": "testing",
         "description": "testing",
-        "peekOfCode": "def offload_holding(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    del holding[stock_name]\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\nif __name__ == '__main__':",
+        "peekOfCode": "def offload_holding(client_code,stock_name):\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    client = Query()\n    result = client_table.search(client.client_code == client_code)\n    holding = result[0].get('holding')\n    del holding[stock_name]\n    client_table.update({'holding': holding}, client.client_code == client_code)\n    db.close()\ndef get_db_snapshot():",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_db_snapshot",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_db_snapshot():\n    db = TinyDB('database/tinydb/db.json')\n    client_table = TinyDB.table(db,'clients')\n    slots_table = TinyDB.table(db,'slots')\n    snapshot = {}\n    snapshot[\"Clients\"] = client_table.all()\n    snapshot[\"Slots\"] = slots_table.all()\n    return snapshot\ndef get_watchlist():\n    db = TinyDB('database/tinydb/db.json')",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def get_watchlist():\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    cuurent_watchlist = watchlist.all()[0]['watchlist']\n    return cuurent_watchlist\ndef update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()",
+        "detail": "testing",
+        "documentation": {}
+    },
+    {
+        "label": "update_watchlist",
+        "kind": 2,
+        "importPath": "testing",
+        "description": "testing",
+        "peekOfCode": "def update_watchlist(update_watchlist):\n    db = TinyDB('database/tinydb/db.json')\n    watchlist = TinyDB.table(db,'watchlist')\n    watchlist.update({'watchlist': update_watchlist}) \n    db.close()\n    return update_watchlist\nif __name__ == '__main__':\n    # current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']\n    # position_sizing(stocks,13,123)",
         "detail": "testing",
         "documentation": {}
     }

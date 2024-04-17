@@ -4,7 +4,7 @@ from database.dto.slots import Slots
 from datetime import datetime 
 from utils.enums.signal import Signal
 from database.dao.slots_dao import get_slots, update_slots
-
+from database.dao.watchlist_dao import *
 from stock_data.price import fetch_stock_data, get_last_traded_price
 import math
 
@@ -134,6 +134,30 @@ def offload_holding(client_code,stock_name):
     client_table.update({'holding': holding}, client.client_code == client_code)
     db.close()
 
+def get_db_snapshot():
+    db = TinyDB('database/tinydb/db.json')
+    client_table = TinyDB.table(db,'clients')
+    slots_table = TinyDB.table(db,'slots')
+    snapshot = {}
+    snapshot["Clients"] = client_table.all()
+    snapshot["Slots"] = slots_table.all()
+    return snapshot
+
+
+def get_watchlist():
+    db = TinyDB('database/tinydb/db.json')
+    watchlist = TinyDB.table(db,'watchlist')
+    cuurent_watchlist = watchlist.all()[0]['watchlist']
+    return cuurent_watchlist
+    
+
+def update_watchlist(update_watchlist):
+    db = TinyDB('database/tinydb/db.json')
+    watchlist = TinyDB.table(db,'watchlist')
+    watchlist.update({'watchlist': update_watchlist}) 
+    db.close()
+    return update_watchlist
+
 if __name__ == '__main__':
     # current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS']
@@ -141,6 +165,7 @@ if __name__ == '__main__':
     # get_slots()
     # print(send_sell_order('OFSS.NS',123))
     # print(get_client_holding_stock(123,'OFSS.NS'))
-    offload_holding(123,'OFSS.NS')
+    
 
+    print(update_watchlist(['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','BALKRISIND.NS','MPHASIS.NS']))
     
