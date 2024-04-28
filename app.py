@@ -23,11 +23,11 @@ def keepAlive():
 
 
 @app.route('/buy', methods=['GET'])
-def buy(stocks):
+def buy():
     
     # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']
     db = get_database()
-    # stocks = get_watchlist(db)
+    stocks = get_watchlist(db)
     
     mid_cap_algo = MidcapBuyAlgorithm(stocks)
     # mid_cap_algo.rank_stocks_by_ema_difference()
