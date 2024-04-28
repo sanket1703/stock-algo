@@ -1,0 +1,549 @@
+{
+  "watchlist": {
+    "1": {
+      "watchlist": [
+        "LUPIN.NS",
+        "INDHOTEL.NS",
+        "POLYCAB.NS",
+        "PERSISTENT.NS",
+        "CUMMINSIND.NS",
+        "ZYDUSLIFE.NS",
+        "RECLTD.NS",
+        "ABBOTINDIA.NS",
+        "TVSMOTOR.NS",
+        "AUBANK.NS",
+        "LTTS.NS",
+        "GUJGASLTD.NS",
+        "OFSS.NS",
+        "COFORGE.NS",
+        "ALKEM.NS",
+        "AUROPHARMA.NS",
+        "HONAUT.NS",
+        "ASTRAL.NS",
+        "BALKRISIND.NS",
+        "MPHASIS.NS"
+      ]
+    }
+  },
+  "slots": {
+    "1": {
+      "slots": [
+        "GUJGASLTD.NS",
+        "INDHOTEL.NS",
+        "AUROPHARMA.NS",
+        "ZYDUSLIFE.NS",
+        "POLYCAB.NS",
+        "CUMMINSIND.NS",
+        "HONAUT.NS"
+      ]
+    }
+  },
+  "clients": {
+    "1": {
+      "client_code": "Sanket",
+      "current_balance": 2463.63916015625,
+      "daily_trade_log": [
+        ["2024-04-17 10:28:15", "GUJGASLTD.NS", "Buy", 553.5, 335, 1300000],
+        [
+          "2024-04-17 10:28:15",
+          "INDHOTEL.NS",
+          "Buy",
+          583.6500244140625,
+          318,
+          1114577.5
+        ],
+        [
+          "2024-04-17 10:28:15",
+          "AUROPHARMA.NS",
+          "Buy",
+          1111.0999755859375,
+          167,
+          928976.7922363281
+        ],
+        [
+          "2024-04-17 10:28:16",
+          "ZYDUSLIFE.NS",
+          "Buy",
+          944.8499755859375,
+          196,
+          743423.0963134766
+        ],
+        [
+          "2024-04-17 10:28:16",
+          "POLYCAB.NS",
+          "Buy",
+          5267.5498046875,
+          35,
+          558232.5010986328
+        ],
+        [
+          "2024-04-17 10:28:16",
+          "CUMMINSIND.NS",
+          "Buy",
+          3120.64990234375,
+          59,
+          373868.2579345703
+        ],
+        [
+          "2024-04-17 10:28:22",
+          "HONAUT.NS",
+          "Buy",
+          44728.30078125,
+          4,
+          189749.91369628906
+        ],
+        [
+          "2024-04-17 10:38:38",
+          "OFSS.NS",
+          "Sell",
+          7858.39990234375,
+          335,
+          10836.710571289062
+        ],
+        ["2024-04-17 10:42:49", "OFSS.NS", "Sell", 7858.39990234375, 318, 0],
+        [
+          "2024-04-17 10:55:44",
+          "GUJGASLTD.NS",
+          "Buy",
+          553.5,
+          644,
+          2498971.1689453125
+        ],
+        [
+          "2024-04-17 10:55:49",
+          "INDHOTEL.NS",
+          "Buy",
+          583.6500244140625,
+          611,
+          2142517.1689453125
+        ],
+        [
+          "2024-04-17 10:55:49",
+          "AUROPHARMA.NS",
+          "Buy",
+          1111.0999755859375,
+          321,
+          1785907.0040283203
+        ],
+        [
+          "2024-04-17 10:55:49",
+          "ZYDUSLIFE.NS",
+          "Buy",
+          944.8499755859375,
+          378,
+          1429243.9118652344
+        ],
+        [
+          "2024-04-17 10:55:50",
+          "POLYCAB.NS",
+          "Buy",
+          5267.5498046875,
+          67,
+          1072090.62109375
+        ],
+        [
+          "2024-04-17 10:55:50",
+          "CUMMINSIND.NS",
+          "Buy",
+          3120.64990234375,
+          115,
+          719164.7841796875
+        ],
+        [
+          "2024-04-17 10:55:50",
+          "HONAUT.NS",
+          "Buy",
+          44728.30078125,
+          8,
+          360290.04541015625
+        ]
+      ],
+      "holding": {
+        "AUROPHARMA.NS": {
+          "stock_name": "AUROPHARMA.NS",
+          "qty": 321,
+          "last_buy_time_stamps": "2024-04-17 10:55:49",
+          "last_buy_price": 1111.0999755859375
+        },
+        "ZYDUSLIFE.NS": {
+          "stock_name": "ZYDUSLIFE.NS",
+          "qty": 378,
+          "last_buy_time_stamps": "2024-04-17 10:55:49",
+          "last_buy_price": 944.8499755859375
+        },
+        "POLYCAB.NS": {
+          "stock_name": "POLYCAB.NS",
+          "qty": 67,
+          "last_buy_time_stamps": "2024-04-17 10:55:50",
+          "last_buy_price": 5267.5498046875
+        },
+        "CUMMINSIND.NS": {
+          "stock_name": "CUMMINSIND.NS",
+          "qty": 115,
+          "last_buy_time_stamps": "2024-04-17 10:55:50",
+          "last_buy_price": 3120.64990234375
+        },
+        "HONAUT.NS": {
+          "stock_name": "HONAUT.NS",
+          "qty": 8,
+          "last_buy_time_stamps": "2024-04-17 10:55:50",
+          "last_buy_price": 44728.30078125
+        },
+        "GUJGASLTD.NS": {
+          "stock_name": "GUJGASLTD.NS",
+          "qty": 644,
+          "last_buy_time_stamps": "2024-04-17 10:55:44",
+          "last_buy_price": 553.5
+        },
+        "INDHOTEL.NS": {
+          "stock_name": "INDHOTEL.NS",
+          "qty": 611,
+          "last_buy_time_stamps": "2024-04-17 10:55:49",
+          "last_buy_price": 583.6500244140625
+        }
+      }
+    },
+    "2": {
+      "client_code": "Keyur",
+      "current_balance": 23865.138793945312,
+      "daily_trade_log": [
+        ["2024-04-17 10:28:22", "GUJGASLTD.NS", "Buy", 553.5, 335, 1300000],
+        [
+          "2024-04-17 10:28:22",
+          "INDHOTEL.NS",
+          "Buy",
+          583.6500244140625,
+          318,
+          1114577.5
+        ],
+        [
+          "2024-04-17 10:28:22",
+          "AUROPHARMA.NS",
+          "Buy",
+          1111.0999755859375,
+          167,
+          928976.7922363281
+        ],
+        [
+          "2024-04-17 10:28:23",
+          "ZYDUSLIFE.NS",
+          "Buy",
+          944.8499755859375,
+          196,
+          743423.0963134766
+        ],
+        [
+          "2024-04-17 10:28:23",
+          "POLYCAB.NS",
+          "Buy",
+          5267.5498046875,
+          35,
+          558232.5010986328
+        ],
+        [
+          "2024-04-17 10:28:23",
+          "CUMMINSIND.NS",
+          "Buy",
+          3120.64990234375,
+          59,
+          373868.2579345703
+        ],
+        [
+          "2024-04-17 10:28:28",
+          "HONAUT.NS",
+          "Buy",
+          44728.30078125,
+          4,
+          189749.91369628906
+        ],
+        [
+          "2024-04-17 10:38:38",
+          "OFSS.NS",
+          "Sell",
+          7858.39990234375,
+          335,
+          10836.710571289062
+        ],
+        [
+          "2024-04-17 10:42:49",
+          "OFSS.NS",
+          "Sell",
+          7858.39990234375,
+          318,
+          2643400.6778564453
+        ],
+        [
+          "2024-04-17 10:55:50",
+          "GUJGASLTD.NS",
+          "Buy",
+          553.5,
+          1327,
+          5142371.846801758
+        ],
+        [
+          "2024-04-17 10:55:51",
+          "INDHOTEL.NS",
+          "Buy",
+          583.6500244140625,
+          1258,
+          4407877.346801758
+        ],
+        [
+          "2024-04-17 10:55:51",
+          "AUROPHARMA.NS",
+          "Buy",
+          1111.0999755859375,
+          661,
+          3673645.616088867
+        ],
+        [
+          "2024-04-17 10:55:56",
+          "ZYDUSLIFE.NS",
+          "Buy",
+          944.8499755859375,
+          777,
+          2939208.5322265625
+        ],
+        [
+          "2024-04-17 10:55:57",
+          "POLYCAB.NS",
+          "Buy",
+          5267.5498046875,
+          139,
+          2205060.101196289
+        ],
+        [
+          "2024-04-17 10:55:57",
+          "CUMMINSIND.NS",
+          "Buy",
+          3120.64990234375,
+          235,
+          1472870.6783447266
+        ],
+        [
+          "2024-04-17 10:55:57",
+          "HONAUT.NS",
+          "Buy",
+          44728.30078125,
+          16,
+          739517.9512939453
+        ]
+      ],
+      "holding": {
+        "AUROPHARMA.NS": {
+          "stock_name": "AUROPHARMA.NS",
+          "qty": 661,
+          "last_buy_time_stamps": "2024-04-17 10:55:51",
+          "last_buy_price": 1111.0999755859375
+        },
+        "ZYDUSLIFE.NS": {
+          "stock_name": "ZYDUSLIFE.NS",
+          "qty": 777,
+          "last_buy_time_stamps": "2024-04-17 10:55:56",
+          "last_buy_price": 944.8499755859375
+        },
+        "POLYCAB.NS": {
+          "stock_name": "POLYCAB.NS",
+          "qty": 139,
+          "last_buy_time_stamps": "2024-04-17 10:55:57",
+          "last_buy_price": 5267.5498046875
+        },
+        "CUMMINSIND.NS": {
+          "stock_name": "CUMMINSIND.NS",
+          "qty": 235,
+          "last_buy_time_stamps": "2024-04-17 10:55:57",
+          "last_buy_price": 3120.64990234375
+        },
+        "HONAUT.NS": {
+          "stock_name": "HONAUT.NS",
+          "qty": 16,
+          "last_buy_time_stamps": "2024-04-17 10:55:57",
+          "last_buy_price": 44728.30078125
+        },
+        "GUJGASLTD.NS": {
+          "stock_name": "GUJGASLTD.NS",
+          "qty": 1327,
+          "last_buy_time_stamps": "2024-04-17 10:55:50",
+          "last_buy_price": 553.5
+        },
+        "INDHOTEL.NS": {
+          "stock_name": "INDHOTEL.NS",
+          "qty": 1258,
+          "last_buy_time_stamps": "2024-04-17 10:55:51",
+          "last_buy_price": 583.6500244140625
+        }
+      }
+    },
+    "3": {
+      "client_code": "Yasho",
+      "current_balance": 23865.138793945312,
+      "daily_trade_log": [
+        ["2024-04-17 10:28:29", "GUJGASLTD.NS", "Buy", 553.5, 335, 1300000],
+        [
+          "2024-04-17 10:28:29",
+          "INDHOTEL.NS",
+          "Buy",
+          583.6500244140625,
+          318,
+          1114577.5
+        ],
+        [
+          "2024-04-17 10:28:29",
+          "AUROPHARMA.NS",
+          "Buy",
+          1111.0999755859375,
+          167,
+          928976.7922363281
+        ],
+        [
+          "2024-04-17 10:28:29",
+          "ZYDUSLIFE.NS",
+          "Buy",
+          944.8499755859375,
+          196,
+          743423.0963134766
+        ],
+        [
+          "2024-04-17 10:28:30",
+          "POLYCAB.NS",
+          "Buy",
+          5267.5498046875,
+          35,
+          558232.5010986328
+        ],
+        [
+          "2024-04-17 10:28:30",
+          "CUMMINSIND.NS",
+          "Buy",
+          3120.64990234375,
+          59,
+          373868.2579345703
+        ],
+        [
+          "2024-04-17 10:28:35",
+          "HONAUT.NS",
+          "Buy",
+          44728.30078125,
+          4,
+          189749.91369628906
+        ],
+        [
+          "2024-04-17 10:38:39",
+          "OFSS.NS",
+          "Sell",
+          7858.39990234375,
+          335,
+          10836.710571289062
+        ],
+        [
+          "2024-04-17 10:42:49",
+          "OFSS.NS",
+          "Sell",
+          7858.39990234375,
+          318,
+          2643400.6778564453
+        ],
+        [
+          "2024-04-17 10:55:57",
+          "GUJGASLTD.NS",
+          "Buy",
+          553.5,
+          1327,
+          5142371.846801758
+        ],
+        [
+          "2024-04-17 10:55:58",
+          "INDHOTEL.NS",
+          "Buy",
+          583.6500244140625,
+          1258,
+          4407877.346801758
+        ],
+        [
+          "2024-04-17 10:55:58",
+          "AUROPHARMA.NS",
+          "Buy",
+          1111.0999755859375,
+          661,
+          3673645.616088867
+        ],
+        [
+          "2024-04-17 10:55:58",
+          "ZYDUSLIFE.NS",
+          "Buy",
+          944.8499755859375,
+          777,
+          2939208.5322265625
+        ],
+        [
+          "2024-04-17 10:55:59",
+          "POLYCAB.NS",
+          "Buy",
+          5267.5498046875,
+          139,
+          2205060.101196289
+        ],
+        [
+          "2024-04-17 10:55:59",
+          "CUMMINSIND.NS",
+          "Buy",
+          3120.64990234375,
+          235,
+          1472870.6783447266
+        ],
+        [
+          "2024-04-17 10:55:59",
+          "HONAUT.NS",
+          "Buy",
+          44728.30078125,
+          16,
+          739517.9512939453
+        ]
+      ],
+      "holding": {
+        "AUROPHARMA.NS": {
+          "stock_name": "AUROPHARMA.NS",
+          "qty": 661,
+          "last_buy_time_stamps": "2024-04-17 10:55:58",
+          "last_buy_price": 1111.0999755859375
+        },
+        "ZYDUSLIFE.NS": {
+          "stock_name": "ZYDUSLIFE.NS",
+          "qty": 777,
+          "last_buy_time_stamps": "2024-04-17 10:55:58",
+          "last_buy_price": 944.8499755859375
+        },
+        "POLYCAB.NS": {
+          "stock_name": "POLYCAB.NS",
+          "qty": 139,
+          "last_buy_time_stamps": "2024-04-17 10:55:59",
+          "last_buy_price": 5267.5498046875
+        },
+        "CUMMINSIND.NS": {
+          "stock_name": "CUMMINSIND.NS",
+          "qty": 235,
+          "last_buy_time_stamps": "2024-04-17 10:55:59",
+          "last_buy_price": 3120.64990234375
+        },
+        "HONAUT.NS": {
+          "stock_name": "HONAUT.NS",
+          "qty": 16,
+          "last_buy_time_stamps": "2024-04-17 10:55:59",
+          "last_buy_price": 44728.30078125
+        },
+        "GUJGASLTD.NS": {
+          "stock_name": "GUJGASLTD.NS",
+          "qty": 1327,
+          "last_buy_time_stamps": "2024-04-17 10:55:57",
+          "last_buy_price": 553.5
+        },
+        "INDHOTEL.NS": {
+          "stock_name": "INDHOTEL.NS",
+          "qty": 1258,
+          "last_buy_time_stamps": "2024-04-17 10:55:58",
+          "last_buy_price": 583.6500244140625
+        }
+      }
+    }
+  }
+}
