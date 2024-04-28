@@ -753,6 +753,15 @@
         "documentation": {}
     },
     {
+        "label": "keepAlive",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def keepAlive():\n    return \"I'm alive\"\n@app.route('/buy', methods=['GET'])\ndef buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "buy",
         "kind": 2,
         "importPath": "app",
@@ -775,7 +784,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\nCORS(app)\n@app.route('/buy', methods=['GET'])\ndef buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)\n@app.route('/keepAlive', methods=['GET'])\ndef keepAlive():\n    return \"I'm alive\"\n@app.route('/buy', methods=['GET'])\ndef buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)",
         "detail": "app",
         "documentation": {}
     },
