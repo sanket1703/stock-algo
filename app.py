@@ -17,6 +17,11 @@ from database.dao.client_dao import *
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/keepAlive', methods=['GET'])
+def keepAlive():
+    return "I'm alive"
+
+
 @app.route('/buy', methods=['GET'])
 def buy(stocks):
     

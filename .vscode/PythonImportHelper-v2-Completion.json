@@ -766,16 +766,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"Sell Algo Completed\"\ndef lambda_handler(event, context):",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "lambda_handler",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        return buy(event[\"stocks\"])\n    elif event[\"action\"] == \"Sell\":\n        return sell()\nif __name__ == \"__main__\":\n    app.run(debug=True)",
+        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"Sell Algo Completed\"\nif __name__ == \"__main__\":",
         "detail": "app",
         "documentation": {}
     },
