@@ -128,6 +128,14 @@
         "documentation": {}
     },
     {
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "isExtraImport": true,
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -158,6 +166,14 @@
         "description": "decimal",
         "isExtraImport": true,
         "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
         "documentation": {}
     },
     {
@@ -259,6 +275,30 @@
         "documentation": {}
     },
     {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -294,6 +334,38 @@
         "documentation": {}
     },
     {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
         "label": "MidcapBuyAlgorithm",
         "importPath": "algorithms.Midcap_Buy_Algorithm",
         "description": "algorithms.Midcap_Buy_Algorithm",
@@ -315,6 +387,22 @@
         "description": "time",
         "isExtraImport": true,
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapSellAlgorithm",
+        "importPath": "algorithms.Midcap_Sell_Algorithm",
+        "description": "algorithms.Midcap_Sell_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Sell_Algorithm",
         "documentation": {}
     },
     {
@@ -342,6 +430,30 @@
         "documentation": {}
     },
     {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Slots",
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "isExtraImport": true,
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
         "label": "Slots",
         "importPath": "database.dto.slots",
         "description": "database.dto.slots",
@@ -358,11 +470,35 @@
         "documentation": {}
     },
     {
+        "label": "PositionSizingBuy",
+        "importPath": "algorithms.Position_Sizing_Buy",
+        "description": "algorithms.Position_Sizing_Buy",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Buy",
+        "documentation": {}
+    },
+    {
         "label": "PositionSizingSell",
         "importPath": "algorithms.Position_Sizing_Sell",
         "description": "algorithms.Position_Sizing_Sell",
         "isExtraImport": true,
         "detail": "algorithms.Position_Sizing_Sell",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingSell",
+        "importPath": "algorithms.Position_Sizing_Sell",
+        "description": "algorithms.Position_Sizing_Sell",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Sell",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.watchlist_dao",
         "documentation": {}
     },
     {
@@ -614,6 +750,42 @@
         "description": "utils.enums.signal",
         "peekOfCode": "class Signal(Enum):\n    BUY=\"Buy\"\n    SELL=\"Sell\"",
         "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "buy",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sell",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"Sell Algo Completed\"\ndef lambda_handler(event, context):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_handler",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        return buy(event[\"stocks\"])\n    elif event[\"action\"] == \"Sell\":\n        return sell()\nif __name__ == \"__main__\":\n    app.run(debug=True)\n    # event = {}\n    # event[\"action\"] = \"Buy\"\n    # print(lambda_handler(event,None))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)\n@app.route('/buy', methods=['GET'])\ndef buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()",
+        "detail": "app",
         "documentation": {}
     },
     {
