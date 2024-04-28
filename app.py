@@ -54,14 +54,6 @@ def sell():
         client.off_load_stocks(stocks_to_sell)
 
     return "Sell Algo Completed"
-
-
-def lambda_handler(event, context):
-    if event["action"] == "Buy":
-        return buy(event["stocks"])
-    elif event["action"] == "Sell":
-        return sell()
-        
     
 if __name__ == "__main__":
     app.run(debug=True)
