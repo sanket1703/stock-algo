@@ -63,7 +63,7 @@ const App = () => {
     <div className={classes.container}>
       <header className={classes.header}>
         <h1>InvestIt®</h1>
-        <h3 style={{ fontStyle: 'italic', fontWeight: 'lighter' }}>"Where Magic happens while you sip on your PinãColada"</h3>
+        <h3 style={{ fontStyle: 'italic', fontWeight: 'lighter' }}>"Where Magic happens while you sip on your PinãColada 🍹"</h3>
       </header>
       <div>
         <div className={classes.buttonContainer}>
