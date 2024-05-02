@@ -45,7 +45,7 @@ class PositionSizingSell:
             last_traded_price = get_last_traded_price(fetch_stock_data(stock_sell))
             qty = holding['qty']
             turnover = (qty*decimal.Decimal(last_traded_price))
-            turnover -= calculate_brokerage(turnover)
+            turnover -= self.calculate_brokerage(turnover)
             offload_holding(self.db,self.client_code,stock_sell)
             total_available_capital = get_client_balance(self.db,self.client_code)
             add_balance(self.db,self.client_code,decimal.Decimal(turnover))
