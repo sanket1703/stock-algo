@@ -33,7 +33,7 @@ class PositionSizingSell:
     def calculate_brokerage(self):
         client_brokerage = get_client_brokerage(self.db,self.client_code)
         print(f"Brokerage fixed for client {self.client_code} is {client_brokerage}")
-        brokerage = 0.00104171 + (1.18*client_brokerage/100)
+        brokerage = decimal.Decimal(0.00104171) + (decimal.Decimal(1.18)*client_brokerage/100)
         print(f"Brokerage Calculated during sell {brokerage}")
         return decimal.Decimal(brokerage)
         
