@@ -30,11 +30,11 @@ class PositionSizingBuy:
         print(f"Order sent for: Stock {buy_stock} for Qty {qty} for Client {client} at approx price {last_traded_price}")
         return last_traded_price
         
-    def calculate_brokerage(self,amount_to_invest):
+    def calculate_brokerage(self):
         client_brokerage = get_client_brokerage(self.db,self.client_code)
         print(f"Brokerage fixed for client {self.client_code} is {client_brokerage}")
-        brokerage = amount_to_invest*Decimal(client_brokerage)
-        print(f"Brokerage Calculated during buy {brokerage}")
+        brokerage = 0.00119171 + (1.18*client_brokerage/100)
+        print(f"Brokerage charge Calculated during buy {brokerage}")
         return brokerage
     
     def position_sizing(self,final_buy_stocks,total_available_slots_before_buy):
@@ -43,7 +43,7 @@ class PositionSizingBuy:
             current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             total_available_capital = get_client_balance(self.db,self.client_code)
             amount_to_invest = total_available_capital/total_available_slots_before_buy
-            amount_to_invest -= self.calculate_brokerage(amount_to_invest)
+            amount_to_invest = amount_to_invest/(1+self.calculate_brokerage())
             last_traded_price = get_last_traded_price(fetch_stock_data(buy_stock))
             qty = math.floor(Decimal(amount_to_invest)/Decimal(last_traded_price))
             price = self.send_buy_order(buy_stock,qty,self.client_code,last_traded_price)
