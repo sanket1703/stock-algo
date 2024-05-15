@@ -30,10 +30,10 @@ class PositionSizingSell:
         print(f"Sell Order placed for {holding['stock_name']} for qty {holding['qty']}")
         return holding
         
-    def calculate_brokerage(self,turnover):
+    def calculate_brokerage(self):
         client_brokerage = get_client_brokerage(self.db,self.client_code)
         print(f"Brokerage fixed for client {self.client_code} is {client_brokerage}")
-        brokerage = turnover*client_brokerage
+        brokerage = 0.00104171 + (1.18*client_brokerage/100)
         print(f"Brokerage Calculated during sell {brokerage}")
         return decimal.Decimal(brokerage)
         
@@ -45,7 +45,8 @@ class PositionSizingSell:
             last_traded_price = get_last_traded_price(fetch_stock_data(stock_sell))
             qty = holding['qty']
             turnover = (qty*decimal.Decimal(last_traded_price))
-            turnover -= self.calculate_brokerage(turnover)
+            # Adjust for brokerage
+            turnover = turnover*(1-self.calculate_brokerage())
             offload_holding(self.db,self.client_code,stock_sell)
             total_available_capital = get_client_balance(self.db,self.client_code)
             add_balance(self.db,self.client_code,decimal.Decimal(turnover))
