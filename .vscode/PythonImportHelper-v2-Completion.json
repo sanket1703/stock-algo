@@ -1,0 +1,818 @@
+[
+    {
+        "label": "calculate_ema",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_ema",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "isExtraImport": true,
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "isExtraImport": true,
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "isExtraImport": true,
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "isExtraImport": true,
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "isExtraImport": true,
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "decimal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "decimal",
+        "description": "decimal",
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "boto3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "boto3",
+        "description": "boto3",
+        "detail": "boto3",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "isExtraImport": true,
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "pandas_ta",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas_ta",
+        "description": "pandas_ta",
+        "detail": "pandas_ta",
+        "documentation": {}
+    },
+    {
+        "label": "yfinance",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yfinance",
+        "description": "yfinance",
+        "detail": "yfinance",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapSellAlgorithm",
+        "importPath": "algorithms.Midcap_Sell_Algorithm",
+        "description": "algorithms.Midcap_Sell_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Sell_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapSellAlgorithm",
+        "importPath": "algorithms.Midcap_Sell_Algorithm",
+        "description": "algorithms.Midcap_Sell_Algorithm",
+        "isExtraImport": true,
+        "detail": "algorithms.Midcap_Sell_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Slots",
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "isExtraImport": true,
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "Slots",
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "isExtraImport": true,
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingBuy",
+        "importPath": "algorithms.Position_Sizing_Buy",
+        "description": "algorithms.Position_Sizing_Buy",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Buy",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingBuy",
+        "importPath": "algorithms.Position_Sizing_Buy",
+        "description": "algorithms.Position_Sizing_Buy",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Buy",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingSell",
+        "importPath": "algorithms.Position_Sizing_Sell",
+        "description": "algorithms.Position_Sizing_Sell",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Sell",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingSell",
+        "importPath": "algorithms.Position_Sizing_Sell",
+        "description": "algorithms.Position_Sizing_Sell",
+        "isExtraImport": true,
+        "detail": "algorithms.Position_Sizing_Sell",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapBuyAlgorithm",
+        "kind": 6,
+        "importPath": "algorithms.Midcap_Buy_Algorithm",
+        "description": "algorithms.Midcap_Buy_Algorithm",
+        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n    def rank_stocks_by_ema_difference(self):\n        \"\"\"\n        Ranks stocks based on the difference between the 100-day EMA and the last traded price.\n        Args:\n            stocks (list): List of stock symbols.",
+        "detail": "algorithms.Midcap_Buy_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "MidcapSellAlgorithm",
+        "kind": 6,
+        "importPath": "algorithms.Midcap_Sell_Algorithm",
+        "description": "algorithms.Midcap_Sell_Algorithm",
+        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self):\n        self.db = get_database()\n        self.slots = get_slots(self.db)\n    def should_sell(self,stock):\n        data = fetch_stock_data(stock)\n        ema = calculate_ema(data).iloc[-1]\n        last_traded_price = data['Close'].iloc[-1]\n        supertrend = calculate_supertrend(data).iloc[-1]\n        if last_traded_price < supertrend or last_traded_price < ema:",
+        "detail": "algorithms.Midcap_Sell_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingBuy",
+        "kind": 6,
+        "importPath": "algorithms.Position_Sizing_Buy",
+        "description": "algorithms.Position_Sizing_Buy",
+        "peekOfCode": "class PositionSizingBuy:\n    def __init__(self,client_code):\n        self.client_code = client_code\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',",
+        "detail": "algorithms.Position_Sizing_Buy",
+        "documentation": {}
+    },
+    {
+        "label": "PositionSizingSell",
+        "kind": 6,
+        "importPath": "algorithms.Position_Sizing_Sell",
+        "description": "algorithms.Position_Sizing_Sell",
+        "peekOfCode": "class PositionSizingSell:\n    def __init__(self,client_code):\n        self.client_code = client_code\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',",
+        "detail": "algorithms.Position_Sizing_Sell",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding_stock",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def get_client_holding_stock(db, client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['holding'][stock_name]\n    return client_balance\ndef get_client_balance(db,client_code):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['current_balance']\n    return client_balance",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def get_client_balance(db,client_code):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['current_balance']\n    return client_balance\ndef get_client_brokerage(db,client_code):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    brokerage = response['Items'][0]['brokerage']\n    return brokerage",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_brokerage",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def get_client_brokerage(db,client_code):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    brokerage = response['Items'][0]['brokerage']\n    return brokerage\ndef update_client_balance(db,client_code,new_balance):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['current_balance'] = new_balance\n    clients.put_item(Item=response['Items'][0])",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_client_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def update_client_balance(db,client_code,new_balance):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['current_balance'] = new_balance\n    clients.put_item(Item=response['Items'][0])\n    return new_balance\ndef update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_holding",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()\n    clients.put_item(Item=response['Items'][0])\ndef offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "offload_holding",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())\n    clients.put_item(Item=response['Items'][0])",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "add_trade_log",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):\n    clients = db.Table('clients')\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())\n    clients.put_item(Item=response['Items'][0])\ndef reduce_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance - amount\n    update_client_balance(db,client,new_balance)\ndef add_balance(db,client,amount):",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def reduce_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance - amount\n    update_client_balance(db,client,new_balance)\ndef add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "add_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_slots",
+        "kind": 2,
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "peekOfCode": "def get_slots(db):\n    slots = db.Table('stock_slots')\n    current_slots = slots.scan()['Items'][0]['stock_slots']\n    return current_slots\ndef update_slots(db,update_slots):\n    slots = db.Table('stock_slots')\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots",
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_slots",
+        "kind": 2,
+        "importPath": "database.dao.slots_dao",
+        "description": "database.dao.slots_dao",
+        "peekOfCode": "def update_slots(db,update_slots):\n    slots = db.Table('stock_slots')\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots\n    slots.put_item(Item = response['Item'])\n    return update_slots",
+        "detail": "database.dao.slots_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist",
+        "kind": 2,
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "peekOfCode": "def get_watchlist(db):\n    watchlist = db.Table('watchlist')\n    curent_watchlist = watchlist.scan()['Items'][0]['watchlist']\n    return curent_watchlist\ndef update_watchlist(db,update_watchlist):\n    watchlist = db.Table('watchlist')\n    key = {\"watchlist_id\":\"1\"}\n    response = watchlist.get_item(Key=key)\n    print(response)\n    response['Item']['watchlist'] = update_watchlist",
+        "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_watchlist",
+        "kind": 2,
+        "importPath": "database.dao.watchlist_dao",
+        "description": "database.dao.watchlist_dao",
+        "peekOfCode": "def update_watchlist(db,update_watchlist):\n    watchlist = db.Table('watchlist')\n    key = {\"watchlist_id\":\"1\"}\n    response = watchlist.get_item(Key=key)\n    print(response)\n    response['Item']['watchlist'] = update_watchlist\n    watchlist.put_item(Item = response['Item'])\n    return update_watchlist",
+        "detail": "database.dao.watchlist_dao",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "kind": 6,
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "peekOfCode": "class Client:\n    def __init__(self,client_code, current_balance,daily_trade_log,holding,brokerage):\n        self.client_code = client_code\n        self.current_balance = current_balance\n        self.daily_trade_log = daily_trade_log\n        self.holding = holding\n        self.brokerage = brokerage\nclass DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty,balance_before_trade):\n        self.date = date",
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "DailyTradeLog",
+        "kind": 6,
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "peekOfCode": "class DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty,balance_before_trade):\n        self.date = date\n        self.stock_name = stock_name\n        self.direction = direction\n        self.price = price\n        self.qty = qty\n        self.balance_before_trade = balance_before_trade\n    def to_list(self):\n        return [self.date,self.stock_name,self.direction,self.price,self.qty,self.balance_before_trade]",
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Holding",
+        "kind": 6,
+        "importPath": "database.dto.clients",
+        "description": "database.dto.clients",
+        "peekOfCode": "class Holding:\n    def __init__(self, stock_name, qty, last_buy_time_stamps, last_buy_price):\n        self.stock_name = stock_name\n        self.qty = qty\n        self.last_buy_time_stamps = last_buy_time_stamps\n        self.last_buy_price = last_buy_price\n    def to_json(self):\n        return {\n            \"stock_name\" : self.stock_name,\n            \"qty\" : self.qty,",
+        "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Slots",
+        "kind": 6,
+        "importPath": "database.dto.slots",
+        "description": "database.dto.slots",
+        "peekOfCode": "class Slots:\n    def __init__(self, stock_name, update_ts, price, qty):\n        self.stock_name = stock_name\n        self.update_ts = update_ts\n        self.price = price\n        self.qty = qty",
+        "detail": "database.dto.slots",
+        "documentation": {}
+    },
+    {
+        "label": "get_database",
+        "kind": 2,
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
+        "peekOfCode": "def get_database():\n    aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n    aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n    # Create a DynamoDB resource object with your credentials\n    dynamodb = boto3.resource(\n        'dynamodb',\n        region_name='ap-south-1',\n        aws_access_key_id=aws_access_key_id,\n        aws_secret_access_key=aws_secret_access_key)\n    return dynamodb",
+        "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_ema",
+        "kind": 2,
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "peekOfCode": "def calculate_ema(data, window=100):\n    \"\"\"\n    Calculates the Exponential Moving Average (EMA) for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for EMA calculation.\n    Returns:\n        pandas.Series: EMA values.\n    \"\"\"\n    ema = data['Close'].ewm(span=window, min_periods=window).mean()",
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_supertrend",
+        "kind": 2,
+        "importPath": "stock_data.indicators",
+        "description": "stock_data.indicators",
+        "peekOfCode": "def calculate_supertrend(data, window=7, multiplier=3):\n    \"\"\"\n    Calculates the Supertrend indicator for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for ATR calculation.\n        multiplier (int): Multiplier for ATR calculation.\n    Returns:\n        pandas.Series: Supertrend values.\n    \"\"\"",
+        "detail": "stock_data.indicators",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_stock_data",
+        "kind": 2,
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "peekOfCode": "def fetch_stock_data(symbol):\n    \"\"\"\n    Fetches historical stock data from Yahoo Finance API for a given symbol.\n    Args:\n        symbol (str): Stock symbol.\n    Returns:\n        pandas.DataFrame: Historical stock data.\n    \"\"\"\n    stock_data = yf.download(symbol, period=\"200d\", interval=\"1d\")\n    return stock_data",
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "kind": 2,
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "peekOfCode": "def get_last_traded_price(data):\n    \"\"\"\n    Retrieves the last traded price from historical stock data.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n    Returns:\n        float: Last traded price.\n    \"\"\"\n    last_traded_price = data['Close'].iloc[-1]\n    return last_traded_price",
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "kind": 6,
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "peekOfCode": "class Signal(Enum):\n    BUY=\"Buy\"\n    SELL=\"Sell\"",
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "keepAlive",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def keepAlive():\n    return \"I'm alive\"\n@app.route('/buy', methods=['GET'])\ndef buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "buy",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sell",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"Sell Algo Completed\"\nif __name__ == \"__main__\":",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)\n@app.route('/keepAlive', methods=['GET'])\ndef keepAlive():\n    return \"I'm alive\"\n@app.route('/buy', methods=['GET'])\ndef buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "buy",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def buy(stocks):\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_watchlist(db)\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # mid_cap_algo.rank_stocks_by_ema_difference()\n    mid_cap_algo.filter_stocks()\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sell",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"Sell Algo Completed\"\ndef lambda_handler(event, context):",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_handler",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        return buy(event[\"stocks\"])\n    elif event[\"action\"] == \"Sell\":\n        return sell()\nif __name__ == \"__main__\":\n    event = {}\n    event[\"action\"] = \"Buy\"\n    print(lambda_handler(event,None))",
+        "detail": "lambda_function",
+        "documentation": {}
+    }
+]

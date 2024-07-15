@@ -1,0 +1,12 @@
+boto3
+Flask
+Flask-Cors
+Flask-RESTful
+numpy
+pandas
+pandas-ta
+requests
+tinydb
+vercel
+yahoofinance
+yfinance
