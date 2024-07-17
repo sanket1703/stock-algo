@@ -26,6 +26,7 @@ def update_client_balance(db,client_code,new_balance):
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
     response['Items'][0]['current_balance'] = new_balance
     clients.put_item(Item=response['Items'][0])
+    print(f"New balance for {client_code} is Rs. {new_balance}")
     return new_balance
 
 def update_holding(db,client_code,stock_name,qty,price,date):
@@ -41,10 +42,10 @@ def offload_holding(db,client_code,stock_name):
     del response['Items'][0]['holding'][stock_name]
     clients.put_item(Item=response['Items'][0])
     
-def add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_before_trade):
+def add_trade_log(db,client_code,date,stock_name,direction,price,qty):
     clients = db.Table('clients')
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
-    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())
+    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty).to_list())
     clients.put_item(Item=response['Items'][0])
 
 def add_order_log(db,client_code,date,stock_name,direction,requestId,qty):

@@ -14,3 +14,12 @@ class ABOrderRequest:
             'StrategyTag': self.StrategyTag,
             'Quantity': self.Quantity
         }
+
+class ABOrderStatusRequest:
+    def __init__(self,request_id):
+        self.request_id = request_id
+        
+    def to_dict(self):
+        return {
+            'RequestId': self.request_id
+        }
