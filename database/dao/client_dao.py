@@ -47,6 +47,11 @@ def add_trade_log(db,client_code,date,stock_name,direction,price,qty,balance_bef
     response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,balance_before_trade).to_list())
     clients.put_item(Item=response['Items'][0])
 
+def add_order_log(db,client_code,date,stock_name,direction,requestId,qty):
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    response['Items'][0]['daily_trade_log'].append(DailyOrderLog(date,stock_name,direction,requestId,qty).to_list())
+    clients.put_item(Item=response['Items'][0])
 
 def reduce_balance(db,client,amount):
     current_balance = get_client_balance(db,client)

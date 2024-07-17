@@ -38,19 +38,23 @@ class PositionSizingBuy:
         return brokerage
     
     def position_sizing(self,final_buy_stocks,total_available_slots_before_buy):
-    
+        total_available_capital = get_client_balance(self.db,self.client_code)
+        amount_to_invest = total_available_capital/total_available_slots_before_buy
+        
         for buy_stock in final_buy_stocks:
             current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            total_available_capital = get_client_balance(self.db,self.client_code)
-            amount_to_invest = total_available_capital/total_available_slots_before_buy
+            
             amount_to_invest = amount_to_invest/(1+self.calculate_brokerage())
             last_traded_price = get_last_traded_price(fetch_stock_data(buy_stock))
             qty = math.floor(Decimal(amount_to_invest)/Decimal(last_traded_price))
-            price = self.send_buy_order(buy_stock,qty,self.client_code,last_traded_price)
+            # Last traded price is only to get an idea to estimate the quantity
+            request_id = self.send_buy_order(buy_stock,qty,self.client_code,last_traded_price)
+            # TODO:- Test if order log is getting created in DynamoDB
+            add_order_log(self.db,self.client_code,current_datetime,buy_stock,Signal.BUY.value,request_id,qty)
+           
             turnover = (qty*last_traded_price)
+            # TODO:- Do this once the trading order is placed
             update_holding(self.db,self.client_code,buy_stock,qty,Decimal(last_traded_price),current_datetime)
             add_trade_log(self.db,self.client_code,current_datetime,buy_stock,Signal.BUY.value,Decimal(last_traded_price),qty,Decimal(total_available_capital))
-            
             print(f"Stock: {buy_stock} Price_buy {price} Quantity {qty} Amount to Invest {amount_to_invest}")
             reduce_balance(self.db,self.client_code,Decimal(turnover))
-            total_available_slots_before_buy -=1    

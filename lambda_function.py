@@ -25,11 +25,16 @@ def buy(stocks):
 
     final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()
     clients = ["FTCT1208","Keyur"]
+
+    orders = {}
     
     for client in clients:
         print(f"Starting position sizing buy for {client}")
         client = PositionSizingBuy(client)
-        client.position_sizing(final_stocks_buy,slots_before_buy)
+        client_order = client.position_sizing(final_stocks_buy,slots_before_buy)
+        orders[client] = client_order
+
+    
     
     # snapshot = get_db_snapshot()
     return "Buy Algo Completed"
