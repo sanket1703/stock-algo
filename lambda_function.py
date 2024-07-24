@@ -1,4 +1,3 @@
-from datetime import datetime
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from time import sleep
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
@@ -31,13 +30,10 @@ def buy(stocks):
     
     for client in clients:
         print(f"Starting position sizing buy for {client}")
-        current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         client = PositionSizingBuy(client)
         client_order = client.position_sizing(final_stocks_buy,slots_before_buy)
         orders[client] = client_order
-        orders["date"] = current_datetime
 
-    # TODO:- Add the order object in the database 
     
     
     # snapshot = get_db_snapshot()
