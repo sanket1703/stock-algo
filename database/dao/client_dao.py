@@ -1,5 +1,11 @@
+import decimal
 from database.dto.clients import *
 import boto3
+
+def get_client_list(db):
+    clients = db.Table('clients')
+    response = clients.scan(ProjectionExpression='client_code')
+    return [item['client_code'] for item in response['Items']]
 
 def get_client_holding_stock(db, client_code,stock_name):
     clients = db.Table('clients')
@@ -26,7 +32,7 @@ def update_client_balance(db,client_code,new_balance):
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
     response['Items'][0]['current_balance'] = new_balance
     clients.put_item(Item=response['Items'][0])
-    print(f"New balance for {client_code} is Rs. {new_balance}")
+    # print(f"New balance for {client_code} is Rs. {new_balance}")
     return new_balance
 
 def update_holding(db,client_code,stock_name,qty,price,date):
@@ -34,6 +40,11 @@ def update_holding(db,client_code,stock_name,qty,price,date):
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
     response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()
     clients.put_item(Item=response['Items'][0])
+
+def get_client_holding(db,client_code,stock_name):
+    clients = db.Table('clients')
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    return response['Items'][0]['holding'][stock_name]['qty']
     
     
 def offload_holding(db,client_code,stock_name):
@@ -51,7 +62,7 @@ def add_trade_log(db,client_code,date,stock_name,direction,price,qty):
 def add_order_log(db,client_code,date,stock_name,direction,requestId,qty):
     clients = db.Table('clients')
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
-    response['Items'][0]['daily_trade_log'].append(DailyOrderLog(date,stock_name,direction,requestId,qty).to_list())
+    response['Items'][0]['daily_trade_log'].append(DailyOrderLog(date,stock_name,direction,requestId,decimal.Decimal(qty)).to_list())
     clients.put_item(Item=response['Items'][0])
 
 def reduce_balance(db,client,amount):
@@ -63,4 +74,3 @@ def add_balance(db,client,amount):
     current_balance = get_client_balance(db,client)
     new_balance = current_balance + amount
     update_client_balance(db,client,new_balance)
-

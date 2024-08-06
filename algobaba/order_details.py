@@ -5,18 +5,18 @@ from algobaba.dto.ABResponse import *
 port = 21000
 
 def is_order_completed(request_id):
-    url = f'http://localhost:{port}/isOrdercompleted'
-    print(url)
+    url = f'http://localhost:{port}/isOrderCompleted'
+    # print(url)
     # Define the parameters
     params = ABOrderStatusRequest(request_id=request_id).to_dict()
-    print(params)
+    # print(params)
     # Send the GET request
     response = requests.get(url, params=params)
-
+    # print(response)
     # Check the status code and get the response data
     if response.status_code == 200 and response.json()["status"] == "success":
         data = response.json()
-        return data
+        return data["response"]== "true"
     else:
         print(f'Error: {response.status_code}')
         if response.status_code == 200:
@@ -26,15 +26,16 @@ def is_order_completed(request_id):
 def order_status(request_id):
     url = f'http://localhost:{port}/OrderStatus'
     # Define the parameters
+    # print(url)
     params = ABOrderStatusRequest(request_id=request_id).to_dict()
-    print(params)
+    # print(params)
     # Send the GET request
     response = requests.get(url, params=params)
 
     # Check the status code and get the response data
     if response.status_code == 200 and response.json()["status"] == "success":
         data = response.json()
-        return data
+        return data["status"]
     else:
         if response.status_code == 200:
             return "Trading Not Started/Out of Market hours"
@@ -44,15 +45,16 @@ def order_status(request_id):
 def get_trade_price(request_id):
     url = f'http://localhost:{port}/OrderAvgPrice'
     # Define the parameters
+    # print(url)
     params = ABOrderStatusRequest(request_id=request_id).to_dict()
-    print(params)
+    # print(params)
     # Send the GET request
     response = requests.get(url, params=params)
 
     # Check the status code and get the response data
     if response.status_code == 200 and response.json()["status"] == "success":
         data = response.json()
-        return data
+        return int(data['response'])
     else:
         if response.status_code == 200:
             return "Trading Not Started/Out of Market hours"
@@ -62,15 +64,16 @@ def get_trade_price(request_id):
 def get_trade_qty(request_id):
     url = f'http://localhost:{port}/OrderFilledQty'
     # Define the parameters
+    # print(url)
     params = ABOrderStatusRequest(request_id=request_id).to_dict()
-    print(params)
+    # print(params)
     # Send the GET request
     response = requests.get(url, params=params)
 
     # Check the status code and get the response data
     if response.status_code == 200 and response.json()["status"] == "success":
         data = response.json()
-        return data
+        return int(data['response'])
     else:
         if response.status_code == 200:
             return "Trading Not Started/Out of Market hours"

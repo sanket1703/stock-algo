@@ -13,4 +13,5 @@ def update_slots(db,update_slots):
     print(response)
     response['Item']['stock_slots'] = update_slots
     slots.put_item(Item = response['Item'])
+    print(response['Item']['stock_slots'])
     return update_slots

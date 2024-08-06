@@ -1,15 +1,37 @@
+from datetime import datetime
+from algorithms.Position_Sizing_Sell import PositionSizingSell
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data
 from database.dao.slots_dao import * 
 from database.dynamodb import get_database
 
 class MidcapSellAlgorithm:
-    def __init__(self):
+    def __init__(self,clients):
         self.db = get_database()
         self.slots = get_slots(self.db)
+        self.stocks_to_sell = []
+        self.stocks_to_keep = []
+        self.clients = clients
+    
+    def position_sizing(self):
+        sell_orders = {}
+        self.stocks_to_sell = []
+        for client_code in self.clients:
+            print(f"Starting position sizing selling for {client_code}")
+            client = PositionSizingSell(client_code)
+            client_order = client.off_load_stocks(self.stocks_to_sell)
+            print(f"Client order:- {client_order}")
+            if client_order == None:
+                continue
+            sell_orders[client_code] = client_order
+            current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            sell_orders["date"] = current_datetime
+        
+        print(sell_orders)
+        return sell_orders    
 
     def should_sell(self,stock):
-        
+        return True
         data = fetch_stock_data(stock)
         ema = calculate_ema(data).iloc[-1]
         last_traded_price = data['Close'].iloc[-1]
@@ -23,21 +45,19 @@ class MidcapSellAlgorithm:
     def sell_logic(self):
         # slots is a list of stocks
         self.slots = get_slots(self.db)
-        stocks_to_keep = []
-        stocks_to_sell = []
         for stock in self.slots:
             if self.should_sell(stock):
-                stocks_to_sell.append(stock)    
+                self.stocks_to_sell.append(stock)
             else:
-                stocks_to_keep.append(stock)
+                self.stocks_to_keep.append(stock)
                 
-        # New Slots 
-        self.stocks_to_keep = stocks_to_keep
         update_slots(self.db,self.stocks_to_keep)
+        
         print("Current Slots")
         print(get_slots(self.db))
-        self.stocks_to_sell = stocks_to_sell
+        
         print("Sell the following stocks")
         print(self.stocks_to_sell)
+        self.stocks_to_sell = ["ABBOTINDIA.NS"]
         return self.stocks_to_sell
     
