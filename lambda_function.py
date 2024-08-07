@@ -39,7 +39,7 @@ def buy(stocks):
     final_stocks_buy, slots_before_buy, slots = mid_cap_algo.slot_calculation() ##
     
     # Step 4 :- Get Client List from Database
-    clients = ["FTCT1208","Keyur","Sanket","Smit","Sid"]
+    clients = ["Keyur","Sanket","Smit","Sid"]
     
     end_time_stock_data = time.time()
     print(f"Execution timefor stock data: {end_time_stock_data-start_time_stock_data:.2f} seconds")
@@ -89,10 +89,10 @@ def complete():
     db = get_database()
     
     watch_list = get_watchlist(db)
-    watch_list = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']
-    
+    # watch_list = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']
+    watch_list = ['LUPIN.NS','INDHOTEL.NS']
     clients = get_client_list(db)
-    clients = ["Keyur","Smit","Sanket"]
+    clients = ["KEYUR","SANKET"]
     
     filter_algo = FilterAlgorithm(watch_list)
     filter_algo.filter_watchlist()
@@ -109,6 +109,7 @@ def complete():
     sell_algo.sell_logic()
     sell_orders = sell_algo.position_sizing()
     
+    print(f"Sell Orders :- {sell_orders}")
     save_sell_orders(sell_orders)
     
     buy_trade_sync = TradeSync()
@@ -119,7 +120,7 @@ def complete():
     sell_trade_sync = TradeSync()
     successful_sell_orders,failed_sell_orders = sell_trade_sync.check_orders(sell_orders)
     
-    print(f"Failed Buy Orders :- {failed_sell_orders}")
+    print(f"Failed Sell Orders :- {failed_sell_orders}")
     
     buy_trade_sync.sync_successful_buy_trades(successful_buy_orders)
     

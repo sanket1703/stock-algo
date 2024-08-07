@@ -17,11 +17,6 @@ def is_order_completed(request_id):
     if response.status_code == 200 and response.json()["status"] == "success":
         data = response.json()
         return data["response"]== "true"
-    else:
-        print(f'Error: {response.status_code}')
-        if response.status_code == 200:
-            return "Trading Not Started/Out of Market hours"
-        return "SystemError"
 
 def order_status(request_id):
     url = f'http://localhost:{port}/OrderStatus'
@@ -54,7 +49,7 @@ def get_trade_price(request_id):
     # Check the status code and get the response data
     if response.status_code == 200 and response.json()["status"] == "success":
         data = response.json()
-        return int(data['response'])
+        return data['response']
     else:
         if response.status_code == 200:
             return "Trading Not Started/Out of Market hours"

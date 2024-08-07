@@ -9,6 +9,7 @@ def send_buy_order(qty,stock,client):
     order_direction = 'LE'
     url = 'http://localhost:21000/MappedOrderSimple'
     # Define the parameters
+    stock = stock[:-3]
     params = ABOrderRequest(SourceSymbol=stock,TransactionType=order_direction,StrategyTag=client,Quantity=qty).to_dict()
     # print(params)
     # Send the GET request
@@ -28,6 +29,7 @@ def send_sell_order(db,stock,client):
     url = 'http://localhost:21000/MappedOrderSimple'
     qty = get_client_holding(db,client,stock)
     # Define the parameters
+    stock = stock[:-3]
     params = ABOrderRequest(SourceSymbol=stock,TransactionType=order_direction,StrategyTag=client,Quantity=qty).to_dict()
     # print(params)
     # Send the GET request

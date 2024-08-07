@@ -35,7 +35,7 @@ class TradeSync:
             if client_orders == None:
                 continue 
             for request_id,buy_stock in client_orders:
-                if(is_order_completed(request_id)):
+                if(not is_order_completed(request_id)):
                     client_failed_orders.append((request_id,buy_stock))
                 else:
                     client_successful_orders.append((request_id,buy_stock))
@@ -61,7 +61,8 @@ class TradeSync:
             for request_id,buy_stock in client_orders:
                 trade_price = get_trade_price(request_id)
                 qty = get_trade_qty(request_id)
-                turnover = (qty*trade_price)
+                #TODO:- qty will return random stuff if there is some error on the AB side -> handle that 
+                turnover = (Decimal(qty)*Decimal(trade_price))
                 update_holding(self.db,client,buy_stock,qty,Decimal(trade_price),current_datetime)
                 add_trade_log(self.db,client,current_datetime,buy_stock,Signal.BUY.value,Decimal(trade_price),qty)
                 reduce_balance(self.db,client,Decimal(turnover))
@@ -81,12 +82,12 @@ class TradeSync:
             for request_id,sell_stock in client_orders:
                 trade_price = get_trade_price(request_id)
                 qty = get_trade_qty(request_id)
-                turnover = (qty*trade_price)
+                turnover = (Decimal(qty)*Decimal(trade_price))
                 # Adjust for brokerage
-                # offload_holding(self.db,client,sell_stock)
-                add_balance(self.db,client,decimal.Decimal(turnover))
-                add_trade_log(self.db,client,current_datetime,sell_stock,Signal.SELL.value,decimal.Decimal(trade_price),qty)
-        return 
+                offload_holding(self.db,client,sell_stock)
+                add_balance(self.db,client,Decimal(turnover))
+                add_trade_log(self.db,client,current_datetime,sell_stock,Signal.SELL.value,Decimal(trade_price),qty)
+        return
                     
                     
                 

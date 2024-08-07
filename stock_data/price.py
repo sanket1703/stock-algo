@@ -12,7 +12,7 @@ def fetch_stock_data(symbol):
     Returns:
         pandas.DataFrame: Historical stock data.
     """
-    stock_data = yf.download(symbol, period="11d", interval="1d")
+    stock_data = yf.download(symbol, period="1mo", interval="1d")
     return stock_data
 
 def fetch_1d_stock_data(symbol):
