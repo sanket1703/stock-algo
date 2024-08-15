@@ -7,16 +7,25 @@ class Client:
         self.brokerage = brokerage
 
 class DailyTradeLog:
-    def __init__(self, date, stock_name, direction, price, qty,balance_before_trade):
+    def __init__(self, date, stock_name, direction, price, qty):
         self.date = date
         self.stock_name = stock_name
         self.direction = direction
         self.price = price
         self.qty = qty
-        self.balance_before_trade = balance_before_trade
+   
     def to_list(self):
-        return [self.date,self.stock_name,self.direction,self.price,self.qty,self.balance_before_trade]
+        return [self.date,self.stock_name,self.direction,self.price,self.qty]
 
+class DailyOrderLog:
+    def __init__(self, date, stock_name, direction, requestId, qty):
+        self.date = date
+        self.stock_name = stock_name
+        self.direction = direction
+        self.requestId = requestId
+        self.qty = qty
+    def to_list(self):
+        return [self.date,self.stock_name,self.direction,self.requestId,self.qty]
      
 class Holding:
     def __init__(self, stock_name, qty, last_buy_time_stamps, last_buy_price):
