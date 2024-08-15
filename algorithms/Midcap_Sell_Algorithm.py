@@ -30,7 +30,6 @@ class MidcapSellAlgorithm:
         return sell_orders    
 
     def should_sell(self,stock):
-        return True
         data = fetch_stock_data(stock)
         ema = calculate_ema(data).iloc[-1]
         last_traded_price = data['Close'].iloc[-1]

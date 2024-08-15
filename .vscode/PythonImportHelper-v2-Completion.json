@@ -1676,7 +1676,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def complete():\n    db = get_database()\n    watch_list = get_watchlist(db)\n    # watch_list = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    watch_list = ['LUPIN.NS','INDHOTEL.NS']\n    clients = get_client_list(db)\n    clients = [\"KEYUR\",\"SANKET\"]\n    filter_algo = FilterAlgorithm(watch_list)\n    filter_algo.filter_watchlist()\n    stocks = filter_algo.filter_stocks()",
+        "peekOfCode": "def complete():\n    db = get_database()\n    watch_list = get_watchlist(db)\n    # watch_list = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    # watch_list = ['LUPIN.NS','INDHOTEL.NS']\n    clients = get_client_list(db)\n    # clients = [\"KEYUR\",\"SANKET\"]\n    filter_algo = FilterAlgorithm(watch_list)\n    filter_algo.filter_watchlist()\n    stocks = filter_algo.filter_stocks()",
         "detail": "lambda_function",
         "documentation": {}
     },

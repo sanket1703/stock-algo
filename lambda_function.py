@@ -90,9 +90,9 @@ def complete():
     
     watch_list = get_watchlist(db)
     # watch_list = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']
-    watch_list = ['LUPIN.NS','INDHOTEL.NS']
+    # watch_list = ['LUPIN.NS','INDHOTEL.NS']
     clients = get_client_list(db)
-    clients = ["KEYUR","SANKET"]
+    # clients = ["KEYUR","SANKET"]
     
     filter_algo = FilterAlgorithm(watch_list)
     filter_algo.filter_watchlist()
@@ -102,7 +102,7 @@ def complete():
     buy_algo.calculate_and_update_slots()
     buy_orders = buy_algo.position_sizing()
     
-    print(buy_orders)
+    print(f"Buy Orders :- {buy_orders}")
     save_buy_orders(buy_orders)
     
     sell_algo = MidcapSellAlgorithm(clients)
