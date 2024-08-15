@@ -1,4 +1,5 @@
 
+
 from algobaba.buy_order import *
 from algobaba.order_details import *
 from database.dao.client_dao import get_client_holding
@@ -11,4 +12,4 @@ from stock_data.price import one_year_return
 
 if __name__ == "__main__":
     # send_buy_order(2,'ABB.NS','SANKET')
-    print(get_trade_qty(''))
+    get_watchlist(get_database())
