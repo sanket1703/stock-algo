@@ -17,6 +17,7 @@ from database.dynamodb import get_database
 from database.dao.client_dao import *
 from database_cleanup import clear_stack
 from utils.csv.helpers import save_buy_orders, save_sell_orders
+from utils.watchlist_filter import massage_watchlist
 
 
 
@@ -87,12 +88,14 @@ def buy(stocks):
 def complete():
     
     db = get_database()
-    
+
     watch_list = get_watchlist(db)
-    # watch_list = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']
-    # watch_list = ['LUPIN.NS','INDHOTEL.NS']
+
+    watch_list = ["Replace this complete List with No NS"]
+
+    watch_list = massage_watchlist(watch_list)
+
     clients = get_client_list(db)
-    # clients = ["KEYUR","SANKET"]
     
     filter_algo = FilterAlgorithm(watch_list)
     filter_algo.filter_watchlist()
