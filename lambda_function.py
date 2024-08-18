@@ -1,5 +1,6 @@
 from datetime import datetime
 import time
+from FOR_KEYUR import get_watchlist_for_keyur
 from algorithms.Filter_Algorithm import FilterAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from time import sleep
@@ -91,7 +92,7 @@ def complete():
 
     watch_list = get_watchlist(db)
 
-    watch_list = ["Replace this complete List with No NS"]
+    watch_list = get_watchlist_for_keyur()
 
     watch_list = massage_watchlist(watch_list)
 
