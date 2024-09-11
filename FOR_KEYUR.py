@@ -1,3 +1,25 @@
 def get_watchlist_for_keyur():
-    watchlist = ["Replace this with List without Symbols"]
+    watchlist =['NBCC',
+                'HUDCO',
+                'BDL',
+                'RVNL',
+                'DIXON',
+                'IRFC',
+                'HAL',
+                'CUMMINSIND',
+                'PRESTIGE',
+                'RECLTD',
+                'PFC',
+                'LUPIN',
+                'BAJAJ-AUTO',
+                'TORNTPOWER',
+                'SUZLON',
+                'MCX',
+                'OFSS',
+                'GLENMARK',
+                'TRENT',
+                'BSE',
+                'KALYANKJIL',
+                'ZOMATO',
+                'POLICYBZR']
     return watchlist

@@ -187,5 +187,5 @@ def runner(n,direction):
     print(total_time/it)
     
 if __name__ == "__main__":
-    clear_stack()
+    #clear_stack()
     runner(1,"Complete")
