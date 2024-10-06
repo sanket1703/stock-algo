@@ -39,12 +39,13 @@ class FilterAlgorithm:
             ema = calculate_ema(data)
             last_traded_price = data['Close'].iloc[-1]
             supertrend = calculate_supertrend(data)
+            # print(symbol)
             # print(ema.iloc[-1])
             # print(last_traded_price)
             # print(supertrend.iloc[-1])
-            filtered_stocks.append(symbol)
-            # if last_traded_price > 1.03 * ema.iloc[-1] and last_traded_price < supertrend.iloc[-1]:
-            #     filtered_stocks.append(symbol)
+            #filtered_stocks.append(symbol)
+            if last_traded_price > 1.03 * ema.iloc[-1] and last_traded_price > supertrend.iloc[-1]:
+                filtered_stocks.append(symbol)
                 
         # print("Final Buy Stocks")
         self.filtered_stocks = filtered_stocks
