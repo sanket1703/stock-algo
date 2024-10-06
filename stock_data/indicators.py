@@ -12,7 +12,8 @@ def calculate_ema(data, window=100):
     Returns:
         pandas.Series: EMA values.
     """
-    ema = data['Close'].ewm(span=window, min_periods=window).mean()
+    #ema = data['Close'].ewm(span=window, min_periods=window).mean()
+    ema=ta.ema(data['Close'],window)
     return ema
 
 def calculate_supertrend(data, window=7, multiplier=3):

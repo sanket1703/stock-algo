@@ -31,14 +31,16 @@ class MidcapSellAlgorithm:
 
     def should_sell(self,stock):
         data = fetch_stock_data(stock)
-        ema = calculate_ema(data).iloc[-1]
-        last_traded_price = data['Close'].iloc[-1]
-        supertrend = calculate_supertrend(data).iloc[-1]
-        
-        if last_traded_price < supertrend or last_traded_price < ema:
-            return True
-        
-        return False
+        try:
+            ema = calculate_ema(data).iloc[-1]
+            last_traded_price = data['Close'].iloc[-1]
+            supertrend = calculate_supertrend(data).iloc[-1]
+            
+            if last_traded_price < supertrend or last_traded_price < ema:
+                return True
+            return False
+        except:
+            return False
     
     def sell_logic(self):
         # slots is a list of stocks
