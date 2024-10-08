@@ -1,5 +1,6 @@
 from datetime import datetime
 from algorithms.Position_Sizing_Buy import PositionSizingBuy
+from brokers.motilal.login import client_login
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data, get_last_traded_price
 from database.dao.slots_dao import * 
@@ -14,12 +15,14 @@ class MidcapBuyAlgorithm:
         self.clients = clients
         self.final_stocks_buy = []
     
-    def position_sizing(self):
+    def position_sizing(self,all_client_data):
         print("Starting Position sizing")
         buy_orders = {}
         for client_code in self.clients:
             client = PositionSizingBuy(client_code)
-            client_order = client.position_sizing(self.final_stocks_buy,self.total_available_slots_before_buy)
+            client_data = all_client_data[client_code]
+            Mofl = client_login(client_data,client_code)
+            client_order = client.position_sizing(self.final_stocks_buy,self.total_available_slots_before_buy,Mofl)
             if client_order == None:
                 continue
             buy_orders[client_code] = client_order
@@ -55,8 +58,7 @@ class MidcapBuyAlgorithm:
         total_available_slots_after_buy =  max_slots - len(slots)
         
         update_slots(self.db,list(slots))
-        
-        print("Final Buy signal to Algo Baba, Before total Available slots")
+        print("Final Buy signal to Broker, Before total Available slots")
         print((self.final_stocks_buy,self.total_available_slots_before_buy))
         return self.final_stocks_buy,self.total_available_slots_before_buy
     

@@ -1,6 +1,7 @@
 from datetime import datetime, time
 from decimal import Decimal
 from algobaba.buy_order import send_buy_order
+from brokers.motilal.order import place_buy_order
 from database.dao.client_dao import *
 import boto3
 from utils.enums.signal import Signal
@@ -39,7 +40,7 @@ class PositionSizingBuy:
         # print(f"Brokerage charge Calculated during buy {brokerage}")
         return brokerage
     
-    def position_sizing(self,final_buy_stocks,total_available_slots_before_buy):
+    def position_sizing(self,final_buy_stocks,total_available_slots_before_buy,Mofsl):
         total_available_capital = get_client_balance(self.db,self.client_code)
         if total_available_slots_before_buy == 0:
             print("No slots available")
@@ -52,7 +53,7 @@ class PositionSizingBuy:
             last_traded_price = get_last_traded_price(fetch_1d_stock_data(buy_stock))
             qty = math.floor(Decimal(amount_to_invest)/Decimal(last_traded_price))
             # Last traded price is only to get an idea to estimate the quantity
-            request_id = send_buy_order(qty,buy_stock,self.client_code)
+            request_id = place_buy_order(self.client_code,buy_stock,qty,Mofsl)
             # print(request_id)
             if request_id == None:
                 return None
