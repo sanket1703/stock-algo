@@ -1,21 +1,23 @@
 import pyotp
 from brokers.motilal.api.MOFSLOPENAPI import MOFSLOPENAPI
+from brokers.motilal.helper.read_client_data import read_csv_to_dict
 
-def client_login(client_data,client_code ):
-    print(f"Client Data {client_data}")
-    Base_Url = "https://openapi.motilaloswaluat.com"
-    ApiKey = client_data['api_key']
+def client_login(client_code):
+    clients_auth = read_csv_to_dict()
+    client_auth_data= clients_auth[client_code]
+    Base_Url = "https://openapi.motilaloswal.com"
+    ApiKey = client_auth_data['api_key']
     userid = client_code
-    password = client_data['password']
-    Two_FA = client_data['pan']
+    password = client_auth_data['password']
+    Two_FA = client_auth_data['pan']
     vendorinfo = client_code
     clientcode = None
     SourceID = "Desktop"
     browsername = "chrome"
     browserversion = "104"   
-    totp = client_data['totp']
+    totp = client_auth_data['totp']
     totp = pyotp.TOTP(totp).now()
     Mofsl = MOFSLOPENAPI(ApiKey, Base_Url, clientcode, SourceID, browsername, browserversion)
-    print("--------------------------------Login--------------------------------")
     Mofsl.login(userid, password, Two_FA, totp, vendorinfo)
+    print(f"--------------------------------Login Completed for {client_code}--------------------------------")
     return Mofsl

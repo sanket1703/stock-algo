@@ -1,42 +1,99 @@
-from datetime import datetime
-import time
 from FOR_KEYUR import get_watchlist_for_keyur
 from algorithms.Filter_Algorithm import FilterAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
-from time import sleep
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from algorithms.Midcap_Sell_Algorithm import MidcapSellAlgorithm
-from tinydb import TinyDB, Query
 from algorithms.Trade_Sync import TradeSync
 from brokers.motilal.helper.read_client_data import read_csv_to_dict
-from database.dao.slots_dao import update_slots
-from database.dto.clients import Client, DailyTradeLog, Holding
-from database.dto.slots import Slots
-from algorithms.Position_Sizing_Buy import PositionSizingBuy
-from algorithms.Position_Sizing_Sell import PositionSizingSell
 from database.dao.watchlist_dao import get_watchlist
 from database.dynamodb import get_database
 from database.dao.client_dao import *
-from database_cleanup import clear_stack
+from database_cleanup import prepare_buy_testdata, prepare_sell_testdata
 from utils.csv.helpers import save_buy_orders, save_sell_orders
+from utils.json.helper import get_buy_orders, get_sell_orders, set_buy_orders, set_sell_orders
 from utils.watchlist_filter import massage_watchlist
 
-
-
-
 def buy():
-    # Given by Keyur
-    buy_stocks = ['LUPIN.NS','INDHOTEL.NS']
-    buy_stocks = buy_stocks
-    
-    db = get_database()
-    clients = get_client_list(db)
-    all_client_data = read_csv_to_dict()
-    print(f"Client Data :- {all_client_data}")
-    buy_algo = MidcapBuyAlgorithm(buy_stocks,clients)
-    buy_algo.calculate_and_update_slots()
-    buy_orders = buy_algo.position_sizing(all_client_data)
+    prepare_buy_testdata()
+    buy_stocks = ['IDEA.NS']
+    buy_algo = MidcapBuyAlgorithm(buy_stocks)
+    buy_algo.allocate_slots()
+    buy_orders = buy_algo.order_executor()
     print(f"Buy orders:- {buy_orders}")
+    set_buy_orders(buy_orders)
+    return buy_orders
+    
+    
+def sell():
+    prepare_sell_testdata()
+    sell_stocks = ['IDEA.NS']
+    sell_algo = MidcapSellAlgorithm()
+    # sell_algo.sell_logic()
+    sell_algo.adhoc_sell(sell_stocks)
+    sell_orders = sell_algo.position_sizing()
+    print(f"Sell orders:- {sell_orders}")
+    set_sell_orders(sell_orders)
+    return sell_orders
+
+def trade_sync_buy():
+    
+    buy_orders = get_buy_orders()
+    trade_sync = TradeSync(buy_orders)
+    filled,unfilled = trade_sync.check_orders(buy_orders)
+    print(f"Filled : {filled}")
+    print(f"Unfilled : {unfilled}")
+    trade_sync.sync_filled_buy_trades(filled)
+    print("Trade Synced for filled orders")
+    
+    if(not unfilled): return
+    print("Retry for below Unfilled")
+    print(f"Unfilled:- {unfilled}")
+    filled,unfilled = trade_sync.check_orders(unfilled)
+    trade_sync.sync_filled_buy_trades(filled)
+    print("Try 2: Trade Synced for filled orders")
+    
+    if(not unfilled): return
+    print("Market order for below unfilled")
+    print(f"Unfilled:- {unfilled}")
+    modified,unmodified = trade_sync.bulk_modify_to_market(unfilled)
+    print(f"Modified orders: {modified}")
+    filled,unfilled = trade_sync.check_orders(modified)
+    print(f"Now filled{filled}")
+    print(f"Now unfilled{filled}")
+    trade_sync.sync_filled_buy_trades(filled)
+    print("Failed even after Modify")
+    print(unfilled)
+    return
+
+def trade_sync_sell():
+    
+    sell_orders = get_sell_orders()
+    trade_sync = TradeSync(sell_orders)
+    filled,unfilled = trade_sync.check_orders(sell_orders)
+    print(f"Try 1: Unfilled : {unfilled}")
+    trade_sync.sync_filled_sell_trades(filled)
+    print("Try 1: Trade Synced for filled orders")
+    
+    if(not unfilled): return
+    print("Try 2: Retry for below Unfilled")
+    print(f"Try 2: Unfilled:- {unfilled}")
+    
+    filled,unfilled = trade_sync.check_orders(unfilled)
+    trade_sync.sync_filled_sell_trades(filled)
+    print("Try 2: Trade Synced for filled orders")
+    
+    if(not unfilled): return
+    print("Try 3: Market order for below unfilled")
+    print(f"Try 3: Unfilled:- {unfilled}")
+    modified,unmodified = trade_sync.bulk_modify_to_market(unfilled)
+    
+    filled,unfilled = trade_sync.check_orders(modified)
+    trade_sync.sync_filled_sell_trades(filled)
+    print("Failed even after Modify")
+    print(unfilled)
+    return
+    
+    
     
 def complete():
     
@@ -57,8 +114,8 @@ def complete():
     stocks = filter_algo.filter_stocks()
     
     buy_algo = MidcapBuyAlgorithm(stocks,clients)
-    buy_algo.calculate_and_update_slots()
-    buy_orders = buy_algo.position_sizing(all_client_data)
+    buy_algo.allocate_slots()
+    buy_orders = buy_algo.order_executor(all_client_data)
     
     print(f"Buy Orders :- {buy_orders}")
     save_buy_orders(buy_orders)
@@ -85,36 +142,6 @@ def complete():
     sell_trade_sync.sync_successful_sell_trades(successful_sell_orders)
     
     return 0
-        
-
-
-def sell():
-    stocks = ['BHEL.NS','LTTS.NS']
-    update_slots(get_database(),stocks)
-    sell_algo = MidcapSellAlgorithm()
-    stocks_to_sell = sell_algo.sell_logic()
-    print(stocks_to_sell)
-    clients = ["FTCT1208","Keyur","Sanket","Smit","Sid"]
-    sell_orders = {}
-    for client_code in clients:
-        print(f"Starting position sizing selling for {client_code}")
-        client = PositionSizingSell(client_code)
-        client_order = client.off_load_stocks(stocks_to_sell)
-        print(f"Client order:- {client_order}")
-        if client_order == None:
-            # print("Something is wrong with the client")
-            continue
-        sell_orders[client_code] = client_order
-        current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        sell_orders["date"] = current_datetime
-        
-    print(f"Sell orders:- {sell_orders}")
-    trade_sync = TradeSync()
-    successful_sell_orders,failed_orders = trade_sync.check_orders(sell_orders)
-    print(f"Successful sell :- {successful_sell_orders}")
-    trade_sync.sync_successful_sell_trades(successful_sell_orders)  
-
-    return 0
 
 
 def lambda_handler(event, context):
@@ -131,6 +158,18 @@ def run(direction):
     event["action"] = direction
     lambda_handler(event,None)
     
+# if __name__ == "__main__":
+#     run("Buy")
+
 if __name__ == "__main__":
-    clear_stack()
-    run("Buy")
+    
+    # client_code = "WEALTH666"
+    # client_auth = get_client_auth(client_code)
+    # Mofsl = client_login(client_auth,client_code)
+    # print(Mofsl.GetTradeDetailByUniqueorderID("1000002WEALTH666",client_code))
+    
+    # run("Sell")
+    # trade_sync_sell()
+    
+    # run("Buy")
+    trade_sync_buy()

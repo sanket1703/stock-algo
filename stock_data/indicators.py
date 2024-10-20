@@ -1,5 +1,5 @@
 import pandas as pd
-import pandas_ta as ta
+# import pandas_ta as ta
 
 def calculate_ema(data, window=100):
     """
@@ -13,7 +13,8 @@ def calculate_ema(data, window=100):
         pandas.Series: EMA values.
     """
     #ema = data['Close'].ewm(span=window, min_periods=window).mean()
-    ema=ta.ema(data['Close'],window)
+    # ema=ta.ema(data['Close'],window)
+    ema = "ema"
     return ema
 
 def calculate_supertrend(data, window=7, multiplier=3):
@@ -28,5 +29,5 @@ def calculate_supertrend(data, window=7, multiplier=3):
     Returns:
         pandas.Series: Supertrend values.
     """
-    supertrend = round(ta.supertrend(high=data['High'],low= data['Low'],close= data['Close'], length=10, multiplier=3)['SUPERT_10_3.0'],2)
-    return supertrend
+    # supertrend = round(ta.supertrend(high=data['High'],low= data['Low'],close= data['Close'], length=10, multiplier=3)['SUPERT_10_3.0'],2)
+    return "supertrend"

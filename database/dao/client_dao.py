@@ -3,6 +3,8 @@ from database.dto.clients import *
 import boto3
 import configparser
 
+from database.dynamodb import get_database
+
 # Initialize the configparser
 config = configparser.ConfigParser()
 
@@ -10,7 +12,8 @@ config = configparser.ConfigParser()
 config.read('config.properties')
 env = config['DEFAULT']['environment']
 
-def get_client_list(db):
+def get_client_list():
+    db = get_database()
     clients = db.Table('clients' + env)
     response = clients.scan(ProjectionExpression='client_code')
     return [item['client_code'] for item in response['Items']]
@@ -82,3 +85,11 @@ def add_balance(db,client,amount):
     current_balance = get_client_balance(db,client)
     new_balance = current_balance + amount
     update_client_balance(db,client,new_balance)
+    
+    
+def get_client_balance(db,client_code):
+    
+    clients = db.Table('clients'+ env)
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    client_balance = response['Items'][0]['current_balance']
+    return client_balance

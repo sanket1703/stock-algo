@@ -1,4 +1,5 @@
 from algobaba.buy_order import send_sell_order
+from brokers.motilal.order import place_sell_order
 from database.dto.clients import Holding
 from database.dao.client_dao import *
 from datetime import datetime
@@ -34,9 +35,9 @@ class PositionSizingSell:
         return decimal.Decimal(brokerage)
         
         
-    def off_load_stocks(self,stocks_sell):
+    def off_load_stocks(self,stocks_sell,Mofl):
         client_order_list = []
         for stock_sell in stocks_sell:
-            request_id = send_sell_order(self.db,stock_sell,self.client_code)
+            request_id = place_sell_order(self.db,self.client_code,stock_sell,Mofl)
             client_order_list.append((request_id,stock_sell))
         return client_order_list

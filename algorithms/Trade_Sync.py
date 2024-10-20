@@ -1,11 +1,12 @@
 from datetime import datetime
 from decimal import Decimal
 
-from algobaba.order_details import get_trade_price, get_trade_qty, is_order_completed, order_status
+from brokers.motilal.order import get_trade_price, get_trade_qty, is_order_completed, modify_order_to_market, order_status
 from database.dao.client_dao import *
 from utils.enums.signal import Signal
+from brokers.motilal.login import client_login
 class TradeSync:
-    def __init__(self):
+    def __init__(self,orders):
         self.db = self.get_database()
         
     def get_database(self):
@@ -21,73 +22,111 @@ class TradeSync:
             aws_secret_access_key=aws_secret_access_key)
         
         return dynamodb
-    
+
+                  
     def check_orders(self,orders):
-        failed_orders = {}
-        successful_orders = {}
-        for client in orders:
-            if client == "date":
+        un_filled_orders = {}
+        filled_orders = {}
+        for client_code in orders:
+            if client_code == "date":
                 continue
-            print(f"Checking order status for {client}")
-            client_orders = orders[client]
-            client_failed_orders = []
-            client_successful_orders = []
+            print(f"Checking order status for {client_code}")
+            client_orders = orders[client_code]
+            client_filled_orders = []
+            client_un_filled_orders = []
             if client_orders == None:
                 continue 
-            for request_id,buy_stock in client_orders:
-                if(not is_order_completed(request_id)):
-                    client_failed_orders.append((request_id,buy_stock))
-                else:
-                    client_successful_orders.append((request_id,buy_stock))
             
-            failed_orders[client] = client_failed_orders
-            successful_orders[client] = client_successful_orders        
+            Mofsl = client_login(client_code)
+            
+            for order_id,buy_stock in client_orders:
+                if(not is_order_completed(Mofsl,client_code,order_id)):
+                    client_un_filled_orders.append((order_id,buy_stock))
+                else:
+                    client_filled_orders.append((order_id,buy_stock))
+            
+            un_filled_orders[client_code] = client_un_filled_orders
+            filled_orders[client_code] = client_filled_orders        
                 
-            # print(f"Done trade sync for {client}")
+            print(f"Done trade sync for {client_code}")
             
         # TODO:- failed_orders & successful_orders should be saved in the DB
-        return orders,failed_orders
+        return filled_orders,un_filled_orders
                     
     
-    def sync_successful_buy_trades(self,successful_orders):
+    def sync_filled_buy_trades(self,filled_orders):
         current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        for client in successful_orders:
-            if client == "date":
+        for client_code in filled_orders:
+            if client_code == "date":
                 continue
-            print(f"Starting trade sync for {client}")
-            client_orders = successful_orders[client]
+            print(f"Starting trade sync for {client_code}")
+            client_orders = filled_orders[client_code]
             if client_orders == None:
                 continue 
-            for request_id,buy_stock in client_orders:
-                trade_price = get_trade_price(request_id)
-                qty = get_trade_qty(request_id)
+            
+            Mofsl = client_login(client_code)
+            
+            for order_id,buy_stock in client_orders:
+                trade_price = get_trade_price(Mofsl,client_code,order_id)
+                qty = get_trade_qty(Mofsl,client_code,order_id)
                 #TODO:- qty will return random stuff if there is some error on the AB side -> handle that 
                 turnover = (Decimal(qty)*Decimal(trade_price))
-                update_holding(self.db,client,buy_stock,qty,Decimal(trade_price),current_datetime)
-                add_trade_log(self.db,client,current_datetime,buy_stock,Signal.BUY.value,Decimal(trade_price),qty)
-                reduce_balance(self.db,client,Decimal(turnover))
+                update_holding(self.db,client_code,buy_stock,qty,Decimal(trade_price),current_datetime)
+                add_trade_log(self.db,client_code,current_datetime,buy_stock,Signal.BUY.value,Decimal(trade_price),qty)
+                reduce_balance(self.db,client_code,Decimal(turnover))
+            print(f"Updated all holdings for {client_code}")
         return 
     
-    def sync_successful_sell_trades(self,successful_orders):
+    def sync_filled_sell_trades(self,filled_orders):
         
-        for client in successful_orders:
-            if client == "date":
+        for client_code in filled_orders:
+            if client_code == "date":
                 continue
-            print(f"Starting trade sync for {client}")
+            print(f"Starting trade sync for {client_code}")
             current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            client_orders = successful_orders[client]
-            print(f"Client {client} :- {client_orders}")
+            client_orders = filled_orders[client_code]
+            print(f"Client {client_code} :- {client_orders}")
             if client_orders == None:
                 continue 
-            for request_id,sell_stock in client_orders:
-                trade_price = get_trade_price(request_id)
-                qty = get_trade_qty(request_id)
+            
+            Mofsl = client_login(client_code)
+            
+            for order_id,sell_stock in client_orders:
+                trade_price = get_trade_price(Mofsl,client_code,order_id)
+                qty = get_trade_qty(Mofsl,client_code,order_id)
                 turnover = (Decimal(qty)*Decimal(trade_price))
                 # Adjust for brokerage
-                offload_holding(self.db,client,sell_stock)
-                add_balance(self.db,client,Decimal(turnover))
-                add_trade_log(self.db,client,current_datetime,sell_stock,Signal.SELL.value,Decimal(trade_price),qty)
+                offload_holding(self.db,client_code,sell_stock)
+                add_balance(self.db,client_code,Decimal(turnover))
+                add_trade_log(self.db,client_code,current_datetime,sell_stock,Signal.SELL.value,Decimal(trade_price),qty)
         return
                     
-                    
+    def bulk_modify_to_market(self,orders):
+        # Given the order object if will modify all orders to Market
+        modified_orders = {}
+        failed_modified_orders = {}
+        for client_code in orders:
+            if client_code == "date":
+                continue
+            
+            Mofsl = client_login(client_code)
+            
+            print(f"Checking order status for {client_code}")
+            client_orders = orders[client_code]
+            client_modified_orders = []
+            client_failed_modified_orders = []
+            if client_orders == None:
+                continue 
+            for order_id,buy_stock in client_orders:
+                if(modify_order_to_market(Mofsl,client_code,order_id)):
+                    client_modified_orders.append((order_id,buy_stock))
+                else:
+                    client_failed_modified_orders.append((order_id,buy_stock))
+            
+            modified_orders[client_code] = client_modified_orders
+            failed_modified_orders[client_code] = client_failed_modified_orders        
                 
+            print(f"Done trade sync for {client_code}")
+    
+        return modified_orders,failed_modified_orders                
+                    

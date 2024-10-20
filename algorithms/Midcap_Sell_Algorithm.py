@@ -1,24 +1,27 @@
 from datetime import datetime
 from algorithms.Position_Sizing_Sell import PositionSizingSell
+from brokers.motilal.login import client_login
+from database.dao.client_dao import get_client_list
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data
 from database.dao.slots_dao import * 
 from database.dynamodb import get_database
 
 class MidcapSellAlgorithm:
-    def __init__(self,clients):
+    def __init__(self):
         self.db = get_database()
         self.slots = get_slots(self.db)
         self.stocks_to_sell = []
         self.stocks_to_keep = []
-        self.clients = clients
+        self.clients = get_client_list()
     
     def position_sizing(self):
         sell_orders = {}
         for client_code in self.clients:
             print(f"Starting position sizing selling for {client_code}")
             client = PositionSizingSell(client_code)
-            client_order = client.off_load_stocks(self.stocks_to_sell)
+            Mofl = client_login(client_code)
+            client_order = client.off_load_stocks(self.stocks_to_sell,Mofl)
             print(f"Client order:- {client_order}")
             if client_order == None:
                 continue
@@ -27,9 +30,10 @@ class MidcapSellAlgorithm:
             sell_orders["date"] = current_datetime
         
         print(sell_orders)
-        return sell_orders    
+        return sell_orders
 
     def should_sell(self,stock):
+        return True
         data = fetch_stock_data(stock)
         try:
             ema = calculate_ema(data).iloc[-1]
@@ -61,3 +65,6 @@ class MidcapSellAlgorithm:
         # self.stocks_to_sell = ["ABBOTINDIA.NS"]
         return self.stocks_to_sell
     
+    
+    def adhoc_sell(self,sell_stock_list):
+        self.stocks_to_sell = sell_stock_list

@@ -1,27 +1,27 @@
 from datetime import datetime
 from algorithms.Position_Sizing_Buy import PositionSizingBuy
+from brokers.motilal.helper.read_client_data import read_csv_to_dict
 from brokers.motilal.login import client_login
-from stock_data.indicators import calculate_ema, calculate_supertrend
-from stock_data.price import fetch_stock_data, get_last_traded_price
+from database.dao.client_dao import get_client_list
 from database.dao.slots_dao import * 
 from database.dynamodb import get_database
 
 
 class MidcapBuyAlgorithm:
-    def __init__(self,stock_list,clients):
+    def __init__(self,stock_list):
         self.db = get_database()
         self.stock_list = stock_list
         self.ranked_stock_list = []
-        self.clients = clients
+        self.clients = get_client_list()
         self.final_stocks_buy = []
-    
-    def position_sizing(self,all_client_data):
+        
+    def order_executor(self):
         print("Starting Position sizing")
         buy_orders = {}
+        
         for client_code in self.clients:
+            Mofl = client_login(client_code)
             client = PositionSizingBuy(client_code)
-            client_data = all_client_data[client_code]
-            Mofl = client_login(client_data,client_code)
             client_order = client.position_sizing(self.final_stocks_buy,self.total_available_slots_before_buy,Mofl)
             if client_order == None:
                 continue
@@ -32,9 +32,11 @@ class MidcapBuyAlgorithm:
         print(buy_orders)
         return buy_orders
     
+    def get_client_auth(self,client_code):
+        clients_auth = read_csv_to_dict()
+        return clients_auth[client_code]
     
-    
-    def calculate_and_update_slots(self):
+    def allocate_slots(self):
         
         slots = get_slots(self.db)
         buy_stocks = self.stock_list

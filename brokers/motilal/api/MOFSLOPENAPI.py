@@ -138,9 +138,7 @@ def GetMacAddress():
 def GetLocalIPAddress():
     try:
         hostname = socket.gethostname()
-        print(hostname)
         local_ip = socket.gethostbyname('localhost')
-        print(local_ip)
         return local_ip
     except Exception as e:
         WriteIntoLog("FAILED", "MOFSLOPENAPI.py", ("GetLocalIPAddress" + str(e)))
@@ -459,6 +457,11 @@ class MOFSLOPENAPI(object):
                 # Getorderdetailbyunqueorderid
                 getorderdetailbyunqueorderid_Apipath = "/rest/book/v1/getorderdetailbyuniqueorderid"
                 URL = (str(base_Url)+str(getorderdetailbyunqueorderid_Apipath))
+                
+            elif f_ApiPath =="gettradedetailbyuniqueorderid":
+                # Gettradedetailbyunqueorderid
+                gettradedetailbyunqueorderid_Apipath = "/rest/book/v1/gettradedetailbyuniqueorderid"
+                URL = (str(base_Url)+str(gettradedetailbyunqueorderid_Apipath))
 
             elif f_ApiPath =="getbrokeragedetail":
                 # getbrokeragedetail

@@ -18,6 +18,14 @@
         "documentation": {}
     },
     {
+        "label": "get",
+        "importPath": "requests",
+        "description": "requests",
+        "isExtraImport": true,
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "algobaba.dto.ABRequest",
         "description": "algobaba.dto.ABRequest",
@@ -58,7 +66,15 @@
         "documentation": {}
     },
     {
-        "label": "*",
+        "label": "get_client_list",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_list",
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
         "isExtraImport": true,
@@ -83,6 +99,22 @@
     },
     {
         "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding",
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
         "isExtraImport": true,
@@ -146,39 +178,7 @@
         "documentation": {}
     },
     {
-        "label": "calculate_ema",
-        "importPath": "stock_data.indicators",
-        "description": "stock_data.indicators",
-        "isExtraImport": true,
-        "detail": "stock_data.indicators",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_supertrend",
-        "importPath": "stock_data.indicators",
-        "description": "stock_data.indicators",
-        "isExtraImport": true,
-        "detail": "stock_data.indicators",
-        "documentation": {}
-    },
-    {
         "label": "fetch_stock_data",
-        "importPath": "stock_data.price",
-        "description": "stock_data.price",
-        "isExtraImport": true,
-        "detail": "stock_data.price",
-        "documentation": {}
-    },
-    {
-        "label": "fetch_stock_data",
-        "importPath": "stock_data.price",
-        "description": "stock_data.price",
-        "isExtraImport": true,
-        "detail": "stock_data.price",
-        "documentation": {}
-    },
-    {
-        "label": "get_last_traded_price",
         "importPath": "stock_data.price",
         "description": "stock_data.price",
         "isExtraImport": true,
@@ -234,11 +234,36 @@
         "documentation": {}
     },
     {
+        "label": "fetch_1d_stock_data",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_traded_price",
+        "importPath": "stock_data.price",
+        "description": "stock_data.price",
+        "isExtraImport": true,
+        "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
         "label": "one_year_return",
         "importPath": "stock_data.price",
         "description": "stock_data.price",
         "isExtraImport": true,
         "detail": "stock_data.price",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -298,6 +323,30 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
@@ -306,22 +355,6 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "PositionSizingBuy",
         "importPath": "algorithms.Position_Sizing_Buy",
         "description": "algorithms.Position_Sizing_Buy",
@@ -338,19 +371,59 @@
         "documentation": {}
     },
     {
-        "label": "PositionSizingBuy",
-        "importPath": "algorithms.Position_Sizing_Buy",
-        "description": "algorithms.Position_Sizing_Buy",
+        "label": "read_csv_to_dict",
+        "importPath": "brokers.motilal.helper.read_client_data",
+        "description": "brokers.motilal.helper.read_client_data",
         "isExtraImport": true,
-        "detail": "algorithms.Position_Sizing_Buy",
+        "detail": "brokers.motilal.helper.read_client_data",
         "documentation": {}
     },
     {
-        "label": "PositionSizingBuy",
-        "importPath": "algorithms.Position_Sizing_Buy",
-        "description": "algorithms.Position_Sizing_Buy",
+        "label": "read_csv_to_dict",
+        "importPath": "brokers.motilal.helper.read_client_data",
+        "description": "brokers.motilal.helper.read_client_data",
         "isExtraImport": true,
-        "detail": "algorithms.Position_Sizing_Buy",
+        "detail": "brokers.motilal.helper.read_client_data",
+        "documentation": {}
+    },
+    {
+        "label": "read_csv_to_dict",
+        "importPath": "brokers.motilal.helper.read_client_data",
+        "description": "brokers.motilal.helper.read_client_data",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.helper.read_client_data",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
         "documentation": {}
     },
     {
@@ -386,14 +459,6 @@
         "documentation": {}
     },
     {
-        "label": "update_slots",
-        "importPath": "database.dao.slots_dao",
-        "description": "database.dao.slots_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.slots_dao",
-        "documentation": {}
-    },
-    {
         "label": "get_database",
         "importPath": "database.dynamodb",
         "description": "database.dynamodb",
@@ -458,19 +523,19 @@
         "documentation": {}
     },
     {
-        "label": "PositionSizingSell",
-        "importPath": "algorithms.Position_Sizing_Sell",
-        "description": "algorithms.Position_Sizing_Sell",
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
         "isExtraImport": true,
-        "detail": "algorithms.Position_Sizing_Sell",
+        "detail": "database.dynamodb",
         "documentation": {}
     },
     {
-        "label": "PositionSizingSell",
-        "importPath": "algorithms.Position_Sizing_Sell",
-        "description": "algorithms.Position_Sizing_Sell",
+        "label": "get_database",
+        "importPath": "database.dynamodb",
+        "description": "database.dynamodb",
         "isExtraImport": true,
-        "detail": "algorithms.Position_Sizing_Sell",
+        "detail": "database.dynamodb",
         "documentation": {}
     },
     {
@@ -515,6 +580,14 @@
         "documentation": {}
     },
     {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
         "label": "send_buy_order",
         "importPath": "algobaba.buy_order",
         "description": "algobaba.buy_order",
@@ -539,12 +612,76 @@
         "documentation": {}
     },
     {
+        "label": "place_buy_order",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "place_sell_order",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_price",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_qty",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "is_order_completed",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "modify_order_to_market",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "order_status",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
         "label": "boto3",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "boto3",
         "description": "boto3",
         "detail": "boto3",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
         "documentation": {}
     },
     {
@@ -629,54 +766,6 @@
         "documentation": {}
     },
     {
-        "label": "Client",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "DailyTradeLog",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "Holding",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "Client",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "DailyTradeLog",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
-        "label": "Holding",
-        "importPath": "database.dto.clients",
-        "description": "database.dto.clients",
-        "isExtraImport": true,
-        "detail": "database.dto.clients",
-        "documentation": {}
-    },
-    {
         "label": "get_trade_price",
         "importPath": "algobaba.order_details",
         "description": "algobaba.order_details",
@@ -709,11 +798,545 @@
         "documentation": {}
     },
     {
+        "label": "get_trade_price",
+        "importPath": "algobaba.order_details",
+        "description": "algobaba.order_details",
+        "isExtraImport": true,
+        "detail": "algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_qty",
+        "importPath": "algobaba.order_details",
+        "description": "algobaba.order_details",
+        "isExtraImport": true,
+        "detail": "algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "is_order_completed",
+        "importPath": "algobaba.order_details",
+        "description": "algobaba.order_details",
+        "isExtraImport": true,
+        "detail": "algobaba.order_details",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "algobaba.order_details",
         "description": "algobaba.order_details",
         "isExtraImport": true,
         "detail": "algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "websockets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "websockets",
+        "description": "websockets",
+        "detail": "websockets",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "websocket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "websocket",
+        "description": "websocket",
+        "detail": "websocket",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "websocket._abnf",
+        "description": "websocket._abnf",
+        "isExtraImport": true,
+        "detail": "websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Lock",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "ssl",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ssl",
+        "description": "ssl",
+        "detail": "ssl",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleCookieJar",
+        "importPath": "websocket._cookiejar",
+        "description": "websocket._cookiejar",
+        "isExtraImport": true,
+        "detail": "websocket._cookiejar",
+        "documentation": {}
+    },
+    {
+        "label": "proxy_info",
+        "importPath": "websocket._http",
+        "description": "websocket._http",
+        "isExtraImport": true,
+        "detail": "websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "read_headers",
+        "importPath": "websocket._http",
+        "description": "websocket._http",
+        "isExtraImport": true,
+        "detail": "websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "_start_proxied_socket",
+        "importPath": "websocket._http",
+        "description": "websocket._http",
+        "isExtraImport": true,
+        "detail": "websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "_tunnel",
+        "importPath": "websocket._http",
+        "description": "websocket._http",
+        "isExtraImport": true,
+        "detail": "websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "_get_addrinfo_list",
+        "importPath": "websocket._http",
+        "description": "websocket._http",
+        "isExtraImport": true,
+        "detail": "websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "connect",
+        "importPath": "websocket._http",
+        "description": "websocket._http",
+        "isExtraImport": true,
+        "detail": "websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "read_headers",
+        "importPath": "websocket._http",
+        "description": "websocket._http",
+        "isExtraImport": true,
+        "detail": "websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "get_proxy_info",
+        "importPath": "websocket._url",
+        "description": "websocket._url",
+        "isExtraImport": true,
+        "detail": "websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "parse_url",
+        "importPath": "websocket._url",
+        "description": "websocket._url",
+        "isExtraImport": true,
+        "detail": "websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "_is_address_in_network",
+        "importPath": "websocket._url",
+        "description": "websocket._url",
+        "isExtraImport": true,
+        "detail": "websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "_is_no_proxy_host",
+        "importPath": "websocket._url",
+        "description": "websocket._url",
+        "isExtraImport": true,
+        "detail": "websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "_create_sec_websocket_key",
+        "importPath": "websocket._handshake",
+        "description": "websocket._handshake",
+        "isExtraImport": true,
+        "detail": "websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "\\",
+        "importPath": "websocket._handshake",
+        "description": "websocket._handshake",
+        "isExtraImport": true,
+        "detail": "websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "validate_utf8",
+        "importPath": "websocket._utils",
+        "description": "websocket._utils",
+        "isExtraImport": true,
+        "detail": "websocket._utils",
+        "documentation": {}
+    },
+    {
+        "label": "decodebytes",
+        "importPath": "base64",
+        "description": "base64",
+        "isExtraImport": true,
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "encodebytes",
+        "importPath": "base64",
+        "description": "base64",
+        "isExtraImport": true,
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "encodebytes",
+        "importPath": "base64",
+        "description": "base64",
+        "isExtraImport": true,
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "array",
+        "description": "array",
+        "detail": "array",
+        "documentation": {}
+    },
+    {
+        "label": "struct",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "struct",
+        "description": "struct",
+        "detail": "struct",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "struct",
+        "description": "struct",
+        "isExtraImport": true,
+        "detail": "struct",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "selectors",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "selectors",
+        "description": "selectors",
+        "detail": "selectors",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
+        "documentation": {}
+    },
+    {
+        "label": "http.cookies",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "http.cookies",
+        "description": "http.cookies",
+        "detail": "http.cookies",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "hmac",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hmac",
+        "description": "hmac",
+        "detail": "hmac",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "importPath": "http",
+        "description": "http",
+        "isExtraImport": true,
+        "detail": "http",
+        "documentation": {}
+    },
+    {
+        "label": "errno",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "errno",
+        "description": "errno",
+        "detail": "errno",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "unquote",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "code",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "code",
+        "description": "code",
+        "detail": "code",
+        "documentation": {}
+    },
+    {
+        "label": "gzip",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gzip",
+        "description": "gzip",
+        "detail": "gzip",
+        "documentation": {}
+    },
+    {
+        "label": "zlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "zlib",
+        "description": "zlib",
+        "detail": "zlib",
+        "documentation": {}
+    },
+    {
+        "label": "re,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re.",
+        "description": "re.",
+        "detail": "re.",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "platform",
+        "description": "platform",
+        "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "geocoder",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "geocoder",
+        "description": "geocoder",
+        "detail": "geocoder",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "importPath": "queue",
+        "description": "queue",
+        "isExtraImport": true,
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "pyotp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyotp",
+        "description": "pyotp",
+        "detail": "pyotp",
+        "documentation": {}
+    },
+    {
+        "label": "MOFSLOPENAPI",
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "get_symbol_token",
+        "importPath": "stock_data.symbols",
+        "description": "stock_data.symbols",
+        "isExtraImport": true,
+        "detail": "stock_data.symbols",
         "documentation": {}
     },
     {
@@ -735,15 +1358,6 @@
         "documentation": {}
     },
     {
-        "label": "pandas_ta",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas_ta",
-        "description": "pandas_ta",
-        "detail": "pandas_ta",
-        "documentation": {}
-    },
-    {
         "label": "yfinance",
         "kind": 6,
         "isExtraImport": true,
@@ -753,29 +1367,36 @@
         "documentation": {}
     },
     {
-        "label": "csv",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "csv",
-        "description": "csv",
-        "detail": "csv",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
         "isExtraImport": true,
         "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
         "documentation": {}
     },
     {
@@ -827,47 +1448,6 @@
         "documentation": {}
     },
     {
-        "label": "MidcapBuyAlgorithm",
-        "importPath": "algorithms.Midcap_Buy_Algorithm",
-        "description": "algorithms.Midcap_Buy_Algorithm",
-        "isExtraImport": true,
-        "detail": "algorithms.Midcap_Buy_Algorithm",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "sleep",
-        "importPath": "time",
-        "description": "time",
-        "isExtraImport": true,
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "sleep",
-        "importPath": "time",
-        "description": "time",
-        "isExtraImport": true,
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "MidcapSellAlgorithm",
-        "importPath": "algorithms.Midcap_Sell_Algorithm",
-        "description": "algorithms.Midcap_Sell_Algorithm",
-        "isExtraImport": true,
-        "detail": "algorithms.Midcap_Sell_Algorithm",
-        "documentation": {}
-    },
-    {
         "label": "MidcapSellAlgorithm",
         "importPath": "algorithms.Midcap_Sell_Algorithm",
         "description": "algorithms.Midcap_Sell_Algorithm",
@@ -900,67 +1480,11 @@
         "documentation": {}
     },
     {
-        "label": "TinyDB",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "TinyDB",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "tinydb",
-        "description": "tinydb",
-        "isExtraImport": true,
-        "detail": "tinydb",
-        "documentation": {}
-    },
-    {
         "label": "Slots",
         "importPath": "database.dto.slots",
         "description": "database.dto.slots",
         "isExtraImport": true,
         "detail": "database.dto.slots",
-        "documentation": {}
-    },
-    {
-        "label": "Slots",
-        "importPath": "database.dto.slots",
-        "description": "database.dto.slots",
-        "isExtraImport": true,
-        "detail": "database.dto.slots",
-        "documentation": {}
-    },
-    {
-        "label": "Slots",
-        "importPath": "database.dto.slots",
-        "description": "database.dto.slots",
-        "isExtraImport": true,
-        "detail": "database.dto.slots",
-        "documentation": {}
-    },
-    {
-        "label": "get_watchlist",
-        "importPath": "database.dao.watchlist_dao",
-        "description": "database.dao.watchlist_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.watchlist_dao",
         "documentation": {}
     },
     {
@@ -996,6 +1520,14 @@
         "documentation": {}
     },
     {
+        "label": "add_slots",
+        "importPath": "utils.database_helper.slots",
+        "description": "utils.database_helper.slots",
+        "isExtraImport": true,
+        "detail": "utils.database_helper.slots",
+        "documentation": {}
+    },
+    {
         "label": "clean_slots",
         "importPath": "utils.database_helper.slots",
         "description": "utils.database_helper.slots",
@@ -1004,45 +1536,11 @@
         "documentation": {}
     },
     {
-        "label": "TradeSync",
-        "importPath": "algorithms.Trade_Sync",
-        "description": "algorithms.Trade_Sync",
+        "label": "get_watchlist_for_keyur",
+        "importPath": "FOR_KEYUR",
+        "description": "FOR_KEYUR",
         "isExtraImport": true,
-        "detail": "algorithms.Trade_Sync",
-        "documentation": {}
-    },
-    {
-        "label": "TradeSync",
-        "importPath": "algorithms.Trade_Sync",
-        "description": "algorithms.Trade_Sync",
-        "isExtraImport": true,
-        "detail": "algorithms.Trade_Sync",
-        "documentation": {}
-    },
-    {
-        "label": "concurrent.futures",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "botocore",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "botocore",
-        "description": "botocore",
-        "detail": "botocore",
-        "documentation": {}
-    },
-    {
-        "label": "ClientError",
-        "importPath": "botocore.exceptions",
-        "description": "botocore.exceptions",
-        "isExtraImport": true,
-        "detail": "botocore.exceptions",
+        "detail": "FOR_KEYUR",
         "documentation": {}
     },
     {
@@ -1054,7 +1552,23 @@
         "documentation": {}
     },
     {
-        "label": "clear_stack",
+        "label": "TradeSync",
+        "importPath": "algorithms.Trade_Sync",
+        "description": "algorithms.Trade_Sync",
+        "isExtraImport": true,
+        "detail": "algorithms.Trade_Sync",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_buy_testdata",
+        "importPath": "database_cleanup",
+        "description": "database_cleanup",
+        "isExtraImport": true,
+        "detail": "database_cleanup",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_sell_testdata",
         "importPath": "database_cleanup",
         "description": "database_cleanup",
         "isExtraImport": true,
@@ -1075,6 +1589,46 @@
         "description": "utils.csv.helpers",
         "isExtraImport": true,
         "detail": "utils.csv.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "get_buy_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_sell_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "set_buy_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "set_sell_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "massage_watchlist",
+        "importPath": "utils.watchlist_filter",
+        "description": "utils.watchlist_filter",
+        "isExtraImport": true,
+        "detail": "utils.watchlist_filter",
         "documentation": {}
     },
     {
@@ -1181,7 +1735,7 @@
         "kind": 6,
         "importPath": "algorithms.Midcap_Buy_Algorithm",
         "description": "algorithms.Midcap_Buy_Algorithm",
-        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list,clients):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n        self.clients = clients\n        self.final_stocks_buy = []\n    def position_sizing(self):\n        print(\"Starting Position sizing\")\n        buy_orders = {}",
+        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n        self.clients = get_client_list()\n        self.final_stocks_buy = []\n    def order_executor(self):\n        print(\"Starting Position sizing\")\n        buy_orders = {}",
         "detail": "algorithms.Midcap_Buy_Algorithm",
         "documentation": {}
     },
@@ -1190,7 +1744,7 @@
         "kind": 6,
         "importPath": "algorithms.Midcap_Sell_Algorithm",
         "description": "algorithms.Midcap_Sell_Algorithm",
-        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self,clients):\n        self.db = get_database()\n        self.slots = get_slots(self.db)\n        self.stocks_to_sell = []\n        self.stocks_to_keep = []\n        self.clients = clients\n    def position_sizing(self):\n        sell_orders = {}\n        for client_code in self.clients:",
+        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self):\n        self.db = get_database()\n        self.slots = get_slots(self.db)\n        self.stocks_to_sell = []\n        self.stocks_to_keep = []\n        self.clients = get_client_list()\n    def position_sizing(self):\n        sell_orders = {}\n        for client_code in self.clients:",
         "detail": "algorithms.Midcap_Sell_Algorithm",
         "documentation": {}
     },
@@ -1217,8 +1771,1331 @@
         "kind": 6,
         "importPath": "algorithms.Trade_Sync",
         "description": "algorithms.Trade_Sync",
-        "peekOfCode": "class TradeSync:\n    def __init__(self):\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',\n            region_name='ap-south-1',",
+        "peekOfCode": "class TradeSync:\n    def __init__(self,orders):\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',\n            region_name='ap-south-1',",
         "detail": "algorithms.Trade_Sync",
+        "documentation": {}
+    },
+    {
+        "label": "TradeSync",
+        "kind": 6,
+        "importPath": "algorithms.Trade_Sync_Backup",
+        "description": "algorithms.Trade_Sync_Backup",
+        "peekOfCode": "class TradeSync:\n    def __init__(self):\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',\n            region_name='ap-south-1',",
+        "detail": "algorithms.Trade_Sync_Backup",
+        "documentation": {}
+    },
+    {
+        "label": "LOCAL_WS_SERVER_PORT",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.echo-server",
+        "description": "brokers.motilal.api.websocket.tests.echo-server",
+        "peekOfCode": "LOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '8765')\nasync def echo(websocket, path):\n    async for message in websocket:\n        await websocket.send(message)\nasync def main():\n    async with websockets.serve(echo, \"localhost\", LOCAL_WS_SERVER_PORT):\n        await asyncio.Future()  # run forever\nasyncio.run(main())",
+        "detail": "brokers.motilal.api.websocket.tests.echo-server",
+        "documentation": {}
+    },
+    {
+        "label": "ABNFTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_abnf",
+        "description": "brokers.motilal.api.websocket.tests.test_abnf",
+        "peekOfCode": "class ABNFTest(unittest.TestCase):\n    def testInit(self):\n        a = ABNF(0,0,0,0, opcode=ABNF.OPCODE_PING)\n        self.assertEqual(a.fin, 0)\n        self.assertEqual(a.rsv1, 0)\n        self.assertEqual(a.rsv2, 0)\n        self.assertEqual(a.rsv3, 0)\n        self.assertEqual(a.opcode, 9)\n        self.assertEqual(a.data, '')\n        a_bad = ABNF(0,1,0,0, opcode=77)",
+        "detail": "brokers.motilal.api.websocket.tests.test_abnf",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketAppTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_app",
+        "description": "brokers.motilal.api.websocket.tests.test_app",
+        "peekOfCode": "class WebSocketAppTest(unittest.TestCase):\n    class NotSetYet:\n        \"\"\" A marker class for signalling that a value hasn't been set yet.\n        \"\"\"\n    def setUp(self):\n        ws.enableTrace(TRACEABLE)\n        WebSocketAppTest.keep_running_open = WebSocketAppTest.NotSetYet()\n        WebSocketAppTest.keep_running_close = WebSocketAppTest.NotSetYet()\n        WebSocketAppTest.get_mask_key_id = WebSocketAppTest.NotSetYet()\n        WebSocketAppTest.on_error_data = WebSocketAppTest.NotSetYet()",
+        "detail": "brokers.motilal.api.websocket.tests.test_app",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_WITH_INTERNET",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_app",
+        "description": "brokers.motilal.api.websocket.tests.test_app",
+        "peekOfCode": "TEST_WITH_INTERNET = os.environ.get('TEST_WITH_INTERNET', '0') == '1'\n# Skip tests relying on local websockets server unless LOCAL_WS_SERVER_PORT != -1\nLOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '-1')\nTEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nTRACEABLE = True\nclass WebSocketAppTest(unittest.TestCase):\n    class NotSetYet:\n        \"\"\" A marker class for signalling that a value hasn't been set yet.\n        \"\"\"\n    def setUp(self):",
+        "detail": "brokers.motilal.api.websocket.tests.test_app",
+        "documentation": {}
+    },
+    {
+        "label": "LOCAL_WS_SERVER_PORT",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_app",
+        "description": "brokers.motilal.api.websocket.tests.test_app",
+        "peekOfCode": "LOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '-1')\nTEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nTRACEABLE = True\nclass WebSocketAppTest(unittest.TestCase):\n    class NotSetYet:\n        \"\"\" A marker class for signalling that a value hasn't been set yet.\n        \"\"\"\n    def setUp(self):\n        ws.enableTrace(TRACEABLE)\n        WebSocketAppTest.keep_running_open = WebSocketAppTest.NotSetYet()",
+        "detail": "brokers.motilal.api.websocket.tests.test_app",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_WITH_LOCAL_SERVER",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_app",
+        "description": "brokers.motilal.api.websocket.tests.test_app",
+        "peekOfCode": "TEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nTRACEABLE = True\nclass WebSocketAppTest(unittest.TestCase):\n    class NotSetYet:\n        \"\"\" A marker class for signalling that a value hasn't been set yet.\n        \"\"\"\n    def setUp(self):\n        ws.enableTrace(TRACEABLE)\n        WebSocketAppTest.keep_running_open = WebSocketAppTest.NotSetYet()\n        WebSocketAppTest.keep_running_close = WebSocketAppTest.NotSetYet()",
+        "detail": "brokers.motilal.api.websocket.tests.test_app",
+        "documentation": {}
+    },
+    {
+        "label": "TRACEABLE",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_app",
+        "description": "brokers.motilal.api.websocket.tests.test_app",
+        "peekOfCode": "TRACEABLE = True\nclass WebSocketAppTest(unittest.TestCase):\n    class NotSetYet:\n        \"\"\" A marker class for signalling that a value hasn't been set yet.\n        \"\"\"\n    def setUp(self):\n        ws.enableTrace(TRACEABLE)\n        WebSocketAppTest.keep_running_open = WebSocketAppTest.NotSetYet()\n        WebSocketAppTest.keep_running_close = WebSocketAppTest.NotSetYet()\n        WebSocketAppTest.get_mask_key_id = WebSocketAppTest.NotSetYet()",
+        "detail": "brokers.motilal.api.websocket.tests.test_app",
+        "documentation": {}
+    },
+    {
+        "label": "CookieJarTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_cookiejar",
+        "description": "brokers.motilal.api.websocket.tests.test_cookiejar",
+        "peekOfCode": "class CookieJarTest(unittest.TestCase):\n    def testAdd(self):\n        cookie_jar = SimpleCookieJar()\n        cookie_jar.add(\"\")\n        self.assertFalse(cookie_jar.jar, \"Cookie with no domain should not be added to the jar\")\n        cookie_jar = SimpleCookieJar()\n        cookie_jar.add(\"a=b\")\n        self.assertFalse(cookie_jar.jar, \"Cookie with no domain should not be added to the jar\")\n        cookie_jar = SimpleCookieJar()\n        cookie_jar.add(\"a=b; domain=.abc\")",
+        "detail": "brokers.motilal.api.websocket.tests.test_cookiejar",
+        "documentation": {}
+    },
+    {
+        "label": "SockMock",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "class SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)\n    def gettimeout(self):\n        return None\n    def recv(self, bufsize):\n        if self.data:",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "HeaderSockMock",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "class HeaderSockMock(SockMock):\n    def __init__(self, fname):\n        SockMock.__init__(self)\n        path = os.path.join(os.path.dirname(__file__), fname)\n        with open(path, \"rb\") as f:\n            self.add_packet(f.read())\nclass OptsList():\n    def __init__(self):\n        self.timeout = 1\n        self.sockopt = []",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "OptsList",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "class OptsList():\n    def __init__(self):\n        self.timeout = 1\n        self.sockopt = []\n        self.sslopt = {\"cert_reqs\": ssl.CERT_NONE}\nclass HttpTest(unittest.TestCase):\n    def testReadHeader(self):\n        status, header, status_message = read_headers(HeaderSockMock(\"data/header01.txt\"))\n        self.assertEqual(status, 101)\n        self.assertEqual(header[\"connection\"], \"Upgrade\")",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "class HttpTest(unittest.TestCase):\n    def testReadHeader(self):\n        status, header, status_message = read_headers(HeaderSockMock(\"data/header01.txt\"))\n        self.assertEqual(status, 101)\n        self.assertEqual(header[\"connection\"], \"Upgrade\")\n        # header02.txt is intentionally malformed\n        self.assertRaises(ws.WebSocketException, read_headers, HeaderSockMock(\"data/header02.txt\"))\n    def testTunnel(self):\n        self.assertRaises(ws.WebSocketProxyException, _tunnel, HeaderSockMock(\"data/header01.txt\"), \"example.com\", 80, (\"username\", \"password\"))\n        self.assertRaises(ws.WebSocketProxyException, _tunnel, HeaderSockMock(\"data/header02.txt\"), \"example.com\", 80, (\"username\", \"password\"))",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_WITH_INTERNET",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "TEST_WITH_INTERNET = os.environ.get('TEST_WITH_INTERNET', '0') == '1'\nTEST_WITH_PROXY = os.environ.get('TEST_WITH_PROXY', '0') == '1'\n# Skip tests relying on local websockets server unless LOCAL_WS_SERVER_PORT != -1\nLOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '-1')\nTEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_WITH_PROXY",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "TEST_WITH_PROXY = os.environ.get('TEST_WITH_PROXY', '0') == '1'\n# Skip tests relying on local websockets server unless LOCAL_WS_SERVER_PORT != -1\nLOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '-1')\nTEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "LOCAL_WS_SERVER_PORT",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "LOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '-1')\nTEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)\n    def gettimeout(self):\n        return None",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_WITH_LOCAL_SERVER",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_http",
+        "description": "brokers.motilal.api.websocket.tests.test_http",
+        "peekOfCode": "TEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)\n    def gettimeout(self):\n        return None\n    def recv(self, bufsize):",
+        "detail": "brokers.motilal.api.websocket.tests.test_http",
+        "documentation": {}
+    },
+    {
+        "label": "UrlTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_url",
+        "description": "brokers.motilal.api.websocket.tests.test_url",
+        "peekOfCode": "class UrlTest(unittest.TestCase):\n    def test_address_in_network(self):\n        self.assertTrue(_is_address_in_network('127.0.0.1', '127.0.0.0/8'))\n        self.assertTrue(_is_address_in_network('127.1.0.1', '127.0.0.0/8'))\n        self.assertFalse(_is_address_in_network('127.1.0.1', '127.0.0.0/24'))\n    def testParseUrl(self):\n        p = parse_url(\"ws://www.example.com/r\")\n        self.assertEqual(p[0], \"www.example.com\")\n        self.assertEqual(p[1], 80)\n        self.assertEqual(p[2], \"/r\")",
+        "detail": "brokers.motilal.api.websocket.tests.test_url",
+        "documentation": {}
+    },
+    {
+        "label": "IsNoProxyHostTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_url",
+        "description": "brokers.motilal.api.websocket.tests.test_url",
+        "peekOfCode": "class IsNoProxyHostTest(unittest.TestCase):\n    def setUp(self):\n        self.no_proxy = os.environ.get(\"no_proxy\", None)\n        if \"no_proxy\" in os.environ:\n            del os.environ[\"no_proxy\"]\n    def tearDown(self):\n        if self.no_proxy:\n            os.environ[\"no_proxy\"] = self.no_proxy\n        elif \"no_proxy\" in os.environ:\n            del os.environ[\"no_proxy\"]",
+        "detail": "brokers.motilal.api.websocket.tests.test_url",
+        "documentation": {}
+    },
+    {
+        "label": "ProxyInfoTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_url",
+        "description": "brokers.motilal.api.websocket.tests.test_url",
+        "peekOfCode": "class ProxyInfoTest(unittest.TestCase):\n    def setUp(self):\n        self.http_proxy = os.environ.get(\"http_proxy\", None)\n        self.https_proxy = os.environ.get(\"https_proxy\", None)\n        self.no_proxy = os.environ.get(\"no_proxy\", None)\n        if \"http_proxy\" in os.environ:\n            del os.environ[\"http_proxy\"]\n        if \"https_proxy\" in os.environ:\n            del os.environ[\"https_proxy\"]\n        if \"no_proxy\" in os.environ:",
+        "detail": "brokers.motilal.api.websocket.tests.test_url",
+        "documentation": {}
+    },
+    {
+        "label": "SockMock",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "class SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)\n    def gettimeout(self):\n        return None\n    def recv(self, bufsize):\n        if self.data:",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "HeaderSockMock",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "class HeaderSockMock(SockMock):\n    def __init__(self, fname):\n        SockMock.__init__(self)\n        path = os.path.join(os.path.dirname(__file__), fname)\n        with open(path, \"rb\") as f:\n            self.add_packet(f.read())\nclass WebSocketTest(unittest.TestCase):\n    def setUp(self):\n        ws.enableTrace(TRACEABLE)\n    def tearDown(self):",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "class WebSocketTest(unittest.TestCase):\n    def setUp(self):\n        ws.enableTrace(TRACEABLE)\n    def tearDown(self):\n        pass\n    def testDefaultTimeout(self):\n        self.assertEqual(ws.getdefaulttimeout(), None)\n        ws.setdefaulttimeout(10)\n        self.assertEqual(ws.getdefaulttimeout(), 10)\n        ws.setdefaulttimeout(None)",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "SockOptTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "class SockOptTest(unittest.TestCase):\n    @unittest.skipUnless(TEST_WITH_LOCAL_SERVER, \"Tests using local websocket server are disabled\")\n    def testSockOpt(self):\n        sockopt = ((socket.IPPROTO_TCP, socket.TCP_NODELAY, 1),)\n        s = ws.create_connection(\"ws://127.0.0.1:\" + LOCAL_WS_SERVER_PORT, sockopt=sockopt)\n        self.assertNotEqual(s.sock.getsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY), 0)\n        s.close()\nclass UtilsTest(unittest.TestCase):\n    def testUtf8Validator(self):\n        state = validate_utf8(b'\\xf0\\x90\\x80\\x80')",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "UtilsTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "class UtilsTest(unittest.TestCase):\n    def testUtf8Validator(self):\n        state = validate_utf8(b'\\xf0\\x90\\x80\\x80')\n        self.assertEqual(state, True)\n        state = validate_utf8(b'\\xce\\xba\\xe1\\xbd\\xb9\\xcf\\x83\\xce\\xbc\\xce\\xb5\\xed\\xa0\\x80edited')\n        self.assertEqual(state, False)\n        state = validate_utf8(b'')\n        self.assertEqual(state, True)\nclass HandshakeTest(unittest.TestCase):\n    @unittest.skipUnless(TEST_WITH_INTERNET, \"Internet-requiring tests are disabled\")",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "HandshakeTest",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "class HandshakeTest(unittest.TestCase):\n    @unittest.skipUnless(TEST_WITH_INTERNET, \"Internet-requiring tests are disabled\")\n    def test_http_SSL(self):\n        websock1 = ws.WebSocket(sslopt={\"cert_chain\": ssl.get_default_verify_paths().capath}, enable_multithread=False)\n        self.assertRaises(ValueError,\n                          websock1.connect, \"wss://api.bitfinex.com/ws/2\")\n        websock2 = ws.WebSocket(sslopt={\"certfile\": \"myNonexistentCertFile\"})\n        self.assertRaises(FileNotFoundError,\n                          websock2.connect, \"wss://api.bitfinex.com/ws/2\")\n    @unittest.skipUnless(TEST_WITH_INTERNET, \"Internet-requiring tests are disabled\")",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "create_mask_key",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "def create_mask_key(_):\n    return \"abcd\"\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)\n    def gettimeout(self):\n        return None",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_WITH_INTERNET",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "TEST_WITH_INTERNET = os.environ.get('TEST_WITH_INTERNET', '0') == '1'\n# Skip tests relying on local websockets server unless LOCAL_WS_SERVER_PORT != -1\nLOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '-1')\nTEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nTRACEABLE = True\ndef create_mask_key(_):\n    return \"abcd\"\nclass SockMock:\n    def __init__(self):\n        self.data = []",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "LOCAL_WS_SERVER_PORT",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "LOCAL_WS_SERVER_PORT = os.environ.get('LOCAL_WS_SERVER_PORT', '-1')\nTEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nTRACEABLE = True\ndef create_mask_key(_):\n    return \"abcd\"\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_WITH_LOCAL_SERVER",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "TEST_WITH_LOCAL_SERVER = LOCAL_WS_SERVER_PORT != '-1'\nTRACEABLE = True\ndef create_mask_key(_):\n    return \"abcd\"\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "TRACEABLE",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket.tests.test_websocket",
+        "description": "brokers.motilal.api.websocket.tests.test_websocket",
+        "peekOfCode": "TRACEABLE = True\ndef create_mask_key(_):\n    return \"abcd\"\nclass SockMock:\n    def __init__(self):\n        self.data = []\n        self.sent = []\n    def add_packet(self, data):\n        self.data.append(data)\n    def gettimeout(self):",
+        "detail": "brokers.motilal.api.websocket.tests.test_websocket",
+        "documentation": {}
+    },
+    {
+        "label": "ABNF",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "class ABNF:\n    \"\"\"\n    ABNF frame class.\n    See http://tools.ietf.org/html/rfc5234\n    and http://tools.ietf.org/html/rfc6455#section-5.2\n    \"\"\"\n    # operation code values.\n    OPCODE_CONT = 0x0\n    OPCODE_TEXT = 0x1\n    OPCODE_BINARY = 0x2",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "frame_buffer",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "class frame_buffer:\n    _HEADER_MASK_INDEX = 5\n    _HEADER_LENGTH_INDEX = 6\n    def __init__(self, recv_fn, skip_utf8_validation):\n        self.recv = recv_fn\n        self.skip_utf8_validation = skip_utf8_validation\n        # Buffers over the packets from the layer beneath until desired amount\n        # bytes of bytes are received.\n        self.recv_buffer = []\n        self.clear()",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "continuous_frame",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "class continuous_frame:\n    def __init__(self, fire_cont_frame, skip_utf8_validation):\n        self.fire_cont_frame = fire_cont_frame\n        self.skip_utf8_validation = skip_utf8_validation\n        self.cont_data = None\n        self.recving_frames = None\n    def validate(self, frame):\n        if not self.recving_frames and frame.opcode == ABNF.OPCODE_CONT:\n            raise WebSocketProtocolException(\"Illegal frame\")\n        if self.recving_frames and \\",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "__all__ = [\n    'ABNF', 'continuous_frame', 'frame_buffer',\n    'STATUS_NORMAL',\n    'STATUS_GOING_AWAY',\n    'STATUS_PROTOCOL_ERROR',\n    'STATUS_UNSUPPORTED_DATA_TYPE',\n    'STATUS_STATUS_NOT_AVAILABLE',\n    'STATUS_ABNORMAL_CLOSED',\n    'STATUS_INVALID_PAYLOAD',\n    'STATUS_POLICY_VIOLATION',",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_NORMAL",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_NORMAL = 1000\nSTATUS_GOING_AWAY = 1001\nSTATUS_PROTOCOL_ERROR = 1002\nSTATUS_UNSUPPORTED_DATA_TYPE = 1003\nSTATUS_STATUS_NOT_AVAILABLE = 1005\nSTATUS_ABNORMAL_CLOSED = 1006\nSTATUS_INVALID_PAYLOAD = 1007\nSTATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_GOING_AWAY",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_GOING_AWAY = 1001\nSTATUS_PROTOCOL_ERROR = 1002\nSTATUS_UNSUPPORTED_DATA_TYPE = 1003\nSTATUS_STATUS_NOT_AVAILABLE = 1005\nSTATUS_ABNORMAL_CLOSED = 1006\nSTATUS_INVALID_PAYLOAD = 1007\nSTATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_PROTOCOL_ERROR",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_PROTOCOL_ERROR = 1002\nSTATUS_UNSUPPORTED_DATA_TYPE = 1003\nSTATUS_STATUS_NOT_AVAILABLE = 1005\nSTATUS_ABNORMAL_CLOSED = 1006\nSTATUS_INVALID_PAYLOAD = 1007\nSTATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_UNSUPPORTED_DATA_TYPE",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_UNSUPPORTED_DATA_TYPE = 1003\nSTATUS_STATUS_NOT_AVAILABLE = 1005\nSTATUS_ABNORMAL_CLOSED = 1006\nSTATUS_INVALID_PAYLOAD = 1007\nSTATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_STATUS_NOT_AVAILABLE",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_STATUS_NOT_AVAILABLE = 1005\nSTATUS_ABNORMAL_CLOSED = 1006\nSTATUS_INVALID_PAYLOAD = 1007\nSTATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_ABNORMAL_CLOSED",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_ABNORMAL_CLOSED = 1006\nSTATUS_INVALID_PAYLOAD = 1007\nSTATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_INVALID_PAYLOAD",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_INVALID_PAYLOAD = 1007\nSTATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_POLICY_VIOLATION",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_POLICY_VIOLATION = 1008\nSTATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_MESSAGE_TOO_BIG",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_MESSAGE_TOO_BIG = 1009\nSTATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_INVALID_EXTENSION",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_INVALID_EXTENSION = 1010\nSTATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,\n    STATUS_PROTOCOL_ERROR,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_UNEXPECTED_CONDITION",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_UNEXPECTED_CONDITION = 1011\nSTATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,\n    STATUS_PROTOCOL_ERROR,\n    STATUS_UNSUPPORTED_DATA_TYPE,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_SERVICE_RESTART",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_SERVICE_RESTART = 1012\nSTATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,\n    STATUS_PROTOCOL_ERROR,\n    STATUS_UNSUPPORTED_DATA_TYPE,\n    STATUS_INVALID_PAYLOAD,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_TRY_AGAIN_LATER",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_TRY_AGAIN_LATER = 1013\nSTATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,\n    STATUS_PROTOCOL_ERROR,\n    STATUS_UNSUPPORTED_DATA_TYPE,\n    STATUS_INVALID_PAYLOAD,\n    STATUS_POLICY_VIOLATION,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_BAD_GATEWAY",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_BAD_GATEWAY = 1014\nSTATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,\n    STATUS_PROTOCOL_ERROR,\n    STATUS_UNSUPPORTED_DATA_TYPE,\n    STATUS_INVALID_PAYLOAD,\n    STATUS_POLICY_VIOLATION,\n    STATUS_MESSAGE_TOO_BIG,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "STATUS_TLS_HANDSHAKE_ERROR",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "STATUS_TLS_HANDSHAKE_ERROR = 1015\nVALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,\n    STATUS_PROTOCOL_ERROR,\n    STATUS_UNSUPPORTED_DATA_TYPE,\n    STATUS_INVALID_PAYLOAD,\n    STATUS_POLICY_VIOLATION,\n    STATUS_MESSAGE_TOO_BIG,\n    STATUS_INVALID_EXTENSION,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "VALID_CLOSE_STATUS",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._abnf",
+        "description": "brokers.motilal.api.websocket._abnf",
+        "peekOfCode": "VALID_CLOSE_STATUS = (\n    STATUS_NORMAL,\n    STATUS_GOING_AWAY,\n    STATUS_PROTOCOL_ERROR,\n    STATUS_UNSUPPORTED_DATA_TYPE,\n    STATUS_INVALID_PAYLOAD,\n    STATUS_POLICY_VIOLATION,\n    STATUS_MESSAGE_TOO_BIG,\n    STATUS_INVALID_EXTENSION,\n    STATUS_UNEXPECTED_CONDITION,",
+        "detail": "brokers.motilal.api.websocket._abnf",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._app",
+        "description": "brokers.motilal.api.websocket._app",
+        "peekOfCode": "class Dispatcher:\n    \"\"\"\n    Dispatcher\n    \"\"\"\n    def __init__(self, app, ping_timeout):\n        self.app = app\n        self.ping_timeout = ping_timeout\n    def read(self, sock, read_callback, check_callback):\n        while self.app.keep_running:\n            sel = selectors.DefaultSelector()",
+        "detail": "brokers.motilal.api.websocket._app",
+        "documentation": {}
+    },
+    {
+        "label": "SSLDispatcher",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._app",
+        "description": "brokers.motilal.api.websocket._app",
+        "peekOfCode": "class SSLDispatcher:\n    \"\"\"\n    SSLDispatcher\n    \"\"\"\n    def __init__(self, app, ping_timeout):\n        self.app = app\n        self.ping_timeout = ping_timeout\n    def read(self, sock, read_callback, check_callback):\n        while self.app.keep_running:\n            r = self.select()",
+        "detail": "brokers.motilal.api.websocket._app",
+        "documentation": {}
+    },
+    {
+        "label": "WrappedDispatcher",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._app",
+        "description": "brokers.motilal.api.websocket._app",
+        "peekOfCode": "class WrappedDispatcher:\n    \"\"\"\n    WrappedDispatcher\n    \"\"\"\n    def __init__(self, app, ping_timeout, dispatcher):\n        self.app = app\n        self.ping_timeout = ping_timeout\n        self.dispatcher = dispatcher\n    def read(self, sock, read_callback, check_callback):\n        self.dispatcher.read(sock, read_callback)",
+        "detail": "brokers.motilal.api.websocket._app",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketApp",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._app",
+        "description": "brokers.motilal.api.websocket._app",
+        "peekOfCode": "class WebSocketApp:\n    \"\"\"\n    Higher level of APIs are provided. The interface is like JavaScript WebSocket object.\n    \"\"\"\n    def __init__(self, url, header=None,\n                 on_open=None, on_message=None, on_error=None,\n                 on_close=None, on_ping=None, on_pong=None,\n                 on_cont_message=None,\n                 keep_running=True, get_mask_key=None, cookie=None,\n                 subprotocols=None,",
+        "detail": "brokers.motilal.api.websocket._app",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._app",
+        "description": "brokers.motilal.api.websocket._app",
+        "peekOfCode": "__all__ = [\"WebSocketApp\"]\nclass Dispatcher:\n    \"\"\"\n    Dispatcher\n    \"\"\"\n    def __init__(self, app, ping_timeout):\n        self.app = app\n        self.ping_timeout = ping_timeout\n    def read(self, sock, read_callback, check_callback):\n        while self.app.keep_running:",
+        "detail": "brokers.motilal.api.websocket._app",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleCookieJar",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._cookiejar",
+        "description": "brokers.motilal.api.websocket._cookiejar",
+        "peekOfCode": "class SimpleCookieJar:\n    def __init__(self):\n        self.jar = dict()\n    def add(self, set_cookie):\n        if set_cookie:\n            simpleCookie = http.cookies.SimpleCookie(set_cookie)\n            for k, v in simpleCookie.items():\n                domain = v.get(\"domain\")\n                if domain:\n                    if not domain.startswith(\".\"):",
+        "detail": "brokers.motilal.api.websocket._cookiejar",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocket",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._core",
+        "description": "brokers.motilal.api.websocket._core",
+        "peekOfCode": "class WebSocket:\n    \"\"\"\n    Low level WebSocket interface.\n    This class is based on the WebSocket protocol `draft-hixie-thewebsocketprotocol-76 <http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-76>`_\n    We can connect to the websocket server and send/receive data.\n    The following example is an echo client.\n    >>> import websocket\n    >>> ws = websocket.WebSocket()\n    >>> ws.connect(\"ws://echo.websocket.org\")\n    >>> ws.send(\"Hello, Server\")",
+        "detail": "brokers.motilal.api.websocket._core",
+        "documentation": {}
+    },
+    {
+        "label": "create_connection",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._core",
+        "description": "brokers.motilal.api.websocket._core",
+        "peekOfCode": "def create_connection(url, timeout=None, class_=WebSocket, **options):\n    \"\"\"\n    Connect to url and return websocket object.\n    Connect to url and return the WebSocket object.\n    Passing optional timeout parameter will set the timeout on the socket.\n    If no timeout is supplied,\n    the global default timeout setting returned by getdefaulttimeout() is used.\n    You can customize using 'options'.\n    If you set \"header\" list object, you can set your own custom header.\n    >>> conn = create_connection(\"ws://echo.websocket.org/\",",
+        "detail": "brokers.motilal.api.websocket._core",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._core",
+        "description": "brokers.motilal.api.websocket._core",
+        "peekOfCode": "__all__ = ['WebSocket', 'create_connection']\nclass WebSocket:\n    \"\"\"\n    Low level WebSocket interface.\n    This class is based on the WebSocket protocol `draft-hixie-thewebsocketprotocol-76 <http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-76>`_\n    We can connect to the websocket server and send/receive data.\n    The following example is an echo client.\n    >>> import websocket\n    >>> ws = websocket.WebSocket()\n    >>> ws.connect(\"ws://echo.websocket.org\")",
+        "detail": "brokers.motilal.api.websocket._core",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketException(Exception):\n    \"\"\"\n    WebSocket exception class.\n    \"\"\"\n    pass\nclass WebSocketProtocolException(WebSocketException):\n    \"\"\"\n    If the WebSocket protocol is invalid, this exception will be raised.\n    \"\"\"\n    pass",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketProtocolException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketProtocolException(WebSocketException):\n    \"\"\"\n    If the WebSocket protocol is invalid, this exception will be raised.\n    \"\"\"\n    pass\nclass WebSocketPayloadException(WebSocketException):\n    \"\"\"\n    If the WebSocket payload is invalid, this exception will be raised.\n    \"\"\"\n    pass",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketPayloadException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketPayloadException(WebSocketException):\n    \"\"\"\n    If the WebSocket payload is invalid, this exception will be raised.\n    \"\"\"\n    pass\nclass WebSocketConnectionClosedException(WebSocketException):\n    \"\"\"\n    If remote host closed the connection or some network error happened,\n    this exception will be raised.\n    \"\"\"",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketConnectionClosedException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketConnectionClosedException(WebSocketException):\n    \"\"\"\n    If remote host closed the connection or some network error happened,\n    this exception will be raised.\n    \"\"\"\n    pass\nclass WebSocketTimeoutException(WebSocketException):\n    \"\"\"\n    WebSocketTimeoutException will be raised at socket timeout during read/write data.\n    \"\"\"",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketTimeoutException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketTimeoutException(WebSocketException):\n    \"\"\"\n    WebSocketTimeoutException will be raised at socket timeout during read/write data.\n    \"\"\"\n    pass\nclass WebSocketProxyException(WebSocketException):\n    \"\"\"\n    WebSocketProxyException will be raised when proxy error occurred.\n    \"\"\"\n    pass",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketProxyException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketProxyException(WebSocketException):\n    \"\"\"\n    WebSocketProxyException will be raised when proxy error occurred.\n    \"\"\"\n    pass\nclass WebSocketBadStatusException(WebSocketException):\n    \"\"\"\n    WebSocketBadStatusException will be raised when we get bad handshake status code.\n    \"\"\"\n    def __init__(self, message, status_code, status_message=None, resp_headers=None):",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketBadStatusException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketBadStatusException(WebSocketException):\n    \"\"\"\n    WebSocketBadStatusException will be raised when we get bad handshake status code.\n    \"\"\"\n    def __init__(self, message, status_code, status_message=None, resp_headers=None):\n        msg = message % (status_code, status_message)\n        super().__init__(msg)\n        self.status_code = status_code\n        self.resp_headers = resp_headers\nclass WebSocketAddressException(WebSocketException):",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "WebSocketAddressException",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._exceptions",
+        "description": "brokers.motilal.api.websocket._exceptions",
+        "peekOfCode": "class WebSocketAddressException(WebSocketException):\n    \"\"\"\n    If the websocket address info cannot be found, this exception will be raised.\n    \"\"\"\n    pass",
+        "detail": "brokers.motilal.api.websocket._exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "handshake_response",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "class handshake_response:\n    def __init__(self, status, headers, subprotocol):\n        self.status = status\n        self.headers = headers\n        self.subprotocol = subprotocol\n        CookieJar.add(headers.get(\"set-cookie\"))\ndef handshake(sock, url, hostname, port, resource, **options):\n    headers, key = _get_handshake_headers(resource, url, hostname, port, options)\n    header_str = \"\\r\\n\".join(headers)\n    send(sock, header_str)",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "handshake",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "def handshake(sock, url, hostname, port, resource, **options):\n    headers, key = _get_handshake_headers(resource, url, hostname, port, options)\n    header_str = \"\\r\\n\".join(headers)\n    send(sock, header_str)\n    dump(\"request header\", header_str)\n    status, resp = _get_resp_headers(sock)\n    if status in SUPPORTED_REDIRECT_STATUSES:\n        return handshake_response(status, resp, None)\n    success, subproto = _validate(resp, key, options.get(\"subprotocols\"))\n    if not success:",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "__all__ = [\"handshake_response\", \"handshake\", \"SUPPORTED_REDIRECT_STATUSES\"]\n# websocket supported version.\nVERSION = 13\nSUPPORTED_REDIRECT_STATUSES = (HTTPStatus.MOVED_PERMANENTLY, HTTPStatus.FOUND, HTTPStatus.SEE_OTHER,)\nSUCCESS_STATUSES = SUPPORTED_REDIRECT_STATUSES + (HTTPStatus.SWITCHING_PROTOCOLS,)\nCookieJar = SimpleCookieJar()\nclass handshake_response:\n    def __init__(self, status, headers, subprotocol):\n        self.status = status\n        self.headers = headers",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "VERSION",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "VERSION = 13\nSUPPORTED_REDIRECT_STATUSES = (HTTPStatus.MOVED_PERMANENTLY, HTTPStatus.FOUND, HTTPStatus.SEE_OTHER,)\nSUCCESS_STATUSES = SUPPORTED_REDIRECT_STATUSES + (HTTPStatus.SWITCHING_PROTOCOLS,)\nCookieJar = SimpleCookieJar()\nclass handshake_response:\n    def __init__(self, status, headers, subprotocol):\n        self.status = status\n        self.headers = headers\n        self.subprotocol = subprotocol\n        CookieJar.add(headers.get(\"set-cookie\"))",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "SUPPORTED_REDIRECT_STATUSES",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "SUPPORTED_REDIRECT_STATUSES = (HTTPStatus.MOVED_PERMANENTLY, HTTPStatus.FOUND, HTTPStatus.SEE_OTHER,)\nSUCCESS_STATUSES = SUPPORTED_REDIRECT_STATUSES + (HTTPStatus.SWITCHING_PROTOCOLS,)\nCookieJar = SimpleCookieJar()\nclass handshake_response:\n    def __init__(self, status, headers, subprotocol):\n        self.status = status\n        self.headers = headers\n        self.subprotocol = subprotocol\n        CookieJar.add(headers.get(\"set-cookie\"))\ndef handshake(sock, url, hostname, port, resource, **options):",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "SUCCESS_STATUSES",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "SUCCESS_STATUSES = SUPPORTED_REDIRECT_STATUSES + (HTTPStatus.SWITCHING_PROTOCOLS,)\nCookieJar = SimpleCookieJar()\nclass handshake_response:\n    def __init__(self, status, headers, subprotocol):\n        self.status = status\n        self.headers = headers\n        self.subprotocol = subprotocol\n        CookieJar.add(headers.get(\"set-cookie\"))\ndef handshake(sock, url, hostname, port, resource, **options):\n    headers, key = _get_handshake_headers(resource, url, hostname, port, options)",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "CookieJar",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "CookieJar = SimpleCookieJar()\nclass handshake_response:\n    def __init__(self, status, headers, subprotocol):\n        self.status = status\n        self.headers = headers\n        self.subprotocol = subprotocol\n        CookieJar.add(headers.get(\"set-cookie\"))\ndef handshake(sock, url, hostname, port, resource, **options):\n    headers, key = _get_handshake_headers(resource, url, hostname, port, options)\n    header_str = \"\\r\\n\".join(headers)",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "_HEADERS_TO_CHECK",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._handshake",
+        "description": "brokers.motilal.api.websocket._handshake",
+        "peekOfCode": "_HEADERS_TO_CHECK = {\n    \"upgrade\": \"websocket\",\n    \"connection\": \"upgrade\",\n}\ndef _validate(headers, key, subprotocols):\n    subproto = None\n    for k, v in _HEADERS_TO_CHECK.items():\n        r = headers.get(k, None)\n        if not r:\n            return False, None",
+        "detail": "brokers.motilal.api.websocket._handshake",
+        "documentation": {}
+    },
+    {
+        "label": "proxy_info",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._http",
+        "description": "brokers.motilal.api.websocket._http",
+        "peekOfCode": "class proxy_info:\n    def __init__(self, **options):\n        self.proxy_host = options.get(\"http_proxy_host\", None)\n        if self.proxy_host:\n            self.proxy_port = options.get(\"http_proxy_port\", 0)\n            self.auth = options.get(\"http_proxy_auth\", None)\n            self.no_proxy = options.get(\"http_no_proxy\", None)\n            self.proxy_protocol = options.get(\"proxy_type\", \"http\")\n            # Note: If timeout not specified, default python-socks timeout is 60 seconds\n            self.proxy_timeout = options.get(\"timeout\", None)",
+        "detail": "brokers.motilal.api.websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "connect",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._http",
+        "description": "brokers.motilal.api.websocket._http",
+        "peekOfCode": "def connect(url, options, proxy, socket):\n    # Use _start_proxied_socket() only for socks4 or socks5 proxy\n    # Use _tunnel() for http proxy\n    # TODO: Use python-socks for http protocol also, to standardize flow\n    if proxy.proxy_host and not socket and not (proxy.proxy_protocol == \"http\"):\n        return _start_proxied_socket(url, options, proxy)\n    hostname, port, resource, is_secure = parse_url(url)\n    if socket:\n        return socket, (hostname, port, resource)\n    addrinfo_list, need_tunnel, auth = _get_addrinfo_list(",
+        "detail": "brokers.motilal.api.websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "read_headers",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._http",
+        "description": "brokers.motilal.api.websocket._http",
+        "peekOfCode": "def read_headers(sock):\n    status = None\n    status_message = None\n    headers = {}\n    trace(\"--- response header ---\")\n    while True:\n        line = recv_line(sock)\n        line = line.decode('utf-8').strip()\n        if not line:\n            break",
+        "detail": "brokers.motilal.api.websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._http",
+        "description": "brokers.motilal.api.websocket._http",
+        "peekOfCode": "__all__ = [\"proxy_info\", \"connect\", \"read_headers\"]\ntry:\n    from python_socks.sync import Proxy\n    from python_socks._errors import *\n    from python_socks._types import ProxyType\n    HAVE_PYTHON_SOCKS = True\nexcept:\n    HAVE_PYTHON_SOCKS = False\n    class ProxyError(Exception):\n        pass",
+        "detail": "brokers.motilal.api.websocket._http",
+        "documentation": {}
+    },
+    {
+        "label": "enableTrace",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def enableTrace(traceable, handler=logging.StreamHandler()):\n    \"\"\"\n    Turn on/off the traceability.\n    Parameters\n    ----------\n    traceable: bool\n        If set to True, traceability is enabled.\n    \"\"\"\n    global _traceEnabled\n    _traceEnabled = traceable",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "dump",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def dump(title, message):\n    if _traceEnabled:\n        _logger.debug(\"--- \" + title + \" ---\")\n        _logger.debug(message)\n        _logger.debug(\"-----------------------\")\ndef error(msg):\n    _logger.error(msg)\ndef warning(msg):\n    _logger.warning(msg)\ndef debug(msg):",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "error",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def error(msg):\n    _logger.error(msg)\ndef warning(msg):\n    _logger.warning(msg)\ndef debug(msg):\n    _logger.debug(msg)\ndef trace(msg):\n    if _traceEnabled:\n        _logger.debug(msg)\ndef isEnabledForError():",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "warning",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def warning(msg):\n    _logger.warning(msg)\ndef debug(msg):\n    _logger.debug(msg)\ndef trace(msg):\n    if _traceEnabled:\n        _logger.debug(msg)\ndef isEnabledForError():\n    return _logger.isEnabledFor(logging.ERROR)\ndef isEnabledForDebug():",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "debug",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def debug(msg):\n    _logger.debug(msg)\ndef trace(msg):\n    if _traceEnabled:\n        _logger.debug(msg)\ndef isEnabledForError():\n    return _logger.isEnabledFor(logging.ERROR)\ndef isEnabledForDebug():\n    return _logger.isEnabledFor(logging.DEBUG)\ndef isEnabledForTrace():",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "trace",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def trace(msg):\n    if _traceEnabled:\n        _logger.debug(msg)\ndef isEnabledForError():\n    return _logger.isEnabledFor(logging.ERROR)\ndef isEnabledForDebug():\n    return _logger.isEnabledFor(logging.DEBUG)\ndef isEnabledForTrace():\n    return _traceEnabled",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "isEnabledForError",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def isEnabledForError():\n    return _logger.isEnabledFor(logging.ERROR)\ndef isEnabledForDebug():\n    return _logger.isEnabledFor(logging.DEBUG)\ndef isEnabledForTrace():\n    return _traceEnabled",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "isEnabledForDebug",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def isEnabledForDebug():\n    return _logger.isEnabledFor(logging.DEBUG)\ndef isEnabledForTrace():\n    return _traceEnabled",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "isEnabledForTrace",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "def isEnabledForTrace():\n    return _traceEnabled",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "_logger",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "_logger = logging.getLogger('websocket')\ntry:\n    from logging import NullHandler\nexcept ImportError:\n    class NullHandler(logging.Handler):\n        def emit(self, record):\n            pass\n_logger.addHandler(NullHandler())\n_traceEnabled = False\n__all__ = [\"enableTrace\", \"dump\", \"error\", \"warning\", \"debug\", \"trace\",",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "_traceEnabled",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "_traceEnabled = False\n__all__ = [\"enableTrace\", \"dump\", \"error\", \"warning\", \"debug\", \"trace\",\n           \"isEnabledForError\", \"isEnabledForDebug\", \"isEnabledForTrace\"]\ndef enableTrace(traceable, handler=logging.StreamHandler()):\n    \"\"\"\n    Turn on/off the traceability.\n    Parameters\n    ----------\n    traceable: bool\n        If set to True, traceability is enabled.",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._logging",
+        "description": "brokers.motilal.api.websocket._logging",
+        "peekOfCode": "__all__ = [\"enableTrace\", \"dump\", \"error\", \"warning\", \"debug\", \"trace\",\n           \"isEnabledForError\", \"isEnabledForDebug\", \"isEnabledForTrace\"]\ndef enableTrace(traceable, handler=logging.StreamHandler()):\n    \"\"\"\n    Turn on/off the traceability.\n    Parameters\n    ----------\n    traceable: bool\n        If set to True, traceability is enabled.\n    \"\"\"",
+        "detail": "brokers.motilal.api.websocket._logging",
+        "documentation": {}
+    },
+    {
+        "label": "sock_opt",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "class sock_opt:\n    def __init__(self, sockopt, sslopt):\n        if sockopt is None:\n            sockopt = []\n        if sslopt is None:\n            sslopt = {}\n        self.sockopt = sockopt\n        self.sslopt = sslopt\n        self.timeout = None\ndef setdefaulttimeout(timeout):",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "setdefaulttimeout",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "def setdefaulttimeout(timeout):\n    \"\"\"\n    Set the global timeout setting to connect.\n    Parameters\n    ----------\n    timeout: int or float\n        default socket timeout time (in seconds)\n    \"\"\"\n    global _default_timeout\n    _default_timeout = timeout",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "getdefaulttimeout",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "def getdefaulttimeout():\n    \"\"\"\n    Get default timeout\n    Returns\n    ----------\n    _default_timeout: int or float\n        Return the global timeout setting (in seconds) to connect.\n    \"\"\"\n    return _default_timeout\ndef recv(sock, bufsize):",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "recv",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "def recv(sock, bufsize):\n    if not sock:\n        raise WebSocketConnectionClosedException(\"socket is already closed.\")\n    def _recv():\n        try:\n            return sock.recv(bufsize)\n        except SSLWantReadError:\n            pass\n        except socket.error as exc:\n            error_code = extract_error_code(exc)",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "recv_line",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "def recv_line(sock):\n    line = []\n    while True:\n        c = recv(sock, 1)\n        line.append(c)\n        if c == b'\\n':\n            break\n    return b''.join(line)\ndef send(sock, data):\n    if isinstance(data, str):",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "send",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "def send(sock, data):\n    if isinstance(data, str):\n        data = data.encode('utf-8')\n    if not sock:\n        raise WebSocketConnectionClosedException(\"socket is already closed.\")\n    def _send():\n        try:\n            return sock.send(data)\n        except SSLWantWriteError:\n            pass",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_SOCKET_OPTION",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "DEFAULT_SOCKET_OPTION = [(socket.SOL_TCP, socket.TCP_NODELAY, 1)]\nif hasattr(socket, \"SO_KEEPALIVE\"):\n    DEFAULT_SOCKET_OPTION.append((socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1))\nif hasattr(socket, \"TCP_KEEPIDLE\"):\n    DEFAULT_SOCKET_OPTION.append((socket.SOL_TCP, socket.TCP_KEEPIDLE, 30))\nif hasattr(socket, \"TCP_KEEPINTVL\"):\n    DEFAULT_SOCKET_OPTION.append((socket.SOL_TCP, socket.TCP_KEEPINTVL, 10))\nif hasattr(socket, \"TCP_KEEPCNT\"):\n    DEFAULT_SOCKET_OPTION.append((socket.SOL_TCP, socket.TCP_KEEPCNT, 3))\n_default_timeout = None",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "_default_timeout",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "_default_timeout = None\n__all__ = [\"DEFAULT_SOCKET_OPTION\", \"sock_opt\", \"setdefaulttimeout\", \"getdefaulttimeout\",\n           \"recv\", \"recv_line\", \"send\"]\nclass sock_opt:\n    def __init__(self, sockopt, sslopt):\n        if sockopt is None:\n            sockopt = []\n        if sslopt is None:\n            sslopt = {}\n        self.sockopt = sockopt",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._socket",
+        "description": "brokers.motilal.api.websocket._socket",
+        "peekOfCode": "__all__ = [\"DEFAULT_SOCKET_OPTION\", \"sock_opt\", \"setdefaulttimeout\", \"getdefaulttimeout\",\n           \"recv\", \"recv_line\", \"send\"]\nclass sock_opt:\n    def __init__(self, sockopt, sslopt):\n        if sockopt is None:\n            sockopt = []\n        if sslopt is None:\n            sslopt = {}\n        self.sockopt = sockopt\n        self.sslopt = sslopt",
+        "detail": "brokers.motilal.api.websocket._socket",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._ssl_compat",
+        "description": "brokers.motilal.api.websocket._ssl_compat",
+        "peekOfCode": "__all__ = [\"HAVE_SSL\", \"ssl\", \"SSLError\", \"SSLWantReadError\", \"SSLWantWriteError\"]\ntry:\n    import ssl\n    from ssl import SSLError\n    from ssl import SSLWantReadError\n    from ssl import SSLWantWriteError\n    HAVE_SSL = True\nexcept ImportError:\n    # dummy class of SSLError for environment without ssl support\n    class SSLError(Exception):",
+        "detail": "brokers.motilal.api.websocket._ssl_compat",
+        "documentation": {}
+    },
+    {
+        "label": "parse_url",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._url",
+        "description": "brokers.motilal.api.websocket._url",
+        "peekOfCode": "def parse_url(url):\n    \"\"\"\n    parse url and the result is tuple of\n    (hostname, port, resource path and the flag of secure mode)\n    Parameters\n    ----------\n    url: str\n        url string.\n    \"\"\"\n    if \":\" not in url:",
+        "detail": "brokers.motilal.api.websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "get_proxy_info",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._url",
+        "description": "brokers.motilal.api.websocket._url",
+        "peekOfCode": "def get_proxy_info(\n        hostname, is_secure, proxy_host=None, proxy_port=0, proxy_auth=None,\n        no_proxy=None, proxy_type='http'):\n    \"\"\"\n    Try to retrieve proxy host and port from environment\n    if not provided in options.\n    Result is (proxy_host, proxy_port, proxy_auth).\n    proxy_auth is tuple of username and password\n    of proxy authentication information.\n    Parameters",
+        "detail": "brokers.motilal.api.websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._url",
+        "description": "brokers.motilal.api.websocket._url",
+        "peekOfCode": "__all__ = [\"parse_url\", \"get_proxy_info\"]\ndef parse_url(url):\n    \"\"\"\n    parse url and the result is tuple of\n    (hostname, port, resource path and the flag of secure mode)\n    Parameters\n    ----------\n    url: str\n        url string.\n    \"\"\"",
+        "detail": "brokers.motilal.api.websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_NO_PROXY_HOST",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._url",
+        "description": "brokers.motilal.api.websocket._url",
+        "peekOfCode": "DEFAULT_NO_PROXY_HOST = [\"localhost\", \"127.0.0.1\"]\ndef _is_ip_address(addr):\n    try:\n        socket.inet_aton(addr)\n    except socket.error:\n        return False\n    else:\n        return True\ndef _is_subnet_address(hostname):\n    try:",
+        "detail": "brokers.motilal.api.websocket._url",
+        "documentation": {}
+    },
+    {
+        "label": "NoLock",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._utils",
+        "description": "brokers.motilal.api.websocket._utils",
+        "peekOfCode": "class NoLock:\n    def __enter__(self):\n        pass\n    def __exit__(self, exc_type, exc_value, traceback):\n        pass\ntry:\n    # If wsaccel is available we use compiled routines to validate UTF-8\n    # strings.\n    from wsaccel.utf8validator import Utf8Validator\n    def _validate_utf8(utfbytes):",
+        "detail": "brokers.motilal.api.websocket._utils",
+        "documentation": {}
+    },
+    {
+        "label": "validate_utf8",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._utils",
+        "description": "brokers.motilal.api.websocket._utils",
+        "peekOfCode": "def validate_utf8(utfbytes):\n    \"\"\"\n    validate utf8 byte string.\n    utfbytes: utf byte string to check.\n    return value: if valid utf8 string, return true. Otherwise, return false.\n    \"\"\"\n    return _validate_utf8(utfbytes)\ndef extract_err_message(exception):\n    if exception.args:\n        return exception.args[0]",
+        "detail": "brokers.motilal.api.websocket._utils",
+        "documentation": {}
+    },
+    {
+        "label": "extract_err_message",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._utils",
+        "description": "brokers.motilal.api.websocket._utils",
+        "peekOfCode": "def extract_err_message(exception):\n    if exception.args:\n        return exception.args[0]\n    else:\n        return None\ndef extract_error_code(exception):\n    if exception.args and len(exception.args) > 1:\n        return exception.args[0] if isinstance(exception.args[0], int) else None",
+        "detail": "brokers.motilal.api.websocket._utils",
+        "documentation": {}
+    },
+    {
+        "label": "extract_error_code",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._utils",
+        "description": "brokers.motilal.api.websocket._utils",
+        "peekOfCode": "def extract_error_code(exception):\n    if exception.args and len(exception.args) > 1:\n        return exception.args[0] if isinstance(exception.args[0], int) else None",
+        "detail": "brokers.motilal.api.websocket._utils",
+        "documentation": {}
+    },
+    {
+        "label": "__all__",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._utils",
+        "description": "brokers.motilal.api.websocket._utils",
+        "peekOfCode": "__all__ = [\"NoLock\", \"validate_utf8\", \"extract_err_message\", \"extract_error_code\"]\nclass NoLock:\n    def __enter__(self):\n        pass\n    def __exit__(self, exc_type, exc_value, traceback):\n        pass\ntry:\n    # If wsaccel is available we use compiled routines to validate UTF-8\n    # strings.\n    from wsaccel.utf8validator import Utf8Validator",
+        "detail": "brokers.motilal.api.websocket._utils",
+        "documentation": {}
+    },
+    {
+        "label": "VAction",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "class VAction(argparse.Action):\n    def __call__(self, parser, args, values, option_string=None):\n        if values is None:\n            values = \"1\"\n        try:\n            values = int(values)\n        except ValueError:\n            values = values.count(\"v\") + 1\n        setattr(args, self.dest, values)\ndef parse_args():",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "RawInput",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "class RawInput:\n    def raw_input(self, prompt):\n        line = input(prompt)\n        if ENCODING and ENCODING != \"utf-8\" and not isinstance(line, str):\n            line = line.decode(ENCODING).encode(\"utf-8\")\n        elif isinstance(line, str):\n            line = line.encode(\"utf-8\")\n        return line\nclass InteractiveConsole(RawInput, code.InteractiveConsole):\n    def write(self, data):",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "InteractiveConsole",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "class InteractiveConsole(RawInput, code.InteractiveConsole):\n    def write(self, data):\n        sys.stdout.write(\"\\033[2K\\033[E\")\n        # sys.stdout.write(\"\\n\")\n        sys.stdout.write(\"\\033[34m< \" + data + \"\\033[39m\")\n        sys.stdout.write(\"\\n> \")\n        sys.stdout.flush()\n    def read(self):\n        return self.raw_input(\"> \")\nclass NonInteractive(RawInput):",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "NonInteractive",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "class NonInteractive(RawInput):\n    def write(self, data):\n        sys.stdout.write(data)\n        sys.stdout.write(\"\\n\")\n        sys.stdout.flush()\n    def read(self):\n        return self.raw_input(\"\")\ndef main():\n    start_time = time.time()\n    args = parse_args()",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "get_encoding",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "def get_encoding():\n    encoding = getattr(sys.stdin, \"encoding\", \"\")\n    if not encoding:\n        return \"utf-8\"\n    else:\n        return encoding.lower()\nOPCODE_DATA = (websocket.ABNF.OPCODE_TEXT, websocket.ABNF.OPCODE_BINARY)\nENCODING = get_encoding()\nclass VAction(argparse.Action):\n    def __call__(self, parser, args, values, option_string=None):",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "parse_args",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "def parse_args():\n    parser = argparse.ArgumentParser(description=\"WebSocket Simple Dump Tool\")\n    parser.add_argument(\"url\", metavar=\"ws_url\",\n                        help=\"websocket url. ex. ws://echo.websocket.events/\")\n    parser.add_argument(\"-p\", \"--proxy\",\n                        help=\"proxy url. ex. http://127.0.0.1:8080\")\n    parser.add_argument(\"-v\", \"--verbose\", default=0, nargs='?', action=VAction,\n                        dest=\"verbose\",\n                        help=\"set verbose mode. If set to 1, show opcode. \"\n                        \"If set to 2, enable to trace  websocket module\")",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "def main():\n    start_time = time.time()\n    args = parse_args()\n    if args.verbose > 1:\n        websocket.enableTrace(True)\n    options = {}\n    if args.proxy:\n        p = urlparse(args.proxy)\n        options[\"http_proxy_host\"] = p.hostname\n        options[\"http_proxy_port\"] = p.port",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "OPCODE_DATA",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "OPCODE_DATA = (websocket.ABNF.OPCODE_TEXT, websocket.ABNF.OPCODE_BINARY)\nENCODING = get_encoding()\nclass VAction(argparse.Action):\n    def __call__(self, parser, args, values, option_string=None):\n        if values is None:\n            values = \"1\"\n        try:\n            values = int(values)\n        except ValueError:\n            values = values.count(\"v\") + 1",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "ENCODING",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.websocket._wsdump",
+        "description": "brokers.motilal.api.websocket._wsdump",
+        "peekOfCode": "ENCODING = get_encoding()\nclass VAction(argparse.Action):\n    def __call__(self, parser, args, values, option_string=None):\n        if values is None:\n            values = \"1\"\n        try:\n            values = int(values)\n        except ValueError:\n            values = values.count(\"v\") + 1\n        setattr(args, self.dest, values)",
+        "detail": "brokers.motilal.api.websocket._wsdump",
+        "documentation": {}
+    },
+    {
+        "label": "MOFSLOPENAPI",
+        "kind": 6,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "class MOFSLOPENAPI(object):\n    m_strMOFSLToken=\"\"\n    m_strClientPublicIP = \"\"\n    m_strClientLocalIP = \"\"\n    m_strMACAddress = \"\"\n    m_strSourceID = \"\"  # Web,Desktop,Mobile\n    m_strApikey = \"\"\n    m_strApiSecretkey = \"\"\n    m_strUseragent = \"MOSL/\" + version\n    m_Base_Url = \"\"",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "WriteIntoLog",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def WriteIntoLog(f_status, f_filename, f_message):\n    try:\n        dt = datetime.now()\n        x = dt.strftime(\"%Y-%m-%d %H:%M:%S\")\n        logmessage = str(x) + (\"             \") + f_status + (\"             \") + f_filename + (\"             \") + f_message + \"\\n\"\n        os.chdir(LogPath)\n        strdate = datetime.now()\n        Logfile = open(str(strdate.strftime(\"%d-%b-%Y\")) + \"_OpenApiLibrary(python).Log\",\"a+\")\n        os.chdir(MainPath)\n        Logfile.write(logmessage)",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "WriteIntoLog_Broadcast",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def WriteIntoLog_Broadcast(f_status, f_filename, f_message):\n    try:\n        dt = datetime.now()\n        x = dt.strftime(\"%Y-%m-%d %H:%M:%S\")\n        logmessage = str(x) + (\"             \") + f_status + (\"             \") + f_filename + (\"             \") + f_message + \"\\n\"\n        os.chdir(LogPath)\n        strdate = datetime.now()\n        Logfile = open(str(strdate.strftime(\"%d-%b-%Y\")) + \"_OpenApiBroadcast(python).Log\",\"a+\")\n        os.chdir(MainPath)\n        Logfile.write(logmessage)",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "WriteIntoLog_TradeStatus",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def WriteIntoLog_TradeStatus(f_status, f_filename, f_message):\n    try:\n        dt = datetime.now()\n        x = dt.strftime(\"%Y-%m-%d %H:%M:%S\")\n        logmessage = str(x) + (\"             \") + f_status + (\"             \") + f_filename + (\"             \") + f_message + \"\\n\"\n        os.chdir(LogPath)\n        strdate = datetime.now()\n        Logfile = open(str(strdate.strftime(\"%d-%b-%Y\")) + \"_OpenApiTradeStatus(python).Log\",\"a+\")\n        os.chdir(MainPath)\n        Logfile.write(logmessage)",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetMacAddress",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetMacAddress(): \n    try:\n        clientMacAddress=':'.join(re.findall('..', '%012x' % uuid.getnode()))\n        return clientMacAddress\n    except Exception as e:\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetMacAddress\" + str(e)))\n        print(e)\n        return \"00:00:00:00:00:00\"\ndef GetLocalIPAddress():\n    try:",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetLocalIPAddress",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetLocalIPAddress():\n    try:\n        hostname = socket.gethostname()\n        local_ip = socket.gethostbyname('localhost')\n        return local_ip\n    except Exception as e:\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetLocalIPAddress\" + str(e)))\n        print(e)\n        return \"1.2.3.4\"\ndef GetPublicIPAddress():",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetPublicIPAddress",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetPublicIPAddress():\n    try:        \n        public_ip = get('http://checkip.dyndns.org/').text\n        ipaddress=str(re.findall(r'[0-9]+(?:\\.[0-9]+){3}',public_ip))\n        finalipppp=ipaddress.replace(\"'\",\"\")\n        finalipppp=finalipppp.replace(\"[\",\"\")\n        finalipppp=finalipppp.replace(\"]\",\"\")\n        if not finalipppp:\n            finalipppp = \"1.2.3.4\"\n        return finalipppp",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetOsName",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetOsName():\n    try:        \n        osname = system.system\n        osname = 'Windows 10'\n        return osname\n    except Exception as e:\n        print(e)\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetOsName\" + str(e)))\n        # return \"Win32NT\"\ndef GetOsVersion():",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetOsVersion",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetOsVersion():\n    try:        \n        osversion = system.version\n        osversion = '10.0.19041'\n        return osversion\n    except Exception as e:\n        print(e)\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetOsVersion\" + str(e)))\n        # return \"10.0.19044.0\"\ndef GetInstalledAppid():",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetInstalledAppid",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetInstalledAppid():\n    try:        \n        installedappid = uuid.uuid1()\n        return installedappid\n    except Exception as e:\n        print(e)\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetInstalledAppid\" + str(e)))\n        # return \"10.0.19044.0\"\ndef GetDeviceModel():\n    try:   ",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetDeviceModel",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetDeviceModel():\n    try:   \n        # devicemodel = objsystem.Model     \n        devicemodel = \"AHV\"\n        return devicemodel\n    except Exception as e:\n        print(e)\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetDeviceModel\" + str(e)))\n        # return \"VMware Virtual Platform\"\ndef GetManufacturer():",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetManufacturer",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetManufacturer():\n    try:   \n        # manufacturer = objsystem.Manufacturer\n        manufacturer = \"DELL\"\n        WriteIntoLog(\"SUCCESS\", \"MOFSLOPENAPI.py\", (\"GetManufacturer\" +manufacturer) )\n        if manufacturer==None:\n           return \"unknown\"\n        elif len(manufacturer) > 25 or len(manufacturer) < 1:\n            return \"unknown\"\n        return manufacturer",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetProductName",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetProductName():\n    try:   \n        productname = \"Investor\"\n        return productname\n    except Exception as e:\n        print(e)\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetProductName\" + str(e)))\n        # return \"Investor\"\ndef GetProductVersion():\n    try:   ",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetProductVersion",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetProductVersion():\n    try:   \n        productversion = \"1\"\n        return productversion\n    except Exception as e:\n        print(e)\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetProductVersion\" + str(e)))\n        # return \"1\"\ndef GetLatitudeLongitude():\n    try:   ",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "GetLatitudeLongitude",
+        "kind": 2,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "def GetLatitudeLongitude():\n    try:   \n        ipaddress = geocoder.ip('me')\n        lst_latlng = ipaddress.latlng\n        # print(var[0],var[1] )\n        if lst_latlng == None:\n            lst_latlng = [19.0760, 72.8777]\n        return lst_latlng\n    except Exception as e:\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetLongitudeLatitude\" + str(e)))",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "version",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "version = \"V.1.1.0\"\n# ErrorLogs\ntry:\n    os.mkdir('Logs')\nexcept FileExistsError:\n    null = 0\ntry:   \n    MainPath = os.getcwd()\n    os.chdir('Logs')\n    LogPath = os.getcwd()",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "system",
+        "kind": 5,
+        "importPath": "brokers.motilal.api.MOFSLOPENAPI",
+        "description": "brokers.motilal.api.MOFSLOPENAPI",
+        "peekOfCode": "system = platform.uname()\ndef GetOsName():\n    try:        \n        osname = system.system\n        osname = 'Windows 10'\n        return osname\n    except Exception as e:\n        print(e)\n        WriteIntoLog(\"FAILED\", \"MOFSLOPENAPI.py\", (\"GetOsName\" + str(e)))\n        # return \"Win32NT\"",
+        "detail": "brokers.motilal.api.MOFSLOPENAPI",
+        "documentation": {}
+    },
+    {
+        "label": "read_csv_to_dict",
+        "kind": 2,
+        "importPath": "brokers.motilal.helper.read_client_data",
+        "description": "brokers.motilal.helper.read_client_data",
+        "peekOfCode": "def read_csv_to_dict():\n    # Define the path to the CSV file\n    csv_file_path = os.path.join(\"Clients\", \"client_data.csv\")\n    csv_file_path = \"brokers/motilal/helper/Clients/client_data.csv\"\n    # Initialize an empty dictionary to store client data with client_code as keys\n    client_data_dict = {}\n    try:\n        # Open the CSV file for reading\n        with open(csv_file_path, mode='r') as file:\n            # Use DictReader to automatically map headers to values",
+        "detail": "brokers.motilal.helper.read_client_data",
+        "documentation": {}
+    },
+    {
+        "label": "client_data",
+        "kind": 5,
+        "importPath": "brokers.motilal.helper.read_client_data",
+        "description": "brokers.motilal.helper.read_client_data",
+        "peekOfCode": "client_data = read_csv_to_dict()\nprint(client_data)",
+        "detail": "brokers.motilal.helper.read_client_data",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "kind": 2,
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "peekOfCode": "def client_login(client_code):\n    clients_auth = read_csv_to_dict()\n    client_auth_data= clients_auth[client_code]\n    Base_Url = \"https://openapi.motilaloswal.com\"\n    ApiKey = client_auth_data['api_key']\n    userid = client_code\n    password = client_auth_data['password']\n    Two_FA = client_auth_data['pan']\n    vendorinfo = client_code\n    clientcode = None",
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
+        "label": "place_buy_order",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def place_buy_order(client_code,stock_code,qty,Mofsl):\n    print(\"--------------------------------PlaceOrder--------------------------------\")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code)\n    print(round(ltp, 4),stock_code)\n    stock_code = stock_code\n    Orderinfo = {\n        \"clientcode\":client_code,      \n        \"exchange\":\"NSE\",",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "place_sell_order",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def place_sell_order(db,client_code,stock_code,Mofsl):\n    print(\"--------------------------------PlaceOrder--------------------------------\")\n    # PlaceOrderInfo\n    qty = 1\n    # qty = get_client_holding(db,client_code,stock_code)\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code)\n    Orderinfo = {\n        \"clientcode\":client_code,      ",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_price",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def get_trade_price(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['averageprice']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(order_details)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\" ):",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_qty",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(order_details)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\" ):\n        return True\n    return False",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "order_status",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(order_details)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\" ):\n        return True\n    return False\ndef is_order_completed(Mofsl,client_code,order_id):\n    return order_status(Mofsl,client_code,order_id)",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "is_order_completed",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def is_order_completed(Mofsl,client_code,order_id):\n    return order_status(Mofsl,client_code,order_id)\ndef modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    print(f\"--------------------------------ModifyOrder for {client_code}--------------------------------\")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   ",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "modify_order_to_market",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    print(f\"--------------------------------ModifyOrder for {client_code}--------------------------------\")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   \n        # \"newquantityinlot\":100,\n        # \"newdisclosedquantity\":0,",
+        "detail": "brokers.motilal.order",
         "documentation": {}
     },
     {
@@ -1226,7 +3103,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def get_client_list(db):\n    clients = db.Table('clients' + env)\n    response = clients.scan(ProjectionExpression='client_code')\n    return [item['client_code'] for item in response['Items']]\ndef get_client_holding_stock(db, client_code,stock_name):\n    clients = db.Table('clients' + env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['holding'][stock_name]\n    return client_balance\ndef get_client_balance(db,client_code):",
+        "peekOfCode": "def get_client_list():\n    db = get_database()\n    clients = db.Table('clients' + env)\n    response = clients.scan(ProjectionExpression='client_code')\n    return [item['client_code'] for item in response['Items']]\ndef get_client_holding_stock(db, client_code,stock_name):\n    clients = db.Table('clients' + env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['holding'][stock_name]\n    return client_balance",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -1316,7 +3193,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def reduce_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance - amount\n    update_client_balance(db,client,new_balance)\ndef add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)",
+        "peekOfCode": "def reduce_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance - amount\n    update_client_balance(db,client,new_balance)\ndef add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)\ndef get_client_balance(db,client_code):\n    clients = db.Table('clients'+ env)",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -1325,7 +3202,16 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)",
+        "peekOfCode": "def add_balance(db,client,amount):\n    current_balance = get_client_balance(db,client)\n    new_balance = current_balance + amount\n    update_client_balance(db,client,new_balance)\ndef get_client_balance(db,client_code):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['current_balance']\n    return client_balance",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_balance",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def get_client_balance(db,client_code):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['current_balance']\n    return client_balance",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -1334,7 +3220,7 @@
         "kind": 5,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "config = configparser.ConfigParser()\n# Read the config file\nconfig.read('config.properties')\nenv = config['DEFAULT']['environment']\ndef get_client_list(db):\n    clients = db.Table('clients' + env)\n    response = clients.scan(ProjectionExpression='client_code')\n    return [item['client_code'] for item in response['Items']]\ndef get_client_holding_stock(db, client_code,stock_name):\n    clients = db.Table('clients' + env)",
+        "peekOfCode": "config = configparser.ConfigParser()\n# Read the config file\nconfig.read('config.properties')\nenv = config['DEFAULT']['environment']\ndef get_client_list():\n    db = get_database()\n    clients = db.Table('clients' + env)\n    response = clients.scan(ProjectionExpression='client_code')\n    return [item['client_code'] for item in response['Items']]\ndef get_client_holding_stock(db, client_code,stock_name):",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -1343,7 +3229,7 @@
         "kind": 5,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "env = config['DEFAULT']['environment']\ndef get_client_list(db):\n    clients = db.Table('clients' + env)\n    response = clients.scan(ProjectionExpression='client_code')\n    return [item['client_code'] for item in response['Items']]\ndef get_client_holding_stock(db, client_code,stock_name):\n    clients = db.Table('clients' + env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['holding'][stock_name]\n    return client_balance",
+        "peekOfCode": "env = config['DEFAULT']['environment']\ndef get_client_list():\n    db = get_database()\n    clients = db.Table('clients' + env)\n    response = clients.scan(ProjectionExpression='client_code')\n    return [item['client_code'] for item in response['Items']]\ndef get_client_holding_stock(db, client_code,stock_name):\n    clients = db.Table('clients' + env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    client_balance = response['Items'][0]['holding'][stock_name]",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -1474,11 +3360,56 @@
         "documentation": {}
     },
     {
+        "label": "csv_file_path",
+        "kind": 5,
+        "importPath": "stock_data.data.generate_stock_tokens",
+        "description": "stock_data.data.generate_stock_tokens",
+        "peekOfCode": "csv_file_path = \"instruments.csv\"  # Update this path if necessary\ndf = pd.read_csv(csv_file_path)\n# Filter rows where instrument_type is \"EQ\" and segment is \"NSE\"\nfiltered_df = df[(df['instrument_type'] == 'EQ') & (df['segment'] == 'NSE')]\n# Create a dictionary with tradingsymbol as key and exchange_token as value\ninstrument_dict = dict(zip(filtered_df['tradingsymbol'], filtered_df['exchange_token']))\n# Save the dictionary to a JSON file named output.json\noutput_json_path = \"output.json\"\nwith open(output_json_path, \"w\") as json_file:\n    json.dump(instrument_dict, json_file, indent=4)",
+        "detail": "stock_data.data.generate_stock_tokens",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "stock_data.data.generate_stock_tokens",
+        "description": "stock_data.data.generate_stock_tokens",
+        "peekOfCode": "df = pd.read_csv(csv_file_path)\n# Filter rows where instrument_type is \"EQ\" and segment is \"NSE\"\nfiltered_df = df[(df['instrument_type'] == 'EQ') & (df['segment'] == 'NSE')]\n# Create a dictionary with tradingsymbol as key and exchange_token as value\ninstrument_dict = dict(zip(filtered_df['tradingsymbol'], filtered_df['exchange_token']))\n# Save the dictionary to a JSON file named output.json\noutput_json_path = \"output.json\"\nwith open(output_json_path, \"w\") as json_file:\n    json.dump(instrument_dict, json_file, indent=4)\nprint(\"Filtered data saved to output.json.\")",
+        "detail": "stock_data.data.generate_stock_tokens",
+        "documentation": {}
+    },
+    {
+        "label": "filtered_df",
+        "kind": 5,
+        "importPath": "stock_data.data.generate_stock_tokens",
+        "description": "stock_data.data.generate_stock_tokens",
+        "peekOfCode": "filtered_df = df[(df['instrument_type'] == 'EQ') & (df['segment'] == 'NSE')]\n# Create a dictionary with tradingsymbol as key and exchange_token as value\ninstrument_dict = dict(zip(filtered_df['tradingsymbol'], filtered_df['exchange_token']))\n# Save the dictionary to a JSON file named output.json\noutput_json_path = \"output.json\"\nwith open(output_json_path, \"w\") as json_file:\n    json.dump(instrument_dict, json_file, indent=4)\nprint(\"Filtered data saved to output.json.\")",
+        "detail": "stock_data.data.generate_stock_tokens",
+        "documentation": {}
+    },
+    {
+        "label": "instrument_dict",
+        "kind": 5,
+        "importPath": "stock_data.data.generate_stock_tokens",
+        "description": "stock_data.data.generate_stock_tokens",
+        "peekOfCode": "instrument_dict = dict(zip(filtered_df['tradingsymbol'], filtered_df['exchange_token']))\n# Save the dictionary to a JSON file named output.json\noutput_json_path = \"output.json\"\nwith open(output_json_path, \"w\") as json_file:\n    json.dump(instrument_dict, json_file, indent=4)\nprint(\"Filtered data saved to output.json.\")",
+        "detail": "stock_data.data.generate_stock_tokens",
+        "documentation": {}
+    },
+    {
+        "label": "output_json_path",
+        "kind": 5,
+        "importPath": "stock_data.data.generate_stock_tokens",
+        "description": "stock_data.data.generate_stock_tokens",
+        "peekOfCode": "output_json_path = \"output.json\"\nwith open(output_json_path, \"w\") as json_file:\n    json.dump(instrument_dict, json_file, indent=4)\nprint(\"Filtered data saved to output.json.\")",
+        "detail": "stock_data.data.generate_stock_tokens",
+        "documentation": {}
+    },
+    {
         "label": "calculate_ema",
         "kind": 2,
         "importPath": "stock_data.indicators",
         "description": "stock_data.indicators",
-        "peekOfCode": "def calculate_ema(data, window=100):\n    \"\"\"\n    Calculates the Exponential Moving Average (EMA) for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for EMA calculation.\n    Returns:\n        pandas.Series: EMA values.\n    \"\"\"\n    ema = data['Close'].ewm(span=window, min_periods=window).mean()",
+        "peekOfCode": "def calculate_ema(data, window=100):\n    \"\"\"\n    Calculates the Exponential Moving Average (EMA) for a given dataset.\n    Args:\n        data (pandas.DataFrame): Historical stock data.\n        window (int): Window size for EMA calculation.\n    Returns:\n        pandas.Series: EMA values.\n    \"\"\"\n    #ema = data['Close'].ewm(span=window, min_periods=window).mean()",
         "detail": "stock_data.indicators",
         "documentation": {}
     },
@@ -1496,7 +3427,7 @@
         "kind": 2,
         "importPath": "stock_data.price",
         "description": "stock_data.price",
-        "peekOfCode": "def fetch_stock_data(symbol):\n    \"\"\"\n    Fetches historical stock data from Yahoo Finance API for a given symbol.\n    Args:\n        symbol (str): Stock symbol.\n    Returns:\n        pandas.DataFrame: Historical stock data.\n    \"\"\"\n    stock_data = yf.download(symbol, period=\"1mo\", interval=\"1d\")\n    return stock_data",
+        "peekOfCode": "def fetch_stock_data(symbol):\n    \"\"\"\n    Fetches historical stock data from Yahoo Finance API for a given symbol.\n    Args:\n        symbol (str): Stock symbol.\n    Returns:\n        pandas.DataFrame: Historical stock data.\n    \"\"\"\n    stock_data = yf.download(symbol, period=\"6mo\", interval=\"1d\")\n    return stock_data",
         "detail": "stock_data.price",
         "documentation": {}
     },
@@ -1537,6 +3468,24 @@
         "documentation": {}
     },
     {
+        "label": "remove_suffix",
+        "kind": 2,
+        "importPath": "stock_data.symbols",
+        "description": "stock_data.symbols",
+        "peekOfCode": "def remove_suffix(symbol, suffix=\".NS\"):\n    return symbol.replace(suffix, \"\")\ndef get_symbol_token(nse_stock_code):\n    symbol_token_name = remove_suffix(nse_stock_code)\n    file_path=\"stock_data/data/stock_token.json\"\n    with open(file_path, \"r\") as json_file:\n        stock_data = json.load(json_file)\n    return stock_data.get(symbol_token_name)\nif __name__ == \"__main__\":\n    print(get_symbol_token(\"RELIANCE.f\"))",
+        "detail": "stock_data.symbols",
+        "documentation": {}
+    },
+    {
+        "label": "get_symbol_token",
+        "kind": 2,
+        "importPath": "stock_data.symbols",
+        "description": "stock_data.symbols",
+        "peekOfCode": "def get_symbol_token(nse_stock_code):\n    symbol_token_name = remove_suffix(nse_stock_code)\n    file_path=\"stock_data/data/stock_token.json\"\n    with open(file_path, \"r\") as json_file:\n        stock_data = json.load(json_file)\n    return stock_data.get(symbol_token_name)\nif __name__ == \"__main__\":\n    print(get_symbol_token(\"RELIANCE.f\"))",
+        "detail": "stock_data.symbols",
+        "documentation": {}
+    },
+    {
         "label": "save_buy_orders",
         "kind": 2,
         "importPath": "utils.csv.helpers",
@@ -1568,7 +3517,16 @@
         "kind": 2,
         "importPath": "utils.database_helper.slots",
         "description": "utils.database_helper.slots",
-        "peekOfCode": "def clean_slots():\n    db = get_database()\n    update_slots(db,list([]))\n    print(\"Slots cleared\")",
+        "peekOfCode": "def clean_slots():\n    db = get_database()\n    update_slots(db,[])\n    print(\"Slots cleared\")\ndef add_slots(slots):\n    db = get_database()\n    update_slots(db,slots)",
+        "detail": "utils.database_helper.slots",
+        "documentation": {}
+    },
+    {
+        "label": "add_slots",
+        "kind": 2,
+        "importPath": "utils.database_helper.slots",
+        "description": "utils.database_helper.slots",
+        "peekOfCode": "def add_slots(slots):\n    db = get_database()\n    update_slots(db,slots)",
         "detail": "utils.database_helper.slots",
         "documentation": {}
     },
@@ -1579,6 +3537,87 @@
         "description": "utils.enums.signal",
         "peekOfCode": "class Signal(Enum):\n    BUY=\"Buy\"\n    SELL=\"Sell\"",
         "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "set_buy_orders",
+        "kind": 2,
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "peekOfCode": "def set_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef set_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_sell_orders():\n    # Save to a file",
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "set_sell_orders",
+        "kind": 2,
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "peekOfCode": "def set_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_sell_orders():\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data\ndef get_buy_orders():",
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_sell_orders",
+        "kind": 2,
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "peekOfCode": "def get_sell_orders():\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data\ndef get_buy_orders():\n    # Save to a file\n    with open(\"order_book/buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_buy_orders",
+        "kind": 2,
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "peekOfCode": "def get_buy_orders():\n    # Save to a file\n    with open(\"order_book/buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "kind": 2,
+        "importPath": "utils.notification.email_send",
+        "description": "utils.notification.email_send",
+        "peekOfCode": "def send_email():\n    # Your Yahoo email credentials\n    sender_email = \"Keyursanket@yahoo.com\"\n    sender_password = \"your_app_password\"  # Use the app password here\n    receiver_email = \"recipient@example.com\"\n    # Set up the email content\n    subject = \"Test Email from Yahoo\"\n    body = \"This is a test email sent from Python using Yahoo SMTP.\"\n    msg = MIMEMultipart()\n    msg['From'] = sender_email",
+        "detail": "utils.notification.email_send",
+        "documentation": {}
+    },
+    {
+        "label": "my_email",
+        "kind": 5,
+        "importPath": "utils.notification.email_send",
+        "description": "utils.notification.email_send",
+        "peekOfCode": "my_email = \"Keyursanket@yahoo.com\"\npassword = \"Kajalmiss@123\"\nimport smtplib\nfrom email.mime.text import MIMEText\nfrom email.mime.multipart import MIMEMultipart\ndef send_email():\n    # Your Yahoo email credentials\n    sender_email = \"Keyursanket@yahoo.com\"\n    sender_password = \"your_app_password\"  # Use the app password here\n    receiver_email = \"recipient@example.com\"",
+        "detail": "utils.notification.email_send",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "utils.notification.email_send",
+        "description": "utils.notification.email_send",
+        "peekOfCode": "password = \"Kajalmiss@123\"\nimport smtplib\nfrom email.mime.text import MIMEText\nfrom email.mime.multipart import MIMEMultipart\ndef send_email():\n    # Your Yahoo email credentials\n    sender_email = \"Keyursanket@yahoo.com\"\n    sender_password = \"your_app_password\"  # Use the app password here\n    receiver_email = \"recipient@example.com\"\n    # Set up the email content",
+        "detail": "utils.notification.email_send",
+        "documentation": {}
+    },
+    {
+        "label": "massage_watchlist",
+        "kind": 2,
+        "importPath": "utils.watchlist_filter",
+        "description": "utils.watchlist_filter",
+        "peekOfCode": "def massage_watchlist(watchlist):\n    temp = []\n    for stock in watchlist:\n        stock += \".NS\"\n        temp.append(stock)\n    return temp",
+        "detail": "utils.watchlist_filter",
+        "documentation": {}
+    },
+    {
+        "label": "get_watchlist_for_keyur",
+        "kind": 2,
+        "importPath": "FOR_KEYUR",
+        "description": "FOR_KEYUR",
+        "peekOfCode": "def get_watchlist_for_keyur():\n    watchlist =['HUDCO',\n  'NBCC',\n  'PFC',\n  'RVNL',\n  'RECLTD',\n  'BDL',\n  'IRFC',\n  'HAL',\n  'DIXON',",
+        "detail": "FOR_KEYUR",
         "documentation": {}
     },
     {
@@ -1618,48 +3657,21 @@
         "documentation": {}
     },
     {
-        "label": "clear_stack",
+        "label": "prepare_sell_testdata",
         "kind": 2,
         "importPath": "database_cleanup",
         "description": "database_cleanup",
-        "peekOfCode": "def clear_stack():\n    clients = [\"FTCT1208\",\"KEYUR\",\"SANKET\",\"Smit\",\"Sid\"]\n    clear_trade_log_clients(clients)\n    clean_slots()\nif __name__ == \"__main__\":\n    clear_stack()",
+        "peekOfCode": "def prepare_sell_testdata():\n    add_slots(list(['LUPIN.NS']))\ndef prepare_buy_testdata():\n    clean_slots()",
         "detail": "database_cleanup",
         "documentation": {}
     },
     {
-        "label": "optimize",
+        "label": "prepare_buy_testdata",
         "kind": 2,
-        "importPath": "lambda_function copy",
-        "description": "lambda_function copy",
-        "peekOfCode": "def optimize(client_code, final_stocks_buy, slots_before_buy):\n    client = PositionSizingBuy(client_code)\n    client_order = client.position_sizing(final_stocks_buy, slots_before_buy)\n    print(f\"Client order for {client_code}: {client_order}\")\n    if client_order is None:\n        return None\n    current_datetime = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    return (client_code, client_order, current_datetime)\ndef buy(stocks):\n    start_time_stock_data = time.time()",
-        "detail": "lambda_function copy",
-        "documentation": {}
-    },
-    {
-        "label": "buy",
-        "kind": 2,
-        "importPath": "lambda_function copy",
-        "description": "lambda_function copy",
-        "peekOfCode": "def buy(stocks):\n    start_time_stock_data = time.time()\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    # db = get_database_with_backoff()\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    mid_cap_algo.filter_stocks()\n    final_stocks_buy, slots_before_buy = mid_cap_algo.slot_fill()\n    clients = [\"FTCT1208\",\"Keyur\"]\n    end_time_stock_data = time.time()\n    print(f\"Execution time for stock data: {end_time_stock_data - start_time_stock_data:.2f} seconds\")",
-        "detail": "lambda_function copy",
-        "documentation": {}
-    },
-    {
-        "label": "sell",
-        "kind": 2,
-        "importPath": "lambda_function copy",
-        "description": "lambda_function copy",
-        "peekOfCode": "def sell():\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    clients = [\"FTCT1208\",\"Keyur\",\"Sanket\",\"Vivek\",\"Smit\",\"Sid\"]\n    for client in clients:\n        print(f\"Starting position sizing selling for {client}\")\n        client = PositionSizingSell(client)\n        client.off_load_stocks(stocks_to_sell)\n    return \"Sell Algo Completed\"\ndef lambda_handler(event, context):",
-        "detail": "lambda_function copy",
-        "documentation": {}
-    },
-    {
-        "label": "lambda_handler",
-        "kind": 2,
-        "importPath": "lambda_function copy",
-        "description": "lambda_function copy",
-        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n        return buy(stocks)\n    elif event[\"action\"] == \"Sell\":\n        return sell()\nif __name__ == \"__main__\":\n    event = {\"action\": \"Buy\"}\n    print(lambda_handler(event, None))",
-        "detail": "lambda_function copy",
+        "importPath": "database_cleanup",
+        "description": "database_cleanup",
+        "peekOfCode": "def prepare_buy_testdata():\n    clean_slots()",
+        "detail": "database_cleanup",
         "documentation": {}
     },
     {
@@ -1667,7 +3679,34 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy(stocks):\n    start_time_stock_data = time.time()\n    stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    # stocks = get_filtered_watchlist()\n    mid_cap_algo = MidcapBuyAlgorithm(stocks)\n    # Step 1 :- Filter watchlist\n    # mid_cap_algo.filter_watchlist()\n    # Step 2 :- Filter Stocks \n    mid_cap_algo.filter_stocks()",
+        "peekOfCode": "def buy():\n    prepare_buy_testdata()\n    buy_stocks = ['IDEA.NS']\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()\n    print(f\"Buy orders:- {buy_orders}\")\n    set_buy_orders(buy_orders)\n    return buy_orders\ndef sell():",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sell",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def sell():\n    prepare_sell_testdata()\n    sell_stocks = ['IDEA.NS']\n    sell_algo = MidcapSellAlgorithm()\n    # sell_algo.sell_logic()\n    sell_algo.adhoc_sell(sell_stocks)\n    sell_orders = sell_algo.position_sizing()\n    print(f\"Sell orders:- {sell_orders}\")\n    set_sell_orders(sell_orders)\n    return sell_orders",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "trade_sync_buy",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def trade_sync_buy():\n    buy_orders = get_buy_orders()\n    trade_sync = TradeSync(buy_orders)\n    filled,unfilled = trade_sync.check_orders(buy_orders)\n    print(f\"Filled : {filled}\")\n    print(f\"Unfilled : {unfilled}\")\n    trade_sync.sync_filled_buy_trades(filled)\n    print(\"Trade Synced for filled orders\")\n    if(not unfilled): return\n    print(\"Retry for below Unfilled\")",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "trade_sync_sell",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def trade_sync_sell():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_orders(sell_orders)\n    print(f\"Try 1: Unfilled : {unfilled}\")\n    trade_sync.sync_filled_sell_trades(filled)\n    print(\"Try 1: Trade Synced for filled orders\")\n    if(not unfilled): return\n    print(\"Try 2: Retry for below Unfilled\")\n    print(f\"Try 2: Unfilled:- {unfilled}\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -1676,16 +3715,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def complete():\n    db = get_database()\n    watch_list = get_watchlist(db)\n    # watch_list = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    # watch_list = ['LUPIN.NS','INDHOTEL.NS']\n    clients = get_client_list(db)\n    # clients = [\"KEYUR\",\"SANKET\"]\n    filter_algo = FilterAlgorithm(watch_list)\n    filter_algo.filter_watchlist()\n    stocks = filter_algo.filter_stocks()",
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "sell",
-        "kind": 2,
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "peekOfCode": "def sell():\n    stocks = ['BHEL.NS','LTTS.NS']\n    update_slots(get_database(),stocks)\n    sell_algo = MidcapSellAlgorithm()\n    stocks_to_sell = sell_algo.sell_logic()\n    print(stocks_to_sell)\n    clients = [\"FTCT1208\",\"Keyur\",\"Sanket\",\"Smit\",\"Sid\"]\n    sell_orders = {}\n    for client_code in clients:\n        print(f\"Starting position sizing selling for {client_code}\")",
+        "peekOfCode": "def complete():\n    db = get_database()\n    watch_list = get_watchlist(db)\n    watch_list = get_watchlist_for_keyur()\n    watch_list = massage_watchlist(watch_list)\n    clients = get_client_list(db)\n    all_client_data = read_csv_to_dict()\n    filter_algo = FilterAlgorithm(watch_list)\n    filter_algo.filter_watchlist()\n    stocks = filter_algo.filter_stocks()",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -1694,16 +3724,16 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n        return buy(stocks)\n    elif event[\"action\"] == \"Sell\":\n        return sell()\n    elif event[\"action\"] == \"Complete\":\n        return complete()\ndef runner(n,direction):\n    event = {}",
+        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        return buy()\n    elif event[\"action\"] == \"Sell\":\n        return sell()\n    elif event[\"action\"] == \"Complete\":\n        return complete()\ndef run(direction):\n    event = {}\n    event[\"action\"] = direction",
         "detail": "lambda_function",
         "documentation": {}
     },
     {
-        "label": "runner",
+        "label": "run",
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def runner(n,direction):\n    event = {}\n    event[\"action\"] = direction\n    total_time = 0\n    it = 0\n    for i in range(1, n+1):\n        print(i)\n        it+=1\n        total_time += lambda_handler(event,None)\n        print(total_time/it)",
+        "peekOfCode": "def run(direction):\n    event = {}\n    event[\"action\"] = direction\n    lambda_handler(event,None)\n# if __name__ == \"__main__\":\n#     run(\"Buy\")\nif __name__ == \"__main__\":\n    # client_code = \"WEALTH666\"\n    # client_auth = get_client_auth(client_code)\n    # Mofsl = client_login(client_auth,client_code)",
         "detail": "lambda_function",
         "documentation": {}
     }
