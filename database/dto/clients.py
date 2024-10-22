@@ -15,7 +15,7 @@ class DailyTradeLog:
         self.qty = qty
    
     def to_list(self):
-        return [self.date,self.stock_name,self.direction,self.price,self.qty]
+        return [self.date,self.stock_name,self.direction,round(self.price,2),round(self.qty,2)]
 
 class DailyOrderLog:
     def __init__(self, date, stock_name, direction, requestId, qty):
@@ -37,7 +37,7 @@ class Holding:
     def to_json(self):
         return {
             "stock_name" : self.stock_name,
-            "qty" : self.qty,
+            "qty" : round(self.qty,2),
             "last_buy_time_stamps" : self.last_buy_time_stamps,
-            "last_buy_price" : self.last_buy_price
+            "last_buy_price" : round(self.last_buy_price,2)
         }

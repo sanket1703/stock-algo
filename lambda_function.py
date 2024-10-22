@@ -10,10 +10,22 @@ from database.dynamodb import get_database
 from database.dao.client_dao import *
 from database_cleanup import prepare_buy_testdata, prepare_sell_testdata
 from utils.csv.helpers import save_buy_orders, save_sell_orders
-from utils.json.helper import get_buy_orders, get_sell_orders, set_buy_orders, set_sell_orders
+from utils.database_helper.client import clear_trade_log_clients
+from utils.gsheets.helpers import add_text
+from utils.gsheets.security.connect import gsheets_auth
+from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_sell_orders,
+    set_buy_orders, set_sell_orders)
 from utils.watchlist_filter import massage_watchlist
+import socket
+import requests
+import dns.resolver
+import warnings
+
 
 def buy():
+    # if not check_connectivity(): 
+    #     print("Please check your connection")
+    #     return
     prepare_buy_testdata()
     buy_stocks = ['IDEA.NS']
     buy_algo = MidcapBuyAlgorithm(buy_stocks)
@@ -35,35 +47,42 @@ def sell():
     set_sell_orders(sell_orders)
     return sell_orders
 
-def trade_sync_buy():
+def buy_order_validator():
     
     buy_orders = get_buy_orders()
+    # if not check_connectivity(): 
+    #     print("Please check your connection")
+    #     return
     trade_sync = TradeSync(buy_orders)
     filled,unfilled = trade_sync.check_orders(buy_orders)
     print(f"Filled : {filled}")
     print(f"Unfilled : {unfilled}")
-    trade_sync.sync_filled_buy_trades(filled)
-    print("Trade Synced for filled orders")
-    
+
     if(not unfilled): return
     print("Retry for below Unfilled")
     print(f"Unfilled:- {unfilled}")
     filled,unfilled = trade_sync.check_orders(unfilled)
-    trade_sync.sync_filled_buy_trades(filled)
-    print("Try 2: Trade Synced for filled orders")
     
     if(not unfilled): return
     print("Market order for below unfilled")
     print(f"Unfilled:- {unfilled}")
+    
     modified,unmodified = trade_sync.bulk_modify_to_market(unfilled)
     print(f"Modified orders: {modified}")
     filled,unfilled = trade_sync.check_orders(modified)
     print(f"Now filled{filled}")
-    print(f"Now unfilled{filled}")
-    trade_sync.sync_filled_buy_trades(filled)
-    print("Failed even after Modify")
-    print(unfilled)
+    print(f"Now unfilled{unfilled}")
+    print("Failed to Modify")
+    print(unmodified)
     return
+
+def filled_buy_orders_processor():
+    # if not check_connectivity(): 
+    #     print("Please check your connection")
+    #     return
+    filled_buy_orders = get_filled_buy_orders()
+    trade_sync = TradeSync(filled_buy_orders)
+    trade_sync.sync_filled_buy_trades(filled_buy_orders)
 
 def trade_sync_sell():
     
@@ -158,18 +177,44 @@ def run(direction):
     event["action"] = direction
     lambda_handler(event,None)
     
-# if __name__ == "__main__":
-#     run("Buy")
+
+def check_mo_resolution():
+    try:
+        ip_address = socket.gethostbyname('openapi.motilaloswal.com')
+        print(f"Domain resolved to IP: {ip_address}")
+        return True
+    except socket.gaierror:
+        print("Can't resolve MO. Issue Connecting to MO.")
+        return False
+    
+def check_connectivity():
+    try:
+        ip_address = socket.gethostbyname('google.com')
+        print(f"Google resolved to IP: {ip_address}")
+        if(not check_mo_resolution()):return False
+        return True
+    except socket.gaierror:
+        print("Can't resolve google.Connectivity issue.")
+        return False
+
+
+def resolve_with_custom_dns(domain):
+    resolver = dns.resolver.Resolver()
+    resolver.nameservers = ['8.8.8.8']  # Use Google's public DNS
+    try:
+        answers = resolver.resolve(domain)
+        print(answers)
+        for rdata in answers:
+            print(f"Resolved IP: {rdata}")
+    except Exception as e:
+        print(f"Failed to resolve {domain}: {e}")
+
 
 if __name__ == "__main__":
-    
-    # client_code = "WEALTH666"
-    # client_auth = get_client_auth(client_code)
-    # Mofsl = client_login(client_auth,client_code)
-    # print(Mofsl.GetTradeDetailByUniqueorderID("1000002WEALTH666",client_code))
-    
-    # run("Sell")
-    # trade_sync_sell()
-    
-    # run("Buy")
-    trade_sync_buy()
+    warnings.filterwarnings("ignore")
+    run("Buy")
+    buy_order_validator()
+    filled_buy_orders_processor()
+    # print(gsheets_auth())
+    # add_text()
+    # update_dynamodb_balance("DEEPAK17",200)

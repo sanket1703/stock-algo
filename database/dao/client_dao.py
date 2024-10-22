@@ -93,3 +93,22 @@ def get_client_balance(db,client_code):
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
     client_balance = response['Items'][0]['current_balance']
     return client_balance
+
+
+def update_dynamodb_balance(client_code,new_balance):
+    aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'
+    aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'
+
+    # Create a DynamoDB resource object with your credentials
+    dynamodb = boto3.resource(
+        'dynamodb',
+        region_name='ap-south-1',
+        aws_access_key_id=aws_access_key_id,
+        aws_secret_access_key=aws_secret_access_key)
+    
+    clients = dynamodb.Table('clients'+ env)
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
+    response['Items'][0]['current_balance'] = new_balance
+    clients.put_item(Item=response['Items'][0])
+    # print(f"New balance for {client_code} is Rs. {new_balance}")
+    return new_balance

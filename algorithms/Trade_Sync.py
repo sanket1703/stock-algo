@@ -5,6 +5,7 @@ from brokers.motilal.order import get_trade_price, get_trade_qty, is_order_compl
 from database.dao.client_dao import *
 from utils.enums.signal import Signal
 from brokers.motilal.login import client_login
+from utils.json.helper import set_filled_buy_orders, set_filled_sell_orders, set_unfilled_buy_orders
 class TradeSync:
     def __init__(self,orders):
         self.db = self.get_database()
@@ -45,12 +46,23 @@ class TradeSync:
                 else:
                     client_filled_orders.append((order_id,buy_stock))
             
-            un_filled_orders[client_code] = client_un_filled_orders
-            filled_orders[client_code] = client_filled_orders        
+            # Check if client_code exists in un_filled_orders, if so, zip the lists, else add client_un_filled_orders
+            if client_code in un_filled_orders:
+                un_filled_orders[client_code] = list(zip(un_filled_orders[client_code], client_un_filled_orders))
+            else:
+                un_filled_orders[client_code] = client_un_filled_orders
+
+            # Check if client_code exists in filled_orders, if so, zip the lists, else add client_filled_orders
+            if client_code in filled_orders:
+                filled_orders[client_code] = list(zip(filled_orders[client_code], client_filled_orders))
+            else:
+                filled_orders[client_code] = client_filled_orders
                 
             print(f"Done trade sync for {client_code}")
             
         # TODO:- failed_orders & successful_orders should be saved in the DB
+        set_filled_buy_orders(filled_orders)
+        set_unfilled_buy_orders(un_filled_orders)
         return filled_orders,un_filled_orders
                     
     
@@ -71,7 +83,7 @@ class TradeSync:
                 qty = get_trade_qty(Mofsl,client_code,order_id)
                 #TODO:- qty will return random stuff if there is some error on the AB side -> handle that 
                 turnover = (Decimal(qty)*Decimal(trade_price))
-                update_holding(self.db,client_code,buy_stock,qty,Decimal(trade_price),current_datetime)
+                update_holding(self.db,client_code,buy_stock,Decimal(qty),Decimal(trade_price),current_datetime)
                 add_trade_log(self.db,client_code,current_datetime,buy_stock,Signal.BUY.value,Decimal(trade_price),qty)
                 reduce_balance(self.db,client_code,Decimal(turnover))
             print(f"Updated all holdings for {client_code}")

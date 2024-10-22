@@ -2,8 +2,10 @@ from database.dynamodb import get_database
 import decimal
 from database.dto.clients import *
 import boto3
+from database.dao.client_dao import get_client_list
 
-def clear_trade_log_clients(client_list):
+def clear_trade_log_clients():
+    client_list = get_client_list()
     db = get_database()
     for client in client_list:
         clients = db.Table('clients')

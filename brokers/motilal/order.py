@@ -20,7 +20,7 @@ def place_buy_order(client_code,stock_code,qty,Mofsl):
         "ordertype":"LIMIT",
         "producttype":"DELIVERY",
         "orderduration":"DAY",
-        "price":round(ltp, 4),
+        "price":round(ltp-0.3, 4),
         "quantityinlot":qty,
         "amoorder":"N"
     }
@@ -59,11 +59,19 @@ def place_sell_order(db,client_code,stock_code,Mofsl):
     return response['uniqueorderid']
 
 
+def get_modified_time(Mofsl,client_code,order_id):
+    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['lastmodifiedtime']
+
 def get_trade_price(Mofsl,client_code,order_id):
-    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['averageprice']
+    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
+    print(orderdetails)
+    return orderdetails['data'][0]['averageprice']
     
 def get_trade_qty(Mofsl,client_code,order_id):
     return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']
+
+def get_order_qty(Mofsl,client_code,order_id):
+    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']
     
 def order_status(Mofsl,client_code,order_id):
     order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
@@ -86,14 +94,15 @@ def modify_order_to_market(Mofsl,client_code,order_id):
         "uniqueorderid":order_id,
         "newordertype":"MARKET",
         "neworderduration":"DAY",   
-        # "newquantityinlot":100,
+        "newquantityinlot":get_order_qty(Mofsl,client_code,order_id),
         # "newdisclosedquantity":0,
         # "newprice":235.50,
         # "newtriggerprice":0,
         # "newgoodtilldate": 0,
-        # "lastmodifiedtime": "14-May-2022 11:31:25",
-        # "qtytradedtoday": 0
+        "lastmodifiedtime": get_modified_time(Mofsl,client_code,order_id),
+        "qtytradedtoday": 0
     }
     response = Mofsl.ModifyOrder(ModifiedOrderInfo)
+    print(f"Modify Order Response: {response}")
     if response['status'] ==  "SUCCESS": return True
     return False

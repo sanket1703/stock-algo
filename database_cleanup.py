@@ -8,4 +8,5 @@ def prepare_sell_testdata():
     add_slots(list(['LUPIN.NS']))
     
 def prepare_buy_testdata():
+    clear_trade_log_clients()
     clean_slots()

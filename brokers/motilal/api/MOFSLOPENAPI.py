@@ -535,7 +535,7 @@ class MOFSLOPENAPI(object):
                 m_headers["browserversion"] = self.m_browserversion
 
             # print(m_headers)            
-            response = requests.post(f_URL, headers= m_headers, data = json.dumps(f_Data))
+            response = requests.post(f_URL, headers= m_headers, data = json.dumps(f_Data),verify=False)
             # print("JSON Response ", response.content)
             j_ResponseMessage = response.content.decode('utf-8')
 
