@@ -89,7 +89,7 @@ def is_order_completed(Mofsl,client_code,order_id):
 
 def modify_order_to_market(Mofsl,client_code,order_id):
     # ModifyOrder
-    print(f"--------------------------------ModifyOrder for {client_code}--------------------------------")
+    logger.debug(f"Modifying to market for {order_id} of {client_code} ")
     ModifiedOrderInfo = {
         "clientcode":client_code,
         "uniqueorderid":order_id,
@@ -104,6 +104,8 @@ def modify_order_to_market(Mofsl,client_code,order_id):
         "qtytradedtoday": 0
     }
     response = Mofsl.ModifyOrder(ModifiedOrderInfo)
-    print(f"Modify Order Response: {response}")
+    logger.debug(f"Modify to Market Response:- {response}")
+    logger.info(f"Modify to Market Message:- {response['message']}")
+    
     if response['status'] ==  "SUCCESS": return True
     return False

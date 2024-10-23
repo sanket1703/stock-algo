@@ -60,6 +60,7 @@ class PositionSizingBuy:
                 logger.error(f"Buy order for {buy_stock} failed for {self.client_code}")
                 continue
             client_order_list.append((request_id,buy_stock))
+        logger.info(f"Position sizing for {self.client_code} completed.")
         return client_order_list
            
            

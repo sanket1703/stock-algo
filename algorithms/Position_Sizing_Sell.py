@@ -7,6 +7,7 @@ import decimal
 from utils.enums.signal import Signal
 from stock_data.price import fetch_stock_data, get_last_traded_price
 import boto3
+from loguru import logger
 
 class PositionSizingSell:
     def __init__(self,client_code):
@@ -37,10 +38,12 @@ class PositionSizingSell:
         
     def off_load_stocks(self,stocks_sell,Mofl):
         client_order_list = []
+        logger.info(f"Initiating offloading stocks for {self.client_code}")
         for stock_sell in stocks_sell:
             request_id = place_sell_order(self.db,self.client_code,stock_sell,Mofl)
             if request_id == '':
-                print(f"Could not sell {stock_sell}")
+                logger.error(f"Buy order for {stock_sell} failed for {self.client_code}")
                 continue
             client_order_list.append((request_id,stock_sell))
+        logger.info(f"Offloading stocks for {self.client_code} completed.")
         return client_order_list

@@ -1,6 +1,6 @@
 from datetime import datetime
 from decimal import Decimal
-
+from loguru import logger
 from brokers.motilal.order import get_trade_price, get_trade_qty, get_xchange_trade_id, is_order_completed, modify_order_to_market, order_status
 from database.dao.client_dao import *
 from utils.enums.signal import Signal
@@ -33,7 +33,7 @@ class TradeSync:
         for client_code in orders:
             if client_code == "date":
                 continue
-            print(f"Checking order status for {client_code}")
+            
             client_orders = orders[client_code]
             client_filled_orders = []
             client_un_filled_orders = []
@@ -41,31 +41,32 @@ class TradeSync:
                 continue 
             
             Mofsl = client_login(client_code)
-            
+            logger.info(f"Buy orders status check for {client_code} initiated.")
             for order_id,buy_stock in client_orders:
                 if(not is_order_completed(Mofsl,client_code,order_id)):
+                    logger.debug(f"{order_id}-{buy_stock} not filled")
                     client_un_filled_orders.append((order_id,buy_stock))
                 else:
                     xchange_trade_id = get_xchange_trade_id(Mofsl,client_code,order_id)
+                    logger.debug(f"{order_id}-{buy_stock} filled with exchange trade id:- {xchange_trade_id}")
                     client_filled_orders.append((order_id,buy_stock,xchange_trade_id))
             
-            # Check if client_code exists in un_filled_orders, if so, zip the lists, else add client_un_filled_orders
-            if client_code in un_filled_orders:
-                un_filled_orders[client_code] = client_un_filled_orders
-            else:
-                un_filled_orders[client_code] = client_un_filled_orders
+            # update the unfilled orders
+            un_filled_orders[client_code] = client_un_filled_orders
 
-            # Check if client_code exists in filled_orders, if so, zip the lists, else add client_filled_orders
+            # update or append filled orders
             if client_code in filled_orders:
                 filled_orders[client_code] = filled_orders[client_code]+ client_filled_orders
             else:
                 filled_orders[client_code] = client_filled_orders
                 
-            print(f"Done trade sync for {client_code}")
+            logger.info(f"Buy orders status check complete for {client_code}")
             
-        # TODO:- failed_orders & successful_orders should be saved in the DB
         set_filled_buy_orders(filled_orders)
         set_unfilled_buy_orders(un_filled_orders)
+        
+        logger.info(f"Filled buy orders:- {filled_orders}")
+        logger.info(f"Unfilled buy orders:- {un_filled_orders}")
         return filled_orders,un_filled_orders
     
     def check_sell_orders(self,orders):
@@ -74,7 +75,7 @@ class TradeSync:
         for client_code in orders:
             if client_code == "date":
                 continue
-            print(f"Checking order status for {client_code}")
+            
             client_orders = orders[client_code]
             client_filled_orders = []
             client_un_filled_orders = []
@@ -82,32 +83,32 @@ class TradeSync:
                 continue 
             
             Mofsl = client_login(client_code)
-            
+            logger.info(f"Sell orders status check for {client_code} initiated.")
             for order_id,sell_stock in client_orders:
                 if(not is_order_completed(Mofsl,client_code,order_id)):
+                    logger.debug(f"{order_id}-{sell_stock} not filled")
                     client_un_filled_orders.append((order_id,sell_stock))
                 else:
                     xchange_trade_id = get_xchange_trade_id(Mofsl,client_code,order_id)
                     client_filled_orders.append((order_id,sell_stock,xchange_trade_id))
             
-            # Check if client_code exists in un_filled_orders, if so, zip the lists, else add client_un_filled_orders
-            if client_code in un_filled_orders:
-                # Over writing the unfilled orders
-                un_filled_orders[client_code] = client_un_filled_orders
-            else:
-                un_filled_orders[client_code] = client_un_filled_orders
+             # update the unfilled orders
+            un_filled_orders[client_code] = client_un_filled_orders
 
-            # Check if client_code exists in filled_orders, if so, zip the lists, else add client_filled_orders
+            # update or append filled orders
             if client_code in filled_orders:
                 filled_orders[client_code] = filled_orders[client_code] + client_filled_orders
             else:
                 filled_orders[client_code] = client_filled_orders
                 
-            print(f"Done trade sync for {client_code}")
+            logger.info(f"Buy orders status check complete for {client_code}")
             
         # TODO:- failed_orders & successful_orders should be saved in the DB
         set_filled_sell_orders(filled_orders)
         set_unfilled_sell_orders(un_filled_orders)
+        
+        logger.info(f"Filled sell orders:- {filled_orders}")
+        logger.info(f"Unfilled sell orders:- {un_filled_orders}")
         return filled_orders,un_filled_orders
                     
     
@@ -168,7 +169,7 @@ class TradeSync:
             
             Mofsl = client_login(client_code)
             
-            print(f"Checking order status for {client_code}")
+            logger.info(f"Modify to Market Orders for {client_code} initiated.")
             client_orders = orders[client_code]
             client_modified_orders = []
             client_failed_modified_orders = []
@@ -176,14 +177,19 @@ class TradeSync:
                 continue 
             for order_id,buy_stock in client_orders:
                 if(modify_order_to_market(Mofsl,client_code,order_id)):
+                    logger.debug(f"{order_id}-{buy_stock} modified to market.")
                     client_modified_orders.append((order_id,buy_stock))
                 else:
+                    logger.debug(f"{order_id}-{buy_stock} failed to modify to market.")
                     client_failed_modified_orders.append((order_id,buy_stock))
             
             modified_orders[client_code] = client_modified_orders
             failed_modified_orders[client_code] = client_failed_modified_orders        
                 
-            print(f"Done trade sync for {client_code}")
-    
+            logger.info(f"Modify to Market Orders for {client_code} completed.")
+        
+        logger.info(f"Modified orders:- {modified_orders}")
+        logger.info(f"Failed modified orders:- {failed_modified_orders}")
+        
         return modified_orders,failed_modified_orders                
                     

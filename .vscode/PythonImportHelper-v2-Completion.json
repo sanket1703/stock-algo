@@ -644,6 +644,22 @@
         "documentation": {}
     },
     {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
         "label": "PositionSizingSell",
         "importPath": "algorithms.Position_Sizing_Sell",
         "description": "algorithms.Position_Sizing_Sell",
@@ -1592,6 +1608,15 @@
         "documentation": {}
     },
     {
+        "label": "dns",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dns",
+        "description": "dns",
+        "detail": "dns",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -1858,15 +1883,6 @@
         "documentation": {}
     },
     {
-        "label": "dns.resolver",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "dns.resolver",
-        "description": "dns.resolver",
-        "detail": "dns.resolver",
-        "documentation": {}
-    },
-    {
         "label": "warnings",
         "kind": 6,
         "isExtraImport": true,
@@ -1979,7 +1995,7 @@
         "kind": 6,
         "importPath": "algorithms.Midcap_Buy_Algorithm",
         "description": "algorithms.Midcap_Buy_Algorithm",
-        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n        self.clients = get_client_list()\n        self.final_stocks_buy = []\n    def order_executor(self):\n        logger.debug(\"Starting Order Execution\")\n        buy_orders = {}",
+        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n        self.clients = get_client_list()\n        self.final_stocks_buy = []\n    def order_executor(self):\n        logger.debug(\"Starting Buy Order Execution.\")\n        buy_orders = {}",
         "detail": "algorithms.Midcap_Buy_Algorithm",
         "documentation": {}
     },
@@ -1988,7 +2004,7 @@
         "kind": 6,
         "importPath": "algorithms.Midcap_Sell_Algorithm",
         "description": "algorithms.Midcap_Sell_Algorithm",
-        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self):\n        self.db = get_database()\n        self.slots = get_slots(self.db)\n        self.stocks_to_sell = []\n        self.stocks_to_keep = []\n        self.clients = get_client_list()\n    def position_sizing(self):\n        sell_orders = {}\n        for client_code in self.clients:",
+        "peekOfCode": "class MidcapSellAlgorithm:\n    def __init__(self):\n        self.db = get_database()\n        self.slots = get_slots(self.db)\n        self.stocks_to_sell = []\n        self.stocks_to_keep = []\n        self.clients = get_client_list()\n    def order_executor(self):\n        logger.debug(\"Starting Sell Order Execution.\")\n        sell_orders = {}",
         "detail": "algorithms.Midcap_Sell_Algorithm",
         "documentation": {}
     },
@@ -3347,7 +3363,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def is_order_completed(Mofsl,client_code,order_id):\n    return order_status(Mofsl,client_code,order_id)\ndef modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    print(f\"--------------------------------ModifyOrder for {client_code}--------------------------------\")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   ",
+        "peekOfCode": "def is_order_completed(Mofsl,client_code,order_id):\n    return order_status(Mofsl,client_code,order_id)\ndef modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    logger.debug(f\"Modifying to market for {order_id} of {client_code} \")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   ",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3356,7 +3372,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    print(f\"--------------------------------ModifyOrder for {client_code}--------------------------------\")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   \n        \"newquantityinlot\":get_order_qty(Mofsl,client_code,order_id),\n        # \"newdisclosedquantity\":0,",
+        "peekOfCode": "def modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    logger.debug(f\"Modifying to market for {order_id} of {client_code} \")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   \n        \"newquantityinlot\":get_order_qty(Mofsl,client_code,order_id),\n        # \"newdisclosedquantity\":0,",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3757,6 +3773,33 @@
         "documentation": {}
     },
     {
+        "label": "check_mo_resolution",
+        "kind": 2,
+        "importPath": "utils.connectivity.check_connection",
+        "description": "utils.connectivity.check_connection",
+        "peekOfCode": "def check_mo_resolution():\n    try:\n        ip_address = socket.gethostbyname('openapi.motilaloswal.com')\n        print(f\"Domain resolved to IP: {ip_address}\")\n        return True\n    except socket.gaierror:\n        print(\"Can't resolve MO. Issue Connecting to MO.\")\n        return False\ndef check_connectivity():\n    try:",
+        "detail": "utils.connectivity.check_connection",
+        "documentation": {}
+    },
+    {
+        "label": "check_connectivity",
+        "kind": 2,
+        "importPath": "utils.connectivity.check_connection",
+        "description": "utils.connectivity.check_connection",
+        "peekOfCode": "def check_connectivity():\n    try:\n        ip_address = socket.gethostbyname('google.com')\n        print(f\"Google resolved to IP: {ip_address}\")\n        if(not check_mo_resolution()):return False\n        return True\n    except socket.gaierror:\n        print(\"Can't resolve google.Connectivity issue.\")\n        return False\ndef resolve_with_custom_dns(domain):",
+        "detail": "utils.connectivity.check_connection",
+        "documentation": {}
+    },
+    {
+        "label": "resolve_with_custom_dns",
+        "kind": 2,
+        "importPath": "utils.connectivity.check_connection",
+        "description": "utils.connectivity.check_connection",
+        "peekOfCode": "def resolve_with_custom_dns(domain):\n    resolver = dns.resolver.Resolver()\n    resolver.nameservers = ['8.8.8.8']  # Use Google's public DNS\n    try:\n        answers = resolver.resolve(domain)\n        print(answers)\n        for rdata in answers:\n            print(f\"Resolved IP: {rdata}\")\n    except Exception as e:\n        print(f\"Failed to resolve {domain}: {e}\")",
+        "detail": "utils.connectivity.check_connection",
+        "documentation": {}
+    },
+    {
         "label": "save_buy_orders",
         "kind": 2,
         "importPath": "utils.csv.helpers",
@@ -4031,7 +4074,7 @@
         "kind": 2,
         "importPath": "database_cleanup",
         "description": "database_cleanup",
-        "peekOfCode": "def prepare_sell_testdata():\n    add_slots(list(['LUPIN.NS']))\ndef prepare_buy_testdata():\n    logger.debug(\"Preparing buy test data\")\n    clear_trade_log_clients()\n    clean_slots()\n    logger.info(\"Test data prepared. Ready to buy.\")",
+        "peekOfCode": "def prepare_sell_testdata(sell_stocks):\n    logger.debug(\"Preparing sell test data\")\n    add_slots(sell_stocks)\n    logger.info(\"Test data prepared. Ready to sell.\")\ndef prepare_buy_testdata():\n    logger.debug(\"Preparing buy test data\")\n    clear_trade_log_clients()\n    clean_slots()\n    logger.info(\"Test data prepared. Ready to buy.\")",
         "detail": "database_cleanup",
         "documentation": {}
     },
@@ -4049,7 +4092,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    prepare_buy_testdata()\n    buy_stocks = ['IDEA.NS','MAHABANK.NS']\n    logger.info(f\"Buy stock list:- {buy_stocks}\")\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()",
+        "peekOfCode": "def buy():\n    prepare_buy_testdata()\n    buy_stocks = ['IDEA.NS','MAHABANK.NS']\n    logger.info(f\"Buy stock list:- {buy_stocks}\")\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()\n    set_buy_orders(buy_orders)\n    logger.info(f\"Consolidated Buy Orders details for each client:- {buy_orders}\")\n    logger.debug(\"Consolidated Buy Orders details saved locally.\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4058,7 +4101,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def sell():\n    prepare_sell_testdata()\n    sell_stocks = ['IDEA.NS']\n    sell_algo = MidcapSellAlgorithm()\n    # sell_algo.sell_logic()\n    sell_algo.adhoc_sell(sell_stocks)\n    sell_orders = sell_algo.position_sizing()\n    print(f\"Sell orders:- {sell_orders}\")\n    set_sell_orders(sell_orders)\n    return sell_orders",
+        "peekOfCode": "def sell():\n    prepare_sell_testdata()\n    sell_stocks = ['IDEA.NS']\n    logger.info(f\"Sell stock list:- {sell_stocks}\")\n    sell_algo = MidcapSellAlgorithm()\n    # sell_algo.sell_logic()\n    sell_algo.adhoc_sell(sell_stocks)\n    sell_orders = sell_algo.order_executor()\n    set_sell_orders(sell_orders)\n    logger.info(f\"Consolidated Sell Orders details for each client:- {sell_orders}\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4067,7 +4110,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy_order_validator():\n    buy_orders = get_buy_orders()\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    print(f\"Buy orders :- {buy_orders}\")\n    trade_sync = TradeSync(buy_orders)\n    filled,unfilled = trade_sync.check_buy_orders(buy_orders)\n    print(f\"Filled : {filled}\")\n    print(f\"Unfilled : {unfilled}\")",
+        "peekOfCode": "def buy_order_validator():\n    buy_orders = get_buy_orders()\n    trade_sync = TradeSync(buy_orders)\n    filled,unfilled = trade_sync.check_buy_orders(buy_orders)\n    if(not unfilled): \n        logger.info(\"All Buy orders filled\")\n        return\n    logger.info(f\"Retry 1: Order validation for {unfilled}\")\n    filled,unfilled = trade_sync.check_buy_orders(unfilled)\n    if(not unfilled): ",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4076,7 +4119,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def filled_buy_orders_processor():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    filled_buy_orders = get_filled_buy_orders()\n    trade_sync = TradeSync(filled_buy_orders)\n    trade_sync.sync_filled_buy_trades(filled_buy_orders)\ndef sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)",
+        "peekOfCode": "def filled_buy_orders_processor():\n    filled_buy_orders = get_filled_buy_orders()\n    trade_sync = TradeSync(filled_buy_orders)\n    trade_sync.sync_filled_buy_trades(filled_buy_orders)\ndef sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_sell_orders(sell_orders)\n    if(not unfilled): \n        logger.info(\"All Buy orders filled\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4085,7 +4128,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_sell_orders(sell_orders)\n    print(f\"Filled : {filled}\")\n    print(f\"Unfilled : {unfilled}\")\n    time.sleep(1)\n    if(not unfilled): return\n    print(\"Retry for below Unfilled\")\n    print(f\"Unfilled:- {unfilled}\")",
+        "peekOfCode": "def sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_sell_orders(sell_orders)\n    if(not unfilled): \n        logger.info(\"All Buy orders filled\")\n        return\n    logger.info(f\"Retry 1: Order validation for {unfilled}\")\n    filled,unfilled = trade_sync.check_sell_orders(unfilled)\n    if(not unfilled): ",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4094,7 +4137,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def filled_sell_orders_processor():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    filled_sell_orders = get_filled_sell_orders()\n    trade_sync = TradeSync(filled_sell_orders)\n    trade_sync.sync_filled_sell_trades(filled_sell_orders)\ndef complete():\n    db = get_database()\n    watch_list = get_watchlist(db)",
+        "peekOfCode": "def filled_sell_orders_processor():\n    filled_sell_orders = get_filled_sell_orders()\n    trade_sync = TradeSync(filled_sell_orders)\n    trade_sync.sync_filled_sell_trades(filled_sell_orders)\ndef complete():\n    db = get_database()\n    watch_list = get_watchlist(db)\n    watch_list = get_watchlist_for_keyur()\n    watch_list = massage_watchlist(watch_list)\n    clients = get_client_list(db)",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4121,34 +4164,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def run(direction):\n    event = {}\n    event[\"action\"] = direction\n    lambda_handler(event,None)\ndef check_mo_resolution():\n    try:\n        ip_address = socket.gethostbyname('openapi.motilaloswal.com')\n        print(f\"Domain resolved to IP: {ip_address}\")\n        return True\n    except socket.gaierror:",
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "check_mo_resolution",
-        "kind": 2,
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "peekOfCode": "def check_mo_resolution():\n    try:\n        ip_address = socket.gethostbyname('openapi.motilaloswal.com')\n        print(f\"Domain resolved to IP: {ip_address}\")\n        return True\n    except socket.gaierror:\n        print(\"Can't resolve MO. Issue Connecting to MO.\")\n        return False\ndef check_connectivity():\n    try:",
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "check_connectivity",
-        "kind": 2,
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "peekOfCode": "def check_connectivity():\n    try:\n        ip_address = socket.gethostbyname('google.com')\n        print(f\"Google resolved to IP: {ip_address}\")\n        if(not check_mo_resolution()):return False\n        return True\n    except socket.gaierror:\n        print(\"Can't resolve google.Connectivity issue.\")\n        return False\ndef resolve_with_custom_dns(domain):",
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "resolve_with_custom_dns",
-        "kind": 2,
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "peekOfCode": "def resolve_with_custom_dns(domain):\n    resolver = dns.resolver.Resolver()\n    resolver.nameservers = ['8.8.8.8']  # Use Google's public DNS\n    try:\n        answers = resolver.resolve(domain)\n        print(answers)\n        for rdata in answers:\n            print(f\"Resolved IP: {rdata}\")\n    except Exception as e:\n        print(f\"Failed to resolve {domain}: {e}\")",
+        "peekOfCode": "def run(direction):\n    event = {}\n    event[\"action\"] = direction\n    lambda_handler(event,None)\nif __name__ == \"__main__\":\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"INFO\")\n    run(\"Buy\")\n    # buy_order_validator()\n    # filled_buy_orders_processor()",
         "detail": "lambda_function",
         "documentation": {}
     }

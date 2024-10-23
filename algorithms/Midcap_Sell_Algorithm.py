@@ -15,8 +15,10 @@ class MidcapSellAlgorithm:
         self.stocks_to_keep = []
         self.clients = get_client_list()
     
-    def position_sizing(self):
+    def order_executor(self):
+        logger.debug("Starting Sell Order Execution.")
         sell_orders = {}
+        
         for client_code in self.clients:
             print(f"Starting position sizing selling for {client_code}")
             client = PositionSizingSell(client_code)
