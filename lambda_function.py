@@ -147,10 +147,10 @@ def run(direction):
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     
-    configure_log(level="INFO")
+    configure_log(level="DEBUG")
     run("Buy")
-    # buy_order_validator()
-    # filled_buy_orders_processor()
+    buy_order_validator()
+    filled_buy_orders_processor()
     
     # input("Please press enter for sell: ")
     # print(f"Proceeding on command!")

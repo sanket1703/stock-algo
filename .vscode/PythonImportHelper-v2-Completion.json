@@ -4164,7 +4164,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def run(direction):\n    event = {}\n    event[\"action\"] = direction\n    lambda_handler(event,None)\nif __name__ == \"__main__\":\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"INFO\")\n    run(\"Buy\")\n    # buy_order_validator()\n    # filled_buy_orders_processor()",
+        "peekOfCode": "def run(direction):\n    event = {}\n    event[\"action\"] = direction\n    lambda_handler(event,None)\nif __name__ == \"__main__\":\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    run(\"Buy\")\n    buy_order_validator()\n    filled_buy_orders_processor()",
         "detail": "lambda_function",
         "documentation": {}
     }
