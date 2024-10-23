@@ -113,26 +113,32 @@ class TradeSync:
                     
     
     def sync_filled_buy_trades(self,filled_orders):
-        current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
         for client_code in filled_orders:
             if client_code == "date":
                 continue
-            print(f"Starting trade sync for {client_code}")
+            logger.info(f"Buy Trade sync for {client_code} initiated.")
             client_orders = filled_orders[client_code]
             if client_orders == None:
                 continue 
             
             Mofsl = client_login(client_code)
-            
+            current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             for order_id,buy_stock,xchange_trade_id in client_orders:
                 trade_price = get_trade_price(Mofsl,client_code,order_id)
                 qty = get_trade_qty(Mofsl,client_code,order_id)
                 #TODO:- qty will return random stuff if there is some error on the AB side -> handle that 
                 turnover = (Decimal(qty)*Decimal(trade_price))
                 update_holding(self.db,client_code,buy_stock,Decimal(qty),Decimal(trade_price),current_datetime)
-                add_trade_log(self.db,client_code,current_datetime,buy_stock,Signal.BUY.value,Decimal(trade_price),qty,xchange_trade_id)
+                logger.debug(f"Added Holding of {qty} {buy_stock}")
+                
                 reduce_balance(self.db,client_code,Decimal(turnover))
-            print(f"Updated all holdings for {client_code}")
+                logger.debug(f"Reduce balance of {turnover} from buy of {buy_stock}")
+                
+                add_trade_log(self.db,client_code,current_datetime,buy_stock,Signal.BUY.value,Decimal(trade_price),qty,xchange_trade_id)
+                logger.debug(f"Added trade log")
+            
+            logger.info(f"Buy Trade sync for {client_code} completed.")
         return 
     
     def sync_filled_sell_trades(self,filled_orders):
@@ -140,23 +146,28 @@ class TradeSync:
         for client_code in filled_orders:
             if client_code == "date":
                 continue
-            print(f"Starting trade sync for {client_code}")
-            current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            logger.info(f"Sell Trade sync for {client_code} initiated.")
             client_orders = filled_orders[client_code]
-            print(f"Client {client_code} :- {client_orders}")
             if client_orders == None:
                 continue 
             
             Mofsl = client_login(client_code)
-            
+            current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             for order_id,sell_stock,xchange_trade_id in client_orders:
                 trade_price = get_trade_price(Mofsl,client_code,order_id)
                 qty = get_trade_qty(Mofsl,client_code,order_id)
                 turnover = (Decimal(qty)*Decimal(trade_price))
-                # Adjust for brokerage
+                
                 offload_holding(self.db,client_code,sell_stock)
+                logger.debug(f"Holding of {sell_stock} offloaded")
+                
                 add_balance(self.db,client_code,Decimal(turnover))
+                logger.debug(f"Added balance of {turnover} from sell of {sell_stock}")
+                
                 add_trade_log(self.db,client_code,current_datetime,sell_stock,Signal.SELL.value,Decimal(trade_price),qty,xchange_trade_id)
+                logger.debug(f"Added trade log")
+            
+            logger.info(f"Sell Trade sync for {client_code} completed.")
         return
                     
     def bulk_modify_to_market(self,orders):

@@ -111,51 +111,19 @@ def filled_sell_orders_processor():
     
     
 def complete():
-    
+
     db = get_database()
-
     watch_list = get_watchlist(db)
-
     watch_list = get_watchlist_for_keyur()
-
     watch_list = massage_watchlist(watch_list)
-
     clients = get_client_list(db)
-    
     all_client_data = read_csv_to_dict()
-    
     filter_algo = FilterAlgorithm(watch_list)
     filter_algo.filter_watchlist()
     stocks = filter_algo.filter_stocks()
-    
     buy_algo = MidcapBuyAlgorithm(stocks,clients)
     buy_algo.allocate_slots()
     buy_orders = buy_algo.order_executor(all_client_data)
-    
-    print(f"Buy Orders :- {buy_orders}")
-    save_buy_orders(buy_orders)
-    
-    sell_algo = MidcapSellAlgorithm(clients)
-    sell_algo.sell_logic()
-    sell_orders = sell_algo.position_sizing()
-    
-    print(f"Sell Orders :- {sell_orders}")
-    save_sell_orders(sell_orders)
-    
-    buy_trade_sync = TradeSync()
-    successful_buy_orders,failed_buy_orders = buy_trade_sync.check_orders(buy_orders)
-    
-    print(f"Failed Buy Orders :- {failed_buy_orders}")
-    
-    sell_trade_sync = TradeSync()
-    successful_sell_orders,failed_sell_orders = sell_trade_sync.check_orders(sell_orders)
-    
-    print(f"Failed Sell Orders :- {failed_sell_orders}")
-    
-    buy_trade_sync.sync_successful_buy_trades(successful_buy_orders)
-    
-    sell_trade_sync.sync_successful_sell_trades(successful_sell_orders)
-    
     return 0
 
 
