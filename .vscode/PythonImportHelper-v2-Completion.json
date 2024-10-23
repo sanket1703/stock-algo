@@ -363,6 +363,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "PositionSizingBuy",
         "importPath": "algorithms.Position_Sizing_Buy",
         "description": "algorithms.Position_Sizing_Buy",
@@ -544,6 +552,95 @@
         "description": "database.dynamodb",
         "isExtraImport": true,
         "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "loguru",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "loguru",
+        "description": "loguru",
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
         "documentation": {}
     },
     {
@@ -645,6 +742,14 @@
     },
     {
         "label": "get_trade_qty",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_xchange_trade_id",
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
         "isExtraImport": true,
@@ -774,6 +879,38 @@
         "documentation": {}
     },
     {
+        "label": "get_filled_buy_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_filled_sell_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_unfilled_buy_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_unfilled_sell_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
         "label": "set_filled_buy_orders",
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
@@ -798,6 +935,14 @@
         "documentation": {}
     },
     {
+        "label": "set_unfilled_sell_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
         "label": "get_buy_orders",
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
@@ -807,6 +952,14 @@
     },
     {
         "label": "get_filled_buy_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_filled_sell_orders",
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
         "isExtraImport": true,
@@ -1472,14 +1625,6 @@
         "documentation": {}
     },
     {
-        "label": "gsheets_auth",
-        "importPath": "utils.gsheets.security.connect",
-        "description": "utils.gsheets.security.connect",
-        "isExtraImport": true,
-        "detail": "utils.gsheets.security.connect",
-        "documentation": {}
-    },
-    {
         "label": "smtplib",
         "kind": 6,
         "isExtraImport": true,
@@ -1625,14 +1770,6 @@
         "documentation": {}
     },
     {
-        "label": "clear_trade_log_clients",
-        "importPath": "utils.database_helper.client",
-        "description": "utils.database_helper.client",
-        "isExtraImport": true,
-        "detail": "utils.database_helper.client",
-        "documentation": {}
-    },
-    {
         "label": "add_slots",
         "importPath": "utils.database_helper.slots",
         "description": "utils.database_helper.slots",
@@ -1705,11 +1842,11 @@
         "documentation": {}
     },
     {
-        "label": "add_text",
-        "importPath": "utils.gsheets.helpers",
-        "description": "utils.gsheets.helpers",
+        "label": "configure_log",
+        "importPath": "utils.logging.configure",
+        "description": "utils.logging.configure",
         "isExtraImport": true,
-        "detail": "utils.gsheets.helpers",
+        "detail": "utils.logging.configure",
         "documentation": {}
     },
     {
@@ -1842,7 +1979,7 @@
         "kind": 6,
         "importPath": "algorithms.Midcap_Buy_Algorithm",
         "description": "algorithms.Midcap_Buy_Algorithm",
-        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n        self.clients = get_client_list()\n        self.final_stocks_buy = []\n    def order_executor(self):\n        print(\"Starting Position sizing\")\n        buy_orders = {}",
+        "peekOfCode": "class MidcapBuyAlgorithm:\n    def __init__(self,stock_list):\n        self.db = get_database()\n        self.stock_list = stock_list\n        self.ranked_stock_list = []\n        self.clients = get_client_list()\n        self.final_stocks_buy = []\n    def order_executor(self):\n        logger.debug(\"Starting Order Execution\")\n        buy_orders = {}",
         "detail": "algorithms.Midcap_Buy_Algorithm",
         "documentation": {}
     },
@@ -3125,15 +3262,6 @@
         "documentation": {}
     },
     {
-        "label": "client_data",
-        "kind": 5,
-        "importPath": "brokers.motilal.helper.read_client_data",
-        "description": "brokers.motilal.helper.read_client_data",
-        "peekOfCode": "client_data = read_csv_to_dict()\nprint(client_data)",
-        "detail": "brokers.motilal.helper.read_client_data",
-        "documentation": {}
-    },
-    {
         "label": "client_login",
         "kind": 2,
         "importPath": "brokers.motilal.login",
@@ -3147,7 +3275,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def place_buy_order(client_code,stock_code,qty,Mofsl):\n    print(\"--------------------------------PlaceOrder--------------------------------\")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code)\n    print(round(ltp, 4),stock_code)\n    stock_code = stock_code\n    Orderinfo = {\n        \"clientcode\":client_code,      \n        \"exchange\":\"NSE\",",
+        "peekOfCode": "def place_buy_order(client_code,stock_code,qty,Mofsl):\n    logger.info(f\"Placing buy order of {qty} {stock_code} for {client_code} \")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    stock_code = get_symbol_token(stock_code)\n    stock_code = stock_code\n    Orderinfo = {\n        \"clientcode\":client_code,      \n        \"exchange\":\"NSE\",\n        \"symboltoken\":stock_code,\n        \"buyorsell\":\"BUY\",",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3156,7 +3284,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def place_sell_order(db,client_code,stock_code,Mofsl):\n    print(\"--------------------------------PlaceOrder--------------------------------\")\n    # PlaceOrderInfo\n    qty = 1\n    # qty = get_client_holding(db,client_code,stock_code)\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code)\n    Orderinfo = {\n        \"clientcode\":client_code,      ",
+        "peekOfCode": "def place_sell_order(db,client_code,stock_code,Mofsl):\n    qty = 1\n    # qty = get_client_holding(db,client_code,stock_code)\n    logger.debug(f\"Placing sell order of {qty} {stock_code} for {client_code} \")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code)\n    Orderinfo = {\n        \"clientcode\":client_code,      \n        \"exchange\":\"NSE\",",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3165,7 +3293,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_modified_time(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['lastmodifiedtime']\ndef get_trade_price(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(orderdetails)\n    return orderdetails['data'][0]['averageprice']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']",
+        "peekOfCode": "def get_modified_time(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['lastmodifiedtime']\ndef get_trade_price(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    return orderdetails['data'][0]['averageprice']\ndef get_xchange_trade_id(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    return orderdetails['data'][0]['orderid']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3174,7 +3302,16 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_trade_price(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(orderdetails)\n    return orderdetails['data'][0]['averageprice']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)",
+        "peekOfCode": "def get_trade_price(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    return orderdetails['data'][0]['averageprice']\ndef get_xchange_trade_id(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    return orderdetails['data'][0]['orderid']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_xchange_trade_id",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def get_xchange_trade_id(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    return orderdetails['data'][0]['orderid']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3183,7 +3320,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(order_details)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\" ):",
+        "peekOfCode": "def get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\"):",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3192,7 +3329,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(order_details)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\" ):\n        return True\n    return False",
+        "peekOfCode": "def get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\"):\n        logger.info(f\"Order is executed and the status is 'Traded'\")\n        return True",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3201,7 +3338,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    print(order_details)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\" ):\n        return True\n    return False\ndef is_order_completed(Mofsl,client_code,order_id):\n    return order_status(Mofsl,client_code,order_id)",
+        "peekOfCode": "def order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\"):\n        logger.info(f\"Order is executed and the status is 'Traded'\")\n        return True\n    logger.info(\"Order is still not 'Traded\")\n    return False",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3282,7 +3419,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def get_client_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    return response['Items'][0]['holding'][stock_name]['qty']\ndef offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty):",
+        "peekOfCode": "def get_client_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    return response['Items'][0]['holding'][stock_name]['qty']\ndef offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty,xchange_trade_id):",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -3291,7 +3428,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty).to_list())\n    clients.put_item(Item=response['Items'][0])",
+        "peekOfCode": "def offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty,xchange_trade_id):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,xchange_trade_id).to_list())\n    clients.put_item(Item=response['Items'][0])",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -3300,7 +3437,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def add_trade_log(db,client_code,date,stock_name,direction,price,qty):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty).to_list())\n    clients.put_item(Item=response['Items'][0])\ndef add_order_log(db,client_code,date,stock_name,direction,requestId,qty):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyOrderLog(date,stock_name,direction,requestId,decimal.Decimal(qty)).to_list())\n    clients.put_item(Item=response['Items'][0])",
+        "peekOfCode": "def add_trade_log(db,client_code,date,stock_name,direction,price,qty,xchange_trade_id):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,xchange_trade_id).to_list())\n    clients.put_item(Item=response['Items'][0])\ndef add_order_log(db,client_code,date,stock_name,direction,requestId,qty):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['daily_trade_log'].append(DailyOrderLog(date,stock_name,direction,requestId,decimal.Decimal(qty)).to_list())\n    clients.put_item(Item=response['Items'][0])",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -3372,7 +3509,7 @@
         "kind": 2,
         "importPath": "database.dao.slots_dao",
         "description": "database.dao.slots_dao",
-        "peekOfCode": "def get_slots(db):\n    slots = db.Table('stock_slots'+ env)\n    current_slots = slots.scan()['Items'][0]['stock_slots']\n    return current_slots\ndef update_slots(db,update_slots):\n    slots = db.Table('stock_slots'+ env)\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots",
+        "peekOfCode": "def get_slots(db):\n    slots = db.Table('stock_slots'+ env)\n    current_slots = slots.scan()['Items'][0]['stock_slots']\n    return current_slots\ndef update_slots(db,update_slots):\n    slots = db.Table('stock_slots'+ env)\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    response['Item']['stock_slots'] = update_slots\n    slots.put_item(Item = response['Item'])",
         "detail": "database.dao.slots_dao",
         "documentation": {}
     },
@@ -3381,7 +3518,7 @@
         "kind": 2,
         "importPath": "database.dao.slots_dao",
         "description": "database.dao.slots_dao",
-        "peekOfCode": "def update_slots(db,update_slots):\n    slots = db.Table('stock_slots'+ env)\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)\n    response['Item']['stock_slots'] = update_slots\n    slots.put_item(Item = response['Item'])\n    print(response['Item']['stock_slots'])\n    return update_slots",
+        "peekOfCode": "def update_slots(db,update_slots):\n    slots = db.Table('stock_slots'+ env)\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    response['Item']['stock_slots'] = update_slots\n    slots.put_item(Item = response['Item'])\n    logger.info(f\"Slots updated:- {update_slots}\")\n    return update_slots",
         "detail": "database.dao.slots_dao",
         "documentation": {}
     },
@@ -3399,7 +3536,7 @@
         "kind": 5,
         "importPath": "database.dao.slots_dao",
         "description": "database.dao.slots_dao",
-        "peekOfCode": "env = config['DEFAULT']['environment']\ndef get_slots(db):\n    slots = db.Table('stock_slots'+ env)\n    current_slots = slots.scan()['Items'][0]['stock_slots']\n    return current_slots\ndef update_slots(db,update_slots):\n    slots = db.Table('stock_slots'+ env)\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    print(response)",
+        "peekOfCode": "env = config['DEFAULT']['environment']\ndef get_slots(db):\n    slots = db.Table('stock_slots'+ env)\n    current_slots = slots.scan()['Items'][0]['stock_slots']\n    return current_slots\ndef update_slots(db,update_slots):\n    slots = db.Table('stock_slots'+ env)\n    key = {\"stock_slots_id\":\"1\"}\n    response = slots.get_item(Key=key)\n    response['Item']['stock_slots'] = update_slots",
         "detail": "database.dao.slots_dao",
         "documentation": {}
     },
@@ -3444,7 +3581,7 @@
         "kind": 6,
         "importPath": "database.dto.clients",
         "description": "database.dto.clients",
-        "peekOfCode": "class Client:\n    def __init__(self,client_code, current_balance,daily_trade_log,holding,brokerage):\n        self.client_code = client_code\n        self.current_balance = current_balance\n        self.daily_trade_log = daily_trade_log\n        self.holding = holding\n        self.brokerage = brokerage\nclass DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty):\n        self.date = date",
+        "peekOfCode": "class Client:\n    def __init__(self,client_code, current_balance,daily_trade_log,holding,brokerage):\n        self.client_code = client_code\n        self.current_balance = current_balance\n        self.daily_trade_log = daily_trade_log\n        self.holding = holding\n        self.brokerage = brokerage\nclass DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty,xchange_trade_id):\n        self.date = date",
         "detail": "database.dto.clients",
         "documentation": {}
     },
@@ -3453,7 +3590,7 @@
         "kind": 6,
         "importPath": "database.dto.clients",
         "description": "database.dto.clients",
-        "peekOfCode": "class DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty):\n        self.date = date\n        self.stock_name = stock_name\n        self.direction = direction\n        self.price = price\n        self.qty = qty\n    def to_list(self):\n        return [self.date,self.stock_name,self.direction,round(self.price,2),round(self.qty,2)]\nclass DailyOrderLog:",
+        "peekOfCode": "class DailyTradeLog:\n    def __init__(self, date, stock_name, direction, price, qty,xchange_trade_id):\n        self.date = date\n        self.stock_name = stock_name\n        self.direction = direction\n        self.price = price\n        self.qty = qty\n        self.xchange_trade_id = xchange_trade_id\n    def to_list(self):\n        return [self.date,self.stock_name,self.direction,round(self.price,2),round(self.qty,2),self.xchange_trade_id]",
         "detail": "database.dto.clients",
         "documentation": {}
     },
@@ -3642,7 +3779,7 @@
         "kind": 2,
         "importPath": "utils.database_helper.client",
         "description": "utils.database_helper.client",
-        "peekOfCode": "def clear_trade_log_clients():\n    client_list = get_client_list()\n    db = get_database()\n    for client in client_list:\n        clients = db.Table('clients')\n        response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client))\n        response['Items'][0]['daily_trade_log']=[]\n        clients.put_item(Item=response['Items'][0])\n        print(\"#############################\")\n        print(f\"Cleared trade log for {client}\")",
+        "peekOfCode": "def clear_trade_log_clients():\n    client_list = get_client_list()\n    db = get_database()\n    for client in client_list:\n        clients = db.Table('clients')\n        response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client))\n        response['Items'][0]['daily_trade_log']=[]\n        clients.put_item(Item=response['Items'][0])\n        logger.debug(f\"Cleared trade log for {client}\")",
         "detail": "utils.database_helper.client",
         "documentation": {}
     },
@@ -3651,7 +3788,7 @@
         "kind": 2,
         "importPath": "utils.database_helper.slots",
         "description": "utils.database_helper.slots",
-        "peekOfCode": "def clean_slots():\n    db = get_database()\n    update_slots(db,[])\n    print(\"Slots cleared\")\ndef add_slots(slots):\n    db = get_database()\n    update_slots(db,slots)",
+        "peekOfCode": "def clean_slots():\n    db = get_database()\n    update_slots(db,[])\n    logger.info(\"Cleared slots on the database.\")\ndef add_slots(slots):\n    db = get_database()\n    update_slots(db,slots)",
         "detail": "utils.database_helper.slots",
         "documentation": {}
     },
@@ -3705,7 +3842,7 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def set_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef set_filled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/filled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef set_unfilled_buy_orders(data):\n    # Save to a file",
+        "peekOfCode": "def set_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef set_filled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/filled_orders/filled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef set_unfilled_buy_orders(data):\n    # Save to a file",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3714,7 +3851,7 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def set_filled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/filled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef set_unfilled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/unfilled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_filled_buy_orders():\n    # Save to a file",
+        "peekOfCode": "def set_filled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/filled_orders/filled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef set_unfilled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/unfilled_orders/unfilled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_filled_buy_orders():\n    # Save to a file",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3723,7 +3860,7 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def set_unfilled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/unfilled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_filled_buy_orders():\n    # Save to a file\n    with open(\"order_book/filled_buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data  \ndef get_unfilled_buy_orders():",
+        "peekOfCode": "def set_unfilled_buy_orders(data):\n    # Save to a file\n    with open(\"order_book/unfilled_orders/unfilled_buy_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_filled_buy_orders():\n    # Save to a file\n    if os.stat('order_book/filled_orders/filled_buy_orders.json').st_size == 0:\n        print(\"No filled buy orders\")\n        return {}\n    with open(\"order_book/filled_orders/filled_buy_orders.json\", \"r\") as file:",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3732,7 +3869,7 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def get_filled_buy_orders():\n    # Save to a file\n    with open(\"order_book/filled_buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data  \ndef get_unfilled_buy_orders():\n    # Save to a file\n    with open(\"order_book/unfilled_buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
+        "peekOfCode": "def get_filled_buy_orders():\n    # Save to a file\n    if os.stat('order_book/filled_orders/filled_buy_orders.json').st_size == 0:\n        print(\"No filled buy orders\")\n        return {}\n    with open(\"order_book/filled_orders/filled_buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data  \ndef get_unfilled_buy_orders():\n    # Save to a file",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3741,7 +3878,7 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def get_unfilled_buy_orders():\n    # Save to a file\n    with open(\"order_book/unfilled_buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data\ndef set_filled_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/filled_sell_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_unfilled_sell_orders():",
+        "peekOfCode": "def get_unfilled_buy_orders():\n    # Save to a file\n    if os.stat('order_book/unfilled_orders/unfilled_buy_orders.json').st_size == 0:\n        print(\"No unfilled buy orders\")\n        return {}\n    with open(\"order_book/unfilled_orders/unfilled_buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data\ndef set_filled_sell_orders(data):\n    # Save to a file",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3750,7 +3887,25 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def set_filled_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/filled_sell_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_unfilled_sell_orders():\n    # Save to a file\n    with open(\"order_book/filled_sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data            \ndef get_sell_orders():",
+        "peekOfCode": "def set_filled_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/filled_orders/filled_sell_orders.json\", \"w\") as file:\n        json.dump(data, file)\ndef get_filled_sell_orders():\n    # Save to a file\n    if os.stat('order_book/filled_orders/filled_sell_orders.json').st_size == 0:\n        print(\"No filled sell orders\")\n        return {}\n    with open(\"order_book/filled_orders/filled_sell_orders.json\", \"r\") as file:",
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_filled_sell_orders",
+        "kind": 2,
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "peekOfCode": "def get_filled_sell_orders():\n    # Save to a file\n    if os.stat('order_book/filled_orders/filled_sell_orders.json').st_size == 0:\n        print(\"No filled sell orders\")\n        return {}\n    with open(\"order_book/filled_orders/filled_sell_orders.json\", \"r\") as file:\n            data = json.load(file)\n    return data            \ndef set_unfilled_sell_orders(data):\n    # Save to a file",
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "set_unfilled_sell_orders",
+        "kind": 2,
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "peekOfCode": "def set_unfilled_sell_orders(data):\n    # Save to a file\n    with open(\"order_book/unfilled_orders/unfilled_sell_orders.json\", \"w\") as file:\n        json.dump(data, file)  \ndef get_unfilled_sell_orders():\n    # Save to a file\n    if os.stat('order_book/unfilled_orders/unfilled_sell_orders.json').st_size == 0:\n        print(\"No unfilled sell orders\")\n        return {}\n    with open(\"order_book/unfilled_orders/unfilled_sell_orders.json\", \"r\") as file:",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3759,7 +3914,7 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def get_unfilled_sell_orders():\n    # Save to a file\n    with open(\"order_book/filled_sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data            \ndef get_sell_orders():\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
+        "peekOfCode": "def get_unfilled_sell_orders():\n    # Save to a file\n    if os.stat('order_book/unfilled_orders/unfilled_sell_orders.json').st_size == 0:\n        print(\"No unfilled sell orders\")\n        return {}\n    with open(\"order_book/unfilled_orders/unfilled_sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data   \ndef get_sell_orders():\n    # Save to a file",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3768,7 +3923,7 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def get_sell_orders():\n    # Save to a file\n    with open(\"order_book/sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data\ndef get_buy_orders():\n    # Save to a file\n    with open(\"order_book/buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
+        "peekOfCode": "def get_sell_orders():\n    # Save to a file\n    if os.stat('order_book/sell_orders.json').st_size == 0:\n        raise ValueError(\"No Sell orders\")\n    with open(\"order_book/sell_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data\ndef get_buy_orders():\n    # Save to a file\n    if os.stat('order_book/buy_orders.json').st_size == 0:",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -3777,8 +3932,17 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def get_buy_orders():\n    # Save to a file\n    with open(\"order_book/buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
+        "peekOfCode": "def get_buy_orders():\n    # Save to a file\n    if os.stat('order_book/buy_orders.json').st_size == 0:\n        raise ValueError(\"No buy orders\")\n    with open(\"order_book/buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
         "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "configure_log",
+        "kind": 2,
+        "importPath": "utils.logging.configure",
+        "description": "utils.logging.configure",
+        "peekOfCode": "def configure_log(level=\"DEBUG\"):\n    today = datetime.now().strftime(\"%Y-%m-%d\")\n    log_filename = f\"algo_logs/algo_run_{today}.log\"\n    logger.remove()\n    logger.add(log_filename, level=\"INFO\")\n    logger.add(sys.stdout, level=level)",
+        "detail": "utils.logging.configure",
         "documentation": {}
     },
     {
@@ -3867,7 +4031,7 @@
         "kind": 2,
         "importPath": "database_cleanup",
         "description": "database_cleanup",
-        "peekOfCode": "def prepare_sell_testdata():\n    add_slots(list(['LUPIN.NS']))\ndef prepare_buy_testdata():\n    clear_trade_log_clients()\n    clean_slots()",
+        "peekOfCode": "def prepare_sell_testdata():\n    add_slots(list(['LUPIN.NS']))\ndef prepare_buy_testdata():\n    logger.debug(\"Preparing buy test data\")\n    clear_trade_log_clients()\n    clean_slots()\n    logger.info(\"Test data prepared. Ready to buy.\")",
         "detail": "database_cleanup",
         "documentation": {}
     },
@@ -3876,7 +4040,7 @@
         "kind": 2,
         "importPath": "database_cleanup",
         "description": "database_cleanup",
-        "peekOfCode": "def prepare_buy_testdata():\n    clear_trade_log_clients()\n    clean_slots()",
+        "peekOfCode": "def prepare_buy_testdata():\n    logger.debug(\"Preparing buy test data\")\n    clear_trade_log_clients()\n    clean_slots()\n    logger.info(\"Test data prepared. Ready to buy.\")",
         "detail": "database_cleanup",
         "documentation": {}
     },
@@ -3885,7 +4049,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    prepare_buy_testdata()\n    buy_stocks = ['IDEA.NS']\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()\n    print(f\"Buy orders:- {buy_orders}\")",
+        "peekOfCode": "def buy():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    prepare_buy_testdata()\n    buy_stocks = ['IDEA.NS','MAHABANK.NS']\n    logger.info(f\"Buy stock list:- {buy_stocks}\")\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -3903,7 +4067,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy_order_validator():\n    buy_orders = get_buy_orders()\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    trade_sync = TradeSync(buy_orders)\n    filled,unfilled = trade_sync.check_orders(buy_orders)\n    print(f\"Filled : {filled}\")\n    print(f\"Unfilled : {unfilled}\")\n    if(not unfilled): return",
+        "peekOfCode": "def buy_order_validator():\n    buy_orders = get_buy_orders()\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    print(f\"Buy orders :- {buy_orders}\")\n    trade_sync = TradeSync(buy_orders)\n    filled,unfilled = trade_sync.check_buy_orders(buy_orders)\n    print(f\"Filled : {filled}\")\n    print(f\"Unfilled : {unfilled}\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -3912,16 +4076,25 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def filled_buy_orders_processor():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    filled_buy_orders = get_filled_buy_orders()\n    trade_sync = TradeSync(filled_buy_orders)\n    trade_sync.sync_filled_buy_trades(filled_buy_orders)\ndef trade_sync_sell():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)",
+        "peekOfCode": "def filled_buy_orders_processor():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    filled_buy_orders = get_filled_buy_orders()\n    trade_sync = TradeSync(filled_buy_orders)\n    trade_sync.sync_filled_buy_trades(filled_buy_orders)\ndef sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)",
         "detail": "lambda_function",
         "documentation": {}
     },
     {
-        "label": "trade_sync_sell",
+        "label": "sell_order_validator",
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def trade_sync_sell():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_orders(sell_orders)\n    print(f\"Try 1: Unfilled : {unfilled}\")\n    trade_sync.sync_filled_sell_trades(filled)\n    print(\"Try 1: Trade Synced for filled orders\")\n    if(not unfilled): return\n    print(\"Try 2: Retry for below Unfilled\")\n    print(f\"Try 2: Unfilled:- {unfilled}\")",
+        "peekOfCode": "def sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_sell_orders(sell_orders)\n    print(f\"Filled : {filled}\")\n    print(f\"Unfilled : {unfilled}\")\n    time.sleep(1)\n    if(not unfilled): return\n    print(\"Retry for below Unfilled\")\n    print(f\"Unfilled:- {unfilled}\")",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "filled_sell_orders_processor",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def filled_sell_orders_processor():\n    # if not check_connectivity(): \n    #     print(\"Please check your connection\")\n    #     return\n    filled_sell_orders = get_filled_sell_orders()\n    trade_sync = TradeSync(filled_sell_orders)\n    trade_sync.sync_filled_sell_trades(filled_sell_orders)\ndef complete():\n    db = get_database()\n    watch_list = get_watchlist(db)",
         "detail": "lambda_function",
         "documentation": {}
     },

@@ -9,17 +9,16 @@ from database.dao.watchlist_dao import get_watchlist
 from database.dynamodb import get_database
 from database.dao.client_dao import *
 from database_cleanup import prepare_buy_testdata, prepare_sell_testdata
+import time
 from utils.csv.helpers import save_buy_orders, save_sell_orders
-from utils.database_helper.client import clear_trade_log_clients
-from utils.gsheets.helpers import add_text
-from utils.gsheets.security.connect import gsheets_auth
-from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_sell_orders,
+from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_filled_sell_orders, get_sell_orders,
     set_buy_orders, set_sell_orders)
+from utils.logging.configure import configure_log
 from utils.watchlist_filter import massage_watchlist
 import socket
-import requests
 import dns.resolver
 import warnings
+from loguru import logger
 
 
 def buy():
@@ -27,12 +26,15 @@ def buy():
     #     print("Please check your connection")
     #     return
     prepare_buy_testdata()
-    buy_stocks = ['IDEA.NS']
+    
+    buy_stocks = ['IDEA.NS','MAHABANK.NS']
+    logger.info(f"Buy stock list:- {buy_stocks}")
     buy_algo = MidcapBuyAlgorithm(buy_stocks)
     buy_algo.allocate_slots()
     buy_orders = buy_algo.order_executor()
-    print(f"Buy orders:- {buy_orders}")
     set_buy_orders(buy_orders)
+    logger.info(f"Consolidated Buy Orders details for each client:- {buy_orders}")
+    logger.debug("Consolidated Buy Orders details saved locally.")
     return buy_orders
     
     
@@ -53,23 +55,26 @@ def buy_order_validator():
     # if not check_connectivity(): 
     #     print("Please check your connection")
     #     return
+    print(f"Buy orders :- {buy_orders}")
     trade_sync = TradeSync(buy_orders)
-    filled,unfilled = trade_sync.check_orders(buy_orders)
+    filled,unfilled = trade_sync.check_buy_orders(buy_orders)
     print(f"Filled : {filled}")
     print(f"Unfilled : {unfilled}")
-
+    
     if(not unfilled): return
     print("Retry for below Unfilled")
     print(f"Unfilled:- {unfilled}")
-    filled,unfilled = trade_sync.check_orders(unfilled)
+    time.sleep(1)
+    filled,unfilled = trade_sync.check_buy_orders(unfilled)
     
     if(not unfilled): return
     print("Market order for below unfilled")
     print(f"Unfilled:- {unfilled}")
-    
+    time.sleep(1)
     modified,unmodified = trade_sync.bulk_modify_to_market(unfilled)
     print(f"Modified orders: {modified}")
-    filled,unfilled = trade_sync.check_orders(modified)
+    time.sleep(2)
+    filled,unfilled = trade_sync.check_buy_orders(modified)
     print(f"Now filled{filled}")
     print(f"Now unfilled{unfilled}")
     print("Failed to Modify")
@@ -84,33 +89,41 @@ def filled_buy_orders_processor():
     trade_sync = TradeSync(filled_buy_orders)
     trade_sync.sync_filled_buy_trades(filled_buy_orders)
 
-def trade_sync_sell():
+def sell_order_validator():
     
     sell_orders = get_sell_orders()
     trade_sync = TradeSync(sell_orders)
-    filled,unfilled = trade_sync.check_orders(sell_orders)
-    print(f"Try 1: Unfilled : {unfilled}")
-    trade_sync.sync_filled_sell_trades(filled)
-    print("Try 1: Trade Synced for filled orders")
-    
+    filled,unfilled = trade_sync.check_sell_orders(sell_orders)
+    print(f"Filled : {filled}")
+    print(f"Unfilled : {unfilled}")
+    time.sleep(1)
     if(not unfilled): return
-    print("Try 2: Retry for below Unfilled")
-    print(f"Try 2: Unfilled:- {unfilled}")
-    
-    filled,unfilled = trade_sync.check_orders(unfilled)
-    trade_sync.sync_filled_sell_trades(filled)
-    print("Try 2: Trade Synced for filled orders")
-    
+    print("Retry for below Unfilled")
+    print(f"Unfilled:- {unfilled}")
+    filled,unfilled = trade_sync.check_sell_orders(unfilled)
+    time.sleep(1)
     if(not unfilled): return
-    print("Try 3: Market order for below unfilled")
-    print(f"Try 3: Unfilled:- {unfilled}")
+    print("Market order for below unfilled")
+    print(f"Unfilled:- {unfilled}")
+    
     modified,unmodified = trade_sync.bulk_modify_to_market(unfilled)
+    print(f"Modified orders: {modified}")
+    time.sleep(2)
+    filled,unfilled = trade_sync.check_sell_orders(modified)
+    print(f"Now filled{filled}")
+    print(f"Now unfilled{unfilled}")
+    print("Failed to Modify")
+    print(unmodified)
     
-    filled,unfilled = trade_sync.check_orders(modified)
-    trade_sync.sync_filled_sell_trades(filled)
-    print("Failed even after Modify")
-    print(unfilled)
     return
+
+def filled_sell_orders_processor():
+    # if not check_connectivity(): 
+    #     print("Please check your connection")
+    #     return
+    filled_sell_orders = get_filled_sell_orders()
+    trade_sync = TradeSync(filled_sell_orders)
+    trade_sync.sync_filled_sell_trades(filled_sell_orders)
     
     
     
@@ -209,12 +222,22 @@ def resolve_with_custom_dns(domain):
     except Exception as e:
         print(f"Failed to resolve {domain}: {e}")
 
-
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
+    
+    configure_log(level="INFO")
     run("Buy")
-    buy_order_validator()
-    filled_buy_orders_processor()
-    # print(gsheets_auth())
-    # add_text()
-    # update_dynamodb_balance("DEEPAK17",200)
+    # buy_order_validator()
+    # filled_buy_orders_processor()
+    
+    # input("Please press enter for sell: ")
+    # print(f"Proceeding on command!")
+    
+    # run("Sell")
+    # sell_order_validator()
+    # filled_sell_orders_processor()
+    # logger.debug("Test")
+    # logger.info("This is an info message")
+    # logger.warning("This is a warning message")
+    # logger.error("This is an error message")
+    # logger.critical("This is a critical message")

@@ -1,0 +1,85 @@
+2024-10-23 16:39:32.210 | INFO     | __main__:<module>:237 - This is an info message
+2024-10-23 16:39:32.210 | WARNING  | __main__:<module>:238 - This is a warning message
+2024-10-23 16:39:32.211 | ERROR    | __main__:<module>:239 - This is an error message
+2024-10-23 16:39:32.211 | CRITICAL | __main__:<module>:240 - This is a critical message
+2024-10-23 16:42:38.485 | INFO     | __main__:<module>:237 - This is an info message
+2024-10-23 16:42:38.486 | WARNING  | __main__:<module>:238 - This is a warning message
+2024-10-23 16:42:38.486 | ERROR    | __main__:<module>:239 - This is an error message
+2024-10-23 16:42:38.486 | CRITICAL | __main__:<module>:240 - This is a critical message
+2024-10-23 16:42:47.712 | INFO     | __main__:<module>:237 - This is an info message
+2024-10-23 16:42:47.712 | WARNING  | __main__:<module>:238 - This is a warning message
+2024-10-23 16:42:47.712 | ERROR    | __main__:<module>:239 - This is an error message
+2024-10-23 16:42:47.712 | CRITICAL | __main__:<module>:240 - This is a critical message
+›2024-10-23 18:54:20.252 | INFO     | __main__:<module>:237 - This is an info message
+2024-10-23 18:54:20.252 | WARNING  | __main__:<module>:238 - This is a warning message
+2024-10-23 18:54:20.252 | ERROR    | __main__:<module>:239 - This is an error message
+2024-10-23 18:54:20.252 | CRITICAL | __main__:<module>:240 - This is a critical message
+2024-10-23 18:55:22.024 | INFO     | __main__:<module>:237 - This is an info message
+2024-10-23 18:55:22.025 | WARNING  | __main__:<module>:238 - This is a warning message
+2024-10-23 18:55:22.025 | ERROR    | __main__:<module>:239 - This is an error message
+2024-10-23 18:55:22.025 | CRITICAL | __main__:<module>:240 - This is a critical message
+2024-10-23 19:24:03.870 | INFO     | database_cleanup:prepare_buy_testdata:12 - Preparing buy test data
+2024-10-23 19:24:04.182 | INFO     | utils.database_helper.client:clear_trade_log_clients:16 - Cleared trade log for DEEPAK17
+2024-10-23 19:24:04.204 | INFO     | utils.database_helper.client:clear_trade_log_clients:16 - Cleared trade log for WEALTH666
+2024-10-23 19:24:04.268 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-10-23 19:24:04.268 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-10-23 19:24:04.270 | INFO     | database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-10-23 19:24:04.270 | INFO     | __main__:buy:31 - Buy stock list:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:24:04.386 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:24:06.808 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:59 - Buy order for MAHABANK.NS failed for DEEPAK17
+2024-10-23 19:24:08.197 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:59 - Buy order for MAHABANK.NS failed for WEALTH666
+2024-10-23 19:24:08.200 | INFO     | __main__:buy:36 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('2300009DEEPAK17', 'IDEA.NS')], 'date': '2024-10-23 19:24:08', 'WEALTH666': [('2300012WEALTH666', 'IDEA.NS')]}
+2024-10-23 19:42:42.416 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-10-23 19:42:42.417 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-10-23 19:42:42.419 | INFO     | database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-10-23 19:42:42.419 | INFO     | __main__:buy:31 - Buy stock list:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:42:42.534 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:42:43.391 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:45 - Initiating Position sizing for DEEPAK17
+2024-10-23 19:42:44.067 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 1 IDEA.NS for DEEPAK17 
+2024-10-23 19:42:44.234 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-10-23 19:42:44.600 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 0 MAHABANK.NS for DEEPAK17 
+2024-10-23 19:42:44.685 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-10-23 19:42:44.685 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:60 - Buy order for MAHABANK.NS failed for DEEPAK17
+2024-10-23 19:42:45.762 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:45 - Initiating Position sizing for WEALTH666
+2024-10-23 19:42:45.869 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-10-23 19:42:46.044 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Oops! Exchange Connectivity Failed, Please Try Again
+2024-10-23 19:42:46.106 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 0 MAHABANK.NS for WEALTH666 
+2024-10-23 19:42:46.211 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-10-23 19:42:46.211 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:60 - Buy order for MAHABANK.NS failed for WEALTH666
+2024-10-23 19:42:46.214 | INFO     | __main__:buy:36 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('2300010DEEPAK17', 'IDEA.NS')], 'date': '2024-10-23 19:42:46', 'WEALTH666': [('2300013WEALTH666', 'IDEA.NS')]}
+2024-10-23 19:43:03.265 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-10-23 19:43:03.266 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-10-23 19:43:03.267 | INFO     | database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-10-23 19:43:03.267 | INFO     | __main__:buy:31 - Buy stock list:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:43:03.383 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:43:05.485 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:45 - Initiating Position sizing for DEEPAK17
+2024-10-23 19:43:05.893 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 1 IDEA.NS for DEEPAK17 
+2024-10-23 19:43:06.049 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-10-23 19:43:06.195 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 0 MAHABANK.NS for DEEPAK17 
+2024-10-23 19:43:06.290 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-10-23 19:43:06.290 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:60 - Buy order for MAHABANK.NS failed for DEEPAK17
+2024-10-23 19:43:06.950 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:45 - Initiating Position sizing for WEALTH666
+2024-10-23 19:43:07.092 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-10-23 19:43:07.250 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Oops! Exchange Connectivity Failed, Please Try Again
+2024-10-23 19:43:07.313 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 0 MAHABANK.NS for WEALTH666 
+2024-10-23 19:43:07.406 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-10-23 19:43:07.406 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:60 - Buy order for MAHABANK.NS failed for WEALTH666
+2024-10-23 19:43:07.408 | INFO     | __main__:buy:36 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('2300011DEEPAK17', 'IDEA.NS')], 'date': '2024-10-23 19:43:07', 'WEALTH666': [('2300014WEALTH666', 'IDEA.NS')]}
+2024-10-23 19:43:33.924 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-10-23 19:43:33.925 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-10-23 19:43:33.926 | INFO     | database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-10-23 19:43:33.926 | INFO     | __main__:buy:31 - Buy stock list:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:43:34.047 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'MAHABANK.NS']
+2024-10-23 19:43:34.928 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:45 - Initiating Position sizing for DEEPAK17
+2024-10-23 19:43:35.348 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 1 IDEA.NS for DEEPAK17 
+2024-10-23 19:43:35.812 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-10-23 19:43:35.955 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 0 MAHABANK.NS for DEEPAK17 
+2024-10-23 19:43:36.073 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-10-23 19:43:36.074 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:60 - Buy order for MAHABANK.NS failed for DEEPAK17
+2024-10-23 19:43:37.089 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:45 - Initiating Position sizing for WEALTH666
+2024-10-23 19:43:37.200 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-10-23 19:43:37.358 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Oops! Exchange Connectivity Failed, Please Try Again
+2024-10-23 19:43:37.420 | INFO     | brokers.motilal.order:place_buy_order:11 - Placing buy order of 0 MAHABANK.NS for WEALTH666 
+2024-10-23 19:43:37.513 | INFO     | brokers.motilal.order:place_buy_order:29 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-10-23 19:43:37.513 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:60 - Buy order for MAHABANK.NS failed for WEALTH666
+2024-10-23 19:43:37.517 | INFO     | __main__:buy:36 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('2300012DEEPAK17', 'IDEA.NS')], 'date': '2024-10-23 19:43:37', 'WEALTH666': [('2300015WEALTH666', 'IDEA.NS')]}

@@ -4,6 +4,7 @@ from algobaba.buy_order import send_buy_order
 from brokers.motilal.order import place_buy_order
 from database.dao.client_dao import *
 import boto3
+from loguru import logger
 from utils.enums.signal import Signal
 import math
 from stock_data.price import fetch_1d_stock_data, fetch_stock_data, get_last_traded_price
@@ -41,9 +42,10 @@ class PositionSizingBuy:
         return brokerage
     
     def position_sizing(self,final_buy_stocks,total_available_slots_before_buy,Mofsl):
+        logger.info(f"Initiating Position sizing for {self.client_code}")
         total_available_capital = get_client_balance(self.db,self.client_code)
         if total_available_slots_before_buy == 0:
-            print("No slots available")
+            logger.info("No slots available")
             return []
         amount_to_invest = total_available_capital/total_available_slots_before_buy
         client_order_list = []
@@ -54,12 +56,10 @@ class PositionSizingBuy:
             qty = math.floor(Decimal(amount_to_invest)/Decimal(last_traded_price))
             # Last traded price is only to get an idea to estimate the quantity
             request_id = place_buy_order(self.client_code,buy_stock,qty,Mofsl)
-            # print(request_id)
-            if request_id == None:
-                return None
+            if request_id == '':
+                logger.error(f"Buy order for {buy_stock} failed for {self.client_code}")
+                continue
             client_order_list.append((request_id,buy_stock))
-            # TODO:- Test if order log is getting created in DynamoDB
-            # add_order_log(self.db,self.client_code,current_datetime,buy_stock,Signal.BUY.value,request_id,qty)
         return client_order_list
            
            

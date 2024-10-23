@@ -1,16 +1,16 @@
 from brokers.motilal.login import client_login
 from database.dao.client_dao import get_client_holding
 from database.dynamodb import get_database
+import loguru
 from stock_data.price import fetch_1d_stock_data, get_last_traded_price
 from stock_data.symbols import get_symbol_token
 from algobaba.order_details import get_trade_price, get_trade_qty, is_order_completed
+from loguru import logger
 
 def place_buy_order(client_code,stock_code,qty,Mofsl):
-    print("--------------------------------PlaceOrder--------------------------------")
+    logger.info(f"Placing buy order of {qty} {stock_code} for {client_code} ")
     ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))
-    # Convert it into the token that motilal wants
     stock_code = get_symbol_token(stock_code)
-    print(round(ltp, 4),stock_code)
     stock_code = stock_code
     Orderinfo = {
         "clientcode":client_code,      
@@ -20,22 +20,20 @@ def place_buy_order(client_code,stock_code,qty,Mofsl):
         "ordertype":"LIMIT",
         "producttype":"DELIVERY",
         "orderduration":"DAY",
-        "price":round(ltp-0.3, 4),
+        "price":round(ltp, 4),
         "quantityinlot":qty,
         "amoorder":"N"
     }
-    print(f"Placing buy order for {client_code} with order info {Orderinfo}")
     response = Mofsl.PlaceOrder(Orderinfo)
-
-    print(f"Buy Order for {client_code} is {response}")
+    logger.debug(f"PlaceOrder for Buy Response:- {response}")
+    logger.info(f"PlaceOrder for Buy Message:- {response['message']}")
     return response['uniqueorderid']
 
 
 def place_sell_order(db,client_code,stock_code,Mofsl):
-    print("--------------------------------PlaceOrder--------------------------------")
-    # PlaceOrderInfo
     qty = 1
     # qty = get_client_holding(db,client_code,stock_code)
+    logger.debug(f"Placing sell order of {qty} {stock_code} for {client_code} ")
     ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))
     # Convert it into the token that motilal wants
     stock_code = get_symbol_token(stock_code)
@@ -51,11 +49,9 @@ def place_sell_order(db,client_code,stock_code,Mofsl):
          "amoorder":"N",
          "price":round(ltp, 4),
     }
-    print(f"Placing sell order for {client_code}")
-    print(Orderinfo)
-    
     response = Mofsl.PlaceOrder(Orderinfo)
-    print(f"Sell Order for {client_code} is {response}")
+    logger.debug(f"PlaceOrder for Sell Response:- {response}")
+    logger.info(f"PlaceOrder for Sell Message:- {response['message']}")
     return response['uniqueorderid']
 
 
@@ -64,9 +60,12 @@ def get_modified_time(Mofsl,client_code,order_id):
 
 def get_trade_price(Mofsl,client_code,order_id):
     orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
-    print(orderdetails)
     return orderdetails['data'][0]['averageprice']
-    
+
+def get_xchange_trade_id(Mofsl,client_code,order_id):
+    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
+    return orderdetails['data'][0]['orderid']
+
 def get_trade_qty(Mofsl,client_code,order_id):
     return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']
 
@@ -75,11 +74,13 @@ def get_order_qty(Mofsl,client_code,order_id):
     
 def order_status(Mofsl,client_code,order_id):
     order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
-    print(order_details)
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
+        logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         return False
-    if (order_details['data'][0]['orderstatus']=="Traded" ):
+    if (order_details['data'][0]['orderstatus']=="Traded"):
+        logger.info(f"Order is executed and the status is 'Traded'")
         return True
+    logger.info("Order is still not 'Traded")
     return False
     
     

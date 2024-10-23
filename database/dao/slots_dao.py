@@ -1,4 +1,5 @@
 import configparser
+from loguru import logger
 
 # Initialize the configparser
 config = configparser.ConfigParser()
@@ -18,8 +19,7 @@ def update_slots(db,update_slots):
     slots = db.Table('stock_slots'+ env)
     key = {"stock_slots_id":"1"}
     response = slots.get_item(Key=key)
-    print(response)
     response['Item']['stock_slots'] = update_slots
     slots.put_item(Item = response['Item'])
-    print(response['Item']['stock_slots'])
+    logger.info(f"Slots updated:- {update_slots}")
     return update_slots

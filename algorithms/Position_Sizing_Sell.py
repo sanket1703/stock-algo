@@ -39,5 +39,8 @@ class PositionSizingSell:
         client_order_list = []
         for stock_sell in stocks_sell:
             request_id = place_sell_order(self.db,self.client_code,stock_sell,Mofl)
+            if request_id == '':
+                print(f"Could not sell {stock_sell}")
+                continue
             client_order_list.append((request_id,stock_sell))
         return client_order_list

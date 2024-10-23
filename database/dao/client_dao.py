@@ -64,10 +64,10 @@ def offload_holding(db,client_code,stock_name):
     del response['Items'][0]['holding'][stock_name]
     clients.put_item(Item=response['Items'][0])
     
-def add_trade_log(db,client_code,date,stock_name,direction,price,qty):
+def add_trade_log(db,client_code,date,stock_name,direction,price,qty,xchange_trade_id):
     clients = db.Table('clients'+ env)
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
-    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty).to_list())
+    response['Items'][0]['daily_trade_log'].append(DailyTradeLog(date,stock_name,direction,price,qty,xchange_trade_id).to_list())
     clients.put_item(Item=response['Items'][0])
 
 def add_order_log(db,client_code,date,stock_name,direction,requestId,qty):

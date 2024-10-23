@@ -5,6 +5,7 @@ from brokers.motilal.login import client_login
 from database.dao.client_dao import get_client_list
 from database.dao.slots_dao import * 
 from database.dynamodb import get_database
+from loguru import logger
 
 
 class MidcapBuyAlgorithm:
@@ -16,7 +17,7 @@ class MidcapBuyAlgorithm:
         self.final_stocks_buy = []
         
     def order_executor(self):
-        print("Starting Position sizing")
+        logger.debug("Starting Order Execution")
         buy_orders = {}
         
         for client_code in self.clients:
@@ -24,12 +25,13 @@ class MidcapBuyAlgorithm:
             client = PositionSizingBuy(client_code)
             client_order = client.position_sizing(self.final_stocks_buy,self.total_available_slots_before_buy,Mofl)
             if client_order == None:
+                logger.error(f"No buy orders executed for {client_code}")
                 continue
             buy_orders[client_code] = client_order
             current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             buy_orders["date"] = current_datetime
             
-        print(buy_orders)
+        logger.debug("Order Execution completed")
         return buy_orders
     
     def get_client_auth(self,client_code):
@@ -44,7 +46,7 @@ class MidcapBuyAlgorithm:
         self.total_available_slots_before_buy = max_slots - len(slots)
         
         if self.total_available_slots_before_buy == 0:
-            print("There are no available slots.")
+            logger.info("No slots available.")
             return ([],self.total_available_slots_before_buy)
         
         for stock in buy_stocks:
@@ -52,7 +54,7 @@ class MidcapBuyAlgorithm:
                 self.final_stocks_buy.append(stock)
                 slots.append(stock)
             else:
-                print(f"{stock} already present in the slots. Not Buying")
+                logger.info(f"{stock} already present in the slots. Not buying {stock}")
             
             if len(slots) >= max_slots:
                 break

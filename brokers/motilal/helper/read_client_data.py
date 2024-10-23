@@ -34,7 +34,3 @@ def read_csv_to_dict():
         return f"File not found: {csv_file_path}"
     except Exception as e:
         return f"An error occurred: {e}"
-
-# Example usage
-client_data = read_csv_to_dict()
-print(client_data)
