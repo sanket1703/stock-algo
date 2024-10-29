@@ -1,7 +1,7 @@
 from datetime import datetime
 from decimal import Decimal
 
-from brokers.algobaba.order_details import get_trade_price, get_trade_qty
+from brokers.algobaba.order_details import get_trade_price, get_trade_qty, is_order_completed
 from database.dao.client_dao import *
 from utils.enums.signal import Signal
 class TradeSync:

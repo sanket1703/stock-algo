@@ -1007,6 +1007,14 @@
         "documentation": {}
     },
     {
+        "label": "is_order_completed",
+        "importPath": "brokers.algobaba.order_details",
+        "description": "brokers.algobaba.order_details",
+        "isExtraImport": true,
+        "detail": "brokers.algobaba.order_details",
+        "documentation": {}
+    },
+    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
