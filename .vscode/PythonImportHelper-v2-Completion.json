@@ -2076,7 +2076,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def adhoc_buy():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(qty_entry.get())\n    limit_price = float(limit_price_entry.get())\n    stock_code = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "peekOfCode": "def adhoc_buy():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(qty_entry.get())\n    limit_price = float(limit_price_entry.get())\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2085,7 +2085,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def adhoc_sell():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(qty_entry.get())\n    limit_price = float(limit_price_entry.get())\n    stock_code = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "peekOfCode": "def adhoc_sell():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(qty_entry.get())\n    limit_price = float(limit_price_entry.get())\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },

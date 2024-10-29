@@ -1,0 +1,8 @@
+2024-10-29 22:31:40.782 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:113 - PlaceOrder for WEALTH666 Sell Response:- {'status': 'ERROR', 'message': 'Oops! Exchange Connectivity Failed, Please Try Again', 'errorcode': '100026', 'uniqueorderid': '2900009WEALTH666'}
+2024-10-29 22:31:40.782 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:114 - PlaceOrder for Sell Message:- Oops! Exchange Connectivity Failed, Please Try Again
+2024-10-29 22:34:40.965 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:113 - PlaceOrder for WEALTH666 Sell Response:- {'status': 'ERROR', 'message': 'Short Selling Not Allowed For Requested Scrip', 'errorcode': '100031', 'uniqueorderid': '2900010WEALTH666'}
+2024-10-29 22:34:40.966 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:114 - PlaceOrder for Sell Message:- Short Selling Not Allowed For Requested Scrip
+2024-10-29 22:36:32.399 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:54 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-10-29 22:36:36.019 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:72 - PlaceOrder for WEALTH666 Buy Response:- {'status': 'ERROR', 'message': 'Oops! Exchange Connectivity Failed, Please Try Again', 'errorcode': '100026', 'uniqueorderid': '2900011WEALTH666'}
+2024-10-29 22:36:36.019 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:73 - PlaceOrder for Buy Message:- Oops! Exchange Connectivity Failed, Please Try Again
+2024-10-29 22:38:06.892 | INFO     | adhoc_module.broker.motilal.order:adhoc_status:36 - Order is still not 'Traded

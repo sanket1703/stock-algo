@@ -181,7 +181,7 @@ if __name__ == "__main__":
     ######################################
     
     # adhoc_order("Buy")
-    # adhoc_order("Sell")
+    # adhoc_order("Status")
     # adhoc_order("Status")
     
     

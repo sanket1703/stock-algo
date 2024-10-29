@@ -20,7 +20,7 @@ def adhoc_status():
     stock_code=order_details['data'][0]['symbol']
     qty=order_details['data'][0]['orderqty']
     price=order_details['data'][0]['price']
-    direction=['data'][0]['buyorsell']
+    direction=order_details['data'][0]['buyorsell']
     logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
@@ -43,16 +43,16 @@ def adhoc_buy():
     client_code = client_code_entry.get()
     qty = int(qty_entry.get())
     limit_price = float(limit_price_entry.get())
-    stock_code = stock_code_entry.get()
+    stock_code_ns = stock_code_entry.get()
 
     # Return or print the values
     logger.debug("Client Code:", client_code)
     logger.debug("Quantity:", qty)
     logger.debug("Limit Price:", limit_price)
-    logger.debug("Stock Code:", stock_code)
+    logger.debug("Stock Code:", stock_code_ns)
     
-    logger.info(f"Placing buy order of {qty} {stock_code} for {client_code} ")
-    stock_code = get_symbol_token(stock_code)
+    logger.info(f"Placing buy order of {qty} {stock_code_ns} for {client_code} ")
+    stock_code = get_symbol_token(stock_code_ns)
     Mofsl = client_login(client_code)
     Orderinfo = {
         "clientcode":client_code,      
@@ -71,7 +71,7 @@ def adhoc_buy():
         response = Mofsl.PlaceOrder(Orderinfo)
         logger.info(f"PlaceOrder for {client_code} Buy Response:- {response}")
         logger.info(f"PlaceOrder for Buy Message:- {response['message']}")
-        message = f"Response for Buy Order {stock_code}/BUY/{qty}@Rs{limit_price}:- \n{response}"
+        message = f"Response for Buy Order {stock_code_ns}/BUY/{qty}@Rs{limit_price}:- \n{response}"
         notification("Buy",message,client_code,response['uniqueorderid'])
         root.destroy()
     else:
@@ -83,15 +83,15 @@ def adhoc_sell():
     client_code = client_code_entry.get()
     qty = int(qty_entry.get())
     limit_price = float(limit_price_entry.get())
-    stock_code = stock_code_entry.get()
+    stock_code_ns = stock_code_entry.get()
 
     # Return or print the values
     logger.debug("Client Code:", client_code)
     logger.debug("Quantity:", qty)
     logger.debug("Limit Price:", limit_price)
-    logger.debug("Stock Code:", stock_code)
+    logger.debug("Stock Code:", stock_code_ns)
     
-    stock_code = get_symbol_token(stock_code)
+    stock_code = get_symbol_token(stock_code_ns)
     
     logger.debug(f"Placing sell order of {qty} {stock_code} for {client_code} ")
     Mofsl = client_login(client_code)
@@ -112,7 +112,7 @@ def adhoc_sell():
         response = Mofsl.PlaceOrder(Orderinfo)
         logger.info(f"PlaceOrder for {client_code} Sell Response:- {response}")
         logger.info(f"PlaceOrder for Sell Message:- {response['message']}")
-        message = f"Response for Sell Order {stock_code}/SELL/{qty}@{limit_price}:- \n{response}"
+        message = f"Response for Sell Order {stock_code_ns}/SELL/{qty}@{limit_price}:- \n{response}"
         notification("Sell",message,client_code,response['uniqueorderid'])
         root.destroy()
     else:
