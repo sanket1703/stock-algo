@@ -1,6 +1,5 @@
 import requests
-from algobaba.dto.ABRequest import *
-from algobaba.dto.ABResponse import *
+from brokers.algobaba.dto.ABRequest import ABOrderRequest
 from database.dao.client_dao import get_client_holding
 
 # Define the endpoint

@@ -243,143 +243,6 @@
         "documentation": {}
     },
     {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "get",
-        "importPath": "requests",
-        "description": "requests",
-        "isExtraImport": true,
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "algobaba.dto.ABRequest",
-        "description": "algobaba.dto.ABRequest",
-        "isExtraImport": true,
-        "detail": "algobaba.dto.ABRequest",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "algobaba.dto.ABRequest",
-        "description": "algobaba.dto.ABRequest",
-        "isExtraImport": true,
-        "detail": "algobaba.dto.ABRequest",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "algobaba.dto.ABResponse",
-        "description": "algobaba.dto.ABResponse",
-        "isExtraImport": true,
-        "detail": "algobaba.dto.ABResponse",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "algobaba.dto.ABResponse",
-        "description": "algobaba.dto.ABResponse",
-        "isExtraImport": true,
-        "detail": "algobaba.dto.ABResponse",
-        "documentation": {}
-    },
-    {
-        "label": "get_client_holding",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "get_client_list",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "get_client_list",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "get_client_holding",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "get_client_list",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "database.dao.client_dao",
-        "description": "database.dao.client_dao",
-        "isExtraImport": true,
-        "detail": "database.dao.client_dao",
-        "documentation": {}
-    },
-    {
         "label": "calculate_ema",
         "importPath": "stock_data.indicators",
         "description": "stock_data.indicators",
@@ -429,14 +292,6 @@
     },
     {
         "label": "fetch_1d_stock_data",
-        "importPath": "stock_data.price",
-        "description": "stock_data.price",
-        "isExtraImport": true,
-        "detail": "stock_data.price",
-        "documentation": {}
-    },
-    {
-        "label": "fetch_stock_data",
         "importPath": "stock_data.price",
         "description": "stock_data.price",
         "isExtraImport": true,
@@ -510,14 +365,6 @@
     },
     {
         "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "time",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -634,6 +481,94 @@
         "description": "brokers.motilal.helper.read_client_data",
         "isExtraImport": true,
         "detail": "brokers.motilal.helper.read_client_data",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_list",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_list",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_holding",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_list",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
         "documentation": {}
     },
     {
@@ -774,22 +709,6 @@
         "documentation": {}
     },
     {
-        "label": "send_buy_order",
-        "importPath": "algobaba.buy_order",
-        "description": "algobaba.buy_order",
-        "isExtraImport": true,
-        "detail": "algobaba.buy_order",
-        "documentation": {}
-    },
-    {
-        "label": "send_sell_order",
-        "importPath": "algobaba.buy_order",
-        "description": "algobaba.buy_order",
-        "isExtraImport": true,
-        "detail": "algobaba.buy_order",
-        "documentation": {}
-    },
-    {
         "label": "place_buy_order",
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
@@ -863,38 +782,6 @@
         "documentation": {}
     },
     {
-        "label": "Signal",
-        "importPath": "utils.enums.signal",
-        "description": "utils.enums.signal",
-        "isExtraImport": true,
-        "detail": "utils.enums.signal",
-        "documentation": {}
-    },
-    {
-        "label": "Signal",
-        "importPath": "utils.enums.signal",
-        "description": "utils.enums.signal",
-        "isExtraImport": true,
-        "detail": "utils.enums.signal",
-        "documentation": {}
-    },
-    {
-        "label": "Signal",
-        "importPath": "utils.enums.signal",
-        "description": "utils.enums.signal",
-        "isExtraImport": true,
-        "detail": "utils.enums.signal",
-        "documentation": {}
-    },
-    {
-        "label": "Signal",
-        "importPath": "utils.enums.signal",
-        "description": "utils.enums.signal",
-        "isExtraImport": true,
-        "detail": "utils.enums.signal",
-        "documentation": {}
-    },
-    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -949,6 +836,30 @@
         "description": "database.dto.clients",
         "isExtraImport": true,
         "detail": "database.dto.clients",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "utils.enums.signal",
+        "description": "utils.enums.signal",
+        "isExtraImport": true,
+        "detail": "utils.enums.signal",
         "documentation": {}
     },
     {
@@ -1080,59 +991,44 @@
         "documentation": {}
     },
     {
-        "label": "get_trade_price",
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
+        "label": "requests",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "algobaba.order_details",
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
         "documentation": {}
     },
     {
-        "label": "get_trade_qty",
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
+        "label": "get",
+        "importPath": "requests",
+        "description": "requests",
         "isExtraImport": true,
-        "detail": "algobaba.order_details",
+        "detail": "requests",
         "documentation": {}
     },
     {
-        "label": "is_order_completed",
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
+        "label": "ABOrderRequest",
+        "importPath": "brokers.algobaba.dto.ABRequest",
+        "description": "brokers.algobaba.dto.ABRequest",
         "isExtraImport": true,
-        "detail": "algobaba.order_details",
+        "detail": "brokers.algobaba.dto.ABRequest",
         "documentation": {}
     },
     {
-        "label": "order_status",
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
+        "label": "*",
+        "importPath": "brokers.algobaba.dto.ABRequest",
+        "description": "brokers.algobaba.dto.ABRequest",
         "isExtraImport": true,
-        "detail": "algobaba.order_details",
+        "detail": "brokers.algobaba.dto.ABRequest",
         "documentation": {}
     },
     {
-        "label": "get_trade_price",
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
+        "label": "*",
+        "importPath": "brokers.algobaba.dto.ABResponse",
+        "description": "brokers.algobaba.dto.ABResponse",
         "isExtraImport": true,
-        "detail": "algobaba.order_details",
-        "documentation": {}
-    },
-    {
-        "label": "get_trade_qty",
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
-        "isExtraImport": true,
-        "detail": "algobaba.order_details",
-        "documentation": {}
-    },
-    {
-        "label": "is_order_completed",
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
-        "isExtraImport": true,
-        "detail": "algobaba.order_details",
+        "detail": "brokers.algobaba.dto.ABResponse",
         "documentation": {}
     },
     {
@@ -2117,96 +2013,6 @@
         "documentation": {}
     },
     {
-        "label": "ABOrderRequest",
-        "kind": 6,
-        "importPath": "algobaba.dto.ABRequest",
-        "description": "algobaba.dto.ABRequest",
-        "peekOfCode": "class ABOrderRequest:\n    def __init__(self,SourceSymbol, TransactionType,StrategyTag,Quantity):\n        self.SourceSymbol = SourceSymbol\n        self.TransactionType = TransactionType\n        self.StrategyTag = StrategyTag\n        self.Quantity = Quantity\n    def to_dict(self):\n        return {\n            'SourceSymbol': self.SourceSymbol,\n            'TransactionType': self.TransactionType,",
-        "detail": "algobaba.dto.ABRequest",
-        "documentation": {}
-    },
-    {
-        "label": "ABOrderStatusRequest",
-        "kind": 6,
-        "importPath": "algobaba.dto.ABRequest",
-        "description": "algobaba.dto.ABRequest",
-        "peekOfCode": "class ABOrderStatusRequest:\n    def __init__(self,request_id):\n        self.request_id = request_id\n    def to_dict(self):\n        return {\n            'RequestId': self.request_id\n        }",
-        "detail": "algobaba.dto.ABRequest",
-        "documentation": {}
-    },
-    {
-        "label": "ABResponse",
-        "kind": 6,
-        "importPath": "algobaba.dto.ABResponse",
-        "description": "algobaba.dto.ABResponse",
-        "peekOfCode": "class ABResponse:\n    def __init__(self,status, response,error):\n        self.status = status\n        self.response = response\n        self.error = error",
-        "detail": "algobaba.dto.ABResponse",
-        "documentation": {}
-    },
-    {
-        "label": "send_buy_order",
-        "kind": 2,
-        "importPath": "algobaba.buy_order",
-        "description": "algobaba.buy_order",
-        "peekOfCode": "def send_buy_order(qty,stock,client):\n    order_direction = 'LE'\n    url = 'http://localhost:21000/MappedOrderSimple'\n    # Define the parameters\n    stock = stock[:-3]\n    params = ABOrderRequest(SourceSymbol=stock,TransactionType=order_direction,StrategyTag=client,Quantity=qty).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data",
-        "detail": "algobaba.buy_order",
-        "documentation": {}
-    },
-    {
-        "label": "send_sell_order",
-        "kind": 2,
-        "importPath": "algobaba.buy_order",
-        "description": "algobaba.buy_order",
-        "peekOfCode": "def send_sell_order(db,stock,client):\n    order_direction = 'SE'\n    url = 'http://localhost:21000/MappedOrderSimple'\n    qty = get_client_holding(db,client,stock)\n    # Define the parameters\n    stock = stock[:-3]\n    params = ABOrderRequest(SourceSymbol=stock,TransactionType=order_direction,StrategyTag=client,Quantity=qty).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)",
-        "detail": "algobaba.buy_order",
-        "documentation": {}
-    },
-    {
-        "label": "is_order_completed",
-        "kind": 2,
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
-        "peekOfCode": "def is_order_completed(request_id):\n    url = f'http://localhost:{port}/isOrderCompleted'\n    # print(url)\n    # Define the parameters\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # print(response)\n    # Check the status code and get the response data",
-        "detail": "algobaba.order_details",
-        "documentation": {}
-    },
-    {
-        "label": "order_status",
-        "kind": 2,
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
-        "peekOfCode": "def order_status(request_id):\n    url = f'http://localhost:{port}/OrderStatus'\n    # Define the parameters\n    # print(url)\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data\n    if response.status_code == 200 and response.json()[\"status\"] == \"success\":",
-        "detail": "algobaba.order_details",
-        "documentation": {}
-    },
-    {
-        "label": "get_trade_price",
-        "kind": 2,
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
-        "peekOfCode": "def get_trade_price(request_id):\n    url = f'http://localhost:{port}/OrderAvgPrice'\n    # Define the parameters\n    # print(url)\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data\n    if response.status_code == 200 and response.json()[\"status\"] == \"success\":",
-        "detail": "algobaba.order_details",
-        "documentation": {}
-    },
-    {
-        "label": "get_trade_qty",
-        "kind": 2,
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
-        "peekOfCode": "def get_trade_qty(request_id):\n    url = f'http://localhost:{port}/OrderFilledQty'\n    # Define the parameters\n    # print(url)\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data\n    if response.status_code == 200 and response.json()[\"status\"] == \"success\":",
-        "detail": "algobaba.order_details",
-        "documentation": {}
-    },
-    {
-        "label": "port",
-        "kind": 5,
-        "importPath": "algobaba.order_details",
-        "description": "algobaba.order_details",
-        "peekOfCode": "port = 21000\ndef is_order_completed(request_id):\n    url = f'http://localhost:{port}/isOrderCompleted'\n    # print(url)\n    # Define the parameters\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # print(response)",
-        "detail": "algobaba.order_details",
-        "documentation": {}
-    },
-    {
         "label": "FilterAlgorithm",
         "kind": 6,
         "importPath": "algorithms.Filter_Algorithm",
@@ -2267,6 +2073,96 @@
         "description": "algorithms.Trade_Sync_Backup",
         "peekOfCode": "class TradeSync:\n    def __init__(self):\n        self.db = self.get_database()\n    def get_database(self):\n        aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n        aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n        # Create a DynamoDB resource object with your credentials\n        dynamodb = boto3.resource(\n            'dynamodb',\n            region_name='ap-south-1',",
         "detail": "algorithms.Trade_Sync_Backup",
+        "documentation": {}
+    },
+    {
+        "label": "ABOrderRequest",
+        "kind": 6,
+        "importPath": "brokers.algobaba.dto.ABRequest",
+        "description": "brokers.algobaba.dto.ABRequest",
+        "peekOfCode": "class ABOrderRequest:\n    def __init__(self,SourceSymbol, TransactionType,StrategyTag,Quantity):\n        self.SourceSymbol = SourceSymbol\n        self.TransactionType = TransactionType\n        self.StrategyTag = StrategyTag\n        self.Quantity = Quantity\n    def to_dict(self):\n        return {\n            'SourceSymbol': self.SourceSymbol,\n            'TransactionType': self.TransactionType,",
+        "detail": "brokers.algobaba.dto.ABRequest",
+        "documentation": {}
+    },
+    {
+        "label": "ABOrderStatusRequest",
+        "kind": 6,
+        "importPath": "brokers.algobaba.dto.ABRequest",
+        "description": "brokers.algobaba.dto.ABRequest",
+        "peekOfCode": "class ABOrderStatusRequest:\n    def __init__(self,request_id):\n        self.request_id = request_id\n    def to_dict(self):\n        return {\n            'RequestId': self.request_id\n        }",
+        "detail": "brokers.algobaba.dto.ABRequest",
+        "documentation": {}
+    },
+    {
+        "label": "ABResponse",
+        "kind": 6,
+        "importPath": "brokers.algobaba.dto.ABResponse",
+        "description": "brokers.algobaba.dto.ABResponse",
+        "peekOfCode": "class ABResponse:\n    def __init__(self,status, response,error):\n        self.status = status\n        self.response = response\n        self.error = error",
+        "detail": "brokers.algobaba.dto.ABResponse",
+        "documentation": {}
+    },
+    {
+        "label": "send_buy_order",
+        "kind": 2,
+        "importPath": "brokers.algobaba.buy_order",
+        "description": "brokers.algobaba.buy_order",
+        "peekOfCode": "def send_buy_order(qty,stock,client):\n    order_direction = 'LE'\n    url = 'http://localhost:21000/MappedOrderSimple'\n    # Define the parameters\n    stock = stock[:-3]\n    params = ABOrderRequest(SourceSymbol=stock,TransactionType=order_direction,StrategyTag=client,Quantity=qty).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data",
+        "detail": "brokers.algobaba.buy_order",
+        "documentation": {}
+    },
+    {
+        "label": "send_sell_order",
+        "kind": 2,
+        "importPath": "brokers.algobaba.buy_order",
+        "description": "brokers.algobaba.buy_order",
+        "peekOfCode": "def send_sell_order(db,stock,client):\n    order_direction = 'SE'\n    url = 'http://localhost:21000/MappedOrderSimple'\n    qty = get_client_holding(db,client,stock)\n    # Define the parameters\n    stock = stock[:-3]\n    params = ABOrderRequest(SourceSymbol=stock,TransactionType=order_direction,StrategyTag=client,Quantity=qty).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)",
+        "detail": "brokers.algobaba.buy_order",
+        "documentation": {}
+    },
+    {
+        "label": "is_order_completed",
+        "kind": 2,
+        "importPath": "brokers.algobaba.order_details",
+        "description": "brokers.algobaba.order_details",
+        "peekOfCode": "def is_order_completed(request_id):\n    url = f'http://localhost:{port}/isOrderCompleted'\n    # print(url)\n    # Define the parameters\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # print(response)\n    # Check the status code and get the response data",
+        "detail": "brokers.algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "order_status",
+        "kind": 2,
+        "importPath": "brokers.algobaba.order_details",
+        "description": "brokers.algobaba.order_details",
+        "peekOfCode": "def order_status(request_id):\n    url = f'http://localhost:{port}/OrderStatus'\n    # Define the parameters\n    # print(url)\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data\n    if response.status_code == 200 and response.json()[\"status\"] == \"success\":",
+        "detail": "brokers.algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_price",
+        "kind": 2,
+        "importPath": "brokers.algobaba.order_details",
+        "description": "brokers.algobaba.order_details",
+        "peekOfCode": "def get_trade_price(request_id):\n    url = f'http://localhost:{port}/OrderAvgPrice'\n    # Define the parameters\n    # print(url)\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data\n    if response.status_code == 200 and response.json()[\"status\"] == \"success\":",
+        "detail": "brokers.algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_qty",
+        "kind": 2,
+        "importPath": "brokers.algobaba.order_details",
+        "description": "brokers.algobaba.order_details",
+        "peekOfCode": "def get_trade_qty(request_id):\n    url = f'http://localhost:{port}/OrderFilledQty'\n    # Define the parameters\n    # print(url)\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # Check the status code and get the response data\n    if response.status_code == 200 and response.json()[\"status\"] == \"success\":",
+        "detail": "brokers.algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "port",
+        "kind": 5,
+        "importPath": "brokers.algobaba.order_details",
+        "description": "brokers.algobaba.order_details",
+        "peekOfCode": "port = 21000\ndef is_order_completed(request_id):\n    url = f'http://localhost:{port}/isOrderCompleted'\n    # print(url)\n    # Define the parameters\n    params = ABOrderStatusRequest(request_id=request_id).to_dict()\n    # print(params)\n    # Send the GET request\n    response = requests.get(url, params=params)\n    # print(response)",
+        "detail": "brokers.algobaba.order_details",
         "documentation": {}
     },
     {

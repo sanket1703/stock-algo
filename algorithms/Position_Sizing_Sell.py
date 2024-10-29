@@ -1,4 +1,4 @@
-from algobaba.buy_order import send_sell_order
+
 from brokers.motilal.order import place_sell_order
 from database.dto.clients import Holding
 from database.dao.client_dao import *

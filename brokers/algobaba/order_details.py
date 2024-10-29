@@ -1,6 +1,6 @@
 import requests
-from algobaba.dto.ABRequest import *
-from algobaba.dto.ABResponse import *
+from brokers.algobaba.dto.ABRequest import *
+from brokers.algobaba.dto.ABResponse import *
 
 port = 21000
 

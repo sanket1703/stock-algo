@@ -1,13 +1,11 @@
-from datetime import datetime, time
+from datetime import datetime
 from decimal import Decimal
-from algobaba.buy_order import send_buy_order
 from brokers.motilal.order import place_buy_order
 from database.dao.client_dao import *
 import boto3
 from loguru import logger
-from utils.enums.signal import Signal
 import math
-from stock_data.price import fetch_1d_stock_data, fetch_stock_data, get_last_traded_price
+from stock_data.price import fetch_1d_stock_data, get_last_traded_price
 
 class PositionSizingBuy:
     def __init__(self,client_code):

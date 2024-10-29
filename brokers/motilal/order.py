@@ -4,7 +4,6 @@ from database.dynamodb import get_database
 import loguru
 from stock_data.price import fetch_1d_stock_data, get_last_traded_price
 from stock_data.symbols import get_symbol_token
-from algobaba.order_details import get_trade_price, get_trade_qty, is_order_completed
 from loguru import logger
 
 def place_buy_order(client_code,stock_code,qty,Mofsl):
