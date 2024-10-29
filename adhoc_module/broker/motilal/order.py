@@ -17,20 +17,24 @@ def adhoc_status():
     Mofsl = client_login(client_code)
     
     order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
+    stock_code=order_details['data'][0]['symbol']
+    qty=order_details['data'][0]['orderqty']
+    price=order_details['data'][0]['price']
+    direction=['data'][0]['buyorsell']
     logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
-        message = f"Could not fetch the order details. Either the order_id expired or could not call MOFSL. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
+        message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nCould not fetch the order details. Either the order_id expired or could not call MOFSL. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
         notification("Status",message,client_code,order_details['data'][0]['uniqueorderid'])
     
     if (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
-        message = f"Order is executed and the status is 'Traded. \n Exchange Trade Id:- {order_details['data'][0]['orderid']}\n\n\n\n {order_details}"
+        message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nOrder is executed and the status is 'Traded. \n Exchange Trade Id:- {order_details['data'][0]['orderid']}\n\n\n\n {order_details}"
         notification("Status",message,client_code,order_details['data'][0]['uniqueorderid'])
     
     logger.info("Order is still not 'Traded")
-    message = f"Order is still not 'Traded. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
+    message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nOrder is still not 'Traded. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
     notification("Status",message,client_code,order_details['data'][0]['uniqueorderid'])
     root.destroy()
 
@@ -67,7 +71,7 @@ def adhoc_buy():
         response = Mofsl.PlaceOrder(Orderinfo)
         logger.info(f"PlaceOrder for {client_code} Buy Response:- {response}")
         logger.info(f"PlaceOrder for Buy Message:- {response['message']}")
-        message = f"Response for Buy Order:- \n{response}"
+        message = f"Response for Buy Order {stock_code}/BUY/{qty}@Rs{limit_price}:- \n{response}"
         notification("Buy",message,client_code,response['uniqueorderid'])
         root.destroy()
     else:
@@ -108,7 +112,7 @@ def adhoc_sell():
         response = Mofsl.PlaceOrder(Orderinfo)
         logger.info(f"PlaceOrder for {client_code} Sell Response:- {response}")
         logger.info(f"PlaceOrder for Sell Message:- {response['message']}")
-        message = f"Response for Sell Order:- \n{response}"
+        message = f"Response for Sell Order {stock_code}/SELL/{qty}@{limit_price}:- \n{response}"
         notification("Sell",message,client_code,response['uniqueorderid'])
         root.destroy()
     else:

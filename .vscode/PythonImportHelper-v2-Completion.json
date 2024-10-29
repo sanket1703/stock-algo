@@ -2067,7 +2067,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def adhoc_status():\n    client_code = client_code_entry.get()\n    order_id = order_id_entry.get()\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    Mofsl = client_login(client_code)\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")",
+        "peekOfCode": "def adhoc_status():\n    client_code = client_code_entry.get()\n    order_id = order_id_entry.get()\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    Mofsl = client_login(client_code)\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    stock_code=order_details['data'][0]['symbol']\n    qty=order_details['data'][0]['orderqty']\n    price=order_details['data'][0]['price']",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
