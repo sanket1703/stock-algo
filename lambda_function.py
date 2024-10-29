@@ -1,4 +1,6 @@
 from FOR_KEYUR import get_watchlist_for_keyur
+
+from adhoc_module.broker.motilal.order import adhoc_order
 from algorithms.Filter_Algorithm import FilterAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
@@ -8,7 +10,8 @@ from brokers.motilal.helper.read_client_data import read_csv_to_dict
 from database.dao.watchlist_dao import get_watchlist
 from database.dynamodb import get_database
 from database.dao.client_dao import *
-from database_cleanup import prepare_buy_testdata, prepare_sell_testdata
+from database.cleanup.database_cleanup import prepare_buy_testdata, prepare_sell_testdata
+from jobs.exchange_tradeid_job import exchange_tradeid_job
 from utils.csv.helpers import save_buy_orders, save_sell_orders
 from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_filled_sell_orders, get_sell_orders,
     set_buy_orders, set_sell_orders)
@@ -20,7 +23,7 @@ from loguru import logger
 
 def buy():
     prepare_buy_testdata()
-    buy_stocks = ['IDEA.NS','MAHABANK.NS']
+    buy_stocks = ['IDEA.NS','GTLINFRA.NS']
     logger.info(f"Buy stock list:- {buy_stocks}")
     buy_algo = MidcapBuyAlgorithm(buy_stocks)
     buy_algo.allocate_slots()
@@ -32,8 +35,8 @@ def buy():
     
     
 def sell():
-    prepare_sell_testdata()
-    sell_stocks = ['IDEA.NS']
+    sell_stocks = ['IDEA.NS','GTLINFRA.NS']
+    prepare_sell_testdata(sell_stocks)
     logger.info(f"Sell stock list:- {sell_stocks}")
     sell_algo = MidcapSellAlgorithm()
     # sell_algo.sell_logic()
@@ -140,26 +143,45 @@ def run(direction):
     event = {}
     event["action"] = direction
     lambda_handler(event,None)
-    
-
 
 
 if __name__ == "__main__":
+    
+    ######################################
+    #########   Configurations    ########
+    ######################################
+    
     warnings.filterwarnings("ignore")
-    
     configure_log(level="DEBUG")
-    run("Buy")
-    buy_order_validator()
-    filled_buy_orders_processor()
     
-    # input("Please press enter for sell: ")
-    # print(f"Proceeding on command!")
+    ######################################
+    #######     Buy Suite     ############
+    ######################################
+    
+    # run("Buy")
+    # buy_order_validator()
+    # filled_buy_orders_processor()
+    
+    ######################################
+    #######     Sell Suite     ###########
+    ######################################
     
     # run("Sell")
     # sell_order_validator()
     # filled_sell_orders_processor()
-    # logger.debug("Test")
-    # logger.info("This is an info message")
-    # logger.warning("This is a warning message")
-    # logger.error("This is an error message")
-    # logger.critical("This is a critical message")
+
+    #####################################
+    #######        Jobs       ###########
+    #####################################
+    
+    # exchange_tradeid_job()
+    
+    ######################################
+    #########      Adhoc Jobs    #########
+    ######################################
+    
+    # adhoc_order("Buy")
+    # adhoc_order("Sell")
+    # adhoc_order("Status")
+    
+    

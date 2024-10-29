@@ -1,6 +1,6 @@
 import json
 import os
-
+from loguru import logger
 def set_buy_orders(data):
     # Save to a file
     with open("order_book/buy_orders.json", "w") as file:
@@ -24,7 +24,7 @@ def set_unfilled_buy_orders(data):
 def get_filled_buy_orders():
     # Save to a file
     if os.stat('order_book/filled_orders/filled_buy_orders.json').st_size == 0:
-        print("No filled buy orders")
+        logger.debug("No filled buy orders")
         return {}
     with open("order_book/filled_orders/filled_buy_orders.json", "r") as file:
         data = json.load(file)
@@ -33,7 +33,7 @@ def get_filled_buy_orders():
 def get_unfilled_buy_orders():
     # Save to a file
     if os.stat('order_book/unfilled_orders/unfilled_buy_orders.json').st_size == 0:
-        print("No unfilled buy orders")
+        logger.debug("No unfilled buy orders")
         return {}
     with open("order_book/unfilled_orders/unfilled_buy_orders.json", "r") as file:
         data = json.load(file)
@@ -47,7 +47,7 @@ def set_filled_sell_orders(data):
 def get_filled_sell_orders():
     # Save to a file
     if os.stat('order_book/filled_orders/filled_sell_orders.json').st_size == 0:
-        print("No filled sell orders")
+        logger.debug("No filled sell orders")
         return {}
     with open("order_book/filled_orders/filled_sell_orders.json", "r") as file:
             data = json.load(file)
@@ -61,7 +61,7 @@ def set_unfilled_sell_orders(data):
 def get_unfilled_sell_orders():
     # Save to a file
     if os.stat('order_book/unfilled_orders/unfilled_sell_orders.json').st_size == 0:
-        print("No unfilled sell orders")
+        logger.debug("No unfilled sell orders")
         return {}
     with open("order_book/unfilled_orders/unfilled_sell_orders.json", "r") as file:
         data = json.load(file)

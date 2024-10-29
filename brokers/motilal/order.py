@@ -74,6 +74,7 @@ def get_order_qty(Mofsl,client_code,order_id):
     
 def order_status(Mofsl,client_code,order_id):
     order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
+    logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         return False
