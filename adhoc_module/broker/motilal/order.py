@@ -27,16 +27,19 @@ def adhoc_status():
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nCould not fetch the order details. Either the order_id expired or could not call MOFSL. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
         notification("Status",message,client_code,order_details['data'][0]['uniqueorderid'])
+        root.destroy()
     
-    if (order_details['data'][0]['orderstatus']=="Traded"):
+    elif (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
-        message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nOrder is executed and the status is 'Traded. \n Exchange Trade Id:- {order_details['data'][0]['orderid']}\n\n\n\n {order_details}"
+        message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nOrder is executed and the status is 'Traded. \n\nExchange Trade Id:- {order_details['data'][0]['orderid']}\n\n\n\n {order_details}"
         notification("Status",message,client_code,order_details['data'][0]['uniqueorderid'])
+        root.destroy()
+    else:
+        logger.info("Order is still not 'Traded")
+        message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nOrder is still not 'Traded. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
+        notification("Status",message,client_code,order_details['data'][0]['uniqueorderid'])
+        root.destroy()
     
-    logger.info("Order is still not 'Traded")
-    message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nOrder is still not 'Traded. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
-    notification("Status",message,client_code,order_details['data'][0]['uniqueorderid'])
-    root.destroy()
 
 def adhoc_buy():
     # Retrieve the values from each entry field
