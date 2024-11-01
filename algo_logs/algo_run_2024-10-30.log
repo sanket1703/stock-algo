@@ -14,3 +14,4 @@
 2024-10-30 10:33:40.418 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:75 - PlaceOrder for WEALTH666 Buy Response:- {'status': 'SUCCESS', 'message': 'Order Placed Successfully', 'errorcode': '', 'uniqueorderid': '3000003WEALTH666'}
 2024-10-30 10:33:40.418 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:76 - PlaceOrder for Buy Message:- Order Placed Successfully
 2024-10-30 10:34:20.886 | INFO     | adhoc_module.broker.motilal.order:adhoc_status:38 - Order is still not 'Traded
+2024-10-30 10:36:51.776 | INFO     | adhoc_module.broker.motilal.order:adhoc_status:33 - Order is executed and the status is 'Traded'
