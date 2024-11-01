@@ -13,6 +13,7 @@ from database.dao.client_dao import *
 from database.cleanup.database_cleanup import prepare_buy_testdata, prepare_sell_testdata
 from jobs.exchange_tradeid_job import exchange_tradeid_job
 from utils.csv.helpers import save_buy_orders, save_sell_orders
+from utils.helpers.helpers import take_confirmation
 from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_filled_sell_orders, get_sell_orders,
     set_buy_orders, set_sell_orders)
 from utils.logging.configure import configure_log
@@ -21,31 +22,37 @@ import warnings
 from loguru import logger
 
 
-def buy():
+def buy(buy_stocks):
     prepare_buy_testdata()
-    buy_stocks = ['IDEA.NS','GTLINFRA.NS']
-    logger.info(f"Buy stock list:- {buy_stocks}")
-    buy_algo = MidcapBuyAlgorithm(buy_stocks)
-    buy_algo.allocate_slots()
-    buy_orders = buy_algo.order_executor()
-    set_buy_orders(buy_orders)
-    logger.info(f"Consolidated Buy Orders details for each client:- {buy_orders}")
-    logger.debug("Consolidated Buy Orders details saved locally.")
-    return buy_orders
+    logger.info(f"Stock list for buy :\n{buy_stocks}")
+    if(take_confirmation()):
+        logger.info(f"Buy stock list:- {buy_stocks}")
+        buy_algo = MidcapBuyAlgorithm(buy_stocks)
+        buy_algo.allocate_slots()
+        buy_orders = buy_algo.order_executor()
+        set_buy_orders(buy_orders)
+        logger.info(f"Consolidated Buy Orders details for each client:- {buy_orders}")
+        logger.debug("Consolidated Buy Orders details saved locally.")
+        return buy_orders
+    else:
+        return
     
     
-def sell():
-    sell_stocks = ['IDEA.NS','GTLINFRA.NS']
+def sell(sell_stocks):
     prepare_sell_testdata(sell_stocks)
-    logger.info(f"Sell stock list:- {sell_stocks}")
-    sell_algo = MidcapSellAlgorithm()
-    # sell_algo.sell_logic()
-    sell_algo.adhoc_sell(sell_stocks)
-    sell_orders = sell_algo.order_executor()
-    set_sell_orders(sell_orders)
-    logger.info(f"Consolidated Sell Orders details for each client:- {sell_orders}")
-    logger.debug("Consolidated Sell Orders details saved locally.")
-    return sell_orders
+    logger.info(f"Stock list for sell : \n{sell_stocks}")
+    if(take_confirmation()):
+        logger.info(f"Stock list for sell :{sell_stocks}")
+        sell_algo = MidcapSellAlgorithm()
+        # sell_algo.sell_logic()
+        sell_algo.adhoc_sell(sell_stocks)
+        sell_orders = sell_algo.order_executor()
+        set_sell_orders(sell_orders)
+        logger.info(f"Consolidated Sell Orders details for each client:- {sell_orders}")
+        logger.debug("Consolidated Sell Orders details saved locally.")
+        return sell_orders
+    else:
+        return
 
 def buy_order_validator():
     
@@ -132,17 +139,57 @@ def complete():
 
 def lambda_handler(event, context):
     if event["action"] == "Buy":
-        return buy()
+        return buy(event["stocks"])
     elif event["action"] == "Sell":
-        return sell()
+        return sell(event["stocks"])
     elif event["action"] == "Complete":
         return complete()
         
 
-def run(direction):
+def order_executor(direction,stocks):
     event = {}
     event["action"] = direction
+    event["stocks"] = stocks
     lambda_handler(event,None)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def final():
+
+    # buy_list = ["IDEA.NS","GTLINFRA.NS"]
+    # order_executor("Buy",buy_list)
+
+
+    sell_list = ["IDEA.NS"]
+    # order_executor("Sell",sell_list)
+
+
+
+
+    # buy_order_validator()
+    # sell_order_validator()
+
+
+
+
+    # filled_buy_orders_processor()
+    filled_sell_orders_processor()
+
+    # exchange_tradeid_job()
 
 
 if __name__ == "__main__":
@@ -153,20 +200,21 @@ if __name__ == "__main__":
     
     warnings.filterwarnings("ignore")
     configure_log(level="DEBUG")
+    final()
     
     ######################################
     #######     Buy Suite     ############
     ######################################
-    
-    # run("Buy")
+    # buy_list = ["IDEA.NS","GTLINFRA.NS"]
+    # order_executor("Buy",buy_list)
     # buy_order_validator()
     # filled_buy_orders_processor()
     
     ######################################
     #######     Sell Suite     ###########
-    ######################################
-    
-    # run("Sell")
+    #####################################
+    # sell_list = []
+    # order_executor("Sell",sell_list)
     # sell_order_validator()
     # filled_sell_orders_processor()
 
@@ -181,7 +229,7 @@ if __name__ == "__main__":
     ######################################
     
     # adhoc_order("Buy")
-    adhoc_order("Status")
+    # adhoc_order("Status")
     # adhoc_order("Sell")
     
     

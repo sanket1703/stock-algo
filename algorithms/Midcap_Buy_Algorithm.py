@@ -62,7 +62,6 @@ class MidcapBuyAlgorithm:
         total_available_slots_after_buy =  max_slots - len(slots)
         
         update_slots(self.db,list(slots))
-        print("Final Buy signal to Broker, Before total Available slots")
         logger.info(f"Final buy list of Stocks :- {self.final_stocks_buy}")
         logger.info(f"Total slots which were available before allocating slots:- {self.total_available_slots_before_buy}")
         return self.final_stocks_buy,self.total_available_slots_before_buy

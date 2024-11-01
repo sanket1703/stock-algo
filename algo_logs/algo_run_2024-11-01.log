@@ -1,0 +1,265 @@
+2024-11-01 17:23:54.033 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-01 17:23:54.033 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-01 17:23:54.033 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-01 17:24:20.549 | INFO     | __main__:buy:30 - Buy stock list:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:24:21.002 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:24:21.002 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:65 - Final buy list of Stocks :- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:24:21.002 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:66 - Total slots which were available before allocating slots:- 13
+2024-11-01 17:24:22.216 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for DEEPAK17
+2024-11-01 17:24:26.223 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for DEEPAK17 
+2024-11-01 17:24:26.549 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-11-01 17:24:27.056 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for DEEPAK17 
+2024-11-01 17:24:27.368 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- This scrip is allowed on cash & carry.Get Intouch With Your CSE Desk For Clarification
+2024-11-01 17:24:27.368 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for DEEPAK17 completed.
+2024-11-01 17:24:28.607 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for WEALTH666
+2024-11-01 17:24:29.109 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-11-01 17:24:29.451 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Security is not allowed to trade in this market.
+2024-11-01 17:24:29.642 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for WEALTH666 
+2024-11-01 17:24:29.984 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Security is not allowed to trade in this market.
+2024-11-01 17:24:29.999 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for WEALTH666 completed.
+2024-11-01 17:24:29.999 | INFO     | __main__:buy:35 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('0100001DEEPAK17', 'IDEA.NS'), ('0100002DEEPAK17', 'GTLINFRA.NS')], 'date': '2024-11-01 17:24:29', 'WEALTH666': [('0100001WEALTH666', 'IDEA.NS'), ('0100002WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:32:23.151 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-01 17:32:23.153 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-01 17:32:23.156 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-01 17:32:23.156 | INFO     | __main__:buy:27 - Stock list for buy :
+['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:33:11.331 | INFO     | __main__:buy:29 - Buy stock list:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:33:11.848 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:33:11.848 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:65 - Final buy list of Stocks :- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:33:11.848 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:66 - Total slots which were available before allocating slots:- 13
+2024-11-01 17:33:13.779 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for DEEPAK17
+2024-11-01 17:33:14.780 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for DEEPAK17 
+2024-11-01 17:33:14.956 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-11-01 17:33:15.054 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for DEEPAK17 
+2024-11-01 17:33:15.207 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- This scrip is allowed on cash & carry.Get Intouch With Your CSE Desk For Clarification
+2024-11-01 17:33:15.207 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for DEEPAK17 completed.
+2024-11-01 17:33:16.130 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for WEALTH666
+2024-11-01 17:33:16.410 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-11-01 17:33:16.606 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Security is not allowed to trade in this market.
+2024-11-01 17:33:16.664 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for WEALTH666 
+2024-11-01 17:33:16.870 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Security is not allowed to trade in this market.
+2024-11-01 17:33:16.870 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for WEALTH666 completed.
+2024-11-01 17:33:16.870 | INFO     | __main__:buy:34 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('0100003DEEPAK17', 'IDEA.NS'), ('0100004DEEPAK17', 'GTLINFRA.NS')], 'date': '2024-11-01 17:33:16', 'WEALTH666': [('0100003WEALTH666', 'IDEA.NS'), ('0100004WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:34:29.590 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 17:34:29.664 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:29.731 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:29.731 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 17:34:30.647 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 17:34:30.716 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:31.218 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:31.218 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 17:34:31.218 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': [['2400001WEALTH666', 'IDEA.NS', '1100000012914000'], ['2400002WEALTH666', 'GTLINFRA.NS', '1100000012914602']]}
+2024-11-01 17:34:31.218 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [('0100003DEEPAK17', 'IDEA.NS'), ('0100004DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100003WEALTH666', 'IDEA.NS'), ('0100004WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:34:31.218 | INFO     | __main__:buy_order_validator:67 - Retry 1: Order validation for {'DEEPAK17': [('0100003DEEPAK17', 'IDEA.NS'), ('0100004DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100003WEALTH666', 'IDEA.NS'), ('0100004WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:34:32.458 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 17:34:32.531 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:32.600 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:32.601 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 17:34:33.501 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 17:34:33.565 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:33.632 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:34:33.632 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 17:34:33.632 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': [['2400001WEALTH666', 'IDEA.NS', '1100000012914000'], ['2400002WEALTH666', 'GTLINFRA.NS', '1100000012914602']]}
+2024-11-01 17:34:33.632 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [('0100003DEEPAK17', 'IDEA.NS'), ('0100004DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100003WEALTH666', 'IDEA.NS'), ('0100004WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:34:33.632 | INFO     | __main__:buy_order_validator:75 - Update to market order for {'DEEPAK17': [('0100003DEEPAK17', 'IDEA.NS'), ('0100004DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100003WEALTH666', 'IDEA.NS'), ('0100004WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:34:34.782 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for DEEPAK17 initiated.
+2024-11-01 17:34:34.980 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Status Is Error
+2024-11-01 17:34:35.981 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Status Is Error
+2024-11-01 17:34:35.981 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for DEEPAK17 completed.
+2024-11-01 17:34:36.862 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for WEALTH666 initiated.
+2024-11-01 17:34:37.071 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Is Already Rejected
+2024-11-01 17:34:37.646 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Is Already Rejected
+2024-11-01 17:34:37.646 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for WEALTH666 completed.
+2024-11-01 17:34:37.646 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:202 - Modified orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 17:34:37.646 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:203 - Failed modified orders:- {'DEEPAK17': [('0100003DEEPAK17', 'IDEA.NS'), ('0100004DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100003WEALTH666', 'IDEA.NS'), ('0100004WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:34:37.646 | INFO     | __main__:buy_order_validator:79 - Retry 2: Order validation for {'DEEPAK17': [('0100003DEEPAK17', 'IDEA.NS'), ('0100004DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100003WEALTH666', 'IDEA.NS'), ('0100004WEALTH666', 'GTLINFRA.NS')]} after Modify to Market
+2024-11-01 17:34:38.551 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 17:34:38.551 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 17:34:39.432 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 17:34:39.432 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 17:34:39.432 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': [['2400001WEALTH666', 'IDEA.NS', '1100000012914000'], ['2400002WEALTH666', 'GTLINFRA.NS', '1100000012914602']]}
+2024-11-01 17:34:39.432 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 17:37:09.130 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-01 17:37:09.131 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-01 17:37:09.131 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-01 17:37:09.131 | INFO     | __main__:buy:27 - Stock list for buy :
+['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:38:16.581 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-01 17:38:16.581 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-01 17:38:16.581 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-01 17:38:16.581 | INFO     | __main__:buy:27 - Stock list for buy :
+['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:38:26.028 | INFO     | __main__:buy:29 - Buy stock list:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:38:26.501 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:38:26.501 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:65 - Final buy list of Stocks :- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 17:38:26.501 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:66 - Total slots which were available before allocating slots:- 13
+2024-11-01 17:38:27.621 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for DEEPAK17
+2024-11-01 17:38:28.605 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for DEEPAK17 
+2024-11-01 17:38:28.906 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-11-01 17:38:29.159 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for DEEPAK17 
+2024-11-01 17:38:29.454 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- This scrip is allowed on cash & carry.Get Intouch With Your CSE Desk For Clarification
+2024-11-01 17:38:29.454 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for DEEPAK17 completed.
+2024-11-01 17:38:30.505 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for WEALTH666
+2024-11-01 17:38:30.928 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-11-01 17:38:31.301 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Security is not allowed to trade in this market.
+2024-11-01 17:38:31.485 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for WEALTH666 
+2024-11-01 17:38:31.805 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Security is not allowed to trade in this market.
+2024-11-01 17:38:31.805 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for WEALTH666 completed.
+2024-11-01 17:38:31.821 | INFO     | __main__:buy:34 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('0100005DEEPAK17', 'IDEA.NS'), ('0100006DEEPAK17', 'GTLINFRA.NS')], 'date': '2024-11-01 17:38:31', 'WEALTH666': [('0100005WEALTH666', 'IDEA.NS'), ('0100006WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:38:32.984 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 17:38:33.056 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:33.123 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:33.123 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 17:38:34.268 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 17:38:34.323 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:34.842 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:34.842 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 17:38:34.842 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 17:38:34.842 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [('0100005DEEPAK17', 'IDEA.NS'), ('0100006DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100005WEALTH666', 'IDEA.NS'), ('0100006WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:38:34.842 | INFO     | __main__:buy_order_validator:67 - Retry 1: Order validation for {'DEEPAK17': [('0100005DEEPAK17', 'IDEA.NS'), ('0100006DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100005WEALTH666', 'IDEA.NS'), ('0100006WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:38:35.970 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 17:38:36.040 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:36.108 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:36.108 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 17:38:37.257 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 17:38:37.327 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:37.822 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 17:38:37.822 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 17:38:37.822 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 17:38:37.822 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [('0100005DEEPAK17', 'IDEA.NS'), ('0100006DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100005WEALTH666', 'IDEA.NS'), ('0100006WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:38:37.822 | INFO     | __main__:buy_order_validator:75 - Update to market order for {'DEEPAK17': [('0100005DEEPAK17', 'IDEA.NS'), ('0100006DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100005WEALTH666', 'IDEA.NS'), ('0100006WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:38:38.836 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for DEEPAK17 initiated.
+2024-11-01 17:38:39.036 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Status Is Error
+2024-11-01 17:38:39.976 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Status Is Error
+2024-11-01 17:38:39.976 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for DEEPAK17 completed.
+2024-11-01 17:38:41.082 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for WEALTH666 initiated.
+2024-11-01 17:38:41.283 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Is Already Rejected
+2024-11-01 17:38:42.211 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Is Already Rejected
+2024-11-01 17:38:42.211 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for WEALTH666 completed.
+2024-11-01 17:38:42.211 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:202 - Modified orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 17:38:42.211 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:203 - Failed modified orders:- {'DEEPAK17': [('0100005DEEPAK17', 'IDEA.NS'), ('0100006DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100005WEALTH666', 'IDEA.NS'), ('0100006WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 17:38:42.211 | INFO     | __main__:buy_order_validator:79 - Retry 2: Order validation for {'DEEPAK17': [('0100005DEEPAK17', 'IDEA.NS'), ('0100006DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100005WEALTH666', 'IDEA.NS'), ('0100006WEALTH666', 'GTLINFRA.NS')]} after Modify to Market
+2024-11-01 17:38:43.353 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 17:38:43.353 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 17:38:44.518 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 17:38:44.518 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 17:38:44.518 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 17:38:44.518 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 18:11:01.811 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-01 18:11:01.811 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-01 18:11:01.811 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-01 18:11:01.811 | INFO     | __main__:buy:27 - Stock list for buy :
+['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 18:11:30.540 | INFO     | __main__:buy:29 - Buy stock list:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 18:11:31.024 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 18:11:31.024 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:65 - Final buy list of Stocks :- ['IDEA.NS', 'GTLINFRA.NS']
+2024-11-01 18:11:31.024 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:66 - Total slots which were available before allocating slots:- 13
+2024-11-01 18:11:32.863 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for DEEPAK17
+2024-11-01 18:11:33.461 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for DEEPAK17 
+2024-11-01 18:11:33.599 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-11-01 18:11:33.700 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for DEEPAK17 
+2024-11-01 18:11:33.858 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- This scrip is allowed on cash & carry.Get Intouch With Your CSE Desk For Clarification
+2024-11-01 18:11:33.859 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for DEEPAK17 completed.
+2024-11-01 18:11:35.027 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:43 - Initiating Position sizing for WEALTH666
+2024-11-01 18:11:35.336 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-11-01 18:11:35.535 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-11-01 18:11:35.591 | INFO     | brokers.motilal.order:place_buy_order:10 - Placing buy order of 5 GTLINFRA.NS for WEALTH666 
+2024-11-01 18:11:35.782 | INFO     | brokers.motilal.order:place_buy_order:28 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-11-01 18:11:35.782 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:61 - Position sizing for WEALTH666 completed.
+2024-11-01 18:11:35.782 | INFO     | __main__:buy:34 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('0100007DEEPAK17', 'IDEA.NS'), ('0100008DEEPAK17', 'GTLINFRA.NS')], 'date': '2024-11-01 18:11:35', 'WEALTH666': [('0100007WEALTH666', 'IDEA.NS'), ('0100008WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 18:13:08.837 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 18:13:08.904 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:13:09.431 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:13:09.431 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 18:13:10.853 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 18:13:10.938 | INFO     | brokers.motilal.order:order_status:81 - Order is executed and the status is 'Traded'
+2024-11-01 18:13:11.445 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:13:11.446 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 18:13:11.447 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': [('0100007WEALTH666', 'IDEA.NS', '1100000002522963')]}
+2024-11-01 18:13:11.447 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [('0100007DEEPAK17', 'IDEA.NS'), ('0100008DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100008WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 18:13:11.448 | INFO     | __main__:buy_order_validator:67 - Retry 1: Order validation for {'DEEPAK17': [('0100007DEEPAK17', 'IDEA.NS'), ('0100008DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100008WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 18:13:12.368 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 18:13:12.438 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:13:12.541 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:13:12.542 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 18:13:13.754 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 18:13:13.838 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:13:13.838 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 18:13:13.838 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': [['0100007WEALTH666', 'IDEA.NS', '1100000002522963']]}
+2024-11-01 18:13:13.839 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [('0100007DEEPAK17', 'IDEA.NS'), ('0100008DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100008WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 18:13:13.839 | INFO     | __main__:buy_order_validator:75 - Update to market order for {'DEEPAK17': [('0100007DEEPAK17', 'IDEA.NS'), ('0100008DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100008WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 18:13:14.948 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for DEEPAK17 initiated.
+2024-11-01 18:13:15.148 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Status Is Error
+2024-11-01 18:13:16.158 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Status Is Error
+2024-11-01 18:13:16.158 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for DEEPAK17 completed.
+2024-11-01 18:13:17.183 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for WEALTH666 initiated.
+2024-11-01 18:13:17.518 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Modify Order Request Sent Successfully
+2024-11-01 18:13:17.518 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for WEALTH666 completed.
+2024-11-01 18:13:17.519 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:202 - Modified orders:- {'DEEPAK17': [], 'WEALTH666': [('0100008WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 18:13:17.519 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:203 - Failed modified orders:- {'DEEPAK17': [('0100007DEEPAK17', 'IDEA.NS'), ('0100008DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': []}
+2024-11-01 18:13:17.519 | INFO     | __main__:buy_order_validator:79 - Retry 2: Order validation for {'DEEPAK17': [('0100007DEEPAK17', 'IDEA.NS'), ('0100008DEEPAK17', 'GTLINFRA.NS')], 'WEALTH666': [('0100008WEALTH666', 'GTLINFRA.NS')]} after Modify to Market
+2024-11-01 18:13:18.694 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for DEEPAK17 initiated.
+2024-11-01 18:13:18.694 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for DEEPAK17
+2024-11-01 18:13:19.562 | INFO     | algorithms.Trade_Sync:check_buy_orders:44 - Buy orders status check for WEALTH666 initiated.
+2024-11-01 18:13:19.638 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:13:19.638 | INFO     | algorithms.Trade_Sync:check_buy_orders:63 - Buy orders status check complete for WEALTH666
+2024-11-01 18:13:19.638 | INFO     | algorithms.Trade_Sync:check_buy_orders:68 - Filled buy orders:- {'DEEPAK17': [], 'WEALTH666': [['0100007WEALTH666', 'IDEA.NS', '1100000002522963']]}
+2024-11-01 18:13:19.638 | INFO     | algorithms.Trade_Sync:check_buy_orders:69 - Unfilled buy orders:- {'DEEPAK17': [], 'WEALTH666': [('0100008WEALTH666', 'GTLINFRA.NS')]}
+2024-11-01 18:16:17.246 | INFO     | algorithms.Trade_Sync:sync_filled_buy_trades:120 - Buy Trade sync for DEEPAK17 initiated.
+2024-11-01 18:16:19.129 | INFO     | algorithms.Trade_Sync:sync_filled_buy_trades:141 - Buy Trade sync for DEEPAK17 completed.
+2024-11-01 18:16:19.130 | INFO     | algorithms.Trade_Sync:sync_filled_buy_trades:120 - Buy Trade sync for WEALTH666 initiated.
+2024-11-01 18:16:20.952 | INFO     | algorithms.Trade_Sync:sync_filled_buy_trades:141 - Buy Trade sync for WEALTH666 completed.
+2024-11-01 18:17:34.998 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:9 - Extraction of Exchange Trade Id started.
+2024-11-01 18:17:34.998 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:23 - Trade IDs with SNO have been saved in order_book/trades/2024-11-01_TRADEID.csv.
+2024-11-01 18:17:34.998 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:29 - Sending email of the csv.
+2024-11-01 18:17:36.374 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:31 - Extraction of Exchange Trade Id completed.
+2024-11-01 18:18:58.768 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS']
+2024-11-01 18:18:58.768 | INFO     | database.cleanup.database_cleanup:prepare_sell_testdata:9 - Test data prepared. Ready to sell.
+2024-11-01 18:18:58.768 | INFO     | __main__:sell:43 - Stock list for sell : 
+['IDEA.NS']
+2024-11-01 18:19:03.561 | INFO     | __main__:sell:45 - Stock list for sell :['IDEA.NS']
+2024-11-01 18:19:04.976 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:41 - Initiating offloading stocks for DEEPAK17
+2024-11-01 18:19:05.884 | INFO     | brokers.motilal.order:place_sell_order:53 - PlaceOrder for Sell Message:- Short Selling Not Allowed For Requested Scrip
+2024-11-01 18:19:05.884 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:48 - Offloading stocks for DEEPAK17 completed.
+2024-11-01 18:19:07.104 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:41 - Initiating offloading stocks for WEALTH666
+2024-11-01 18:19:07.299 | INFO     | brokers.motilal.order:place_sell_order:53 - PlaceOrder for Sell Message:- Order Placed Successfully
+2024-11-01 18:19:07.315 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:48 - Offloading stocks for WEALTH666 completed.
+2024-11-01 18:19:07.315 | INFO     | __main__:sell:51 - Consolidated Sell Orders details for each client:- {'DEEPAK17': [('0100009DEEPAK17', 'IDEA.NS')], 'date': '2024-11-01 18:19:07', 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS')]}
+2024-11-01 18:20:10.705 | INFO     | algorithms.Trade_Sync:check_sell_orders:86 - Sell orders status check for DEEPAK17 initiated.
+2024-11-01 18:20:10.789 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:20:10.789 | INFO     | algorithms.Trade_Sync:check_sell_orders:104 - Buy orders status check complete for DEEPAK17
+2024-11-01 18:20:11.704 | INFO     | algorithms.Trade_Sync:check_sell_orders:86 - Sell orders status check for WEALTH666 initiated.
+2024-11-01 18:20:11.773 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:20:11.773 | INFO     | algorithms.Trade_Sync:check_sell_orders:104 - Buy orders status check complete for WEALTH666
+2024-11-01 18:20:11.773 | INFO     | algorithms.Trade_Sync:check_sell_orders:110 - Filled sell orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 18:20:11.773 | INFO     | algorithms.Trade_Sync:check_sell_orders:111 - Unfilled sell orders:- {'DEEPAK17': [('0100009DEEPAK17', 'IDEA.NS')], 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS')]}
+2024-11-01 18:20:11.773 | INFO     | __main__:sell_order_validator:99 - Retry 1: Order validation for {'DEEPAK17': [('0100009DEEPAK17', 'IDEA.NS')], 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS')]}
+2024-11-01 18:20:12.637 | INFO     | algorithms.Trade_Sync:check_sell_orders:86 - Sell orders status check for DEEPAK17 initiated.
+2024-11-01 18:20:12.704 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:20:12.704 | INFO     | algorithms.Trade_Sync:check_sell_orders:104 - Buy orders status check complete for DEEPAK17
+2024-11-01 18:20:13.588 | INFO     | algorithms.Trade_Sync:check_sell_orders:86 - Sell orders status check for WEALTH666 initiated.
+2024-11-01 18:20:13.672 | INFO     | brokers.motilal.order:order_status:83 - Order is still not 'Traded
+2024-11-01 18:20:13.672 | INFO     | algorithms.Trade_Sync:check_sell_orders:104 - Buy orders status check complete for WEALTH666
+2024-11-01 18:20:13.672 | INFO     | algorithms.Trade_Sync:check_sell_orders:110 - Filled sell orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 18:20:13.672 | INFO     | algorithms.Trade_Sync:check_sell_orders:111 - Unfilled sell orders:- {'DEEPAK17': [('0100009DEEPAK17', 'IDEA.NS')], 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS')]}
+2024-11-01 18:20:13.672 | INFO     | __main__:sell_order_validator:107 - Update to market order for {'DEEPAK17': [('0100009DEEPAK17', 'IDEA.NS')], 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS')]}
+2024-11-01 18:20:15.666 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for DEEPAK17 initiated.
+2024-11-01 18:20:15.885 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Order Status Is Error
+2024-11-01 18:20:15.885 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for DEEPAK17 completed.
+2024-11-01 18:20:16.788 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:183 - Modify to Market Orders for WEALTH666 initiated.
+2024-11-01 18:20:17.521 | INFO     | brokers.motilal.order:modify_order_to_market:108 - Modify to Market Message:- Modify Order Request Sent Successfully
+2024-11-01 18:20:17.521 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:200 - Modify to Market Orders for WEALTH666 completed.
+2024-11-01 18:20:17.521 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:202 - Modified orders:- {'DEEPAK17': [], 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS')]}
+2024-11-01 18:20:17.521 | INFO     | algorithms.Trade_Sync:bulk_modify_to_market:203 - Failed modified orders:- {'DEEPAK17': [('0100009DEEPAK17', 'IDEA.NS')], 'WEALTH666': []}
+2024-11-01 18:20:17.521 | INFO     | __main__:sell_order_validator:111 - Retry 2: Order validation for {'DEEPAK17': [('0100009DEEPAK17', 'IDEA.NS')], 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS')]} after Modify to Market
+2024-11-01 18:20:18.437 | INFO     | algorithms.Trade_Sync:check_sell_orders:86 - Sell orders status check for DEEPAK17 initiated.
+2024-11-01 18:20:18.437 | INFO     | algorithms.Trade_Sync:check_sell_orders:104 - Buy orders status check complete for DEEPAK17
+2024-11-01 18:20:19.588 | INFO     | algorithms.Trade_Sync:check_sell_orders:86 - Sell orders status check for WEALTH666 initiated.
+2024-11-01 18:20:19.656 | INFO     | brokers.motilal.order:order_status:81 - Order is executed and the status is 'Traded'
+2024-11-01 18:20:19.721 | INFO     | algorithms.Trade_Sync:check_sell_orders:104 - Buy orders status check complete for WEALTH666
+2024-11-01 18:20:19.737 | INFO     | algorithms.Trade_Sync:check_sell_orders:110 - Filled sell orders:- {'DEEPAK17': [], 'WEALTH666': [('0100009WEALTH666', 'IDEA.NS', '1100000003584135')]}
+2024-11-01 18:20:19.739 | INFO     | algorithms.Trade_Sync:check_sell_orders:111 - Unfilled sell orders:- {'DEEPAK17': [], 'WEALTH666': []}
+2024-11-01 18:21:21.056 | INFO     | algorithms.Trade_Sync:sync_filled_sell_trades:149 - Sell Trade sync for DEEPAK17 initiated.
+2024-11-01 18:21:22.173 | INFO     | algorithms.Trade_Sync:sync_filled_sell_trades:170 - Sell Trade sync for DEEPAK17 completed.
+2024-11-01 18:21:22.173 | INFO     | algorithms.Trade_Sync:sync_filled_sell_trades:149 - Sell Trade sync for WEALTH666 initiated.
+2024-11-01 18:21:23.541 | INFO     | algorithms.Trade_Sync:sync_filled_sell_trades:170 - Sell Trade sync for WEALTH666 completed.
