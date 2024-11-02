@@ -2087,6 +2087,14 @@
         "documentation": {}
     },
     {
+        "label": "pre_order_executor_job",
+        "importPath": "jobs.pre_order_executor_job",
+        "description": "jobs.pre_order_executor_job",
+        "isExtraImport": true,
+        "detail": "jobs.pre_order_executor_job",
+        "documentation": {}
+    },
+    {
         "label": "save_buy_orders",
         "importPath": "utils.csv.helpers",
         "description": "utils.csv.helpers",

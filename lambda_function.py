@@ -13,6 +13,7 @@ from database.dao.client_dao import *
 from database.cleanup.database_cleanup import prepare_buy_testdata, prepare_sell_testdata
 from jobs.exchange_tradeid_job import exchange_tradeid_job
 from jobs.mo_login_check_job import check_login_job
+from jobs.pre_order_executor_job import pre_order_executor_job
 from utils.csv.helpers import save_buy_orders, save_sell_orders
 from utils.helpers.check_time import check_end_of_market
 from utils.helpers.take_confirmation import take_confirmation
@@ -182,6 +183,12 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     configure_log(level="DEBUG")
     # final()
+    
+    ######################################
+    ##   Before Execution (ONLY ONCE)   ##
+    ######################################
+    
+    pre_order_executor_job()
 
     ######################################
     #######     Buy Suite     ############
