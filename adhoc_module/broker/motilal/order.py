@@ -109,16 +109,9 @@ def adhoc_sell():
     logger.debug("Limit Price:", limit_price)
     logger.debug("Stock Code:", stock_code_ns)
     
-    if (limit_price == "MARKET"):
-        ordertype = "MARKET"
-    else:
-        ordertype = "LIMIT"
-        limit_price = float(limit_price)
-    
     stock_code = get_symbol_token(stock_code_ns)
-    
-    
     Mofsl = client_login(client_code)
+    
     if (limit_price == "MARKET"):
         logger.debug(
             f"Placing MARKET sell order of {qty} {stock_code} for {client_code} ")
@@ -146,7 +139,7 @@ def adhoc_sell():
             "orderduration": "DAY",
             "quantityinlot": qty,
             "amoorder": "N",
-            "price": round(limit_price, 4)
+            "price": round(float(limit_price), 4)
         }
         
     yesno = messagebox.askyesno("Confirmation", "Are you sure you want to proceed?")
