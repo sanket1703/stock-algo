@@ -163,6 +163,46 @@
         "documentation": {}
     },
     {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
         "label": "client_login",
         "importPath": "brokers.motilal.login",
         "description": "brokers.motilal.login",
@@ -216,6 +256,22 @@
         "description": "stock_data.symbols",
         "isExtraImport": true,
         "detail": "stock_data.symbols",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
         "documentation": {}
     },
     {
@@ -444,6 +500,22 @@
         "documentation": {}
     },
     {
+        "label": "time",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "PositionSizingBuy",
         "importPath": "algorithms.Position_Sizing_Buy",
         "description": "algorithms.Position_Sizing_Buy",
@@ -541,6 +613,14 @@
     },
     {
         "label": "get_client_holding",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_list",
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
         "isExtraImport": true,
@@ -657,6 +737,30 @@
         "description": "database.dynamodb",
         "isExtraImport": true,
         "detail": "database.dynamodb",
+        "documentation": {}
+    },
+    {
+        "label": "print_client",
+        "importPath": "utils.helpers.print_client",
+        "description": "utils.helpers.print_client",
+        "isExtraImport": true,
+        "detail": "utils.helpers.print_client",
+        "documentation": {}
+    },
+    {
+        "label": "print_client",
+        "importPath": "utils.helpers.print_client",
+        "description": "utils.helpers.print_client",
+        "isExtraImport": true,
+        "detail": "utils.helpers.print_client",
+        "documentation": {}
+    },
+    {
+        "label": "print_client",
+        "importPath": "utils.helpers.print_client",
+        "description": "utils.helpers.print_client",
+        "isExtraImport": true,
+        "detail": "utils.helpers.print_client",
         "documentation": {}
     },
     {
@@ -1600,6 +1704,38 @@
         "documentation": {}
     },
     {
+        "label": "clean_order_jsons_job",
+        "importPath": "jobs.clean_json",
+        "description": "jobs.clean_json",
+        "isExtraImport": true,
+        "detail": "jobs.clean_json",
+        "documentation": {}
+    },
+    {
+        "label": "clean_order_jsons_job",
+        "importPath": "jobs.clean_json",
+        "description": "jobs.clean_json",
+        "isExtraImport": true,
+        "detail": "jobs.clean_json",
+        "documentation": {}
+    },
+    {
+        "label": "check_login_job",
+        "importPath": "jobs.mo_login_check_job",
+        "description": "jobs.mo_login_check_job",
+        "isExtraImport": true,
+        "detail": "jobs.mo_login_check_job",
+        "documentation": {}
+    },
+    {
+        "label": "check_login_job",
+        "importPath": "jobs.mo_login_check_job",
+        "description": "jobs.mo_login_check_job",
+        "isExtraImport": true,
+        "detail": "jobs.mo_login_check_job",
+        "documentation": {}
+    },
+    {
         "label": "MIMEText",
         "importPath": "email.mime.text",
         "description": "email.mime.text",
@@ -1770,6 +1906,15 @@
         "description": "utils.gsheets.security.connect",
         "isExtraImport": true,
         "detail": "utils.gsheets.security.connect",
+        "documentation": {}
+    },
+    {
+        "label": "pytz",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytz",
+        "description": "pytz",
+        "detail": "pytz",
         "documentation": {}
     },
     {
@@ -1955,6 +2100,22 @@
         "description": "utils.csv.helpers",
         "isExtraImport": true,
         "detail": "utils.csv.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "check_end_of_market",
+        "importPath": "utils.helpers.check_time",
+        "description": "utils.helpers.check_time",
+        "isExtraImport": true,
+        "detail": "utils.helpers.check_time",
+        "documentation": {}
+    },
+    {
+        "label": "take_confirmation",
+        "importPath": "utils.helpers.take_confirmation",
+        "description": "utils.helpers.take_confirmation",
+        "isExtraImport": true,
+        "detail": "utils.helpers.take_confirmation",
         "documentation": {}
     },
     {
@@ -3441,6 +3602,15 @@
         "documentation": {}
     },
     {
+        "label": "notification_error",
+        "kind": 2,
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "peekOfCode": "def notification_error(direction,message_text,client):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Place {direction} Order FAILED.\"\n    message = f\"Error Response \\n\\n{message_text}\"\n    send_email(sender,recipient,cc,subject,message,None)\ndef place_sell_order(db,client_code,stock_code,Mofsl):\n    qty = 1\n    # qty = get_client_holding(db,client_code,stock_code)",
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
         "label": "place_sell_order",
         "kind": 2,
         "importPath": "brokers.motilal.order",
@@ -3490,7 +3660,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\"):\n        logger.info(f\"Order is executed and the status is 'Traded'\")",
+        "peekOfCode": "def get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if(order_details[\"status\"]!=\"SUCCESS\"):\n        notification_error(\"ORDER STATUS\",order_details,client_code)",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3499,7 +3669,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\"):\n        logger.info(f\"Order is executed and the status is 'Traded'\")\n        return True\n    logger.info(\"Order is still not 'Traded\")",
+        "peekOfCode": "def order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if(order_details[\"status\"]!=\"SUCCESS\"):\n        notification_error(\"ORDER STATUS\",order_details,client_code)\n        return False\n    if (order_details['data'][0]['orderstatus']==\"Traded\"):",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3810,6 +3980,24 @@
         "documentation": {}
     },
     {
+        "label": "empty_json",
+        "kind": 2,
+        "importPath": "jobs.clean_json",
+        "description": "jobs.clean_json",
+        "peekOfCode": "def empty_json(file_path):\n    # Read the JSON data from the file\n    with open(file_path, 'r') as file:\n        orders = json.load(file)\n    # Update client codes to empty lists, ignoring the 'date' field\n    for client in orders:\n        if client != \"date\":\n            orders[client] = []\n    # Write the updated JSON back to the file\n    with open(file_path, 'w') as file:",
+        "detail": "jobs.clean_json",
+        "documentation": {}
+    },
+    {
+        "label": "clean_order_jsons_job",
+        "kind": 2,
+        "importPath": "jobs.clean_json",
+        "description": "jobs.clean_json",
+        "peekOfCode": "def clean_order_jsons_job():\n    file_paths = [\n        \"order_book/buy_orders.json\",\n        \"order_book/sell_orders.json\",\n        \"order_book/filled_orders/filled_buy_orders.json\",\n        \"order_book/filled_orders/filled_sell_orders.json\",\n        \"order_book/unfilled_orders/unfilled_buy_orders.json\",\n        \"order_book/unfilled_orders/unfilled_sell_orders.json\"\n    ]\n    for file_path in file_paths:",
+        "detail": "jobs.clean_json",
+        "documentation": {}
+    },
+    {
         "label": "exchange_tradeid_job",
         "kind": 2,
         "importPath": "jobs.exchange_tradeid_job",
@@ -3825,6 +4013,42 @@
         "description": "jobs.exchange_tradeid_job",
         "peekOfCode": "def extract_trade_ids(data):\n    trade_ids = []\n    for user, trades in data.items():\n        for trade in trades:\n            trade_id = trade[2]  # The trade ID is the third element in each list\n            trade_ids.append(trade_id)\n    return trade_ids",
         "detail": "jobs.exchange_tradeid_job",
+        "documentation": {}
+    },
+    {
+        "label": "notification_failed",
+        "kind": 2,
+        "importPath": "jobs.mo_login_check_job",
+        "description": "jobs.mo_login_check_job",
+        "peekOfCode": "def notification_failed(client,message):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Login Failed for client {client}\"\n    message = f\"message\"\n    send_email(sender,recipient,cc,subject,message,None)\ndef notification_success():\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"",
+        "detail": "jobs.mo_login_check_job",
+        "documentation": {}
+    },
+    {
+        "label": "notification_success",
+        "kind": 2,
+        "importPath": "jobs.mo_login_check_job",
+        "description": "jobs.mo_login_check_job",
+        "peekOfCode": "def notification_success():\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"MO Login Success for All Clients.\"\n    message = \"All Clients logged in successfully.\"\n    send_email(sender,recipient,cc,subject,message,None)\ndef check_login_job():\n    clients = get_client_list()\n    failures = 0",
+        "detail": "jobs.mo_login_check_job",
+        "documentation": {}
+    },
+    {
+        "label": "check_login_job",
+        "kind": 2,
+        "importPath": "jobs.mo_login_check_job",
+        "description": "jobs.mo_login_check_job",
+        "peekOfCode": "def check_login_job():\n    clients = get_client_list()\n    failures = 0\n    for client in clients:\n        Mofl = client_login(client)\n        login_response = Mofl.GetPosition(client)\n        time.sleep(5)\n        logger.info(login_response)\n        if(login_response['status']!='SUCCESS'):\n            logger.info(f\"[{client}] Login Failed for client {client}\")",
+        "detail": "jobs.mo_login_check_job",
+        "documentation": {}
+    },
+    {
+        "label": "pre_order_executor_job",
+        "kind": 2,
+        "importPath": "jobs.pre_order_executor_job",
+        "description": "jobs.pre_order_executor_job",
+        "peekOfCode": "def pre_order_executor_job():\n    check_login_job()\n    clean_order_jsons_job()",
+        "detail": "jobs.pre_order_executor_job",
         "documentation": {}
     },
     {
@@ -4089,6 +4313,33 @@
         "documentation": {}
     },
     {
+        "label": "check_end_of_market",
+        "kind": 2,
+        "importPath": "utils.helpers.check_time",
+        "description": "utils.helpers.check_time",
+        "peekOfCode": "def check_end_of_market():\n    # Define the specific time\n    target_time = time(15, 25)  # 3:25 PM\n    # Get the current time in IST\n    ist = pytz.timezone('Asia/Kolkata')\n    current_time = datetime.now(ist).time()\n    # Check if the current time is after 3:25 PM\n    if current_time >= target_time:\n        # Execute your code here\n        logger.info(\"It's after 3:25 PM IST. Modify Order will be executing.\")",
+        "detail": "utils.helpers.check_time",
+        "documentation": {}
+    },
+    {
+        "label": "print_client",
+        "kind": 2,
+        "importPath": "utils.helpers.print_client",
+        "description": "utils.helpers.print_client",
+        "peekOfCode": "def print_client(client):\n    logger.info(f\"############################################################################################\")\n    logger.info(f\"{client}  {client}    {client}    {client}    {client}    {client}    {client}    {client}    {client}\")\n    logger.info(f\"############################################################################################\")",
+        "detail": "utils.helpers.print_client",
+        "documentation": {}
+    },
+    {
+        "label": "take_confirmation",
+        "kind": 2,
+        "importPath": "utils.helpers.take_confirmation",
+        "description": "utils.helpers.take_confirmation",
+        "peekOfCode": "def take_confirmation():\n    # Define the correct password\n    correct_password = \"fortunealpha13\"\n    # Prompt the user to enter the password\n    user_password = input(\"Please check the stocks before continuing. Enter the confirmation code to proceed: \")\n    # Check if the entered password is correct\n    if user_password == correct_password:\n        print(\"Confirmation Code confirmed. Proceeding with the process...\")\n        return True\n    else:",
+        "detail": "utils.helpers.take_confirmation",
+        "documentation": {}
+    },
+    {
         "label": "set_buy_orders",
         "kind": 2,
         "importPath": "utils.json.helper",
@@ -4201,7 +4452,7 @@
         "kind": 2,
         "importPath": "utils.logging.configure",
         "description": "utils.logging.configure",
-        "peekOfCode": "def email_log_handler(message):\n    \"\"\"Custom handler for sending log messages via email.\"\"\"\n    log_record = message.record\n    level = log_record[\"level\"].name\n    if level in [\"ERROR\", \"CRITICAL\"]:\n        subject = f\"Log Alert: {level} - {log_record['message']}\"\n        body = f\"Time: {log_record['time']}\\nLevel: {log_record['level']}\\nMessage: {log_record['message']}\\n\"\n        sender = \"Keyursanket.com\"\n        recipient = \"sanketyou8@gmail.com\"\n        cc = \"keyurmarolia2@gmail.com\"",
+        "peekOfCode": "def email_log_handler(message):\n    \"\"\"Custom handler for sending log messages via email.\"\"\"\n    log_record = message.record\n    level = log_record[\"level\"].name\n    if level in [\"CRITICAL\"]:\n        subject = f\"Log Alert: {level} - {log_record['message']}\"\n        body = f\"Time: {log_record['time']}\\nLevel: {log_record['level']}\\nMessage: {log_record['message']}\\n\"\n        sender = \"Keyursanket.com\"\n        recipient = \"sanketyou8@gmail.com\"\n        cc = \"keyurmarolia2@gmail.com\"",
         "detail": "utils.logging.configure",
         "documentation": {}
     },
@@ -4210,7 +4461,7 @@
         "kind": 2,
         "importPath": "utils.logging.configure",
         "description": "utils.logging.configure",
-        "peekOfCode": "def configure_log(level=\"DEBUG\"):\n    today = datetime.now().strftime(\"%Y-%m-%d\")\n    log_filename = f\"algo_logs/algo_run_{today}.log\"\n    logger.remove()\n    logger.add(log_filename, level=\"INFO\")\n    logger.add(sys.stdout, level=level)\n    logger.add(email_log_handler, level=\"ERROR\")",
+        "peekOfCode": "def configure_log(level=\"DEBUG\"):\n    today = datetime.now().strftime(\"%Y-%m-%d\")\n    log_filename = f\"algo_logs/algo_run_{today}.log\"\n    logger.remove()\n    logger.add(log_filename, level=\"INFO\")\n    logger.add(sys.stdout, level=level)\n    logger.add(email_log_handler, level=\"CRITICAL\")",
         "detail": "utils.logging.configure",
         "documentation": {}
     },
@@ -4255,7 +4506,7 @@
         "kind": 2,
         "importPath": "FOR_KEYUR",
         "description": "FOR_KEYUR",
-        "peekOfCode": "def get_watchlist_for_keyur():\n    watchlist =['HUDCO',\n  'NBCC',\n  'PFC',\n  'RVNL',\n  'RECLTD',\n  'BDL',\n  'IRFC',\n  'HAL',\n  'DIXON',",
+        "peekOfCode": "def get_watchlist_for_keyur():\n    watchlist =['OFSS',\n    'NBCC',\n    'PFC',\n    'RECLTD',\n    'BDL',\n    'HAL',\n    'HUDCO',\n    'BHEL',\n    'RVNL',",
         "detail": "FOR_KEYUR",
         "documentation": {}
     },
@@ -4300,7 +4551,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy():\n    prepare_buy_testdata()\n    buy_stocks = ['IDEA.NS','GTLINFRA.NS']\n    logger.info(f\"Buy stock list:- {buy_stocks}\")\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()\n    set_buy_orders(buy_orders)\n    logger.info(f\"Consolidated Buy Orders details for each client:- {buy_orders}\")\n    logger.debug(\"Consolidated Buy Orders details saved locally.\")",
+        "peekOfCode": "def buy(buy_stocks):\n    prepare_buy_testdata()\n    logger.info(f\"Stock list for buy :\\n{buy_stocks}\")\n    if (take_confirmation()):\n        logger.info(f\"Buy stock list:- {buy_stocks}\")\n        buy_algo = MidcapBuyAlgorithm(buy_stocks)\n        buy_algo.allocate_slots()\n        buy_orders = buy_algo.order_executor()\n        set_buy_orders(buy_orders)\n        logger.info(",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4309,7 +4560,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def sell():\n    sell_stocks = ['IDEA.NS','GTLINFRA.NS']\n    prepare_sell_testdata(sell_stocks)\n    logger.info(f\"Sell stock list:- {sell_stocks}\")\n    sell_algo = MidcapSellAlgorithm()\n    # sell_algo.sell_logic()\n    sell_algo.adhoc_sell(sell_stocks)\n    sell_orders = sell_algo.order_executor()\n    set_sell_orders(sell_orders)\n    logger.info(f\"Consolidated Sell Orders details for each client:- {sell_orders}\")",
+        "peekOfCode": "def sell(sell_stocks):\n    prepare_sell_testdata(sell_stocks)\n    logger.info(f\"Stock list for sell : \\n{sell_stocks}\")\n    if (take_confirmation()):\n        logger.info(f\"Stock list for sell :{sell_stocks}\")\n        sell_algo = MidcapSellAlgorithm()\n        # sell_algo.sell_logic()\n        sell_algo.adhoc_sell(sell_stocks)\n        sell_orders = sell_algo.order_executor()\n        set_sell_orders(sell_orders)",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4318,7 +4569,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy_order_validator():\n    buy_orders = get_buy_orders()\n    trade_sync = TradeSync(buy_orders)\n    filled,unfilled = trade_sync.check_buy_orders(buy_orders)\n    if(not unfilled): \n        logger.info(\"All Buy orders filled\")\n        return\n    logger.info(f\"Retry 1: Order validation for {unfilled}\")\n    filled,unfilled = trade_sync.check_buy_orders(unfilled)\n    if(not unfilled): ",
+        "peekOfCode": "def buy_order_validator():\n    buy_orders = get_buy_orders()\n    trade_sync = TradeSync(buy_orders)\n    filled, unfilled = trade_sync.check_buy_orders(buy_orders)\n    if (not unfilled):\n        logger.info(\"All Buy orders filled\")\n        return\n    logger.info(f\"Retry 1: Order validation for {unfilled}\")\n    filled, unfilled = trade_sync.check_buy_orders(unfilled)\n    if (not unfilled):",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4327,7 +4578,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def filled_buy_orders_processor():\n    filled_buy_orders = get_filled_buy_orders()\n    trade_sync = TradeSync(filled_buy_orders)\n    trade_sync.sync_filled_buy_trades(filled_buy_orders)\ndef sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_sell_orders(sell_orders)\n    if(not unfilled): \n        logger.info(\"All Buy orders filled\")",
+        "peekOfCode": "def filled_buy_orders_processor():\n    filled_buy_orders = get_filled_buy_orders()\n    trade_sync = TradeSync(filled_buy_orders)\n    trade_sync.sync_filled_buy_trades(filled_buy_orders)\ndef sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled, unfilled = trade_sync.check_sell_orders(sell_orders)\n    if (not unfilled):\n        logger.info(\"All Buy orders filled\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4336,7 +4587,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled,unfilled = trade_sync.check_sell_orders(sell_orders)\n    if(not unfilled): \n        logger.info(\"All Buy orders filled\")\n        return\n    logger.info(f\"Retry 1: Order validation for {unfilled}\")\n    filled,unfilled = trade_sync.check_sell_orders(unfilled)\n    if(not unfilled): ",
+        "peekOfCode": "def sell_order_validator():\n    sell_orders = get_sell_orders()\n    trade_sync = TradeSync(sell_orders)\n    filled, unfilled = trade_sync.check_sell_orders(sell_orders)\n    if (not unfilled):\n        logger.info(\"All Buy orders filled\")\n        return\n    logger.info(f\"Retry 1: Order validation for {unfilled}\")\n    filled, unfilled = trade_sync.check_sell_orders(unfilled)\n    if (not unfilled):",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4363,16 +4614,16 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        return buy()\n    elif event[\"action\"] == \"Sell\":\n        return sell()\n    elif event[\"action\"] == \"Complete\":\n        return complete()\ndef run(direction):\n    event = {}\n    event[\"action\"] = direction",
+        "peekOfCode": "def lambda_handler(event, context):\n    if event[\"action\"] == \"Buy\":\n        return buy(event[\"stocks\"])\n    elif event[\"action\"] == \"Sell\":\n        return sell(event[\"stocks\"])\n    elif event[\"action\"] == \"Complete\":\n        return complete()\ndef order_executor(direction, stocks):\n    event = {}\n    event[\"action\"] = direction",
         "detail": "lambda_function",
         "documentation": {}
     },
     {
-        "label": "run",
+        "label": "order_executor",
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def run(direction):\n    event = {}\n    event[\"action\"] = direction\n    lambda_handler(event,None)\nif __name__ == \"__main__\":\n    ######################################\n    #########   Configurations    ########\n    ######################################\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")",
+        "peekOfCode": "def order_executor(direction, stocks):\n    event = {}\n    event[\"action\"] = direction\n    event[\"stocks\"] = stocks\n    lambda_handler(event, None)\n# def final():\n    # buy_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Buy\",buy_list)\n    # sell_list = [\"IDEA.NS\"]\n    # order_executor(\"Sell\",sell_list)",
         "detail": "lambda_function",
         "documentation": {}
     }

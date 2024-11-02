@@ -5,6 +5,7 @@ from brokers.motilal.order import get_trade_price, get_trade_qty, get_xchange_tr
 from database.dao.client_dao import *
 from utils.enums.signal import Signal
 from brokers.motilal.login import client_login
+from utils.helpers.print_client import print_client
 from utils.json.helper import (get_filled_buy_orders, get_filled_sell_orders,
     get_unfilled_buy_orders, get_unfilled_sell_orders, set_filled_buy_orders,
     set_filled_sell_orders, set_unfilled_buy_orders, set_unfilled_sell_orders)
@@ -33,7 +34,7 @@ class TradeSync:
         for client_code in orders:
             if client_code == "date":
                 continue
-            
+            print_client(client_code)
             client_orders = orders[client_code]
             client_filled_orders = []
             client_un_filled_orders = []
@@ -75,7 +76,7 @@ class TradeSync:
         for client_code in orders:
             if client_code == "date":
                 continue
-            
+            print_client(client_code)
             client_orders = orders[client_code]
             client_filled_orders = []
             client_un_filled_orders = []
@@ -117,6 +118,7 @@ class TradeSync:
         for client_code in filled_orders:
             if client_code == "date":
                 continue
+            print_client(client_code)
             logger.info(f"Buy Trade sync for {client_code} initiated.")
             client_orders = filled_orders[client_code]
             if client_orders == None:
@@ -146,6 +148,7 @@ class TradeSync:
         for client_code in filled_orders:
             if client_code == "date":
                 continue
+            print_client(client_code)
             logger.info(f"Sell Trade sync for {client_code} initiated.")
             client_orders = filled_orders[client_code]
             if client_orders == None:
@@ -175,9 +178,10 @@ class TradeSync:
         modified_orders = {}
         failed_modified_orders = {}
         for client_code in orders:
+            
             if client_code == "date":
                 continue
-            
+            print_client(client_code)
             Mofsl = client_login(client_code)
             
             logger.info(f"Modify to Market Orders for {client_code} initiated.")

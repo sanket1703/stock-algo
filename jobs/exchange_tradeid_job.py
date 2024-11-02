@@ -39,3 +39,4 @@ def extract_trade_ids(data):
             trade_ids.append(trade_id)
     return trade_ids
 
+

@@ -6,6 +6,7 @@ from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data
 from database.dao.slots_dao import * 
 from database.dynamodb import get_database
+from utils.helpers.print_client import print_client
 
 class MidcapSellAlgorithm:
     def __init__(self):
@@ -21,6 +22,7 @@ class MidcapSellAlgorithm:
         
         for client_code in self.clients:
             print(f"Starting position sizing selling for {client_code}")
+            print_client(client_code)
             client = PositionSizingSell(client_code)
             Mofl = client_login(client_code)
             client_order = client.off_load_stocks(self.stocks_to_sell,Mofl)

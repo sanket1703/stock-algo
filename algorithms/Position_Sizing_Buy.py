@@ -43,7 +43,7 @@ class PositionSizingBuy:
         logger.info(f"Initiating Position sizing for {self.client_code}")
         total_available_capital = get_client_balance(self.db,self.client_code)
         if total_available_slots_before_buy == 0:
-            logger.info("No slots available")
+            logger.info("No slots available for {self.client_code}")
             return []
         amount_to_invest = total_available_capital/total_available_slots_before_buy
         client_order_list = []

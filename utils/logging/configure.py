@@ -8,7 +8,7 @@ def email_log_handler(message):
     log_record = message.record
     level = log_record["level"].name
     
-    if level in ["ERROR", "CRITICAL"]:
+    if level in ["CRITICAL"]:
         subject = f"Log Alert: {level} - {log_record['message']}"
         body = f"Time: {log_record['time']}\nLevel: {log_record['level']}\nMessage: {log_record['message']}\n"
         sender = "Keyursanket.com"
@@ -27,4 +27,4 @@ def configure_log(level="DEBUG"):
     logger.remove()
     logger.add(log_filename, level="INFO")
     logger.add(sys.stdout, level=level)
-    logger.add(email_log_handler, level="ERROR")
+    logger.add(email_log_handler, level="CRITICAL")

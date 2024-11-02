@@ -2,6 +2,7 @@ from brokers.motilal.login import client_login
 from database.dao.client_dao import get_client_holding
 from database.dynamodb import get_database
 import loguru
+from notification.email.send_email import send_email
 from stock_data.price import fetch_1d_stock_data, get_last_traded_price
 from stock_data.symbols import get_symbol_token
 from loguru import logger
@@ -26,8 +27,22 @@ def place_buy_order(client_code,stock_code,qty,Mofsl):
     response = Mofsl.PlaceOrder(Orderinfo)
     logger.debug(f"PlaceOrder for Buy Response:- {response}")
     logger.info(f"PlaceOrder for Buy Message:- {response['message']}")
+
+    if(response["status"]!="SUCCESS"):
+        notification_error("BUY",response,client_code)
+        if('uniqueorderid' in response):
+            return response['uniqueorderid']
+        else: 
+            return ''
     return response['uniqueorderid']
 
+def notification_error(direction,message_text,client):
+    sender = "Keyursanket.com"
+    recipient = "sanketyou8@gmail.com"
+    cc = "keyurmarolia2@gmail.com"
+    subject = f"[{client}] Place {direction} Order FAILED."
+    message = f"Error Response \n\n{message_text}"
+    send_email(sender,recipient,cc,subject,message,None)
 
 def place_sell_order(db,client_code,stock_code,Mofsl):
     qty = 1
@@ -51,6 +66,12 @@ def place_sell_order(db,client_code,stock_code,Mofsl):
     response = Mofsl.PlaceOrder(Orderinfo)
     logger.debug(f"PlaceOrder for Sell Response:- {response}")
     logger.info(f"PlaceOrder for Sell Message:- {response['message']}")
+    if(response["status"]!="SUCCESS"):
+        notification_error("SELL",response,client_code)
+        if('uniqueorderid' in response):
+            return response['uniqueorderid']
+        else: 
+            return ''
     return response['uniqueorderid']
 
 
@@ -77,9 +98,13 @@ def order_status(Mofsl,client_code,order_id):
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         return False
+    if(order_details["status"]!="SUCCESS"):
+        notification_error("ORDER STATUS",order_details,client_code)
+        return False
     if (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
         return True
+    
     logger.info("Order is still not 'Traded")
     return False
     
@@ -107,5 +132,9 @@ def modify_order_to_market(Mofsl,client_code,order_id):
     logger.debug(f"Modify to Market Response:- {response}")
     logger.info(f"Modify to Market Message:- {response['message']}")
     
-    if response['status'] ==  "SUCCESS": return True
-    return False
+    if response['status'] ==  "SUCCESS": 
+        return True
+    
+    if(response["status"]!="SUCCESS"):
+        notification_error("MODIFY MARKET",response,client_code)
+        return False

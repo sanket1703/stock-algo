@@ -7,6 +7,8 @@ from database.dao.slots_dao import *
 from database.dynamodb import get_database
 from loguru import logger
 
+from utils.helpers.print_client import print_client
+
 
 class MidcapBuyAlgorithm:
     def __init__(self,stock_list):
@@ -21,6 +23,7 @@ class MidcapBuyAlgorithm:
         buy_orders = {}
         
         for client_code in self.clients:
+            print_client(client_code)
             Mofl = client_login(client_code)
             client = PositionSizingBuy(client_code)
             client_order = client.position_sizing(self.final_stocks_buy,self.total_available_slots_before_buy,Mofl)
@@ -31,7 +34,7 @@ class MidcapBuyAlgorithm:
             current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             buy_orders["date"] = current_datetime
             
-        logger.debug("Order Execution completed")
+        logger.debug(f"Order Execution completed for {client_code}")
         return buy_orders
     
     def get_client_auth(self,client_code):
