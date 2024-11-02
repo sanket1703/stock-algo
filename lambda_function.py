@@ -188,23 +188,23 @@ if __name__ == "__main__":
     ##   Before Execution (ONLY ONCE)   ##
     ######################################
     
-    pre_order_executor_job()
+    # pre_order_executor_job()
 
     ######################################
     #######     Buy Suite     ############
     ######################################
-    buy_list = ["IDEA.NS", "GTLINFRA.NS"]
-    order_executor("Buy", buy_list)
-    buy_order_validator()
-    filled_buy_orders_processor()
+    # buy_list = ["IDEA.NS", "GTLINFRA.NS"]
+    # order_executor("Buy", buy_list)
+    # buy_order_validator()
+    # filled_buy_orders_processor()
 
     ######################################
     #######     Sell Suite     ###########
     #####################################
-    sell_list = []
-    order_executor("Sell", sell_list)
-    sell_order_validator()
-    filled_sell_orders_processor()
+    # sell_list = []
+    # order_executor("Sell", sell_list)
+    # sell_order_validator()
+    # filled_sell_orders_processor()
 
     #####################################
     #######        Jobs       ###########
@@ -218,6 +218,6 @@ if __name__ == "__main__":
     #########      Adhoc Jobs    #########
     ######################################
 
-    # adhoc_order("Buy")
+    adhoc_order("Buy")
     # adhoc_order("Status")
     # adhoc_order("Sell")

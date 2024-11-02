@@ -524,3 +524,17 @@
 2024-11-02 13:27:16.332 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
 2024-11-02 13:27:16.333 | INFO     | algorithms.Trade_Sync:sync_filled_sell_trades:152 - Sell Trade sync for WEALTH666 initiated.
 2024-11-02 13:27:17.736 | INFO     | algorithms.Trade_Sync:sync_filled_sell_trades:173 - Sell Trade sync for WEALTH666 completed.
+2024-11-02 13:40:08.319 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:63 - Placing buy order of 1 IDEA.NS for WEALTH666 
+2024-11-02 13:44:35.759 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:59 - Placing Market buy order of 1 IDEA.NS for WEALTH666 
+2024-11-02 13:44:38.136 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:90 - PlaceOrder for WEALTH666 Buy Response:- {'status': 'FAILED', 'message': 'Expecting value: line 1 column 1 (char 0)', 'errorcode': '', 'uniqueorderid': ''}
+2024-11-02 13:44:38.136 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:91 - PlaceOrder for Buy Message:- Expecting value: line 1 column 1 (char 0)
+2024-11-02 13:48:42.484 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:72 - Placing Limit buy order of 1 IDEA.NS for WEALTH666 
+2024-11-02 13:48:45.577 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:90 - PlaceOrder for WEALTH666 Buy Response:- {'status': 'ERROR', 'message': 'Order Type and Price combination does not work for this order', 'errorcode': 'M01083', 'uniqueorderid': ''}
+2024-11-02 13:48:45.577 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:91 - PlaceOrder for Buy Message:- Order Type and Price combination does not work for this order
+2024-11-02 13:49:39.492 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:72 - Placing Limit buy order of 1 IDEA.NS for WEALTH666 
+2024-11-02 13:49:40.925 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:90 - PlaceOrder for WEALTH666 Buy Response:- {'status': 'ERROR', 'message': 'Oops! Exchange Connectivity Failed, Please Try Again', 'errorcode': '100026', 'uniqueorderid': '0200004WEALTH666'}
+2024-11-02 13:49:40.925 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:91 - PlaceOrder for Buy Message:- Oops! Exchange Connectivity Failed, Please Try Again
+2024-11-02 13:50:24.262 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:155 - PlaceOrder for WEALTH666 Sell Response:- {'status': 'ERROR', 'message': 'Authorization is Invalid In Header Parameter', 'errorcode': 'MO2007', 'data': None}
+2024-11-02 13:50:24.263 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:156 - PlaceOrder for Sell Message:- Authorization is Invalid In Header Parameter
+2024-11-02 13:52:07.986 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:155 - PlaceOrder for WEALTH666 Sell Response:- {'status': 'ERROR', 'message': 'Authorization is Invalid In Header Parameter', 'errorcode': 'MO2007', 'data': None}
+2024-11-02 13:52:07.987 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:156 - PlaceOrder for Sell Message:- Authorization is Invalid In Header Parameter

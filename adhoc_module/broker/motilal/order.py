@@ -45,7 +45,7 @@ def adhoc_buy():
     # Retrieve the values from each entry field
     client_code = client_code_entry.get()
     qty = int(qty_entry.get())
-    limit_price = float(limit_price_entry.get())
+    limit_price = limit_price_entry.get()
     stock_code_ns = stock_code_entry.get()
 
     # Return or print the values
@@ -53,22 +53,37 @@ def adhoc_buy():
     logger.debug("Quantity:", qty)
     logger.debug("Limit Price:", limit_price)
     logger.debug("Stock Code:", stock_code_ns)
-    
-    logger.info(f"Placing buy order of {qty} {stock_code_ns} for {client_code} ")
     stock_code = get_symbol_token(stock_code_ns)
     Mofsl = client_login(client_code)
-    Orderinfo = {
-        "clientcode":client_code,      
-        "exchange":"NSE",
-        "symboltoken":stock_code,
-        "buyorsell":"BUY",
-        "ordertype":"LIMIT",
-        "producttype":"DELIVERY",
-        "orderduration":"DAY",
-        "price":round(limit_price, 4),
-        "quantityinlot":qty,
-        "amoorder":"N"
-    }
+    if(limit_price == "MARKET"):
+        logger.info(f"Placing Market buy order of {qty} {stock_code_ns} for {client_code} ")
+        Orderinfo = {
+            "clientcode":client_code,      
+            "exchange":"NSE",
+            "symboltoken":stock_code,
+            "buyorsell":"BUY",
+            "ordertype": "MARKET",
+            "producttype":"DELIVERY",
+            "orderduration":"DAY",
+            "quantityinlot":qty,
+            "amoorder":"N"
+        }
+    else:
+        logger.info(
+            f"Placing Limit buy order of {qty} {stock_code_ns} for {client_code} ")
+        Orderinfo = {
+            "clientcode": client_code,
+            "exchange": "NSE",
+            "symboltoken": stock_code,
+            "buyorsell": "BUY",
+            "ordertype": "LIMIT",
+            "producttype": "DELIVERY",
+            "orderduration": "DAY",
+            "price": round(float(limit_price), 4),
+            "quantityinlot": qty,
+            "amoorder": "N"
+        }
+        
     yesno = messagebox.askyesno("Confirmation", "Are you sure you want to proceed?")
     if yesno:
         response = Mofsl.PlaceOrder(Orderinfo)
@@ -85,7 +100,7 @@ def adhoc_sell():
     # Retrieve the values from each entry field
     client_code = client_code_entry.get()
     qty = int(qty_entry.get())
-    limit_price = float(limit_price_entry.get())
+    limit_price = limit_price_entry.get()
     stock_code_ns = stock_code_entry.get()
 
     # Return or print the values
@@ -94,22 +109,46 @@ def adhoc_sell():
     logger.debug("Limit Price:", limit_price)
     logger.debug("Stock Code:", stock_code_ns)
     
+    if (limit_price == "MARKET"):
+        ordertype = "MARKET"
+    else:
+        ordertype = "LIMIT"
+        limit_price = float(limit_price)
+    
     stock_code = get_symbol_token(stock_code_ns)
     
-    logger.debug(f"Placing sell order of {qty} {stock_code} for {client_code} ")
+    
     Mofsl = client_login(client_code)
-    Orderinfo = {
-        "clientcode":client_code,      
-        "exchange":"NSE",
-        "symboltoken":stock_code,
-        "buyorsell":"SELL",
-        "ordertype":"LIMIT",
-        "producttype":"DELIVERY",
-        "orderduration":"DAY",
-        "quantityinlot":qty,
-         "amoorder":"N",
-         "price":round(limit_price, 4),
-    }
+    if (limit_price == "MARKET"):
+        logger.debug(
+            f"Placing MARKET sell order of {qty} {stock_code} for {client_code} ")
+        Orderinfo = {
+            "clientcode":client_code,      
+            "exchange":"NSE",
+            "symboltoken":stock_code,
+            "buyorsell":"SELL",
+            "ordertype": "MARKET",
+            "producttype":"DELIVERY",
+            "orderduration":"DAY",
+            "quantityinlot":qty,
+            "amoorder":"N",
+        }
+    else:
+        logger.debug(
+            f"Placing LIMIT sell order of {qty} {stock_code} for {client_code} ")
+        Orderinfo = {
+            "clientcode": client_code,
+            "exchange": "NSE",
+            "symboltoken": stock_code,
+            "buyorsell": "SELL",
+            "ordertype": "LIMIT",
+            "producttype": "DELIVERY",
+            "orderduration": "DAY",
+            "quantityinlot": qty,
+            "amoorder": "N",
+            "price": round(limit_price, 4)
+        }
+        
     yesno = messagebox.askyesno("Confirmation", "Are you sure you want to proceed?")
     if yesno:
         response = Mofsl.PlaceOrder(Orderinfo)
