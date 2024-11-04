@@ -1,0 +1,8 @@
+2024-11-04 09:26:27.776 | INFO     | jobs.mo_login_check_job:check_login_job:30 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-04 09:26:33.688 | INFO     | jobs.mo_login_check_job:check_login_job:30 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-04 09:26:34.612 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-11-04 09:26:34.614 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-11-04 09:26:34.616 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-11-04 09:26:34.618 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-11-04 09:26:34.619 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-11-04 09:26:34.620 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
