@@ -164,16 +164,36 @@ def order_executor(direction, stocks):
     lambda_handler(event, None)
 
 
-# def final():
+def final():
+
+    # check_login_job()
+
+    # adhoc_order("Buy")   # Buy   , Sell    ,    Status
+
+
+
     # buy_list = ["IDEA.NS","GTLINFRA.NS"]
     # order_executor("Buy",buy_list)
-    # sell_list = ["IDEA.NS"]
+    
+    
+    # sell_list = ["IDEA.NS","GTLINFRA.NS"]
     # order_executor("Sell",sell_list)
+
+
     # buy_order_validator()
     # sell_order_validator()
+
+
     # filled_buy_orders_processor()
     # filled_sell_orders_processor()
-    # exchange_tradeid_job()
+
+
+    exchange_tradeid_job()
+
+
+
+
+
 if __name__ == "__main__":
 
     ######################################
@@ -182,7 +202,7 @@ if __name__ == "__main__":
 
     warnings.filterwarnings("ignore")
     configure_log(level="DEBUG")
-    # final()
+    final()
     
     ######################################
     ##   Before Execution (ONLY ONCE)   ##
@@ -218,6 +238,6 @@ if __name__ == "__main__":
     #########      Adhoc Jobs    #########
     ######################################
 
-    adhoc_order("Buy")
+    # adhoc_order("Buy")
     # adhoc_order("Status")
     # adhoc_order("Sell")

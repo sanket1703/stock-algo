@@ -1,0 +1,4 @@
+2024-11-06 09:51:04.413 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:9 - Extraction of Exchange Trade Id started.
+2024-11-06 09:51:04.414 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:23 - Trade IDs with SNO have been saved in order_book/trades/2024-11-06_TRADEID.csv.
+2024-11-06 09:51:04.414 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:29 - Sending email of the csv.
+2024-11-06 09:51:05.660 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:31 - Extraction of Exchange Trade Id completed.

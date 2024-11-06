@@ -35,8 +35,11 @@ def extract_trade_ids(data):
     trade_ids = []
     for user, trades in data.items():
         for trade in trades:
+            if user=="date":
+                continue
             trade_id = trade[2]  # The trade ID is the third element in each list
             trade_ids.append(trade_id)
+
     return trade_ids
 
 
