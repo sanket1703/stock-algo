@@ -1,5 +1,4 @@
 from FOR_KEYUR import get_watchlist_for_keyur
-
 from adhoc_module.broker.motilal.order import adhoc_order
 from algorithms.Filter_Algorithm import FilterAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
@@ -208,7 +207,7 @@ if __name__ == "__main__":
     ##   Before Execution (ONLY ONCE)   ##
     ######################################
     
-    # pre_order_executor_job()
+    pre_order_executor_job()
 
     ######################################
     #######     Buy Suite     ############
