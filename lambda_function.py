@@ -187,7 +187,7 @@ if __name__ == "__main__":
     ##   Before Execution (ONLY ONCE)   ##
     ######################################
     
-    pre_order_executor_job()
+    # pre_order_executor_job()
 
     ######################################
     #######     Buy Suite     ############
