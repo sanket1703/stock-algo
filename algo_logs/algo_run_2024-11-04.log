@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+2024-11-04 10:01:35.018 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:72 - Placing Limit buy order of 46 NIFTYBEES.NS for FTCT1216 
+2024-11-04 10:01:37.173 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:90 - PlaceOrder for FTCT1216 Buy Response:- {'status': 'SUCCESS', 'message': 'Order Placed Successfully', 'errorcode': '', 'uniqueorderid': '0400001FTCT1216'}
+2024-11-04 10:01:37.174 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:91 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-11-04 10:03:37.669 | INFO     | adhoc_module.broker.motilal.order:adhoc_status:38 - Order is still not 'Traded
+2024-11-04 10:30:52.351 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:72 - Placing Limit buy order of 46 NIFTYBEES.NS for FTCT1216 
+2024-11-04 10:30:53.872 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:90 - PlaceOrder for FTCT1216 Buy Response:- {'status': 'SUCCESS', 'message': 'Order Placed Successfully', 'errorcode': '', 'uniqueorderid': '0400002FTCT1216'}
+2024-11-04 10:30:53.872 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:91 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-11-04 11:07:35.055 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:59 - Placing Market buy order of 1 IDEA.NS for WEALTH666 
+2024-11-04 11:07:36.899 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:90 - PlaceOrder for WEALTH666 Buy Response:- {'status': 'SUCCESS', 'message': 'Order Placed Successfully', 'errorcode': '', 'uniqueorderid': '0400001WEALTH666'}
+2024-11-04 11:07:36.899 | INFO     | adhoc_module.broker.motilal.order:adhoc_buy:91 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-11-04 11:08:55.968 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:148 - PlaceOrder for WEALTH666 Sell Response:- {'status': 'SUCCESS', 'message': 'Order Placed Successfully', 'errorcode': '', 'uniqueorderid': '0400002WEALTH666'}
+2024-11-04 11:08:55.968 | INFO     | adhoc_module.broker.motilal.order:adhoc_sell:149 - PlaceOrder for Sell Message:- Order Placed Successfully
+=======
 2024-11-04 09:26:27.776 | INFO     | jobs.mo_login_check_job:check_login_job:30 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
 2024-11-04 09:26:33.688 | INFO     | jobs.mo_login_check_job:check_login_job:30 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
 2024-11-04 09:26:34.612 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
@@ -6,3 +20,4 @@
 2024-11-04 09:26:34.618 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
 2024-11-04 09:26:34.619 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
 2024-11-04 09:26:34.620 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+>>>>>>> 059cfe46f47c543c9408136864aecd0b60c7a442
