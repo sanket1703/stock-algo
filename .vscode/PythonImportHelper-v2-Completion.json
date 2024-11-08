@@ -1,19 +1,34 @@
 [
     {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
         "label": "tkinter",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "tkinter",
         "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
         "detail": "tkinter",
         "documentation": {}
     },
@@ -195,11 +210,11 @@
         "documentation": {}
     },
     {
-        "label": "client_login",
-        "importPath": "brokers.motilal.login",
-        "description": "brokers.motilal.login",
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
         "isExtraImport": true,
-        "detail": "brokers.motilal.login",
+        "detail": "loguru",
         "documentation": {}
     },
     {
@@ -240,6 +255,166 @@
         "description": "brokers.motilal.login",
         "isExtraImport": true,
         "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
+        "label": "get_modified_time",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_order_qty",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "place_buy_order",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "place_sell_order",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_price",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_qty",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_xchange_trade_id",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "is_order_completed",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "modify_order_to_market",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "order_status",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_modified_time",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_order_qty",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
+        "documentation": {}
+    },
+    {
+        "label": "send_email",
+        "importPath": "notification.email.send_email",
+        "description": "notification.email.send_email",
+        "isExtraImport": true,
+        "detail": "notification.email.send_email",
         "documentation": {}
     },
     {
@@ -259,43 +434,11 @@
         "documentation": {}
     },
     {
-        "label": "send_email",
-        "importPath": "notification.email.send_email",
-        "description": "notification.email.send_email",
+        "label": "get_symbol_token",
+        "importPath": "stock_data.symbols",
+        "description": "stock_data.symbols",
         "isExtraImport": true,
-        "detail": "notification.email.send_email",
-        "documentation": {}
-    },
-    {
-        "label": "send_email",
-        "importPath": "notification.email.send_email",
-        "description": "notification.email.send_email",
-        "isExtraImport": true,
-        "detail": "notification.email.send_email",
-        "documentation": {}
-    },
-    {
-        "label": "send_email",
-        "importPath": "notification.email.send_email",
-        "description": "notification.email.send_email",
-        "isExtraImport": true,
-        "detail": "notification.email.send_email",
-        "documentation": {}
-    },
-    {
-        "label": "send_email",
-        "importPath": "notification.email.send_email",
-        "description": "notification.email.send_email",
-        "isExtraImport": true,
-        "detail": "notification.email.send_email",
-        "documentation": {}
-    },
-    {
-        "label": "send_email",
-        "importPath": "notification.email.send_email",
-        "description": "notification.email.send_email",
-        "isExtraImport": true,
-        "detail": "notification.email.send_email",
+        "detail": "stock_data.symbols",
         "documentation": {}
     },
     {
@@ -813,70 +956,6 @@
         "documentation": {}
     },
     {
-        "label": "place_buy_order",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "place_sell_order",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "get_trade_price",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "get_trade_qty",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "get_xchange_trade_id",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "is_order_completed",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "modify_order_to_market",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "order_status",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
         "label": "boto3",
         "kind": 6,
         "isExtraImport": true,
@@ -1116,6 +1195,15 @@
         "description": "brokers.algobaba.order_details",
         "isExtraImport": true,
         "detail": "brokers.algobaba.order_details",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -2047,6 +2135,14 @@
         "documentation": {}
     },
     {
+        "label": "ahdoc_order_box",
+        "importPath": "adhoc_module.broker.motilal.order",
+        "description": "adhoc_module.broker.motilal.order",
+        "isExtraImport": true,
+        "detail": "adhoc_module.broker.motilal.order",
+        "documentation": {}
+    },
+    {
         "label": "FilterAlgorithm",
         "importPath": "algorithms.Filter_Algorithm",
         "description": "algorithms.Filter_Algorithm",
@@ -2152,38 +2248,74 @@
         "documentation": {}
     },
     {
-        "label": "adhoc_status",
+        "label": "update_color",
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def adhoc_status():\n    client_code = client_code_entry.get()\n    order_id = order_id_entry.get()\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    Mofsl = client_login(client_code)\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    stock_code=order_details['data'][0]['symbol']\n    qty=order_details['data'][0]['orderqty']\n    price=order_details['data'][0]['price']",
+        "peekOfCode": "def update_color(event):\n    direction = direction_var.get()\n    if direction == \"Buy\":\n        root.configure(bg=\"green\")\n    elif direction == \"Sell\":\n        root.configure(bg=\"red\")\n    elif direction == \"Modify\":\n        root.configure(bg=\"orange\")\n    elif direction == \"Status\":\n        root.configure(bg=\"light gray\")",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
     {
-        "label": "adhoc_buy",
+        "label": "execute_action",
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def adhoc_buy():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(qty_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "peekOfCode": "def execute_action():\n    direction = direction_var.get()\n    if direction == \"Buy\":\n        buy_action()\n    elif direction == \"Sell\":\n        sell_action()\n    elif direction == \"Modify\":\n        modify_action()\n    elif direction == \"Status\":\n        status_action()",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
     {
-        "label": "adhoc_sell",
+        "label": "buy_action",
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def adhoc_sell():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(qty_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "peekOfCode": "def buy_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
     {
-        "label": "adhoc_order",
+        "label": "sell_action",
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def adhoc_order(direction):\n    # Main tkinter window\n    global root\n    root = tk.Tk()\n    root.title(\"Order\")\n    global client_code_entry, qty_entry, limit_price_entry, stock_code_entry, order_id_entry\n    # Labels and entry fields for each variable\n    tk.Label(root, text=\"Client Code:\").grid(row=0, column=0, padx=10, pady=5)\n    client_code_entry = tk.Entry(root)\n    client_code_entry.insert(0, \"WEALTH666\")",
+        "peekOfCode": "def sell_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "detail": "adhoc_module.broker.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "modify_action",
+        "kind": 2,
+        "importPath": "adhoc_module.broker.motilal.order",
+        "description": "adhoc_module.broker.motilal.order",
+        "peekOfCode": "def modify_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    order_id = order_id_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Limit Price:\", limit_price)\n    logger.debug(\"Stock Code:\", stock_code_ns)",
+        "detail": "adhoc_module.broker.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "status_action",
+        "kind": 2,
+        "importPath": "adhoc_module.broker.motilal.order",
+        "description": "adhoc_module.broker.motilal.order",
+        "peekOfCode": "def status_action():\n    client_code = client_code_entry.get()\n    order_id = order_id_entry.get()\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    Mofsl = client_login(client_code)\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id, client_code)\n    stock_code = order_details['data'][0]['symbol']\n    qty = order_details['data'][0]['orderqty']\n    price = order_details['data'][0]['price']",
+        "detail": "adhoc_module.broker.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "show_response_window",
+        "kind": 2,
+        "importPath": "adhoc_module.broker.motilal.order",
+        "description": "adhoc_module.broker.motilal.order",
+        "peekOfCode": "def show_response_window(client_code, status, message, details, direction):\n    title = f\"{direction} Response\"\n    content = f\"Client Code:   {client_code}\\n\\nDirection:   {direction}\\n\\nStatus:    {status}\\n\\nMessage:    {message}\\n\\nDetails:   {details}\"\n    messagebox.showinfo(title, content)\ndef ahdoc_order_box():\n    # Display the response message in a pop-up window\n    # Setting up the main window\n    global root\n    root = tk.Tk()\n    root.title(\"Stock Order Form\")",
+        "detail": "adhoc_module.broker.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "ahdoc_order_box",
+        "kind": 2,
+        "importPath": "adhoc_module.broker.motilal.order",
+        "description": "adhoc_module.broker.motilal.order",
+        "peekOfCode": "def ahdoc_order_box():\n    # Display the response message in a pop-up window\n    # Setting up the main window\n    global root\n    root = tk.Tk()\n    root.title(\"Stock Order Form\")\n    root.geometry(\"400x300\")\n    # Labels and Entry Fields\n    tk.Label(root, text=\"Client Code:\").grid(\n        row=0, column=0, padx=10, pady=5, sticky=\"w\")",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2192,16 +2324,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def notification(direction,message_text,client,order_id):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Adhoc Order {direction} - {order_id}\"\n    send_email(sender,recipient,cc,subject,message_text,None)\n# Commented code is the way in which you can fetch orders from the JSON\n# def extract_order_details_from_file(file_path):\n#     # Read JSON data from the file\n#     with open(file_path, 'r') as file:",
-        "detail": "adhoc_module.broker.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "extract_order_status_data_from_file",
-        "kind": 2,
-        "importPath": "adhoc_module.broker.motilal.order",
-        "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def extract_order_status_data_from_file(file_path):\n    with open(file_path, 'r') as file:\n        data = json.load(file)\n    client_code = data.get(\"client_code\")\n    order_id = data.get(\"order_id\")\n    return client_code, order_id",
+        "peekOfCode": "def notification(direction, message_text, client, order_id):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Adhoc Order {direction} - {order_id}\"\n    send_email(sender, recipient, cc, subject, message_text, None)\n# Commented code is the way in which you can fetch orders from the JSON\n# def extract_order_details_from_file(file_path):\n#     # Read JSON data from the file\n#     with open(file_path, 'r') as file:",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -4640,8 +4763,89 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def final():\n    # check_login_job()\n    # adhoc_order(\"Buy\")   # Buy   , Sell    ,    Status\n    # buy_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Buy\",buy_list)\n    # sell_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Sell\",sell_list)\n    # buy_order_validator()\n    # sell_order_validator()",
+        "peekOfCode": "def final():\n    # check_login_job()\n    # adhoc_order(\"Buy\")   # Buy   , Sell    ,    Status\n    # buy_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Buy\",buy_list)\n    # sell_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Sell\",sell_list)\n    # buy_order_validator()\n    # sell_order_validator()\n    # filled_buy_orders_processor()",
         "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "update_color",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def update_color(event):\n    direction = direction_var.get()\n    if direction == \"Buy\":\n        root.configure(bg=\"green\")\n    elif direction == \"Sell\":\n        root.configure(bg=\"red\")\n    elif direction == \"Modify\":\n        root.configure(bg=\"orange\")\n    elif direction == \"Status\":\n        root.configure(bg=\"light gray\")",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "execute_action",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def execute_action():\n    direction = direction_var.get()\n    if direction == \"Buy\":\n        buy_action()\n    elif direction == \"Sell\":\n        sell_action()\n    elif direction == \"Modify\":\n        modify_action()\n    elif direction == \"Status\":\n        status_action()",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "buy_action",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def buy_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "sell_action",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def sell_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "modify_action",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def modify_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    order_id = order_id_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Limit Price:\", limit_price)\n    logger.debug(\"Stock Code:\", stock_code_ns)",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "status_action",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def status_action():\n    client_code = client_code_entry.get()\n    order_id = order_id_entry.get()\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    Mofsl = client_login(client_code)\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    stock_code=order_details['data'][0]['symbol']\n    qty=order_details['data'][0]['orderqty']\n    price=order_details['data'][0]['price']",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "show_response_window",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def show_response_window(client_code, status, message, details, direction):\n    title = f\"{direction} Response\"\n    content = f\"Client Code:   {client_code}\\n\\nDirection:   {direction}\\n\\nStatus:    {status}\\n\\nMessage:    {message}\\n\\nDetails:   {details}\"\n    messagebox.showinfo(title, content)\ndef show_box():\n        # Display the response message in a pop-up window\n# Setting up the main window\n    global root\n    root = tk.Tk()\n    root.title(\"Stock Order Form\")",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "show_box",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def show_box():\n        # Display the response message in a pop-up window\n# Setting up the main window\n    global root\n    root = tk.Tk()\n    root.title(\"Stock Order Form\")\n    root.geometry(\"400x300\")\n    # Labels and Entry Fields\n    tk.Label(root, text=\"Client Code:\").grid(\n        row=0, column=0, padx=10, pady=5, sticky=\"w\")",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "notification",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def notification(direction, message_text, client, order_id):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Adhoc Order {direction} - {order_id}\"\n    send_email(sender, recipient, cc, subject, message_text, None)\n# Commented code is the way in which you can fetch orders from the JSON\n# def extract_order_details_from_file(file_path):\n#     # Read JSON data from the file\n#     with open(file_path, 'r') as file:",
+        "detail": "test",
         "documentation": {}
     }
 ]

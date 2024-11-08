@@ -1,5 +1,5 @@
 from FOR_KEYUR import get_watchlist_for_keyur
-from adhoc_module.broker.motilal.order import adhoc_order
+from adhoc_module.broker.motilal.order import adhoc_order, ahdoc_order_box
 from algorithms.Filter_Algorithm import FilterAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
@@ -166,31 +166,16 @@ def order_executor(direction, stocks):
 def final():
 
     # check_login_job()
-
     # adhoc_order("Buy")   # Buy   , Sell    ,    Status
-
-
-
     # buy_list = ["IDEA.NS","GTLINFRA.NS"]
     # order_executor("Buy",buy_list)
-    
-    
     # sell_list = ["IDEA.NS","GTLINFRA.NS"]
     # order_executor("Sell",sell_list)
-
-
     # buy_order_validator()
     # sell_order_validator()
-
-
     # filled_buy_orders_processor()
     # filled_sell_orders_processor()
-
-
     exchange_tradeid_job()
-
-
-
 
 
 if __name__ == "__main__":
@@ -201,7 +186,7 @@ if __name__ == "__main__":
 
     warnings.filterwarnings("ignore")
     configure_log(level="DEBUG")
-    final()
+    # final()
     
     ######################################
     ##   Before Execution (ONLY ONCE)   ##
@@ -236,7 +221,4 @@ if __name__ == "__main__":
     ######################################
     #########      Adhoc Jobs    #########
     ######################################
-
-    # adhoc_order("Buy")
-    # adhoc_order("Status")
-    # adhoc_order("Sell")
+    ahdoc_order_box()
