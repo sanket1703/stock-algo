@@ -4019,7 +4019,7 @@
         "kind": 2,
         "importPath": "jobs.exchange_tradeid_job",
         "description": "jobs.exchange_tradeid_job",
-        "peekOfCode": "def extract_trade_ids(data):\n    trade_ids = []\n    for user, trades in data.items():\n        for trade in trades:\n            trade_id = trade[2]  # The trade ID is the third element in each list\n            trade_ids.append(trade_id)\n    return trade_ids",
+        "peekOfCode": "def extract_trade_ids(data):\n    trade_ids = []\n    for user, trades in data.items():\n        for trade in trades:\n            if user==\"date\":\n                continue\n            trade_id = trade[2]  # The trade ID is the third element in each list\n            trade_ids.append(trade_id)\n    return trade_ids",
         "detail": "jobs.exchange_tradeid_job",
         "documentation": {}
     },
@@ -4631,7 +4631,16 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def order_executor(direction, stocks):\n    event = {}\n    event[\"action\"] = direction\n    event[\"stocks\"] = stocks\n    lambda_handler(event, None)\n# def final():\n    # buy_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Buy\",buy_list)\n    # sell_list = [\"IDEA.NS\"]\n    # order_executor(\"Sell\",sell_list)",
+        "peekOfCode": "def order_executor(direction, stocks):\n    event = {}\n    event[\"action\"] = direction\n    event[\"stocks\"] = stocks\n    lambda_handler(event, None)\ndef final():\n    # check_login_job()\n    # adhoc_order(\"Buy\")   # Buy   , Sell    ,    Status\n    # buy_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Buy\",buy_list)",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "final",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def final():\n    # check_login_job()\n    # adhoc_order(\"Buy\")   # Buy   , Sell    ,    Status\n    # buy_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Buy\",buy_list)\n    # sell_list = [\"IDEA.NS\",\"GTLINFRA.NS\"]\n    # order_executor(\"Sell\",sell_list)\n    # buy_order_validator()\n    # sell_order_validator()",
         "detail": "lambda_function",
         "documentation": {}
     }
