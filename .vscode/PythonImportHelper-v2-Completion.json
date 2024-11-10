@@ -4745,15 +4745,6 @@
         "documentation": {}
     },
     {
-        "label": "get_watchlist_for_keyur",
-        "kind": 2,
-        "importPath": "FOR_KEYUR",
-        "description": "FOR_KEYUR",
-        "peekOfCode": "def get_watchlist_for_keyur():\n    watchlist =['OFSS',\n    'NBCC',\n    'PFC',\n    'RECLTD',\n    'BDL',\n    'HAL',\n    'HUDCO',\n    'BHEL',\n    'RVNL',",
-        "detail": "FOR_KEYUR",
-        "documentation": {}
-    },
-    {
         "label": "keepAlive",
         "kind": 2,
         "importPath": "app",
