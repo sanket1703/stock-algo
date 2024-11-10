@@ -7,6 +7,8 @@ from stock_data.price import fetch_1d_stock_data, get_last_traded_price
 from stock_data.symbols import get_symbol_token
 from loguru import logger
 
+from utils.json.orders import update_status
+
 def place_buy_order(client_code,stock_code,qty,Mofsl):
     logger.info(f"Placing buy order of {qty} {stock_code} for {client_code} ")
     ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))
@@ -45,8 +47,8 @@ def notification_error(direction,message_text,client):
     send_email(sender,recipient,cc,subject,message,None)
 
 def place_sell_order(db,client_code,stock_code,Mofsl):
-    qty = 1
-    # qty = get_client_holding(db,client_code,stock_code)
+
+    qty = get_client_holding(db,client_code,stock_code)
     logger.debug(f"Placing sell order of {qty} {stock_code} for {client_code} ")
     ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))
     # Convert it into the token that motilal wants
@@ -96,13 +98,19 @@ def order_status(Mofsl,client_code,order_id):
     order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
     logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
+        update_status(order_id, "Placed", order_details['message'],"Limit",
+                      "")
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         return False
     if(order_details["status"]!="SUCCESS"):
         notification_error("ORDER STATUS",order_details,client_code)
+        update_status(order_id, "Placed", order_details['message'], "Limit",
+                      "")
         return False
     if (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
+        update_status(order_id, "Traded", order_details['message'], "Limit",
+                      order_details['data'][0]['orderid'])
         return True
     
     logger.info("Order is still not 'Traded")
@@ -133,8 +141,12 @@ def modify_order_to_market(Mofsl,client_code,order_id):
     logger.info(f"Modify to Market Message:- {response['message']}")
     
     if response['status'] ==  "SUCCESS": 
+        update_status(order_id, "Placed", response['message'],"Market",
+                      response['data'][0]['orderid'])
         return True
     
     if(response["status"]!="SUCCESS"):
         notification_error("MODIFY MARKET",response,client_code)
+        update_status(order_id, "Placed", response['message'], "Market",
+                      "")
         return False

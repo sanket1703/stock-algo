@@ -1,5 +1,7 @@
+import json
+from datetime import datetime
 from FOR_KEYUR import get_watchlist_for_keyur
-from adhoc_module.broker.motilal.order import adhoc_order, ahdoc_order_box
+from adhoc_module.broker.motilal.order import ahdoc_order_box
 from algorithms.Filter_Algorithm import FilterAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
@@ -130,31 +132,11 @@ def filled_sell_orders_processor():
     trade_sync.sync_filled_sell_trades(filled_sell_orders)
 
 
-def complete():
-
-    db = get_database()
-    watch_list = get_watchlist(db)
-    watch_list = get_watchlist_for_keyur()
-    watch_list = massage_watchlist(watch_list)
-    clients = get_client_list(db)
-    all_client_data = read_csv_to_dict()
-    filter_algo = FilterAlgorithm(watch_list)
-    filter_algo.filter_watchlist()
-    stocks = filter_algo.filter_stocks()
-    buy_algo = MidcapBuyAlgorithm(stocks, clients)
-    buy_algo.allocate_slots()
-    buy_orders = buy_algo.order_executor(all_client_data)
-    return 0
-
-
 def lambda_handler(event, context):
     if event["action"] == "Buy":
         return buy(event["stocks"])
     elif event["action"] == "Sell":
         return sell(event["stocks"])
-    elif event["action"] == "Complete":
-        return complete()
-
 
 def order_executor(direction, stocks):
     event = {}
@@ -163,20 +145,44 @@ def order_executor(direction, stocks):
     lambda_handler(event, None)
 
 
-def final():
+def shouldValidate():
+    # Condition 1: Check if the current time is before 3:25 PM
+    # current_time = datetime.now().time()
+    # if current_time >= datetime.strptime("15:25", "%H:%M").time():
+    #     return False
 
-    # check_login_job()
-    # adhoc_order("Buy")   # Buy   , Sell    ,    Status
-    # buy_list = ["IDEA.NS","GTLINFRA.NS"]
-    # order_executor("Buy",buy_list)
-    # sell_list = ["IDEA.NS","GTLINFRA.NS"]
-    # order_executor("Sell",sell_list)
-    # buy_order_validator()
-    # sell_order_validator()
-    # filled_buy_orders_processor()
-    # filled_sell_orders_processor()
+    # Load unfilled buy and sell orders from JSON files
+    with open('order_book/unfilled_orders/unfilled_buy_orders.json', 'r') as buy_file:
+        unfilled_buy_orders = json.load(buy_file)
+
+    with open('order_book/unfilled_orders/unfilled_sell_orders.json', 'r') as sell_file:
+        unfilled_sell_orders = json.load(sell_file)
+
+    # Condition 2 & 3: Check if there is at least one non-empty list in either buy or sell orders
+    any_buy_orders_non_empty = any(
+        orders for client, orders in unfilled_buy_orders.items() if client != "date"
+    )
+    any_sell_orders_non_empty = any(
+        orders for client, orders in unfilled_sell_orders.items() if client != "date"
+    )
+
+    # Return True if there is at least one non-empty list in either buy or sell orders
+    return any_buy_orders_non_empty or any_sell_orders_non_empty
+
+
+def validate_orders():
+    while (shouldValidate()):
+        buy_order_validator()
+        sell_order_validator()
+
+def sync_orders():
+    filled_buy_orders_processor()
+    filled_sell_orders_processor()
     exchange_tradeid_job()
 
+def pre_run_checklist():
+    check_login_job()
+    clean_order_jsons_job()
 
 if __name__ == "__main__":
 
@@ -186,7 +192,22 @@ if __name__ == "__main__":
 
     warnings.filterwarnings("ignore")
     configure_log(level="DEBUG")
-    # final()
+    
+    ######################################
+    #########      Full Run       ########
+    ######################################
+    
+    pre_run_checklist()
+
+    buy_list = ["IDEA.NS", "GTLINFRA.NS"]
+    order_executor("Buy", buy_list)
+
+    sell_list = ["IDEA.NS", "GTLINFRA.NS"]
+    order_executor("Sell", sell_list)
+    
+    # validate_orders()
+
+    # sync_orders()
     
     ######################################
     ##   Before Execution (ONLY ONCE)   ##
@@ -197,6 +218,7 @@ if __name__ == "__main__":
     ######################################
     #######     Buy Suite     ############
     ######################################
+    
     # buy_list = ["IDEA.NS", "GTLINFRA.NS"]
     # order_executor("Buy", buy_list)
     # buy_order_validator()
@@ -205,6 +227,7 @@ if __name__ == "__main__":
     ######################################
     #######     Sell Suite     ###########
     #####################################
+    
     # sell_list = []
     # order_executor("Sell", sell_list)
     # sell_order_validator()
@@ -221,4 +244,5 @@ if __name__ == "__main__":
     ######################################
     #########      Adhoc Jobs    #########
     ######################################
-    ahdoc_order_box()
+    
+    # ahdoc_order_box()

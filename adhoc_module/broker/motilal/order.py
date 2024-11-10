@@ -19,6 +19,8 @@ def update_color(event):
         root.configure(bg="orange")
     elif direction == "Status":
         root.configure(bg="light gray")
+    elif direction == "Cancel Order":
+        root.configure(bg="blue")
 
 
 def execute_action():
@@ -31,6 +33,8 @@ def execute_action():
         modify_action()
     elif direction == "Status":
         status_action()
+    elif direction == "Cancel Order":
+        cancel_action()
 
 
 def buy_action():
@@ -85,11 +89,13 @@ def buy_action():
         logger.info(f"PlaceOrder for Buy Message:- {response['message']}")
         message = f"Response for Buy Order {stock_code_ns}/BUY/{qty}@Rs{limit_price}:- \n{response}"
         notification("Buy", message, client_code, response['uniqueorderid'])
-        show_response_window(response['status'],
+        show_response_window(client_code,response['status'],
                              response['message'], message, "BUY")
-        root.destroy()
+        reset()
+        # root.destroy()
     else:
-        root.destroy()
+        # root.destroy()
+        reset()
 
 
 def sell_action():
@@ -146,11 +152,11 @@ def sell_action():
         logger.info(f"PlaceOrder for Sell Message:- {response['message']}")
         message = f"Response for Sell Order {stock_code_ns}/SELL/{qty}@{limit_price}:- \n{response}"
         notification("Sell", message, client_code, response['uniqueorderid'])
-        show_response_window(response['status'],
+        show_response_window(client_code,response['status'],
                              response['message'], message, "SELL")
-        root.destroy()
+        reset()
     else:
-        root.destroy()
+        reset()
 
 
 def modify_action():
@@ -193,10 +199,41 @@ def modify_action():
         logger.info(f"Modify to Market Message:- {response['message']}")
         message = f"Response for Modify Order {stock_code_ns}/MODIFY/{qty}@{limit_price}:- \n{response}"
         notification("MODIFY", message, client_code, order_id)
-        show_response_window(response['status'],
+        show_response_window(client_code,response['status'],
                              response['message'], message, "MODIFY")
+        reset()
     else:
-        root.destroy()
+        reset()
+
+
+def cancel_action():
+    client_code = client_code_entry.get()
+    order_id = order_id_entry.get()
+
+    # Return or print the values
+    logger.debug("Client Code:", client_code)
+    logger.debug("Order Id", order_id)
+
+    Mofsl = client_login(client_code)
+
+    logger.debug(f"Cancel {order_id} of {client_code} ")
+
+    yesno = messagebox.askyesno(
+        "Confirmation", "Are you sure you want to proceed?")
+    if yesno:
+        response = Mofsl.CancelOrder(order_id, client_code)
+        print(response)
+        logger.debug(f"Cancel Order Response:- {response}")
+        logger.info(f"Cancel Order Message:- {response['message']}")
+        message = f"Cancel {order_id}:- \n{response}"
+        notification("CANCEL", message, client_code, order_id)
+        show_response_window(client_code, response['status'],
+                             response['message'], message, "CANCEL")
+        reset()
+    else:
+        reset()
+
+
 
 
 def status_action():
@@ -225,7 +262,7 @@ def status_action():
                      order_details['data'][0]['uniqueorderid'])
         show_response_window(client_code, order_details['status'],
                              message, message, "STATUS")
-        root.destroy()
+        reset()
 
     elif (order_details['data'][0]['orderstatus'] == "Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
@@ -235,7 +272,7 @@ def status_action():
         show_response_window(client_code, order_details['status'],
                              message, message, "STATUS")
 
-        root.destroy()
+        reset()
     else:
         logger.info("Order is still not 'Traded")
         message = f"{stock_code}/{direction}/{qty}@Rs{price} \n\nOrder is still not 'Traded. \n\n\n\nOrder Status:- {order_details['data'][0]['orderstatus']} \n\n\n\nError:- {order_details['data'][0]['error']} \n\n\n\n{order_details}"
@@ -244,7 +281,7 @@ def status_action():
                      order_details['data'][0]['uniqueorderid'])
         show_response_window(client_code, order_details['status'],
                              message, message, "STATUS")
-        root.destroy()
+        reset()
 
 
 def show_response_window(client_code, status, message, details, direction):
@@ -252,6 +289,17 @@ def show_response_window(client_code, status, message, details, direction):
     content = f"Client Code:   {client_code}\n\nDirection:   {direction}\n\nStatus:    {status}\n\nMessage:    {message}\n\nDetails:   {details}"
     messagebox.showinfo(title, content)
 
+def reset():
+    client_code_entry.delete(0, tk.END)
+    client_code_entry.insert(0, "WEALTH666")
+    quantity_entry.delete(0, tk.END)
+    quantity_entry.insert(0, "0")
+    stock_code_entry.delete(0, tk.END)
+    stock_code_entry.insert(0, "IDEA.NS")
+    order_id_entry.delete(0, tk.END)
+    order_id_entry.insert(0, "")
+    limit_price_entry.delete(0, tk.END)
+    limit_price_entry.insert(0, "")
 
 def ahdoc_order_box():
 
@@ -261,7 +309,7 @@ def ahdoc_order_box():
     global root
     root = tk.Tk()
 
-    root.title("Stock Order Form")
+    root.title("Order Terminal")
     root.geometry("400x300")
 
     # Labels and Entry Fields
@@ -305,7 +353,7 @@ def ahdoc_order_box():
     global direction_var
     direction_var = tk.StringVar()
     direction_dropdown = ttk.Combobox(root, textvariable=direction_var, values=[
-        "Buy", "Sell", "Modify", "Status"])
+        "Buy", "Sell", "Modify", "Status", "Cancel Order"])
     direction_dropdown.grid(row=5, column=1, padx=10, pady=5)
     direction_dropdown.bind("<<ComboboxSelected>>", update_color)
 

@@ -6,6 +6,7 @@ import boto3
 from loguru import logger
 import math
 from stock_data.price import fetch_1d_stock_data, get_last_traded_price
+from utils.json.orders import update_order_list
 
 class PositionSizingBuy:
     def __init__(self,client_code):
@@ -53,11 +54,16 @@ class PositionSizingBuy:
             last_traded_price = get_last_traded_price(fetch_1d_stock_data(buy_stock))
             qty = math.floor(Decimal(amount_to_invest)/Decimal(last_traded_price))
             # Last traded price is only to get an idea to estimate the quantity
-            request_id = place_buy_order(self.client_code,buy_stock,qty,Mofsl)
-            if request_id == '':
+            order_id = place_buy_order(self.client_code,buy_stock,qty,Mofsl)
+            if order_id == '':
                 logger.error(f"Buy order for {buy_stock} failed for {self.client_code}")
+                update_order_list(order_id, self.client_code,
+                                  buy_stock, qty, last_traded_price, "Buy", "Limit", "Failed", "", "")
                 continue
-            client_order_list.append((request_id,buy_stock))
+            client_order_list.append((order_id, buy_stock))
+            update_order_list(order_id, self.client_code,
+                              buy_stock, qty, last_traded_price, "Buy","Limit","Placed","","")
+            
         logger.info(f"Position sizing for {self.client_code} completed.")
         return client_order_list
            

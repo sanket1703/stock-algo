@@ -5,9 +5,11 @@ from database.dao.client_dao import *
 from datetime import datetime
 import decimal
 from utils.enums.signal import Signal
-from stock_data.price import fetch_stock_data, get_last_traded_price
+from stock_data.price import fetch_1d_stock_data, fetch_stock_data, get_last_traded_price
 import boto3
 from loguru import logger
+
+from utils.json.orders import update_order_list
 
 class PositionSizingSell:
     def __init__(self,client_code):
@@ -40,10 +42,17 @@ class PositionSizingSell:
         client_order_list = []
         logger.info(f"Initiating offloading stocks for {self.client_code}")
         for stock_sell in stocks_sell:
-            request_id = place_sell_order(self.db,self.client_code,stock_sell,Mofl)
-            if request_id == '':
+            order_id = place_sell_order(
+                self.db, self.client_code, stock_sell, Mofl)
+            qty = get_client_holding(get_database(), self.client_code, stock_sell)
+            ltp = get_last_traded_price(fetch_1d_stock_data(stock_sell))
+            if order_id == '':
                 logger.error(f"Buy order for {stock_sell} failed for {self.client_code}")
+                update_order_list(order_id, self.client_code,
+                                  stock_sell, qty, ltp, "Sell", "Limit", "Failed", "", "")
                 continue
-            client_order_list.append((request_id,stock_sell))
+            client_order_list.append((order_id, stock_sell))
+            update_order_list(order_id, self.client_code,
+                              stock_sell, qty, ltp, "Sell", "Limit", "Placed", "", "")
         logger.info(f"Offloading stocks for {self.client_code} completed.")
         return client_order_list

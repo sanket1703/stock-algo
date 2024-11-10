@@ -9,6 +9,7 @@ from utils.helpers.print_client import print_client
 from utils.json.helper import (get_filled_buy_orders, get_filled_sell_orders,
     get_unfilled_buy_orders, get_unfilled_sell_orders, set_filled_buy_orders,
     set_filled_sell_orders, set_unfilled_buy_orders, set_unfilled_sell_orders)
+from utils.json.orders import update_status
 class TradeSync:
     def __init__(self,orders):
         self.db = self.get_database()
@@ -51,6 +52,7 @@ class TradeSync:
                     xchange_trade_id = get_xchange_trade_id(Mofsl,client_code,order_id)
                     logger.debug(f"{order_id}-{buy_stock} filled with exchange trade id:- {xchange_trade_id}")
                     client_filled_orders.append((order_id,buy_stock,xchange_trade_id))
+                    
             
             # update the unfilled orders
             un_filled_orders[client_code] = client_un_filled_orders
