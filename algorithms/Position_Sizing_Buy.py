@@ -57,12 +57,8 @@ class PositionSizingBuy:
             order_id = place_buy_order(self.client_code,buy_stock,qty,Mofsl)
             if order_id == '':
                 logger.error(f"Buy order for {buy_stock} failed for {self.client_code}")
-                update_order_list(order_id, self.client_code,
-                                  buy_stock, qty, last_traded_price, "Buy", "Limit", "Failed", "", "")
                 continue
             client_order_list.append((order_id, buy_stock))
-            update_order_list(order_id, self.client_code,
-                              buy_stock, qty, last_traded_price, "Buy","Limit","Placed","","")
             
         logger.info(f"Position sizing for {self.client_code} completed.")
         return client_order_list

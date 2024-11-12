@@ -1,12 +1,13 @@
 from datetime import datetime
 from decimal import Decimal
 from loguru import logger
-from brokers.motilal.order import get_trade_price, get_trade_qty, get_xchange_trade_id, is_order_completed, modify_order_to_market, order_status
+from brokers.motilal.order import get_trade_price, get_trade_qty, get_xchange_trade_id, is_order_completed, modify_order_to_market
 from database.dao.client_dao import *
 from utils.enums.signal import Signal
 from brokers.motilal.login import client_login
+from utils.helpers.check_time import check_end_of_market
 from utils.helpers.print_client import print_client
-from utils.json.helper import (get_filled_buy_orders, get_filled_sell_orders,
+from utils.json.helper import (get_filled_buy_orders, get_filled_sell_orders, get_orders,
     get_unfilled_buy_orders, get_unfilled_sell_orders, set_filled_buy_orders,
     set_filled_sell_orders, set_unfilled_buy_orders, set_unfilled_sell_orders)
 from utils.json.orders import update_status
@@ -28,6 +29,18 @@ class TradeSync:
         
         return dynamodb
 
+    def check_orders(self):
+        orders = get_orders()
+        for order in orders:
+            client = order['ClientCode']
+            order_id = order['OrderID']
+            Mofsl = client_login(client)
+            is_order_completed(Mofsl, client, order_id)
+            if (check_end_of_market() and order["ExchangeTradeID"]==""):
+                modify_order_to_market(Mofsl, client, order_id)
+                
+                
+                
                   
     def check_buy_orders(self,orders):
         un_filled_orders = get_unfilled_buy_orders()

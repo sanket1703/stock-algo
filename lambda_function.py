@@ -1,6 +1,5 @@
 import json
 from datetime import datetime
-from FOR_KEYUR import get_watchlist_for_keyur
 from adhoc_module.broker.motilal.order import ahdoc_order_box
 from algorithms.Filter_Algorithm import FilterAlgorithm
 from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
@@ -30,37 +29,30 @@ from jobs.clean_json import clean_order_jsons_job
 def buy(buy_stocks):
     prepare_buy_testdata()
     logger.info(f"Stock list for buy :\n{buy_stocks}")
-    if (take_confirmation()):
-        logger.info(f"Buy stock list:- {buy_stocks}")
-        buy_algo = MidcapBuyAlgorithm(buy_stocks)
-        buy_algo.allocate_slots()
-        buy_orders = buy_algo.order_executor()
-        set_buy_orders(buy_orders)
-        logger.info(
-            f"Consolidated Buy Orders details for each client:- {buy_orders}")
-        logger.debug("Consolidated Buy Orders details saved locally.")
-        return buy_orders
-    else:
-        return
+
+    logger.info(f"Buy stock list:- {buy_stocks}")
+    buy_algo = MidcapBuyAlgorithm(buy_stocks)
+    buy_algo.allocate_slots()
+    buy_orders = buy_algo.order_executor()
+    set_buy_orders(buy_orders)
+    logger.info(
+        f"Consolidated Buy Orders details for each client:- {buy_orders}")
+    logger.debug("Consolidated Buy Orders details saved locally.")
+    return buy_orders
 
 
 def sell(sell_stocks):
     prepare_sell_testdata(sell_stocks)
     logger.info(f"Stock list for sell : \n{sell_stocks}")
-    if (take_confirmation()):
-        logger.info(f"Stock list for sell :{sell_stocks}")
-        sell_algo = MidcapSellAlgorithm()
-        # sell_algo.sell_logic()
-        sell_algo.adhoc_sell(sell_stocks)
-        sell_orders = sell_algo.order_executor()
-        set_sell_orders(sell_orders)
-        logger.info(
-            f"Consolidated Sell Orders details for each client:- {sell_orders}")
-        logger.debug("Consolidated Sell Orders details saved locally.")
-        return sell_orders
-    else:
-        return
-
+    sell_algo = MidcapSellAlgorithm()
+    # sell_algo.sell_logic()
+    sell_algo.adhoc_sell(sell_stocks)
+    sell_orders = sell_algo.order_executor()
+    set_sell_orders(sell_orders)
+    logger.info(
+        f"Consolidated Sell Orders details for each client:- {sell_orders}")
+    logger.debug("Consolidated Sell Orders details saved locally.")
+    return sell_orders
 
 def buy_order_validator():
 
@@ -169,20 +161,43 @@ def shouldValidate():
     # Return True if there is at least one non-empty list in either buy or sell orders
     return any_buy_orders_non_empty or any_sell_orders_non_empty
 
+def order_validator():
+    trade_sync = TradeSync([])
+    trade_sync.check_orders()
 
 def validate_orders():
+    warnings.filterwarnings("ignore")
+    configure_log(level="DEBUG")
     while (shouldValidate()):
         buy_order_validator()
         sell_order_validator()
 
 def sync_orders():
+    warnings.filterwarnings("ignore")
+    configure_log(level="DEBUG")
     filled_buy_orders_processor()
     filled_sell_orders_processor()
     exchange_tradeid_job()
 
 def pre_run_checklist():
+    warnings.filterwarnings("ignore")
+    configure_log(level="DEBUG")
     check_login_job()
     clean_order_jsons_job()
+    return "All Pre-Run checklists complete"
+    
+def buy_order(buy_list):
+    warnings.filterwarnings("ignore")
+    configure_log(level="DEBUG")
+    order_executor("Buy", buy_list)
+    return "Buy Orders Placed"
+
+
+def sell_order(sell_list):
+    warnings.filterwarnings("ignore")
+    configure_log(level="DEBUG")
+    order_executor("Sell", sell_list)
+    return "Sell Orders Placed"
 
 if __name__ == "__main__":
 
@@ -197,13 +212,13 @@ if __name__ == "__main__":
     #########      Full Run       ########
     ######################################
     
-    pre_run_checklist()
+    # pre_run_checklist()
 
-    buy_list = ["IDEA.NS", "GTLINFRA.NS"]
-    order_executor("Buy", buy_list)
+    # buy_list = ["IDEA.NS", "GTLINFRA.NS"]
+    # order_executor("Buy", buy_list)
 
-    sell_list = ["IDEA.NS", "GTLINFRA.NS"]
-    order_executor("Sell", sell_list)
+    # sell_list = ["IDEA.NS", "GTLINFRA.NS"]
+    # order_executor("Sell", sell_list)
     
     # validate_orders()
 

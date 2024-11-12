@@ -26,7 +26,6 @@ def check_login_job():
     for client in clients:
         Mofl = client_login(client)
         login_response = Mofl.GetPosition(client)
-        time.sleep(5)
         logger.info(login_response)
         if(login_response['status']!='SUCCESS'):
             logger.info(f"[{client}] Login Failed for client {client}")

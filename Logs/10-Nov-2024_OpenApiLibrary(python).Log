@@ -20,3 +20,28 @@
 2024-11-10 16:18:16             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
 2024-11-10 16:21:57             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
 2024-11-10 16:23:04             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-11-10 22:57:37             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-11-10 22:58:44             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-11-10 23:04:59             FAILED             MOFSLOPENAPI.py             GetPublicIPAddressHTTPConnectionPool(host='checkip.dyndns.org', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1460f9270>, 'Connection to checkip.dyndns.org timed out. (connect timeout=None)'))
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-11-10 23:04:59             ERROR             MOFSLOPENAPI.py             Invalid TOTP Value | Please Provide Correct TOTP
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             Initilaize GetPosition request send
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-11-10 23:04:59             SUCCESS             MOFSLOPENAPI.py             GetPosition request sent Successfully
+2024-11-10 23:05:05             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-11-10 23:11:20             FAILED             MOFSLOPENAPI.py             GetPublicIPAddressHTTPConnectionPool(host='checkip.dyndns.org', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x146127e80>, 'Connection to checkip.dyndns.org timed out. (connect timeout=None)'))
+2024-11-10 23:11:20             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-11-10 23:11:21             ERROR             MOFSLOPENAPI.py             Invalid TOTP Value | Please Provide Correct TOTP
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             Initilaize GetPosition request send
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-11-10 23:11:21             SUCCESS             MOFSLOPENAPI.py             GetPosition request sent Successfully

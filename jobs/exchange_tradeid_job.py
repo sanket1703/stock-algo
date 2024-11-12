@@ -29,6 +29,7 @@ def exchange_tradeid_job():
     logger.info("Sending email of the csv.")
     send_email(sender,recipient,cc,subject,body,filename)
     logger.info("Extraction of Exchange Trade Id completed.")
+    return "Extraction of Exchange Trade Id completed."
 
 
 def extract_trade_ids(data):

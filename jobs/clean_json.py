@@ -25,7 +25,8 @@ def clean_order_jsons_job():
         "order_book/filled_orders/filled_buy_orders.json",
         "order_book/filled_orders/filled_sell_orders.json",
         "order_book/unfilled_orders/unfilled_buy_orders.json",
-        "order_book/unfilled_orders/unfilled_sell_orders.json"
+        "order_book/unfilled_orders/unfilled_sell_orders.json",
+        "order_book/orders.json"
     ]
     for file_path in file_paths:
         empty_json(file_path)

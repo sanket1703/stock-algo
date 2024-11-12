@@ -1,3 +1,4 @@
+import re
 import requests
 from requests import get
 import json
@@ -145,21 +146,47 @@ def GetLocalIPAddress():
         print(e)
         return "1.2.3.4"
 
-def GetPublicIPAddress():
-    try:        
-        public_ip = get('http://checkip.dyndns.org/').text
-        ipaddress=str(re.findall(r'[0-9]+(?:\.[0-9]+){3}',public_ip))
 
-        finalipppp=ipaddress.replace("'","")
-        finalipppp=finalipppp.replace("[","")
-        finalipppp=finalipppp.replace("]","")
-        if not finalipppp:
-            finalipppp = "1.2.3.4"
-        return finalipppp
+def GetPublicIPAddress():
+    try:
+        # Using a more reliable IP address service
+        print("Starting")
+        response = requests.get(
+            "https://api.ipify.org?format=json", timeout=10)
+        print(response)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+
+        # Parse JSON response to get the IP address
+        public_ip = response.json().get("ip")
+
+        # Fallback in case of an empty response or unexpected format
+        if not public_ip:
+            public_ip = "1.2.3.4"
+
+        return public_ip
+
     except Exception as e:
         print(e)
-        WriteIntoLog("FAILED", "MOFSLOPENAPI.py", ("GetPublicIPAddress" + str(e)))
+        WriteIntoLog("FAILED", "MOFSLOPENAPI.py",
+                     f"GetPublicIPAddress: {str(e)}")
         return "1.2.3.4"
+
+# def GetPublicIPAddress():
+#     try:        
+#         public_ip = get('http://checkip.dyndns.org/').text
+        
+#         ipaddress=str(re.findall(r'[0-9]+(?:\.[0-9]+){3}',public_ip))
+
+#         finalipppp=ipaddress.replace("'","")
+#         finalipppp=finalipppp.replace("[","")
+#         finalipppp=finalipppp.replace("]","")
+#         if not finalipppp:
+#             finalipppp = "1.2.3.4"
+#         return finalipppp
+#     except Exception as e:
+#         print(e)
+#         WriteIntoLog("FAILED", "MOFSLOPENAPI.py", ("GetPublicIPAddress" + str(e)))
+#         return "1.2.3.4"
 
 # print(GetLocalIPAddress())
 # print(GetPublicIPAddress())

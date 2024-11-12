@@ -41,7 +41,7 @@ def update_order_list(order_id, client_code, stock_code, quantity, limit_price, 
     logger.debug(f"Order {order.order_id} added successfully.")
 
 
-def update_status(client_code, status, message, order_type, exchange_trade_id):
+def update_status(order_id, status, message, order_type, exchange_trade_id):
     # Load the existing orders from the JSON file
     file_path = "order_book/orders.json"
     
@@ -57,7 +57,7 @@ def update_status(client_code, status, message, order_type, exchange_trade_id):
 
     # Iterate through the orders and update the status for the matching client_code
     for order in data.get("orders", []):
-        if order["ClientCode"] == client_code:
+        if order["OrderID"] == order_id:
             order["Status"] = status
             order["Message"] = message
             order["Order Type"] = order_type
@@ -70,9 +70,9 @@ def update_status(client_code, status, message, order_type, exchange_trade_id):
         with open(file_path, 'w') as f:
             json.dump(data, f, indent=4)
         logger.info(
-            f"Order with ClientCode {client_code} has been updated successfully.")
+            f"Order with OrderID {order_id} has been updated successfully.")
     else:
-        logger.info(f"No order found with ClientCode {client_code}.")
+        logger.info(f"No order found with ClientCode {order_id}.")
     
     
 

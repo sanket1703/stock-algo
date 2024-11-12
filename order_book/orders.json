@@ -1,3 +1,95 @@
 {
-    "orders": []
+    "orders": [
+        {
+            "OrderID": "1200001DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "IDEA.NS",
+            "Quantity": 1,
+            "LimitPrice": 7.83,
+            "Direction": "Buy",
+            "Order Type": "Limit",
+            "Status": "Not Placed",
+            "Message": "Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin",
+            "ExchangeTradeID": "",
+            "Timestamp": "12th November 2024"
+        },
+        {
+            "OrderID": "1200002DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "GTLINFRA.NS",
+            "Quantity": 5,
+            "LimitPrice": 2.15,
+            "Direction": "Buy",
+            "Order Type": "Limit",
+            "Status": "Not Placed",
+            "Message": "This scrip is allowed on cash & carry.Get Intouch With Your CSE Desk For Clarification",
+            "ExchangeTradeID": "",
+            "Timestamp": "12th November 2024"
+        },
+        {
+            "OrderID": "1200001WEALTH666",
+            "ClientCode": "WEALTH666",
+            "StockCode": "IDEA.NS",
+            "Quantity": 1,
+            "LimitPrice": 7.83,
+            "Direction": "Buy",
+            "Order Type": "Limit",
+            "Status": "Traded",
+            "Message": "Order Data",
+            "ExchangeTradeID": "1100000015304496",
+            "Timestamp": "12th November 2024"
+        },
+        {
+            "OrderID": "1200002WEALTH666",
+            "ClientCode": "WEALTH666",
+            "StockCode": "GTLINFRA.NS",
+            "Quantity": 4,
+            "LimitPrice": 2.15,
+            "Direction": "Buy",
+            "Order Type": "Limit",
+            "Status": "Traded",
+            "Message": "Order Data",
+            "ExchangeTradeID": "1100000015304991",
+            "Timestamp": "12th November 2024"
+        },
+        {
+            "OrderID": "1200003DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "IDEA.NS",
+            "Quantity": 1,
+            "LimitPrice": 7.83,
+            "Direction": "Sell",
+            "Order Type": "Limit",
+            "Status": "Not Placed",
+            "Message": "Short Selling Not Allowed For Requested Scrip",
+            "ExchangeTradeID": "",
+            "Timestamp": "12th November 2024"
+        },
+        {
+            "OrderID": "1200004DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "IDEA.NS",
+            "Quantity": 1,
+            "LimitPrice": 7.83,
+            "Direction": "Sell",
+            "Order Type": "Limit",
+            "Status": "Not Placed",
+            "Message": "Short Selling Not Allowed For Requested Scrip",
+            "ExchangeTradeID": "",
+            "Timestamp": "12th November 2024"
+        },
+        {
+            "OrderID": "1200003WEALTH666",
+            "ClientCode": "WEALTH666",
+            "StockCode": "IDEA.NS",
+            "Quantity": 1,
+            "LimitPrice": 7.83,
+            "Direction": "Sell",
+            "Order Type": "Limit",
+            "Status": "Traded",
+            "Message": "Order Data",
+            "ExchangeTradeID": "1100000021720986",
+            "Timestamp": "12th November 2024"
+        }
+    ]
 }

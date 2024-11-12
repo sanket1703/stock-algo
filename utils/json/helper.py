@@ -83,3 +83,12 @@ def get_buy_orders():
     with open("order_book/buy_orders.json", "r") as file:
         data = json.load(file)
     return data
+
+
+def get_orders():
+    # Save to a file
+    if os.stat('order_book/orders.json').st_size == 0:
+        raise ValueError("No buy orders")
+    with open("order_book/orders.json", "r") as file:
+        data = json.load(file)
+    return data["orders"]

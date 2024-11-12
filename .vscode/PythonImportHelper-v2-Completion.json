@@ -25,6 +25,14 @@
         "documentation": {}
     },
     {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
         "label": "loguru",
         "kind": 6,
         "isExtraImport": true,
@@ -322,14 +330,6 @@
         "documentation": {}
     },
     {
-        "label": "order_status",
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "isExtraImport": true,
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
         "label": "send_email",
         "importPath": "notification.email.send_email",
         "description": "notification.email.send_email",
@@ -596,6 +596,14 @@
     },
     {
         "label": "time",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -966,6 +974,14 @@
         "documentation": {}
     },
     {
+        "label": "update_order_list",
+        "importPath": "utils.json.orders",
+        "description": "utils.json.orders",
+        "isExtraImport": true,
+        "detail": "utils.json.orders",
+        "documentation": {}
+    },
+    {
         "label": "update_status",
         "importPath": "utils.json.orders",
         "description": "utils.json.orders",
@@ -1046,6 +1062,22 @@
         "documentation": {}
     },
     {
+        "label": "check_end_of_market",
+        "importPath": "utils.helpers.check_time",
+        "description": "utils.helpers.check_time",
+        "isExtraImport": true,
+        "detail": "utils.helpers.check_time",
+        "documentation": {}
+    },
+    {
+        "label": "check_end_of_market",
+        "importPath": "utils.helpers.check_time",
+        "description": "utils.helpers.check_time",
+        "isExtraImport": true,
+        "detail": "utils.helpers.check_time",
+        "documentation": {}
+    },
+    {
         "label": "get_filled_buy_orders",
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
@@ -1055,6 +1087,14 @@
     },
     {
         "label": "get_filled_sell_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_orders",
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
         "isExtraImport": true,
@@ -1689,6 +1729,15 @@
         "documentation": {}
     },
     {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
         "label": "re,",
         "kind": 6,
         "isExtraImport": true,
@@ -2023,6 +2072,14 @@
         "documentation": {}
     },
     {
+        "label": "exchange_tradeid_job",
+        "importPath": "jobs.exchange_tradeid_job",
+        "description": "jobs.exchange_tradeid_job",
+        "isExtraImport": true,
+        "detail": "jobs.exchange_tradeid_job",
+        "documentation": {}
+    },
+    {
         "label": "Order",
         "importPath": "database.dto.orders",
         "description": "database.dto.orders",
@@ -2144,11 +2201,76 @@
         "documentation": {}
     },
     {
-        "label": "get_watchlist_for_keyur",
-        "importPath": "FOR_KEYUR",
-        "description": "FOR_KEYUR",
+        "label": "ast",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "FOR_KEYUR",
+        "importPath": "ast",
+        "description": "ast",
+        "detail": "ast",
+        "documentation": {}
+    },
+    {
+        "label": "buy_order",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "buy_order_validator",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "order_validator",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "pre_run_checklist",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sell_order",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sell_order_validator",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sync_orders",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "validate_orders",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
         "documentation": {}
     },
     {
@@ -2213,14 +2335,6 @@
         "description": "utils.csv.helpers",
         "isExtraImport": true,
         "detail": "utils.csv.helpers",
-        "documentation": {}
-    },
-    {
-        "label": "check_end_of_market",
-        "importPath": "utils.helpers.check_time",
-        "description": "utils.helpers.check_time",
-        "isExtraImport": true,
-        "detail": "utils.helpers.check_time",
         "documentation": {}
     },
     {
@@ -2303,6 +2417,15 @@
         "description": "dash.dependencies",
         "isExtraImport": true,
         "detail": "dash.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "dash_bootstrap_components",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dash_bootstrap_components",
+        "description": "dash_bootstrap_components",
+        "detail": "dash_bootstrap_components",
         "documentation": {}
     },
     {
@@ -3687,7 +3810,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.api.MOFSLOPENAPI",
         "description": "brokers.motilal.api.MOFSLOPENAPI",
-        "peekOfCode": "def GetPublicIPAddress():\n    try:        \n        public_ip = get('http://checkip.dyndns.org/').text\n        ipaddress=str(re.findall(r'[0-9]+(?:\\.[0-9]+){3}',public_ip))\n        finalipppp=ipaddress.replace(\"'\",\"\")\n        finalipppp=finalipppp.replace(\"[\",\"\")\n        finalipppp=finalipppp.replace(\"]\",\"\")\n        if not finalipppp:\n            finalipppp = \"1.2.3.4\"\n        return finalipppp",
+        "peekOfCode": "def GetPublicIPAddress():\n    try:\n        # Using a more reliable IP address service\n        print(\"Starting\")\n        response = requests.get(\n            \"https://api.ipify.org?format=json\", timeout=10)\n        print(response)\n        response.raise_for_status()  # Raise an exception for HTTP errors\n        # Parse JSON response to get the IP address\n        public_ip = response.json().get(\"ip\")",
         "detail": "brokers.motilal.api.MOFSLOPENAPI",
         "documentation": {}
     },
@@ -3804,7 +3927,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def place_buy_order(client_code,stock_code,qty,Mofsl):\n    logger.info(f\"Placing buy order of {qty} {stock_code} for {client_code} \")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    stock_code = get_symbol_token(stock_code)\n    stock_code = stock_code\n    Orderinfo = {\n        \"clientcode\":client_code,      \n        \"exchange\":\"NSE\",\n        \"symboltoken\":stock_code,\n        \"buyorsell\":\"BUY\",",
+        "peekOfCode": "def place_buy_order(client_code,stock_code_nse,qty,Mofsl):\n    logger.info(\n        f\"Placing buy order of {qty} {stock_code_nse} for {client_code} \")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))\n    stock_code = get_symbol_token(stock_code_nse)\n    stock_code = stock_code\n    Orderinfo = {\n        \"clientcode\":client_code,      \n        \"exchange\":\"NSE\",\n        \"symboltoken\":stock_code,",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3813,7 +3936,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def notification_error(direction,message_text,client):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Place {direction} Order FAILED.\"\n    message = f\"Error Response \\n\\n{message_text}\"\n    send_email(sender,recipient,cc,subject,message,None)\ndef place_sell_order(db,client_code,stock_code,Mofsl):\n    qty = get_client_holding(db,client_code,stock_code)\n    logger.debug(f\"Placing sell order of {qty} {stock_code} for {client_code} \")",
+        "peekOfCode": "def notification_error(direction,message_text,client):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Place {direction} Order FAILED.\"\n    message = f\"Error Response \\n\\n{message_text}\"\n    send_email(sender,recipient,cc,subject,message,None)\ndef place_sell_order(db, client_code, stock_code_nse, Mofsl):\n    qty = 1\n    # qty = get_client_holding(db,client_code,stock_code)",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3822,7 +3945,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def place_sell_order(db,client_code,stock_code,Mofsl):\n    qty = get_client_holding(db,client_code,stock_code)\n    logger.debug(f\"Placing sell order of {qty} {stock_code} for {client_code} \")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code)\n    Orderinfo = {\n        \"clientcode\":client_code,      \n        \"exchange\":\"NSE\",\n        \"symboltoken\":stock_code,",
+        "peekOfCode": "def place_sell_order(db, client_code, stock_code_nse, Mofsl):\n    qty = 1\n    # qty = get_client_holding(db,client_code,stock_code)\n    logger.debug(\n        f\"Placing sell order of {qty} {stock_code_nse} for {client_code} \")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code_nse)\n    Orderinfo = {\n        \"clientcode\":client_code,      ",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3849,7 +3972,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_xchange_trade_id(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    return orderdetails['data'][0]['orderid']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")",
+        "peekOfCode": "def get_xchange_trade_id(Mofsl,client_code,order_id):\n    orderdetails = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    return orderdetails['data'][0]['orderid']\ndef get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef is_order_completed(Mofsl, client_code, order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3858,7 +3981,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        update_status(order_id, \"Placed\", order_details['message'],\"Limit\",\n                      \"\")",
+        "peekOfCode": "def get_trade_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['qtytradedtoday']\ndef get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef is_order_completed(Mofsl, client_code, order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        update_status(order_id, \"Placed\", order_details['message'],\"Limit\",\n                      \"\")",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3867,16 +3990,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        update_status(order_id, \"Placed\", order_details['message'],\"Limit\",\n                      \"\")\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False",
-        "detail": "brokers.motilal.order",
-        "documentation": {}
-    },
-    {
-        "label": "order_status",
-        "kind": 2,
-        "importPath": "brokers.motilal.order",
-        "description": "brokers.motilal.order",
-        "peekOfCode": "def order_status(Mofsl,client_code,order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        update_status(order_id, \"Placed\", order_details['message'],\"Limit\",\n                      \"\")\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if(order_details[\"status\"]!=\"SUCCESS\"):\n        notification_error(\"ORDER STATUS\",order_details,client_code)",
+        "peekOfCode": "def get_order_qty(Mofsl,client_code,order_id):\n    return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']\ndef is_order_completed(Mofsl, client_code, order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        update_status(order_id, \"Placed\", order_details['message'],\"Limit\",\n                      \"\")\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -3885,7 +3999,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def is_order_completed(Mofsl,client_code,order_id):\n    return order_status(Mofsl,client_code,order_id)\ndef modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    logger.debug(f\"Modifying to market for {order_id} of {client_code} \")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   ",
+        "peekOfCode": "def is_order_completed(Mofsl, client_code, order_id):\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)\n    logger.debug(f\"Order details for {client_code} for {order_id}:- {order_details} \")\n    if (order_details['status'] == \"FAILED\" or order_details['message']=='NO RECORDS FOUND'):\n        update_status(order_id, \"Placed\", order_details['message'],\"Limit\",\n                      \"\")\n        logger.error(f\"Could not fetch the order details. Either the order_id expired or could not call MOFSL\")\n        return False\n    if(order_details[\"status\"]!=\"SUCCESS\"):\n        notification_error(\"ORDER STATUS\",order_details,client_code)",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -4209,7 +4323,7 @@
         "kind": 2,
         "importPath": "jobs.clean_json",
         "description": "jobs.clean_json",
-        "peekOfCode": "def clean_order_jsons_job():\n    file_paths = [\n        \"order_book/buy_orders.json\",\n        \"order_book/sell_orders.json\",\n        \"order_book/filled_orders/filled_buy_orders.json\",\n        \"order_book/filled_orders/filled_sell_orders.json\",\n        \"order_book/unfilled_orders/unfilled_buy_orders.json\",\n        \"order_book/unfilled_orders/unfilled_sell_orders.json\"\n    ]\n    for file_path in file_paths:",
+        "peekOfCode": "def clean_order_jsons_job():\n    file_paths = [\n        \"order_book/buy_orders.json\",\n        \"order_book/sell_orders.json\",\n        \"order_book/filled_orders/filled_buy_orders.json\",\n        \"order_book/filled_orders/filled_sell_orders.json\",\n        \"order_book/unfilled_orders/unfilled_buy_orders.json\",\n        \"order_book/unfilled_orders/unfilled_sell_orders.json\",\n        \"order_book/orders.json\"\n    ]",
         "detail": "jobs.clean_json",
         "documentation": {}
     },
@@ -4254,7 +4368,7 @@
         "kind": 2,
         "importPath": "jobs.mo_login_check_job",
         "description": "jobs.mo_login_check_job",
-        "peekOfCode": "def check_login_job():\n    clients = get_client_list()\n    failures = 0\n    for client in clients:\n        Mofl = client_login(client)\n        login_response = Mofl.GetPosition(client)\n        time.sleep(5)\n        logger.info(login_response)\n        if(login_response['status']!='SUCCESS'):\n            logger.info(f\"[{client}] Login Failed for client {client}\")",
+        "peekOfCode": "def check_login_job():\n    clients = get_client_list()\n    failures = 0\n    for client in clients:\n        Mofl = client_login(client)\n        login_response = Mofl.GetPosition(client)\n        logger.info(login_response)\n        if(login_response['status']!='SUCCESS'):\n            logger.info(f\"[{client}] Login Failed for client {client}\")\n            failures+=1",
         "detail": "jobs.mo_login_check_job",
         "documentation": {}
     },
@@ -4659,7 +4773,16 @@
         "kind": 2,
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
-        "peekOfCode": "def get_buy_orders():\n    # Save to a file\n    if os.stat('order_book/buy_orders.json').st_size == 0:\n        raise ValueError(\"No buy orders\")\n    with open(\"order_book/buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data",
+        "peekOfCode": "def get_buy_orders():\n    # Save to a file\n    if os.stat('order_book/buy_orders.json').st_size == 0:\n        raise ValueError(\"No buy orders\")\n    with open(\"order_book/buy_orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data\ndef get_orders():\n    # Save to a file\n    if os.stat('order_book/orders.json').st_size == 0:",
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_orders",
+        "kind": 2,
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "peekOfCode": "def get_orders():\n    # Save to a file\n    if os.stat('order_book/orders.json').st_size == 0:\n        raise ValueError(\"No buy orders\")\n    with open(\"order_book/orders.json\", \"r\") as file:\n        data = json.load(file)\n    return data[\"orders\"]",
         "detail": "utils.json.helper",
         "documentation": {}
     },
@@ -4677,7 +4800,7 @@
         "kind": 2,
         "importPath": "utils.json.orders",
         "description": "utils.json.orders",
-        "peekOfCode": "def update_status(client_code, status, message, order_type, exchange_trade_id):\n    # Load the existing orders from the JSON file\n    file_path = \"order_book/orders.json\"\n    try:\n        with open(file_path, 'r') as f:\n            data = json.load(f)\n    except FileNotFoundError:\n        logger.error(\"The orders file does not exist.\")\n        return\n    # Flag to track if the order was found",
+        "peekOfCode": "def update_status(order_id, status, message, order_type, exchange_trade_id):\n    # Load the existing orders from the JSON file\n    file_path = \"order_book/orders.json\"\n    try:\n        with open(file_path, 'r') as f:\n            data = json.load(f)\n    except FileNotFoundError:\n        logger.error(\"The orders file does not exist.\")\n        return\n    # Flag to track if the order was found",
         "detail": "utils.json.orders",
         "documentation": {}
     },
@@ -4781,11 +4904,101 @@
         "documentation": {}
     },
     {
+        "label": "bg_order_validator",
+        "kind": 2,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "def bg_order_validator():\n    while True:\n        order_validator()\n        time.sleep(5)\n# Function to execute selected function\ndef execute_function(selected_func, input_list, progress_label):\n    # Update progress label to show which function is in progress\n    progress_label.config(text=f\"Executing: {selected_func}\")\n    progress_label.update()\n    # Notify that function has started",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "execute_function",
+        "kind": 2,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "def execute_function(selected_func, input_list, progress_label):\n    # Update progress label to show which function is in progress\n    progress_label.config(text=f\"Executing: {selected_func}\")\n    progress_label.update()\n    # Notify that function has started\n    messagebox.showinfo(\"Execution Started\", f\"Starting {selected_func}...\")\n    # Execute the function in a separate thread to avoid freezing the UI\n    def run(input_list):  # Ensure input_list is passed to the thread\n        try:\n            if selected_func == \"Buy Order\":",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Fortune Alpha 13\")\n# Dropdown for function selection\nfunction_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\",\"Buy Order Validator\", \"Sell Order Validator\", \"Buy-Sell Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [1, 2, 3]):\")",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "function_choices",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "function_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\",\"Buy Order Validator\", \"Sell Order Validator\", \"Buy-Sell Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [1, 2, 3]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "selected_func",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "selected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [1, 2, 3]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "dropdown",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "dropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [1, 2, 3]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "list_label",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "list_label = tk.Label(root, text=\"Enter a list (e.g., [1, 2, 3]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "list_entry",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "list_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "progress_label",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "progress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg\n# threading.Thread(target=bg_order_validator, daemon=True).start()\n# Start the UI\nroot.mainloop()",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "execute_button",
+        "kind": 5,
+        "importPath": "func_ui",
+        "description": "func_ui",
+        "peekOfCode": "execute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg\n# threading.Thread(target=bg_order_validator, daemon=True).start()\n# Start the UI\nroot.mainloop()",
+        "detail": "func_ui",
+        "documentation": {}
+    },
+    {
         "label": "buy",
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy(buy_stocks):\n    prepare_buy_testdata()\n    logger.info(f\"Stock list for buy :\\n{buy_stocks}\")\n    if (take_confirmation()):\n        logger.info(f\"Buy stock list:- {buy_stocks}\")\n        buy_algo = MidcapBuyAlgorithm(buy_stocks)\n        buy_algo.allocate_slots()\n        buy_orders = buy_algo.order_executor()\n        set_buy_orders(buy_orders)\n        logger.info(",
+        "peekOfCode": "def buy(buy_stocks):\n    prepare_buy_testdata()\n    logger.info(f\"Stock list for buy :\\n{buy_stocks}\")\n    logger.info(f\"Buy stock list:- {buy_stocks}\")\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()\n    set_buy_orders(buy_orders)\n    logger.info(\n        f\"Consolidated Buy Orders details for each client:- {buy_orders}\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4794,7 +5007,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def sell(sell_stocks):\n    prepare_sell_testdata(sell_stocks)\n    logger.info(f\"Stock list for sell : \\n{sell_stocks}\")\n    if (take_confirmation()):\n        logger.info(f\"Stock list for sell :{sell_stocks}\")\n        sell_algo = MidcapSellAlgorithm()\n        # sell_algo.sell_logic()\n        sell_algo.adhoc_sell(sell_stocks)\n        sell_orders = sell_algo.order_executor()\n        set_sell_orders(sell_orders)",
+        "peekOfCode": "def sell(sell_stocks):\n    prepare_sell_testdata(sell_stocks)\n    logger.info(f\"Stock list for sell : \\n{sell_stocks}\")\n    sell_algo = MidcapSellAlgorithm()\n    # sell_algo.sell_logic()\n    sell_algo.adhoc_sell(sell_stocks)\n    sell_orders = sell_algo.order_executor()\n    set_sell_orders(sell_orders)\n    logger.info(\n        f\"Consolidated Sell Orders details for each client:- {sell_orders}\")",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4862,11 +5075,20 @@
         "documentation": {}
     },
     {
+        "label": "order_validator",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def order_validator():\n    trade_sync = TradeSync([])\n    trade_sync.check_orders()\ndef validate_orders():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    while (shouldValidate()):\n        buy_order_validator()\n        sell_order_validator()\ndef sync_orders():",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
         "label": "validate_orders",
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def validate_orders():\n    while (shouldValidate()):\n        buy_order_validator()\n        sell_order_validator()\ndef sync_orders():\n    filled_buy_orders_processor()\n    filled_sell_orders_processor()\n    exchange_tradeid_job()\ndef pre_run_checklist():\n    check_login_job()",
+        "peekOfCode": "def validate_orders():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    while (shouldValidate()):\n        buy_order_validator()\n        sell_order_validator()\ndef sync_orders():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    filled_buy_orders_processor()",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4875,7 +5097,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def sync_orders():\n    filled_buy_orders_processor()\n    filled_sell_orders_processor()\n    exchange_tradeid_job()\ndef pre_run_checklist():\n    check_login_job()\n    clean_order_jsons_job()\nif __name__ == \"__main__\":\n    ######################################\n    #########   Configurations    ########",
+        "peekOfCode": "def sync_orders():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    filled_buy_orders_processor()\n    filled_sell_orders_processor()\n    exchange_tradeid_job()\ndef pre_run_checklist():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    check_login_job()",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -4884,53 +5106,89 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def pre_run_checklist():\n    check_login_job()\n    clean_order_jsons_job()\nif __name__ == \"__main__\":\n    ######################################\n    #########   Configurations    ########\n    ######################################\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    ######################################",
+        "peekOfCode": "def pre_run_checklist():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    check_login_job()\n    clean_order_jsons_job()\n    return \"All Pre-Run checklists complete\"\ndef buy_order(buy_list):\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    order_executor(\"Buy\", buy_list)",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "buy_order",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def buy_order(buy_list):\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    order_executor(\"Buy\", buy_list)\n    return \"Buy Orders Placed\"\ndef sell_order(sell_list):\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    order_executor(\"Sell\", sell_list)\n    return \"Sell Orders Placed\"",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sell_order",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def sell_order(sell_list):\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    order_executor(\"Sell\", sell_list)\n    return \"Sell Orders Placed\"\nif __name__ == \"__main__\":\n    ######################################\n    #########   Configurations    ########\n    ######################################\n    warnings.filterwarnings(\"ignore\")",
         "detail": "lambda_function",
         "documentation": {}
     },
     {
         "label": "load_json_data",
         "kind": 2,
-        "importPath": "orders_screen",
-        "description": "orders_screen",
+        "importPath": "orders_dash",
+        "description": "orders_dash",
         "peekOfCode": "def load_json_data():\n    with open(\"order_book/orders.json\", 'r') as f:\n        data = json.load(f)\n    # Assuming JSON structure {\"orders\": [ ... ]}\n    return pd.DataFrame(data[\"orders\"])\n# Define status color mapping\ndef status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",",
-        "detail": "orders_screen",
+        "detail": "orders_dash",
         "documentation": {}
     },
     {
         "label": "status_color",
         "kind": 2,
-        "importPath": "orders_screen",
-        "description": "orders_screen",
-        "peekOfCode": "def status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",\n        \"Placed\": \"yellow\",\n    }.get(status, \"lightgrey\")\n# Layout of the app\napp.layout = html.Div([\n    html.H1(\"Order Status Dashboard\"),\n    dash_table.DataTable(",
-        "detail": "orders_screen",
+        "importPath": "orders_dash",
+        "description": "orders_dash",
+        "peekOfCode": "def status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",\n        \"Placed\": \"blue\",\n    }.get(status, \"lightgrey\")\n# Get current date and last updated timestamp\ndef get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")\ndef get_last_updated_time():",
+        "detail": "orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_date",
+        "kind": 2,
+        "importPath": "orders_dash",
+        "description": "orders_dash",
+        "peekOfCode": "def get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")\ndef get_last_updated_time():\n    return datetime.now().strftime(\"%d %B %Y %I:%M %p\")\n# Layout of the app\napp.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={",
+        "detail": "orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_updated_time",
+        "kind": 2,
+        "importPath": "orders_dash",
+        "description": "orders_dash",
+        "peekOfCode": "def get_last_updated_time():\n    return datetime.now().strftime(\"%d %B %Y %I:%M %p\")\n# Layout of the app\napp.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={\n                    'textAlign': 'center', 'color': 'white'}),\n            html.Div([",
+        "detail": "orders_dash",
         "documentation": {}
     },
     {
         "label": "update_table",
         "kind": 2,
-        "importPath": "orders_screen",
-        "description": "orders_screen",
-        "peekOfCode": "def update_table(n):\n    df = load_json_data()\n    return df.to_dict('records')\nif __name__ == '__main__':\n    app.run_server(debug=True,port=8050)",
-        "detail": "orders_screen",
+        "importPath": "orders_dash",
+        "description": "orders_dash",
+        "peekOfCode": "def update_table(n):\n    # Load data\n    df = load_json_data()\n    # Dark theme only\n    background_color = \"#333333\"\n    text_color = \"white\"\n    # Set status colors for dark theme\n    status_colors = [\n        {\n            'if': {",
+        "detail": "orders_dash",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "orders_screen",
-        "description": "orders_screen",
-        "peekOfCode": "app = dash.Dash(__name__)\n# Define a function to load JSON data\ndef load_json_data():\n    with open(\"order_book/orders.json\", 'r') as f:\n        data = json.load(f)\n    # Assuming JSON structure {\"orders\": [ ... ]}\n    return pd.DataFrame(data[\"orders\"])\n# Define status color mapping\ndef status_color(status):\n    return {",
-        "detail": "orders_screen",
+        "importPath": "orders_dash",
+        "description": "orders_dash",
+        "peekOfCode": "app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])\n# Define a function to load JSON data\ndef load_json_data():\n    with open(\"order_book/orders.json\", 'r') as f:\n        data = json.load(f)\n    # Assuming JSON structure {\"orders\": [ ... ]}\n    return pd.DataFrame(data[\"orders\"])\n# Define status color mapping\ndef status_color(status):\n    return {",
+        "detail": "orders_dash",
         "documentation": {}
     },
     {
         "label": "app.layout",
         "kind": 5,
-        "importPath": "orders_screen",
-        "description": "orders_screen",
-        "peekOfCode": "app.layout = html.Div([\n    html.H1(\"Order Status Dashboard\"),\n    dash_table.DataTable(\n        id='orders-table',\n        style_data_conditional=[\n            {\n                'if': {\n                    'filter_query': '{{Status}} = \"{}\"'.format(status),\n                    'column_id': 'Status'\n                },",
-        "detail": "orders_screen",
+        "importPath": "orders_dash",
+        "description": "orders_dash",
+        "peekOfCode": "app.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={\n                    'textAlign': 'center', 'color': 'white'}),\n            html.Div([\n                html.Div(f\"Last Updated: {get_last_updated_time()}\", id=\"last-updated\", style={\n                         'color': 'white', 'fontSize': '18px', 'textAlign': 'left'})\n            ], style={'marginBottom': '20px'}),",
+        "detail": "orders_dash",
         "documentation": {}
     }
 ]

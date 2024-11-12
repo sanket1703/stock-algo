@@ -7,12 +7,13 @@ from stock_data.price import fetch_1d_stock_data, get_last_traded_price
 from stock_data.symbols import get_symbol_token
 from loguru import logger
 
-from utils.json.orders import update_status
+from utils.json.orders import update_order_list, update_status
 
-def place_buy_order(client_code,stock_code,qty,Mofsl):
-    logger.info(f"Placing buy order of {qty} {stock_code} for {client_code} ")
-    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))
-    stock_code = get_symbol_token(stock_code)
+def place_buy_order(client_code,stock_code_nse,qty,Mofsl):
+    logger.info(
+        f"Placing buy order of {qty} {stock_code_nse} for {client_code} ")
+    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))
+    stock_code = get_symbol_token(stock_code_nse)
     stock_code = stock_code
     Orderinfo = {
         "clientcode":client_code,      
@@ -33,9 +34,15 @@ def place_buy_order(client_code,stock_code,qty,Mofsl):
     if(response["status"]!="SUCCESS"):
         notification_error("BUY",response,client_code)
         if('uniqueorderid' in response):
+            update_order_list(response['uniqueorderid'], client_code,
+                              stock_code_nse, qty, ltp, "Buy", "Limit", "Not Placed", response['message'], "")
             return response['uniqueorderid']
         else: 
+            update_order_list(response['uniqueorderid'], client_code,
+                              stock_code_nse, qty, ltp, "Buy", "Limit", "FAILED", response['message'], "")
             return ''
+    update_order_list(response['uniqueorderid'], client_code,
+                      stock_code_nse, qty, ltp, "Buy", "Limit", "Placed", response['message'], "")
     return response['uniqueorderid']
 
 def notification_error(direction,message_text,client):
@@ -46,13 +53,15 @@ def notification_error(direction,message_text,client):
     message = f"Error Response \n\n{message_text}"
     send_email(sender,recipient,cc,subject,message,None)
 
-def place_sell_order(db,client_code,stock_code,Mofsl):
 
-    qty = get_client_holding(db,client_code,stock_code)
-    logger.debug(f"Placing sell order of {qty} {stock_code} for {client_code} ")
-    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code))
+def place_sell_order(db, client_code, stock_code_nse, Mofsl):
+    qty = 1
+    # qty = get_client_holding(db,client_code,stock_code)
+    logger.debug(
+        f"Placing sell order of {qty} {stock_code_nse} for {client_code} ")
+    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))
     # Convert it into the token that motilal wants
-    stock_code = get_symbol_token(stock_code)
+    stock_code = get_symbol_token(stock_code_nse)
     Orderinfo = {
         "clientcode":client_code,      
         "exchange":"NSE",
@@ -71,9 +80,18 @@ def place_sell_order(db,client_code,stock_code,Mofsl):
     if(response["status"]!="SUCCESS"):
         notification_error("SELL",response,client_code)
         if('uniqueorderid' in response):
+            update_order_list(response['uniqueorderid'], client_code,
+                              stock_code_nse, qty, ltp, "Sell", "Limit", "Not Placed", response['message'], "")
+
             return response['uniqueorderid']
-        else: 
+        else:
+            update_order_list(response['uniqueorderid'], client_code,
+                              stock_code_nse, qty, ltp, "Sell", "Limit", "FAILED", response['message'], "")
+
             return ''
+    update_order_list(response['uniqueorderid'], client_code,
+                      stock_code_nse, qty, ltp, "Sell", "Limit", "Placed", response['message'], "")
+
     return response['uniqueorderid']
 
 
@@ -94,7 +112,8 @@ def get_trade_qty(Mofsl,client_code,order_id):
 def get_order_qty(Mofsl,client_code,order_id):
     return Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)['data'][0]['orderqty']
     
-def order_status(Mofsl,client_code,order_id):
+
+def is_order_completed(Mofsl, client_code, order_id):
     order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
     logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
@@ -115,10 +134,6 @@ def order_status(Mofsl,client_code,order_id):
     
     logger.info("Order is still not 'Traded")
     return False
-    
-    
-def is_order_completed(Mofsl,client_code,order_id):
-    return order_status(Mofsl,client_code,order_id)
 
 def modify_order_to_market(Mofsl,client_code,order_id):
     # ModifyOrder

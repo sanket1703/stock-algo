@@ -77,3 +77,18 @@
 2024-11-10 16:10:21.878 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
 2024-11-10 16:18:15.499 | INFO     | jobs.mo_login_check_job:check_login_job:30 - {'status': 'ERROR', 'message': 'Authorization is Invalid In Header Parameter', 'errorcode': 'MO2007', 'data': None}
 2024-11-10 16:18:15.502 | INFO     | jobs.mo_login_check_job:check_login_job:32 - [DEEPAK17] Login Failed for client DEEPAK17
+2024-11-10 23:05:04.763 | INFO     | jobs.mo_login_check_job:check_login_job:30 - {'status': 'ERROR', 'message': 'Authorization is Invalid In Header Parameter', 'errorcode': 'MO2007', 'data': None}
+2024-11-10 23:05:04.766 | INFO     | jobs.mo_login_check_job:check_login_job:32 - [DEEPAK17] Login Failed for client DEEPAK17
+2024-11-10 23:11:26.192 | INFO     | jobs.mo_login_check_job:check_login_job:30 - {'status': 'ERROR', 'message': 'Authorization is Invalid In Header Parameter', 'errorcode': 'MO2007', 'data': None}
+2024-11-10 23:11:26.194 | INFO     | jobs.mo_login_check_job:check_login_job:32 - [WEALTH666] Login Failed for client WEALTH666
+2024-11-10 23:11:27.227 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-11-10 23:11:27.227 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-11-10 23:11:27.229 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-11-10 23:11:27.230 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-11-10 23:11:27.232 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-11-10 23:11:27.233 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-11-10 23:11:27.453 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-10 23:11:27.453 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-10 23:11:27.455 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-10 23:11:27.455 | INFO     | __main__:buy:32 - Stock list for buy :
+['IDEA.NS', 'GTLINFRA.NS']
