@@ -10,9 +10,10 @@ from utils.helpers.print_client import print_client
 from utils.json.helper import (get_filled_buy_orders, get_filled_sell_orders, get_orders,
     get_unfilled_buy_orders, get_unfilled_sell_orders, set_filled_buy_orders,
     set_filled_sell_orders, set_unfilled_buy_orders, set_unfilled_sell_orders)
-from utils.json.orders import update_status
+from utils.json.orders_json_helper import update_status, update_sync_status
 class TradeSync:
-    def __init__(self,orders):
+    def __init__(self):
+        
         self.db = self.get_database()
         
     def get_database(self):
@@ -29,8 +30,10 @@ class TradeSync:
         
         return dynamodb
 
-    def check_orders(self):
+    def validate_orders(self):
         orders = get_orders()
+        if(orders == []):
+            logger.info("No orders placed. Nothing to process")
         for order in orders:
             client = order['ClientCode']
             order_id = order['OrderID']
@@ -39,7 +42,53 @@ class TradeSync:
             if (check_end_of_market() and order["ExchangeTradeID"]==""):
                 modify_order_to_market(Mofsl, client, order_id)
                 
+    def sync_trades(self):
+        
+        orders = get_orders()
+        for order in orders:
+            xchange_trade_id = order["ExchangeTradeID"]
+            if (xchange_trade_id != "" and order["SyncStatus"] != "Synced"):
+                current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                client_code = order['ClientCode']
+                order_id = order['OrderID']
+                stock_code = order['StockCode']
+                # Mofsl = client_login(client_code)
+                # trade_price = get_trade_price(Mofsl, client_code, order_id)
+                trade_price = order["TradePrice"]
+                # qty = get_trade_qty(Mofsl, client_code, order_id)
+                qty = order["QtyTraded"]
+                # TODO:- qty will return random stuff if there is some error on the AB side -> handle that
+                turnover = (Decimal(qty)*Decimal(trade_price))
                 
+                if (order['Direction']=="Buy"):
+                
+                    update_holding(self.db, client_code, stock_code, Decimal(
+                        qty), Decimal(trade_price), current_datetime)
+                    logger.debug(f"Added Holding of {qty} {stock_code}")
+
+                    reduce_balance(self.db, client_code, Decimal(turnover))
+                    logger.debug(
+                        f"Reduce balance of {turnover} from buy of {stock_code}")
+
+                    add_trade_log(self.db, client_code, current_datetime, stock_code,
+                                Signal.BUY.value, Decimal(trade_price), qty, xchange_trade_id)
+                    logger.debug(f"Added trade log")
+                    update_sync_status(order_id)
+                
+                elif (order['Direction'] == "Sell"):
+                    
+                    offload_holding(self.db, client_code, stock_code)
+                    logger.debug(f"Holding of {stock_code} offloaded")
+
+                    add_balance(self.db, client_code, Decimal(turnover))
+                    logger.debug(
+                        f"Added balance of {turnover} from sell of {stock_code}")
+
+                    add_trade_log(self.db, client_code, current_datetime, stock_code,
+                                Signal.SELL.value, Decimal(trade_price), qty, xchange_trade_id)
+                    logger.debug(f"Added trade log")
+                    update_sync_status(order_id)
+                    
                 
                   
     def check_buy_orders(self,orders):

@@ -6,7 +6,7 @@ from loguru import logger
 from database.dto.orders import Order
 
 
-def update_order_list(order_id, client_code, stock_code, quantity, limit_price, direction, order_type, status, message, exchange_trade_id):
+def update_order_list(order_id, client_code, stock_code, quantity, limit_price, direction, order_type, status, message, exchange_trade_id, qty_traded, trade_price, sync_status):
     order = Order(
         order_id=order_id,
         client_code=client_code,
@@ -18,7 +18,11 @@ def update_order_list(order_id, client_code, stock_code, quantity, limit_price, 
         status=status,
         message=message,
         exchange_trade_id=exchange_trade_id,
-        timestamp=get_current_date()  # Using an ISO format timestamp
+        timestamp=get_current_date(),
+        qty_traded=qty_traded,
+        trade_price=trade_price,
+        sync_status=sync_status
+        # Using an ISO format timestamp
     )
     file_path = "order_book/orders.json"
     try:
@@ -38,10 +42,10 @@ def update_order_list(order_id, client_code, stock_code, quantity, limit_price, 
     with open(file_path, 'w') as f:
         json.dump(data, f, indent=4)
 
-    logger.debug(f"Order {order.order_id} added successfully.")
+    logger.info(f"Order {order.order_id} added successfully to order list.")
 
 
-def update_status(order_id, status, message, order_type, exchange_trade_id):
+def update_status(order_id, status, message, order_type, exchange_trade_id,trade_price,trade_qty):
     # Load the existing orders from the JSON file
     file_path = "order_book/orders.json"
     
@@ -62,6 +66,8 @@ def update_status(order_id, status, message, order_type, exchange_trade_id):
             order["Message"] = message
             order["Order Type"] = order_type
             order["ExchangeTradeID"] = exchange_trade_id
+            order["TradePrice"] = trade_price
+            order["QtyTraded"] = trade_qty
             order_found = True
             break
 
@@ -74,7 +80,35 @@ def update_status(order_id, status, message, order_type, exchange_trade_id):
     else:
         logger.info(f"No order found with ClientCode {order_id}.")
     
-    
+
+def update_sync_status(order_id):
+    file_path = "order_book/orders.json"
+
+    try:
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        logger.error("The orders file does not exist.")
+        return
+
+    # Flag to track if the order was found
+    order_found = False
+
+    # Iterate through the orders and update the status for the matching client_code
+    for order in data.get("orders", []):
+        if order["OrderID"] == order_id:
+            order["SSyncStatustatus"] = "Synced"
+            order_found = True
+            break
+
+    # If the order was found, save the updated data back to the file
+    if order_found:
+        with open(file_path, 'w') as f:
+            json.dump(data, f, indent=4)
+        logger.info(
+            f"Order with OrderID {order_id} has been Synced successfully.")
+    else:
+        logger.info(f"No order found with Order ID {order_id}.")
 
 def get_current_date():
     # Get the current date

@@ -6,7 +6,7 @@ import boto3
 from loguru import logger
 import math
 from stock_data.price import fetch_1d_stock_data, get_last_traded_price
-from utils.json.orders import update_order_list
+from utils.json.orders_json_helper import update_order_list
 
 class PositionSizingBuy:
     def __init__(self,client_code):

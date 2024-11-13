@@ -1,3 +1,4 @@
+from decimal import Decimal
 import json
 from datetime import datetime
 from adhoc_module.broker.motilal.order import ahdoc_order_box
@@ -16,6 +17,7 @@ from jobs.mo_login_check_job import check_login_job
 from jobs.pre_order_executor_job import pre_order_executor_job
 from utils.csv.helpers import save_buy_orders, save_sell_orders
 from utils.helpers.check_time import check_end_of_market
+from utils.helpers.get_config import get_test_mode
 from utils.helpers.take_confirmation import take_confirmation
 from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_filled_sell_orders, get_sell_orders,
                                set_buy_orders, set_sell_orders)
@@ -26,8 +28,11 @@ from loguru import logger
 from jobs.clean_json import clean_order_jsons_job
 
 
+
 def buy(buy_stocks):
-    prepare_buy_testdata()
+    
+    if (get_test_mode()):prepare_buy_testdata()
+    
     logger.info(f"Stock list for buy :\n{buy_stocks}")
 
     logger.info(f"Buy stock list:- {buy_stocks}")
@@ -42,17 +47,30 @@ def buy(buy_stocks):
 
 
 def sell(sell_stocks):
-    prepare_sell_testdata(sell_stocks)
+    
+    if (get_test_mode()):prepare_sell_testdata(sell_stocks)
+    
     logger.info(f"Stock list for sell : \n{sell_stocks}")
     sell_algo = MidcapSellAlgorithm()
-    # sell_algo.sell_logic()
-    sell_algo.adhoc_sell(sell_stocks)
+    
+    if (get_test_mode()):sell_algo.adhoc_sell(sell_stocks)
+    elif (not get_test_mode()):sell_algo.sell_logic()
+    
     sell_orders = sell_algo.order_executor()
     set_sell_orders(sell_orders)
     logger.info(
         f"Consolidated Sell Orders details for each client:- {sell_orders}")
     logger.debug("Consolidated Sell Orders details saved locally.")
     return sell_orders
+
+def order_validator():
+    trade_sync = TradeSync()
+    trade_sync.validate_orders()
+
+def trade_sync():
+    trade_sync = TradeSync()
+    trade_sync.sync_trades()
+    
 
 def buy_order_validator():
 
@@ -161,10 +179,6 @@ def shouldValidate():
     # Return True if there is at least one non-empty list in either buy or sell orders
     return any_buy_orders_non_empty or any_sell_orders_non_empty
 
-def order_validator():
-    trade_sync = TradeSync([])
-    trade_sync.check_orders()
-
 def validate_orders():
     warnings.filterwarnings("ignore")
     configure_log(level="DEBUG")
@@ -191,7 +205,6 @@ def buy_order(buy_list):
     configure_log(level="DEBUG")
     order_executor("Buy", buy_list)
     return "Buy Orders Placed"
-
 
 def sell_order(sell_list):
     warnings.filterwarnings("ignore")

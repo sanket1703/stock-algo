@@ -9,7 +9,7 @@ from stock_data.price import fetch_1d_stock_data, fetch_stock_data, get_last_tra
 import boto3
 from loguru import logger
 
-from utils.json.orders import update_order_list
+from utils.json.orders_json_helper import update_order_list
 
 class PositionSizingSell:
     def __init__(self,client_code):
@@ -42,8 +42,7 @@ class PositionSizingSell:
         client_order_list = []
         logger.info(f"Initiating offloading stocks for {self.client_code}")
         for stock_sell in stocks_sell:
-            order_id = place_sell_order(
-                self.db, self.client_code, stock_sell, Mofl)
+            order_id = place_sell_order(self.client_code, stock_sell, Mofl)
             # qty = get_client_holding(get_database(), self.client_code, stock_sell)
             ltp = get_last_traded_price(fetch_1d_stock_data(stock_sell))
             if order_id == '':

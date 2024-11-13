@@ -7,7 +7,8 @@ from stock_data.price import fetch_1d_stock_data, get_last_traded_price
 from stock_data.symbols import get_symbol_token
 from loguru import logger
 
-from utils.json.orders import update_order_list, update_status
+from utils.helpers.get_config import get_test_mode
+from utils.json.orders_json_helper import update_order_list, update_status
 
 def place_buy_order(client_code,stock_code_nse,qty,Mofsl):
     logger.info(
@@ -35,14 +36,14 @@ def place_buy_order(client_code,stock_code_nse,qty,Mofsl):
         notification_error("BUY",response,client_code)
         if('uniqueorderid' in response):
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Buy", "Limit", "Not Placed", response['message'], "")
+                              stock_code_nse, qty, ltp, "Buy", "Limit", "Not Placed", response['message'], "",0, 0, "")
             return response['uniqueorderid']
         else: 
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Buy", "Limit", "FAILED", response['message'], "")
+                              stock_code_nse, qty, ltp, "Buy", "Limit", "FAILED", response['message'], "", 0, 0, "")
             return ''
     update_order_list(response['uniqueorderid'], client_code,
-                      stock_code_nse, qty, ltp, "Buy", "Limit", "Placed", response['message'], "")
+                      stock_code_nse, qty, ltp, "Buy", "Limit", "Placed", response['message'], "", 0, 0, "")
     return response['uniqueorderid']
 
 def notification_error(direction,message_text,client):
@@ -54,9 +55,11 @@ def notification_error(direction,message_text,client):
     send_email(sender,recipient,cc,subject,message,None)
 
 
-def place_sell_order(db, client_code, stock_code_nse, Mofsl):
-    qty = 1
-    # qty = get_client_holding(db,client_code,stock_code)
+def place_sell_order(client_code, stock_code_nse, Mofsl):
+    
+    if (get_test_mode()):qty=1
+    else: qty = get_client_holding(get_database(),client_code,stock_code)
+    
     logger.debug(
         f"Placing sell order of {qty} {stock_code_nse} for {client_code} ")
     ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))
@@ -81,16 +84,16 @@ def place_sell_order(db, client_code, stock_code_nse, Mofsl):
         notification_error("SELL",response,client_code)
         if('uniqueorderid' in response):
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Sell", "Limit", "Not Placed", response['message'], "")
+                              stock_code_nse, qty, ltp, "Sell", "Limit", "Not Placed", response['message'], "",0,0,"")
 
             return response['uniqueorderid']
         else:
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Sell", "Limit", "FAILED", response['message'], "")
+                              stock_code_nse, qty, ltp, "Sell", "Limit", "FAILED", response['message'], "", 0, 0, "")
 
             return ''
     update_order_list(response['uniqueorderid'], client_code,
-                      stock_code_nse, qty, ltp, "Sell", "Limit", "Placed", response['message'], "")
+                      stock_code_nse, qty, ltp, "Sell", "Limit", "Placed", response['message'], "",0,0,"")
 
     return response['uniqueorderid']
 
@@ -118,18 +121,18 @@ def is_order_completed(Mofsl, client_code, order_id):
     logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
         update_status(order_id, "Placed", order_details['message'],"Limit",
-                      "")
+                      "","","",0)
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         return False
     if(order_details["status"]!="SUCCESS"):
         notification_error("ORDER STATUS",order_details,client_code)
         update_status(order_id, "Placed", order_details['message'], "Limit",
-                      "")
+                      "","","",0)
         return False
     if (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
         update_status(order_id, "Traded", order_details['message'], "Limit",
-                      order_details['data'][0]['orderid'])
+                      order_details['data'][0]['orderid'], order_details['data'][0]['averageprice'], "", order_details['data'][0]['qtytradedtoday'])
         return True
     
     logger.info("Order is still not 'Traded")
@@ -157,11 +160,11 @@ def modify_order_to_market(Mofsl,client_code,order_id):
     
     if response['status'] ==  "SUCCESS": 
         update_status(order_id, "Placed", response['message'],"Market",
-                      response['data'][0]['orderid'])
+                      response['data'][0]['orderid'], response['data'][0]['averageprice'], "", response['data'][0]['qtytradedtoday'])
         return True
     
     if(response["status"]!="SUCCESS"):
         notification_error("MODIFY MARKET",response,client_code)
         update_status(order_id, "Placed", response['message'], "Market",
-                      "")
+                      "","","",0)
         return False
