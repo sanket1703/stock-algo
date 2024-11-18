@@ -121,13 +121,13 @@ def is_order_completed(Mofsl, client_code, order_id):
     logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
         update_status(order_id, "Placed", order_details['message'],"Limit",
-                      "","","",0)
+                      "","",0)
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         return False
     if(order_details["status"]!="SUCCESS"):
-        notification_error("ORDER STATUS",order_details,client_code)
+        # notification_error("ORDER STATUS",order_details,client_code)
         update_status(order_id, "Placed", order_details['message'], "Limit",
-                      "","","",0)
+                      "","",0)
         return False
     if (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")

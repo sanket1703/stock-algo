@@ -1,0 +1,79 @@
+2024-11-18 16:48:50.132 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-18 16:48:50.759 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-18 16:48:51.655 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-11-18 16:48:51.656 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-11-18 16:48:51.657 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-11-18 16:48:51.662 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-11-18 16:48:51.663 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-11-18 16:48:51.665 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-11-18 16:48:51.665 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/orders.json has been reset successfully.
+2024-11-18 16:51:04.283 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-18 16:51:04.285 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-18 16:51:04.286 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-18 16:51:04.286 | INFO     | lambda_function:buy:36 - Stock list for buy :
+['RPOWER.NS']
+2024-11-18 16:51:04.286 | INFO     | lambda_function:buy:38 - Buy stock list:- ['RPOWER.NS']
+2024-11-18 16:51:04.394 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['RPOWER.NS']
+2024-11-18 16:51:04.394 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:68 - Final buy list of Stocks :- ['RPOWER.NS']
+2024-11-18 16:51:04.394 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:69 - Total slots which were available before allocating slots:- 13
+2024-11-18 16:51:04.394 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-18 16:51:04.394 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-11-18 16:51:04.395 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-18 16:51:05.050 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for DEEPAK17
+2024-11-18 16:51:06.803 | INFO     | brokers.motilal.order:place_buy_order:14 - Placing buy order of 0 RPOWER.NS for DEEPAK17 
+2024-11-18 16:51:06.897 | INFO     | brokers.motilal.order:place_buy_order:33 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-11-18 16:51:07.742 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order  added successfully to order list.
+2024-11-18 16:51:07.742 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:59 - Buy order for RPOWER.NS failed for DEEPAK17
+2024-11-18 16:51:07.742 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:63 - Position sizing for DEEPAK17 completed.
+2024-11-18 16:51:07.742 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-18 16:51:07.742 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-11-18 16:51:07.743 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-18 16:51:08.429 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for WEALTH666
+2024-11-18 16:51:08.547 | INFO     | brokers.motilal.order:place_buy_order:14 - Placing buy order of 0 RPOWER.NS for WEALTH666 
+2024-11-18 16:51:08.636 | INFO     | brokers.motilal.order:place_buy_order:33 - PlaceOrder for Buy Message:- Invalid Quantity Parameter
+2024-11-18 16:51:09.586 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order  added successfully to order list.
+2024-11-18 16:51:09.587 | ERROR    | algorithms.Position_Sizing_Buy:position_sizing:59 - Buy order for RPOWER.NS failed for WEALTH666
+2024-11-18 16:51:09.587 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:63 - Position sizing for WEALTH666 completed.
+2024-11-18 16:51:09.591 | INFO     | lambda_function:buy:43 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [], 'date': '2024-11-18 16:51:09', 'WEALTH666': []}
+2024-11-18 16:54:26.517 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['RPOWER.NS']
+2024-11-18 16:54:26.519 | INFO     | database.cleanup.database_cleanup:prepare_sell_testdata:9 - Test data prepared. Ready to sell.
+2024-11-18 16:54:26.519 | INFO     | lambda_function:sell:53 - Stock list for sell : 
+['RPOWER.NS']
+2024-11-18 16:54:26.621 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-18 16:54:26.621 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-11-18 16:54:26.621 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-18 16:54:27.385 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:43 - Initiating offloading stocks for DEEPAK17
+2024-11-18 16:54:27.638 | INFO     | brokers.motilal.order:place_sell_order:82 - PlaceOrder for Sell Message:- Data Not Found For Requested Scrip
+2024-11-18 16:54:28.548 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order  added successfully to order list.
+2024-11-18 16:54:28.575 | ERROR    | algorithms.Position_Sizing_Sell:off_load_stocks:49 - Buy order for RPOWER.NS failed for DEEPAK17
+2024-11-18 16:54:28.575 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:52 - Offloading stocks for DEEPAK17 completed.
+2024-11-18 16:54:28.576 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-18 16:54:28.576 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-11-18 16:54:28.576 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-18 16:54:29.327 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:43 - Initiating offloading stocks for WEALTH666
+2024-11-18 16:54:29.452 | INFO     | brokers.motilal.order:place_sell_order:82 - PlaceOrder for Sell Message:- Data Not Found For Requested Scrip
+2024-11-18 16:54:30.390 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order  added successfully to order list.
+2024-11-18 16:54:30.440 | ERROR    | algorithms.Position_Sizing_Sell:off_load_stocks:49 - Buy order for RPOWER.NS failed for WEALTH666
+2024-11-18 16:54:30.440 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:52 - Offloading stocks for WEALTH666 completed.
+2024-11-18 16:54:30.442 | INFO     | lambda_function:sell:61 - Consolidated Sell Orders details for each client:- {'DEEPAK17': [], 'date': '2024-11-18 16:54:30', 'WEALTH666': []}
+2024-11-18 16:55:45.859 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['RPOWER.NS']
+2024-11-18 16:55:45.861 | INFO     | database.cleanup.database_cleanup:prepare_sell_testdata:9 - Test data prepared. Ready to sell.
+2024-11-18 16:55:45.861 | INFO     | lambda_function:sell:53 - Stock list for sell : 
+['RPOWER.NS']
+2024-11-18 16:55:45.958 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-18 16:55:45.959 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-11-18 16:55:45.959 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-18 16:55:46.794 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:43 - Initiating offloading stocks for DEEPAK17
+2024-11-18 16:55:47.157 | INFO     | brokers.motilal.order:place_sell_order:82 - PlaceOrder for Sell Message:- Data Not Found For Requested Scrip
+2024-11-18 16:55:48.940 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order  added successfully to order list.
+2024-11-18 16:55:48.965 | ERROR    | algorithms.Position_Sizing_Sell:off_load_stocks:49 - Buy order for RPOWER.NS failed for DEEPAK17
+2024-11-18 16:55:48.965 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:52 - Offloading stocks for DEEPAK17 completed.
+2024-11-18 16:55:48.965 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-18 16:55:48.965 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-11-18 16:55:48.966 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-18 16:55:49.602 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:43 - Initiating offloading stocks for WEALTH666
+2024-11-18 16:55:49.699 | INFO     | brokers.motilal.order:place_sell_order:82 - PlaceOrder for Sell Message:- Data Not Found For Requested Scrip
+2024-11-18 16:55:50.674 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order  added successfully to order list.
+2024-11-18 16:55:50.736 | ERROR    | algorithms.Position_Sizing_Sell:off_load_stocks:49 - Buy order for RPOWER.NS failed for WEALTH666
+2024-11-18 16:55:50.737 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:52 - Offloading stocks for WEALTH666 completed.
+2024-11-18 16:55:50.739 | INFO     | lambda_function:sell:61 - Consolidated Sell Orders details for each client:- {'DEEPAK17': [], 'date': '2024-11-18 16:55:50', 'WEALTH666': []}
