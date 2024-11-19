@@ -45,7 +45,7 @@ def update_order_list(order_id, client_code, stock_code, quantity, limit_price, 
     logger.info(f"Order {order.order_id} added successfully to order list.")
 
 
-def update_status(order_id, status, message, order_type, exchange_trade_id,trade_price,trade_qty):
+def update_status(order_id, status=None, message=None, order_type=None, exchange_trade_id=None, trade_price=None, trade_qty=None):
     # Load the existing orders from the JSON file
     file_path = "order_book/orders.json"
     
@@ -62,12 +62,18 @@ def update_status(order_id, status, message, order_type, exchange_trade_id,trade
     # Iterate through the orders and update the status for the matching client_code
     for order in data.get("orders", []):
         if order["OrderID"] == order_id:
-            order["Status"] = status
-            order["Message"] = message
-            order["Order Type"] = order_type
-            order["ExchangeTradeID"] = exchange_trade_id
-            order["TradePrice"] = trade_price
-            order["QtyTraded"] = trade_qty
+            if status is not None:
+                order["Status"] = status
+            if message is not None:
+                order["Message"] = message
+            if order_type is not None:
+                order["Order Type"] = order_type
+            if exchange_trade_id is not None:
+                order["ExchangeTradeID"] = exchange_trade_id
+            if trade_price is not None:
+                order["TradePrice"] = trade_price
+            if trade_qty is not None:
+                order["QtyTraded"] = trade_qty
             order_found = True
             break
 

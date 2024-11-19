@@ -12,7 +12,7 @@ def bg_order_validator():
     # The orders keep on get validated in the background
     while True:
         order_validator()
-        time.sleep(1)
+        time.sleep(10)
 
 # Function to execute selected function
 

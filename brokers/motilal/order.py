@@ -125,19 +125,24 @@ def is_order_completed(Mofsl, client_code, order_id):
     order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id,client_code)
     logger.debug(f"Order details for {client_code} for {order_id}:- {order_details} ")
     if (order_details['status'] == "FAILED" or order_details['message']=='NO RECORDS FOUND'):
-        update_status(order_id, "Placed", order_details['message'],"Limit",
-                      "","",0)
+        update_status(order_id=order_id, message=order_details['message'])
         logger.error(f"Could not fetch the order details. Either the order_id expired or could not call MOFSL")
         return False
-    if(order_details["status"]!="SUCCESS"):
-        # notification_error("ORDER STATUS",order_details,client_code)
-        update_status(order_id, "Placed", order_details['message'], "Limit",
-                      "","",0)
+    
+    if (order_details["status"] == "SUCCESS"):
+        if (order_details['data'][0]['error']!=""):
+            update_status(order_id=order_id,
+                          message=order_details['data'][0]['error'])
         return False
+    
     if (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
-        update_status(order_id, "Traded", order_details['message'], "Limit",
-                      order_details['data'][0]['orderid'], order_details['data'][0]['averageprice'], "", order_details['data'][0]['qtytradedtoday'])
+        update_status(order_id=order_id, 
+                      status="Traded",
+                      message=order_details['message'], 
+                      exchange_trade_id=order_details['data'][0]['orderid'], 
+                      trade_price=order_details['data'][0]['averageprice'],
+                      trade_qty=order_details['data'][0]['qtytradedtoday'])
         return True
     
     logger.info("Order is still not 'Traded")
