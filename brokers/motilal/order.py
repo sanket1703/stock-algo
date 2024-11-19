@@ -1,3 +1,4 @@
+from decimal import Decimal
 from brokers.motilal.login import client_login
 from database.dao.client_dao import get_client_holding
 from database.dynamodb import get_database
@@ -42,7 +43,8 @@ def place_buy_order(client_code,stock_code_nse,qty,Mofsl):
             update_order_list(response['uniqueorderid'], client_code,
                               stock_code_nse, qty, ltp, "Buy", "Limit", "FAILED", response['message'], "", 0, 0, "")
             return ''
-    update_order_list(response['uniqueorderid'], client_code,
+    else:
+        update_order_list(response['uniqueorderid'], client_code,
                       stock_code_nse, qty, ltp, "Buy", "Limit", "Placed", response['message'], "", 0, 0, "")
     return response['uniqueorderid']
 
@@ -57,14 +59,16 @@ def notification_error(direction,message_text,client):
 
 def place_sell_order(client_code, stock_code_nse, Mofsl):
     
-    if (get_test_mode()):qty=1
-    else: qty = get_client_holding(get_database(),client_code,stock_code)
+    # if (get_test_mode()):qty=1
+    # else: qty = get_client_holding(get_database(),client_code,stock_code)
     
-    logger.debug(
-        f"Placing sell order of {qty} {stock_code_nse} for {client_code} ")
+    
     ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))
     # Convert it into the token that motilal wants
     stock_code = get_symbol_token(stock_code_nse)
+    qty = get_client_holding(get_database(), client_code, stock_code_nse)
+    logger.debug(
+        f"Placing sell order of {qty} {stock_code_nse} for {client_code} ")
     Orderinfo = {
         "clientcode":client_code,      
         "exchange":"NSE",
@@ -73,7 +77,7 @@ def place_sell_order(client_code, stock_code_nse, Mofsl):
         "ordertype":"LIMIT",
         "producttype":"DELIVERY",
         "orderduration":"DAY",
-        "quantityinlot":qty,
+        "quantityinlot":int(qty),
          "amoorder":"N",
          "price":round(ltp, 4),
     }
@@ -84,16 +88,17 @@ def place_sell_order(client_code, stock_code_nse, Mofsl):
         notification_error("SELL",response,client_code)
         if('uniqueorderid' in response):
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Sell", "Limit", "Not Placed", response['message'], "",0,0,"")
+                              stock_code_nse, int(qty), ltp, "Sell", "Limit", "Not Placed", response['message'], "", 0, 0, "")
 
             return response['uniqueorderid']
         else:
-            update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Sell", "Limit", "FAILED", response['message'], "", 0, 0, "")
+            update_order_list("", client_code,
+                              stock_code_nse, int(qty), ltp, "Sell", "Limit", "FAILED", response['message'], "", 0, 0, "")
 
             return ''
-    update_order_list(response['uniqueorderid'], client_code,
-                      stock_code_nse, qty, ltp, "Sell", "Limit", "Placed", response['message'], "",0,0,"")
+    else:
+        update_order_list(response['uniqueorderid'], client_code,
+                      stock_code_nse, int(qty), ltp, "Sell", "Limit", "Placed", response['message'], "",0,0,"")
 
     return response['uniqueorderid']
 

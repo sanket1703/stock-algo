@@ -1,0 +1,35 @@
+2024-11-19 11:19:01.598 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 11:19:01.599 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 11:19:01.670 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-19 11:19:02.907 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-19 11:19:03.840 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 11:19:03.845 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 11:19:03.866 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-11-19 11:19:03.870 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-11-19 11:19:03.877 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-11-19 11:19:03.884 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-11-19 11:19:03.889 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-11-19 11:19:03.891 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-11-19 11:19:03.913 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/orders.json has been reset successfully.
+2024-11-19 11:19:05.226 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:06.249 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:07.266 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:08.314 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:09.346 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:10.361 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:11.376 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:12.394 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:13.406 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:14.419 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:15.432 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:16.449 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:17.467 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:18.486 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:19.498 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:20.549 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:21.567 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:22.584 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:23.596 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:24.604 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:25.609 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-19 11:19:26.626 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process

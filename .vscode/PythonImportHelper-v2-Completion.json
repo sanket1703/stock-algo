@@ -956,6 +956,14 @@
         "documentation": {}
     },
     {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
         "label": "boto3",
         "kind": 6,
         "isExtraImport": true,
@@ -4009,7 +4017,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def notification_error(direction,message_text,client):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Place {direction} Order FAILED.\"\n    message = f\"Error Response \\n\\n{message_text}\"\n    send_email(sender,recipient,cc,subject,message,None)\ndef place_sell_order(client_code, stock_code_nse, Mofsl):\n    if (get_test_mode()):qty=1\n    else: qty = get_client_holding(get_database(),client_code,stock_code)",
+        "peekOfCode": "def notification_error(direction,message_text,client):\n    sender = \"Keyursanket.com\"\n    recipient = \"sanketyou8@gmail.com\"\n    cc = \"keyurmarolia2@gmail.com\"\n    subject = f\"[{client}] Place {direction} Order FAILED.\"\n    message = f\"Error Response \\n\\n{message_text}\"\n    send_email(sender,recipient,cc,subject,message,None)\ndef place_sell_order(client_code, stock_code_nse, Mofsl):\n    # if (get_test_mode()):qty=1\n    # else: qty = get_client_holding(get_database(),client_code,stock_code)",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -4018,7 +4026,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def place_sell_order(client_code, stock_code_nse, Mofsl):\n    if (get_test_mode()):qty=1\n    else: qty = get_client_holding(get_database(),client_code,stock_code)\n    logger.debug(\n        f\"Placing sell order of {qty} {stock_code_nse} for {client_code} \")\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code_nse)\n    Orderinfo = {\n        \"clientcode\":client_code,      ",
+        "peekOfCode": "def place_sell_order(client_code, stock_code_nse, Mofsl):\n    # if (get_test_mode()):qty=1\n    # else: qty = get_client_holding(get_database(),client_code,stock_code)\n    ltp = get_last_traded_price(fetch_1d_stock_data(stock_code_nse))\n    # Convert it into the token that motilal wants\n    stock_code = get_symbol_token(stock_code_nse)\n    qty = get_client_holding(get_database(), client_code, stock_code_nse)\n    logger.debug(\n        f\"Placing sell order of {qty} {stock_code_nse} for {client_code} \")\n    Orderinfo = {",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
