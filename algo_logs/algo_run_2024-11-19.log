@@ -167,3 +167,89 @@
 2024-11-19 10:25:05.447 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
 2024-11-19 10:25:06.971 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
 2024-11-19 10:25:06.971 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:07.699 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:07.699 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:08.327 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:08.328 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:09.012 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:09.012 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:10.689 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:10.690 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:11.394 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:11.397 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:12.688 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:12.688 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:13.391 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:13.391 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:14.031 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:14.031 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:14.849 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:14.849 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:15.542 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:15.542 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:16.395 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:16.396 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:18.065 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:18.065 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:18.838 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:18.838 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:19.478 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:19.478 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:20.239 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:20.239 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:20.939 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:20.940 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:21.581 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:21.581 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:22.237 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:22.237 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:22.910 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:22.910 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:25.134 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:25.134 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:25.912 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:25.913 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:26.645 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:26.645 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:27.344 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:27.344 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:27.992 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:27.992 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:28.704 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:28.704 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:29.510 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:29.510 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:30.206 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:30.207 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:31.954 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:31.954 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:32.664 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:32.664 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:33.396 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:33.396 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:34.103 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:34.103 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:34.801 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:34.801 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:35.513 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:35.515 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:36.752 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:36.761 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:37.786 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:37.787 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:39.614 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:39.615 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:40.308 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:40.308 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:41.212 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:41.212 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:41.920 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:41.921 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:42.684 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:42.684 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:43.724 | INFO     | utils.json.orders_json_helper:update_status:78 - Order with OrderID  has been updated successfully.
+2024-11-19 10:25:43.724 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:44.440 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:44.440 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-19 10:25:45.133 | INFO     | brokers.motilal.order:is_order_completed:138 - Order is still not 'Traded
+2024-11-19 10:25:45.133 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
