@@ -2,7 +2,7 @@ from datetime import datetime
 from algorithms.Position_Sizing_Buy import PositionSizingBuy
 from brokers.motilal.helper.read_client_data import read_csv_to_dict
 from brokers.motilal.login import client_login
-from database.dao.client_dao import get_client_list
+from database.dao.client_dao import get_client_list, is_client_enabled
 from database.dao.slots_dao import * 
 from database.dynamodb import get_database
 from loguru import logger
@@ -23,7 +23,12 @@ class MidcapBuyAlgorithm:
         buy_orders = {}
         
         for client_code in self.clients:
+            
             print_client(client_code)
+            if (not is_client_enabled(self.db, client_code)):
+                logger.info(f"{client_code} is not enabled")
+                continue
+            
             Mofl = client_login(client_code)
             client = PositionSizingBuy(client_code)
             client_order = client.position_sizing(self.final_stocks_buy,self.total_available_slots_before_buy,Mofl)

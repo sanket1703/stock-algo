@@ -1,7 +1,7 @@
 from datetime import datetime
 from algorithms.Position_Sizing_Sell import PositionSizingSell
 from brokers.motilal.login import client_login
-from database.dao.client_dao import get_client_list
+from database.dao.client_dao import get_client_list, is_client_enabled
 from stock_data.indicators import calculate_ema, calculate_supertrend
 from stock_data.price import fetch_stock_data
 from database.dao.slots_dao import * 
@@ -21,6 +21,9 @@ class MidcapSellAlgorithm:
         sell_orders = {}
         
         for client_code in self.clients:
+            if (not is_client_enabled(self.db, client_code)):
+                logger.info(f"{client_code} is not enabled")
+                continue
             print(f"Starting position sizing selling for {client_code}")
             print_client(client_code)
             client = PositionSizingSell(client_code)

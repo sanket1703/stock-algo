@@ -683,7 +683,23 @@
         "documentation": {}
     },
     {
+        "label": "is_client_enabled",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
         "label": "get_client_list",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "is_client_enabled",
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
         "isExtraImport": true,
@@ -4137,7 +4153,7 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()\n    clients.put_item(Item=response['Items'][0])\ndef get_client_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    return response['Items'][0]['holding'][stock_name]['qty']\ndef offload_holding(db,client_code,stock_name):",
+        "peekOfCode": "def update_holding(db,client_code,stock_name,qty,price,date):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    response['Items'][0]['holding'][stock_name] = Holding(stock_name,qty,date,price).to_json()\n    clients.put_item(Item=response['Items'][0])\ndef get_client_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    return response['Items'][0]['holding'][stock_name]['qty']\ndef is_client_enabled(db,client_code):",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -4146,7 +4162,16 @@
         "kind": 2,
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
-        "peekOfCode": "def get_client_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    return response['Items'][0]['holding'][stock_name]['qty']\ndef offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])\ndef add_trade_log(db,client_code,date,stock_name,direction,price,qty,xchange_trade_id):",
+        "peekOfCode": "def get_client_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    return response['Items'][0]['holding'][stock_name]['qty']\ndef is_client_enabled(db,client_code):\n    clients = db.Table('clients' + env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr(\n        'client_code').eq(client_code))\n    return response['Items'][0]['enabled']\ndef offload_holding(db,client_code,stock_name):",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "is_client_enabled",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def is_client_enabled(db,client_code):\n    clients = db.Table('clients' + env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr(\n        'client_code').eq(client_code))\n    return response['Items'][0]['enabled']\ndef offload_holding(db,client_code,stock_name):\n    clients = db.Table('clients'+ env)\n    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n    del response['Items'][0]['holding'][stock_name]\n    clients.put_item(Item=response['Items'][0])",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },

@@ -95,6 +95,38 @@
             "Direction": "Sell",
             "SyncStatus": "",
             "Timestamp": "18th November 2024"
+        },
+        {
+            "OrderID": "1900001DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "IDEA.NS",
+            "Status": "Not Placed",
+            "ExchangeTradeID": "",
+            "Quantity": 1,
+            "QtyTraded": 0,
+            "LimitPrice": 7.36,
+            "TradePrice": 0,
+            "Order Type": "Limit",
+            "Message": "Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin",
+            "Direction": "Buy",
+            "SyncStatus": "",
+            "Timestamp": "19th November 2024"
+        },
+        {
+            "OrderID": "1900002DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "IDEA.NS",
+            "Status": "Not Placed",
+            "ExchangeTradeID": "",
+            "Quantity": 1,
+            "QtyTraded": 0,
+            "LimitPrice": 7.36,
+            "TradePrice": 0,
+            "Order Type": "Limit",
+            "Message": "Short Selling Not Allowed For Requested Scrip",
+            "Direction": "Sell",
+            "SyncStatus": "",
+            "Timestamp": "19th November 2024"
         }
     ]
 }

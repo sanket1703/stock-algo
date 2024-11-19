@@ -56,7 +56,12 @@ def get_client_holding(db,client_code,stock_name):
     clients = db.Table('clients'+ env)
     response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))
     return response['Items'][0]['holding'][stock_name]['qty']
-    
+   
+def is_client_enabled(db,client_code):
+    clients = db.Table('clients' + env)
+    response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr(
+        'client_code').eq(client_code))
+    return response['Items'][0]['enabled']
     
 def offload_holding(db,client_code,stock_name):
     clients = db.Table('clients'+ env)
