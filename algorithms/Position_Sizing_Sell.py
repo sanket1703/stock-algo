@@ -46,7 +46,7 @@ class PositionSizingSell:
             # qty = get_client_holding(get_database(), self.client_code, stock_sell)
             ltp = get_last_traded_price(fetch_1d_stock_data(stock_sell))
             if order_id == '':
-                logger.error(f"Buy order for {stock_sell} failed for {self.client_code}")
+                logger.error(f"Sell order for {stock_sell} failed for {self.client_code}")
                 continue
             client_order_list.append((order_id, stock_sell))
         logger.info(f"Offloading stocks for {self.client_code} completed.")

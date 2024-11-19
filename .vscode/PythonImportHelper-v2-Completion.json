@@ -2419,6 +2419,15 @@
         "documentation": {}
     },
     {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
         "label": "dash",
         "kind": 6,
         "isExtraImport": true,
@@ -5201,6 +5210,42 @@
         "description": "lambda_function",
         "peekOfCode": "def sell_order(sell_list):\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    order_executor(\"Sell\", sell_list)\n    return \"Sell Orders Placed\"\nif __name__ == \"__main__\":\n    ######################################\n    #########   Configurations    ########\n    ######################################\n    warnings.filterwarnings(\"ignore\")",
         "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "generate_rest_request",
+        "kind": 2,
+        "importPath": "llm_request",
+        "description": "llm_request",
+        "peekOfCode": "def generate_rest_request(user_input):\n    \"\"\"\n    Convert natural language input into a REST API request using OpenAI GPT.\n    \"\"\"\n    # Define a prompt for text-to-REST conversion\n    # prompt = f\"\"\"\n    # Convert the following natural language instruction into a REST API request for weather of cities.\n    # Example REST API: GET https://wttr.in/{\"{Place}\"}?format=3\n    # Instruction: \"{user_input}\"\n    # REST Request:\"\"\"",
+        "detail": "llm_request",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_key",
+        "kind": 5,
+        "importPath": "llm_request",
+        "description": "llm_request",
+        "peekOfCode": "openai.api_key = \"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\"\ndef generate_rest_request(user_input):\n    \"\"\"\n    Convert natural language input into a REST API request using OpenAI GPT.\n    \"\"\"\n    # Define a prompt for text-to-REST conversion\n    # prompt = f\"\"\"\n    # Convert the following natural language instruction into a REST API request for weather of cities.\n    # Example REST API: GET https://wttr.in/{\"{Place}\"}?format=3\n    # Instruction: \"{user_input}\"",
+        "detail": "llm_request",
+        "documentation": {}
+    },
+    {
+        "label": "user_instruction",
+        "kind": 5,
+        "importPath": "llm_request",
+        "description": "llm_request",
+        "peekOfCode": "user_instruction = \"Get the latest weather of Mumbai.\"\n# Generate the REST API request\nrest_request = generate_rest_request(user_instruction)\nprint(\"Generated REST Request:\")\nprint(rest_request)",
+        "detail": "llm_request",
+        "documentation": {}
+    },
+    {
+        "label": "rest_request",
+        "kind": 5,
+        "importPath": "llm_request",
+        "description": "llm_request",
+        "peekOfCode": "rest_request = generate_rest_request(user_instruction)\nprint(\"Generated REST Request:\")\nprint(rest_request)",
+        "detail": "llm_request",
         "documentation": {}
     },
     {
