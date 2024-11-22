@@ -1,0 +1,62 @@
+2024-11-22 10:19:14.083 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-22 10:19:14.265 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-22 10:19:14.265 | ERROR    | brokers.motilal.order:is_order_completed:129 - Could not fetch the order details. Either the order_id expired or could not call MOFSL
+2024-11-22 10:19:14.266 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:19:14.764 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-22 10:19:15.753 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-11-22 10:19:15.755 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-11-22 10:19:15.757 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-11-22 10:19:15.759 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-11-22 10:19:15.760 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-11-22 10:19:15.762 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-11-22 10:19:15.762 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/orders.json has been reset successfully.
+2024-11-22 10:19:25.015 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-22 10:19:35.045 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-22 10:19:45.062 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-22 10:19:55.106 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-22 10:20:00.786 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- []
+2024-11-22 10:20:00.787 | INFO     | utils.database_helper.slots:clean_slots:7 - Cleared slots on the database.
+2024-11-22 10:20:00.788 | INFO     | database.cleanup.database_cleanup:prepare_buy_testdata:15 - Test data prepared. Ready to buy.
+2024-11-22 10:20:00.788 | INFO     | lambda_function:buy:36 - Stock list for buy :
+['IDEA.NS']
+2024-11-22 10:20:00.788 | INFO     | lambda_function:buy:38 - Buy stock list:- ['IDEA.NS']
+2024-11-22 10:20:00.903 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['IDEA.NS']
+2024-11-22 10:20:00.904 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:73 - Final buy list of Stocks :- ['IDEA.NS']
+2024-11-22 10:20:00.904 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:74 - Total slots which were available before allocating slots:- 13
+2024-11-22 10:20:00.904 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-22 10:20:00.904 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-11-22 10:20:00.904 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-22 10:20:00.918 | INFO     | algorithms.Midcap_Buy_Algorithm:order_executor:29 - DEEPAK17 is not enabled
+2024-11-22 10:20:00.919 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-22 10:20:00.919 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-11-22 10:20:00.919 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-22 10:20:01.585 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for WEALTH666
+2024-11-22 10:20:02.761 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 14 IDEA.NS for WEALTH666 
+2024-11-22 10:20:02.956 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-11-22 10:20:02.957 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 2200001WEALTH666 added successfully to order list.
+2024-11-22 10:20:02.957 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:63 - Position sizing for WEALTH666 completed.
+2024-11-22 10:20:02.960 | INFO     | lambda_function:buy:43 - Consolidated Buy Orders details for each client:- {'WEALTH666': [('2200001WEALTH666', 'IDEA.NS')], 'date': '2024-11-22 10:20:02'}
+2024-11-22 10:20:05.747 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:20:16.405 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:20:27.067 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:20:37.781 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:20:48.450 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:20:59.096 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:21:09.747 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:21:10.748 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:21:16.710 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:21:21.716 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:21:32.415 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:21:43.219 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:21:54.009 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:22:05.647 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:22:16.336 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:22:28.115 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:22:38.970 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:22:49.627 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:23:00.305 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:23:11.090 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:23:21.785 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:23:33.250 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:23:43.942 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-22 10:23:54.659 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.

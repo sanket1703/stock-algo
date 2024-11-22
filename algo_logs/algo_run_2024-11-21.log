@@ -1,0 +1,835 @@
+2024-11-21 10:01:04.161 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-21 10:01:04.802 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-11-21 10:01:05.752 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-11-21 10:01:05.753 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-11-21 10:01:05.755 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-11-21 10:01:05.756 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-11-21 10:01:05.757 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-11-21 10:01:05.758 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-11-21 10:01:05.758 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/orders.json has been reset successfully.
+2024-11-21 10:01:13.028 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:01:23.059 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:01:33.077 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:01:43.126 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:01:53.136 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:02:03.176 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:02:13.183 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:02:23.208 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:02:33.221 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-11-21 10:02:35.524 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['MCX.NS']
+2024-11-21 10:02:35.527 | INFO     | database.cleanup.database_cleanup:prepare_sell_testdata:9 - Test data prepared. Ready to sell.
+2024-11-21 10:02:35.528 | INFO     | lambda_function:sell:53 - Stock list for sell : 
+['MCX.NS']
+2024-11-21 10:02:35.669 | INFO     | algorithms.Midcap_Sell_Algorithm:order_executor:25 - DEEPAK17 is not enabled
+2024-11-21 10:02:35.686 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-11-21 10:02:35.686 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-11-21 10:02:35.686 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-11-21 10:02:36.340 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:43 - Initiating offloading stocks for WEALTH666
+2024-11-21 10:02:37.428 | INFO     | brokers.motilal.order:place_sell_order:86 - PlaceOrder for Sell Message:- Short Selling Not Allowed For Requested Scrip
+2024-11-21 10:02:38.319 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 2100001WEALTH666 added successfully to order list.
+2024-11-21 10:02:38.351 | INFO     | algorithms.Position_Sizing_Sell:off_load_stocks:52 - Offloading stocks for WEALTH666 completed.
+2024-11-21 10:02:38.352 | INFO     | lambda_function:sell:61 - Consolidated Sell Orders details for each client:- {'WEALTH666': [('2100001WEALTH666', 'MCX.NS')], 'date': '2024-11-21 10:02:38'}
+2024-11-21 10:02:46.248 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:02:46.248 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:02:57.054 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:02:57.055 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:03:07.824 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:03:07.825 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:03:18.571 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:03:18.571 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:03:29.279 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:03:29.280 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:03:39.992 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:03:39.993 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:03:50.719 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:03:50.720 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:04:01.431 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:04:01.433 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:04:12.524 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:04:12.524 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:04:23.224 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:04:23.226 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:04:33.918 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:04:33.918 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:04:44.584 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:04:44.584 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:04:55.463 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:04:55.464 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:05:06.172 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:05:06.173 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:05:16.968 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:05:16.968 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:05:27.705 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:05:27.706 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:05:38.571 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:05:38.572 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:05:49.234 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:05:49.234 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:05:59.977 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:05:59.977 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:06:11.116 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:06:11.116 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:06:21.881 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:06:21.882 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:06:32.630 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:06:32.631 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:06:43.334 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:06:43.335 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:06:54.019 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:06:54.020 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:07:05.025 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:07:05.026 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:07:15.695 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:07:15.696 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:07:26.390 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:07:26.391 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:07:37.064 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:07:37.065 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:07:47.902 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:07:47.902 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:07:58.648 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:07:58.648 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:08:09.993 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:08:09.993 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:08:20.665 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:08:20.666 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:08:31.354 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:08:31.355 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:08:42.159 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:08:42.160 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:08:52.941 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:08:52.941 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:09:03.650 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:09:03.650 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:09:14.314 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:09:14.314 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:09:25.034 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:09:25.034 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:09:35.700 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:09:35.701 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:09:46.446 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:09:46.447 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:09:57.203 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:09:57.203 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:10:07.928 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:10:07.928 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:10:19.448 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:10:19.449 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:10:30.288 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:10:30.289 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:10:40.972 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:10:40.973 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:10:52.619 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:10:52.620 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:11:03.399 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:11:03.399 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:11:14.129 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:11:14.132 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:11:24.809 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:11:24.809 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:11:35.523 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:11:35.524 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:11:46.368 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:11:46.368 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:11:57.117 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:11:57.118 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:12:08.230 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:12:08.230 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:12:18.956 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:12:18.957 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:12:29.734 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:12:29.735 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:12:40.429 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:12:40.429 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:12:51.216 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:12:51.217 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:13:01.959 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:13:01.960 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:13:12.699 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:13:12.700 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:13:23.469 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:13:23.471 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:13:34.250 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:13:34.250 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:13:44.940 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:13:44.940 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:13:55.803 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:13:55.804 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:14:06.605 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:14:06.606 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:14:17.429 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:14:17.429 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:14:28.383 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:14:28.384 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:14:39.621 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:14:39.622 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:14:50.330 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:14:50.331 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:15:01.011 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:15:01.012 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:15:11.677 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:15:11.677 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:15:22.403 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:15:22.404 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:15:33.077 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:15:33.078 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:15:43.770 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:15:43.770 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:15:54.440 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:15:54.440 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:16:05.154 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:16:05.155 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:16:15.817 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:16:15.818 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:16:26.503 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:16:26.504 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:16:37.291 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:16:37.292 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:16:48.055 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:16:48.055 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:16:58.822 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:16:58.822 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:17:09.541 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:17:09.542 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:17:20.230 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:17:20.230 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:17:30.941 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:17:30.941 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:17:41.620 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:17:41.621 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:17:52.284 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:17:52.284 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:18:02.955 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:18:02.955 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:18:13.643 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:18:13.644 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:18:24.701 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:18:24.708 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:18:35.477 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:18:35.478 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:18:46.177 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:18:46.178 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:18:56.840 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:18:56.840 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:19:07.487 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:19:07.487 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:19:18.180 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:19:18.180 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:19:28.926 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:19:28.926 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:19:39.632 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:19:39.632 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:19:50.337 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:19:50.337 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:20:01.777 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:20:01.777 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:20:12.495 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:20:12.495 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:20:23.208 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:20:23.209 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:20:33.874 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:20:33.875 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:20:44.554 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:20:44.554 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:20:55.262 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:20:55.262 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:21:06.005 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:21:06.006 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:21:16.743 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:21:16.744 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:21:27.411 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:21:27.411 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:21:38.191 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:21:38.192 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:21:48.886 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:21:48.887 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:21:59.963 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:21:59.963 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:22:10.686 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:22:10.686 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:22:21.346 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:22:21.347 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:22:32.022 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:22:32.023 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:22:42.689 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:22:42.690 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:22:53.439 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:22:53.440 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:23:04.616 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:23:04.619 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:23:15.392 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:23:15.392 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:23:26.674 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:23:26.674 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:23:37.380 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:23:37.381 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:23:48.056 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:23:48.056 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:23:58.735 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:23:58.735 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:24:09.418 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:24:09.418 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:24:20.082 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:24:20.083 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:24:30.771 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:24:30.772 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:24:41.490 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:24:41.491 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:24:52.209 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:24:52.209 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:25:02.908 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:25:02.909 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:25:13.632 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:25:13.633 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:25:24.322 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:25:24.323 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:25:35.404 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:25:35.405 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:25:46.168 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:25:46.169 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:25:56.994 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:25:56.995 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:26:07.708 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:26:07.709 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:26:18.406 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:26:18.406 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:26:29.084 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:26:29.085 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:26:39.804 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:26:39.804 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:26:50.538 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:26:50.538 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:27:01.261 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:27:01.262 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:27:11.953 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:27:11.954 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:27:22.684 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:27:22.685 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:27:33.389 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:27:33.390 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:27:44.091 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:27:44.091 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:27:54.783 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:27:54.783 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:28:05.453 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:28:05.454 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:28:16.204 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:28:16.204 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:28:26.876 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:28:26.877 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:28:37.560 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:28:37.561 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:28:48.227 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:28:48.228 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:28:59.001 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:28:59.001 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:29:09.663 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:29:09.664 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:29:20.803 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:29:20.803 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:29:31.857 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:29:31.857 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:29:43.357 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:29:43.357 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:29:54.026 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:29:54.026 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:30:04.708 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:30:04.709 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:30:15.786 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:30:15.791 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:30:26.510 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:30:26.510 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:30:37.208 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:30:37.209 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:30:47.898 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:30:47.899 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:30:58.596 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:30:58.596 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:31:09.316 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:31:09.316 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:31:20.001 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:31:20.002 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:31:30.687 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:31:30.688 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:31:41.352 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:31:41.353 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:31:52.088 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:31:52.089 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:32:02.750 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:32:02.751 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:32:13.437 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:32:13.438 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:32:24.121 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:32:24.122 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:32:35.215 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:32:35.215 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:32:45.870 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:32:45.871 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:32:56.587 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:32:56.587 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:33:07.313 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:33:07.313 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:33:18.044 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:33:18.045 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:33:28.749 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:33:28.750 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:33:39.463 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:33:39.464 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:33:50.146 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:33:50.147 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:34:01.082 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:34:01.083 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:34:11.812 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:34:11.812 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:34:22.561 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:34:22.563 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:34:33.635 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:34:33.636 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:34:44.309 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:34:44.310 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:34:54.980 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:34:54.982 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:35:05.763 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:35:05.765 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:35:16.804 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:35:16.805 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:35:27.509 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:35:27.510 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:35:38.232 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:35:38.234 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:35:48.928 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:35:48.930 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:35:59.634 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:35:59.636 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:36:10.308 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:36:10.309 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:36:20.980 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:36:20.981 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:36:31.706 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:36:31.707 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:36:42.772 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:36:42.773 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:36:53.601 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:36:53.602 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:37:04.355 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:37:04.356 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:37:15.053 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:37:15.054 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:37:25.765 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:37:25.767 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:37:36.537 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:37:36.537 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:37:47.259 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:37:47.260 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:37:58.633 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:37:58.634 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:38:09.378 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:38:09.379 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:38:20.065 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:38:20.066 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:38:30.739 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:38:30.740 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:38:41.432 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:38:41.433 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:38:52.101 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:38:52.102 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:39:02.816 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:39:02.817 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:39:13.505 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:39:13.506 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:39:24.248 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:39:24.249 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:39:34.964 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:39:34.965 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:39:45.658 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:39:45.659 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:39:56.338 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:39:56.338 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:40:07.037 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:40:07.037 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:40:18.114 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:40:18.115 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:40:29.254 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:40:29.255 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:40:39.991 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:40:39.991 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:40:50.737 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:40:50.737 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:41:01.438 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:41:01.439 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:41:12.131 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:41:12.132 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:41:22.797 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:41:22.798 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:41:33.586 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:41:33.587 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:41:44.248 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:41:44.249 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:41:54.941 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:41:54.942 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:42:05.627 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:42:05.628 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:42:16.426 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:42:16.426 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:42:27.608 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:42:27.608 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:42:38.291 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:42:38.292 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:42:48.970 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:42:48.970 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:42:59.662 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:42:59.662 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:43:10.334 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:43:10.335 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:43:21.048 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:43:21.049 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:43:32.242 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:43:32.243 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:43:42.936 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:43:42.937 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:43:53.607 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:43:53.608 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:44:04.298 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:44:04.299 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:44:15.392 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:44:15.392 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:44:26.503 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:44:26.504 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:44:37.193 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:44:37.194 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:44:47.873 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:44:47.873 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:44:58.547 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:44:58.548 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:45:09.245 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:45:09.245 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:45:20.339 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:45:20.339 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:45:31.038 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:45:31.039 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:45:42.127 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:45:42.127 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:45:52.861 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:45:52.862 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:46:03.582 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:46:03.583 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:46:14.353 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:46:14.353 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:46:25.209 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:46:25.210 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:46:35.941 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:46:35.942 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:46:46.642 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:46:46.643 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:46:57.357 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:46:57.357 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:47:08.162 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:47:08.162 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:47:18.914 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:47:18.927 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:47:29.602 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:47:29.603 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:47:40.270 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:47:40.270 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:47:50.958 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:47:50.959 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:48:02.051 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:48:02.051 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:48:12.721 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:48:12.725 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:48:23.449 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:48:23.450 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:48:34.115 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:48:34.116 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:48:44.891 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:48:44.892 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:48:55.585 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:48:55.586 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:49:06.261 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:49:06.261 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:49:16.935 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:49:16.935 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:49:28.432 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:49:28.433 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:49:39.175 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:49:39.175 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:49:49.903 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:49:49.904 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:50:01.636 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:50:01.636 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:50:12.929 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:50:12.937 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:50:23.685 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:50:23.686 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:50:34.394 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:50:34.394 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:50:45.079 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:50:45.079 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:50:56.625 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:50:56.627 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:51:07.357 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:51:07.358 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:51:18.373 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:51:18.373 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:51:29.045 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:51:29.046 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:51:39.789 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:51:39.790 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:51:50.462 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:51:50.463 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:52:01.255 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:52:01.255 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:52:11.928 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:52:11.929 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:52:22.648 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:52:22.649 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:52:33.366 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:52:33.367 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:52:44.095 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:52:44.096 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:52:54.810 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:52:54.810 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:53:05.501 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:53:05.501 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:53:16.251 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:53:16.251 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:53:28.717 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:53:28.718 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:53:39.423 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:53:39.424 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:53:50.106 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:53:50.106 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:54:00.778 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:54:00.778 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:54:11.500 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:54:11.501 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:54:22.176 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:54:22.176 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:54:32.872 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:54:32.872 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:54:43.573 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:54:43.573 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:54:54.298 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:54:54.298 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:55:04.946 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:55:04.947 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:55:15.630 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:55:15.631 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:55:26.300 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:55:26.301 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:55:37.530 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:55:37.531 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:55:48.192 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:55:48.193 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:55:58.915 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:55:58.916 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:56:09.626 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:56:09.627 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:56:20.616 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:56:20.616 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:56:31.304 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:56:31.304 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:56:42.070 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:56:42.071 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:56:52.749 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:56:52.749 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:57:03.443 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:57:03.444 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:57:14.189 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:57:14.190 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:57:25.184 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:57:25.184 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:57:35.836 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:57:35.836 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:57:46.535 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:57:46.536 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:57:57.247 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:57:57.248 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:58:07.957 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:58:07.957 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:58:18.602 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:58:18.602 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:58:29.345 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:58:29.345 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:58:40.352 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:58:40.353 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:58:51.030 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:58:51.030 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:59:01.734 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:59:01.734 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:59:12.608 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:59:12.608 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:59:23.288 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:59:23.289 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:59:34.013 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:59:34.014 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:59:44.762 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:59:44.763 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 10:59:55.609 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 10:59:55.610 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:00:06.673 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:00:06.673 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:00:17.399 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:00:17.399 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:00:28.090 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:00:28.091 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:00:38.892 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:00:38.892 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:00:49.575 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:00:49.576 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:01:00.285 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:01:00.285 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:01:11.835 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:01:11.836 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:01:22.543 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:01:22.543 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:01:33.216 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:01:33.217 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:01:44.254 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:01:44.255 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:01:55.266 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:01:55.266 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:02:05.990 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:02:05.991 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:02:16.958 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:02:16.959 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:02:27.634 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:02:27.635 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:02:38.373 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:02:38.374 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:02:49.442 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:02:49.442 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:03:00.120 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:03:00.120 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:03:10.819 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:03:10.819 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:03:21.497 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:03:21.498 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:03:32.238 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:03:32.238 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:03:42.897 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:03:42.897 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:03:53.994 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:03:53.994 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:04:05.018 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:04:05.018 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:04:15.894 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:04:15.895 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:04:26.545 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:04:26.546 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:04:37.280 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:04:37.281 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:04:47.968 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:04:47.968 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:04:58.705 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:04:58.705 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:05:09.416 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:05:09.417 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:05:20.113 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:05:20.114 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:05:30.824 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:05:30.824 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:05:41.528 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:05:41.528 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:05:52.196 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:05:52.197 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:06:02.939 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:06:02.939 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:06:13.589 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:06:13.590 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:06:24.297 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:06:24.297 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:06:35.199 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:06:35.200 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:06:45.883 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:06:45.884 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:06:56.573 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:06:56.573 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:07:07.323 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:07:07.323 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:07:18.018 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:07:18.018 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:07:28.717 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:07:28.718 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:07:39.423 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:07:39.424 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:07:50.174 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:07:50.175 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:08:00.835 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:08:00.835 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:08:11.502 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:08:11.503 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:08:22.175 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:08:22.175 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:08:32.907 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:08:32.907 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:08:43.555 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:08:43.555 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:08:54.248 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:08:54.248 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:09:04.969 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:09:04.970 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:09:15.634 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:09:15.635 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:09:26.362 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:09:26.363 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:09:37.289 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:09:37.289 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:09:47.990 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:09:47.990 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:09:58.715 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:09:58.716 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:10:09.468 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:10:09.469 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:10:20.154 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:10:20.155 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:10:30.836 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:10:30.836 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:10:41.539 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:10:41.539 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:10:52.361 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:10:52.362 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:11:03.083 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:11:03.084 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:11:13.788 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:11:13.789 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:11:24.506 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:11:24.506 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:11:35.178 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:11:35.179 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:11:45.954 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:11:45.955 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:11:56.640 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:11:56.640 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:12:07.357 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:12:07.358 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:12:18.141 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:12:18.141 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:12:29.082 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:12:29.083 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:12:39.807 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:12:39.808 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:12:50.491 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:12:50.492 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:13:01.171 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:13:01.172 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:13:11.964 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:13:11.965 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:13:22.844 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:13:22.845 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:13:33.621 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:13:33.622 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:13:44.491 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:13:44.491 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:13:55.227 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:13:55.228 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:14:06.029 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:14:06.029 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:14:16.777 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:14:16.777 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:14:27.509 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:14:27.510 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:14:38.232 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:14:38.233 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-11-21 11:14:48.891 | INFO     | utils.json.orders_json_helper:update_status:84 - Order with OrderID 2100001WEALTH666 has been updated successfully.
+2024-11-21 11:14:48.892 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.

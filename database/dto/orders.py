@@ -20,15 +20,15 @@ class Order:
             "OrderID": self.order_id,
             "ClientCode": self.client_code,
             "StockCode": self.stock_code,
+            "Direction": self.direction,
             "Status": self.status,
-            "ExchangeTradeID": self.exchange_trade_id,
             "Quantity": round(self.quantity, 2),
             "QtyTraded": round(self.qty_traded, 2),
             "LimitPrice": round(self.limit_price, 2),
             "TradePrice": round(self.trade_price, 2),
             "Order Type": self.order_type,
             "Message": self.message,
-            "Direction": self.direction,
-            "SyncStatus": self.sync_status,
-            "Timestamp": self.timestamp
+            "ExchangeTradeID": self.exchange_trade_id,
+            "Timestamp": self.timestamp,
+            "SyncStatus": self.sync_status
         }

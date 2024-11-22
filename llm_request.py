@@ -1,49 +1,38 @@
-import openai
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-# Set up OpenAI API key
-openai.api_key = "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"
+# Use Flan-T5 as an alternative
+model_name = "google/flan-t5-base"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
 
-def generate_rest_request(user_input):
+def generate_rest_request(prompt):
     """
-    Convert natural language input into a REST API request using OpenAI GPT.
+    Generate a REST API request using Flan-T5.
     """
-    # Define a prompt for text-to-REST conversion
-    # prompt = f"""
-    # Convert the following natural language instruction into a REST API request for weather of cities.
-    # Example REST API: GET https://wttr.in/{"{Place}"}?format=3
-    
-    # Instruction: "{user_input}"
-    # REST Request:"""
+    inputs = tokenizer(prompt, return_tensors="pt")
+    outputs = model.generate(inputs.input_ids, max_length=100,
+                             num_beams=5, no_repeat_ngram_size=2, early_stopping=True)
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 
-        
-    messages = [
-            {"role": "system", "content": "You are an assistant that converts user instructions into REST API requests."},
-            {"role": "user", "content": f"Convert this instruction into a REST API request: {user_input}"}
-        ]
+# Example usage
+prompt = """You are a highly advanced AI assistant specializing in generating REST API requests based on natural language instructions. Your goal is to understand the user's request and create a complete and properly formatted REST API request with the required URL, HTTP method, headers, and body. Follow these rules:
+1. Identify the endpoint, method(GET, POST, etc.), and query or body parameters from the input.
+2. Include sample data for placeholders.
+3. Format the response in proper JSON format for easy integration.
 
-    try:
-        # Call the ChatGPT API
-        response = openai.ChatCompletion.create(
-            model="gpt-4o-mini",  # Use "gpt-4" if available
-            messages=messages,
-            max_tokens=100,
-            temperature=0  # Lower temperature for deterministic output
-        )
-
-        # Extract and return the assistant's message
-        rest_request = response['choices'][0]['message']['content']
-        return rest_request
-
-    except Exception as e:
-        return f"Error: {e}"
-
-
-# User input
-user_instruction = "Get the latest weather of Mumbai."
-
-# Generate the REST API request
-rest_request = generate_rest_request(user_instruction)
+# Example:
+Input: "Get the current stock price for Tesla."
+Output:
+{
+    "method": "GET",
+    "url": "https://api.example.com/stocks?symbol={{symbol}}}",
+    "headers": {
+        "Authorization": "Bearer YOUR_API_KEY"
+    }
+}
+"""
+rest_request = generate_rest_request(prompt)
 print("Generated REST Request:")
 print(rest_request)

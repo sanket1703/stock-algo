@@ -1,52 +1,20 @@
 {
     "orders": [
         {
-            "OrderID": "1900011WEALTH666",
+            "OrderID": "2200001WEALTH666",
             "ClientCode": "WEALTH666",
-            "StockCode": "MCX.NS",
-            "Status": "Not Placed",
-            "ExchangeTradeID": "",
-            "Quantity": 4,
-            "QtyTraded": 0,
-            "LimitPrice": 6106.35,
-            "TradePrice": 0,
-            "Order Type": "Limit",
-            "Message": "ShortSell not allowed",
-            "Direction": "Sell",
-            "SyncStatus": "",
-            "Timestamp": "19th November 2024"
-        },
-        {
-            "OrderID": "1900012WEALTH666",
-            "ClientCode": "WEALTH666",
-            "StockCode": "MCX.NS",
-            "Status": "Not Placed",
-            "ExchangeTradeID": "",
-            "Quantity": 1,
-            "QtyTraded": 0,
-            "LimitPrice": 6106.35,
-            "TradePrice": 0,
-            "Order Type": "Limit",
-            "Message": "*** Total Capital: 152, Utilised: 0, Available: 152, Order Margin: 6106.35, Margin exceeded by 5954.35, REJSTART100,20,2,0REJEND",
+            "StockCode": "IDEA.NS",
             "Direction": "Buy",
-            "SyncStatus": "",
-            "Timestamp": "19th November 2024"
-        },
-        {
-            "OrderID": "1900013WEALTH666",
-            "ClientCode": "WEALTH666",
-            "StockCode": "MCX.NS",
-            "Status": "Not Placed",
-            "ExchangeTradeID": "",
-            "Quantity": 4,
-            "QtyTraded": 0,
-            "LimitPrice": 6106.35,
-            "TradePrice": 0,
+            "Status": "Traded",
+            "Quantity": 14,
+            "QtyTraded": 14,
+            "LimitPrice": 6.77,
+            "TradePrice": 6.77,
             "Order Type": "Limit",
-            "Message": "ShortSell not allowed",
-            "Direction": "Sell",
-            "SyncStatus": "",
-            "Timestamp": "19th November 2024"
+            "Message": "Order Data",
+            "ExchangeTradeID": "1100000013310722",
+            "Timestamp": "22nd November 2024",
+            "SyncStatus": ""
         }
     ]
 }
