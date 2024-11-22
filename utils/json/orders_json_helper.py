@@ -118,7 +118,7 @@ def update_sync_status(order_id):
 
 def get_current_date():
     # Get the current date
-    formatted_date = datetime.now().strftime("%-d %B %Y")
+    formatted_date = datetime.now().strftime("%d %B %Y")
 
     # Determine the suffix for the day
     day = datetime.now().day
