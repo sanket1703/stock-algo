@@ -133,7 +133,7 @@ def is_order_completed(Mofsl, client_code, order_id):
         if (order_details['data'][0]['error']!=""):
             update_status(order_id=order_id,
                           message=order_details['data'][0]['error'])
-        return False
+            return False
     
     if (order_details['data'][0]['orderstatus']=="Traded"):
         logger.info(f"Order is executed and the status is 'Traded'")
