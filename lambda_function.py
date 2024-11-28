@@ -31,7 +31,7 @@ from jobs.clean_json import clean_order_jsons_job
 
 def buy(buy_stocks):
     
-    if (get_test_mode()):prepare_buy_testdata()
+    # if (get_test_mode()):prepare_buy_testdata()
     
     logger.info(f"Stock list for buy :\n{buy_stocks}")
 
@@ -272,4 +272,4 @@ if __name__ == "__main__":
     #########      Adhoc Jobs    #########
     ######################################
     
-    # ahdoc_order_box()
+    ahdoc_order_box()

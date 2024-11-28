@@ -168,14 +168,36 @@ def modify_action():
 
     # Return or print the values
     logger.debug("Client Code:", client_code)
+    logger.debug("Order Id:", order_id)
     logger.debug("Limit Price:", limit_price)
     logger.debug("Stock Code:", stock_code_ns)
 
+    stock_code = get_symbol_token(stock_code_ns)
     Mofsl = client_login(client_code)
-
-    logger.debug(f"Modifying to market for {order_id} of {client_code} ")
     qty = get_order_qty(Mofsl, client_code, order_id)
-    ModifiedOrderInfo = {
+    if (limit_price == "MARKET"):
+        logger.debug(
+            f"Updating order {order_id} to MARKET for {stock_code} for {client_code} ")
+        
+        ModifiedOrderInfo = {
+        "clientcode": client_code,
+        "uniqueorderid": order_id,
+        "newordertype": "MARKET",
+        "neworderduration": "DAY",
+        "newquantityinlot": qty,
+        "newdisclosedquantity": 1,
+        # "newprice": round(float(limit_price), 4),
+        # "newtriggerprice":0,
+        # "newgoodtilldate": 0,
+        "lastmodifiedtime": get_modified_time(Mofsl, client_code, order_id),
+        "qtytradedtoday": 0
+
+    }
+    else:
+        logger.debug(
+            f"Placing LIMIT sell order of {qty} {stock_code} for {client_code} ")
+        
+        ModifiedOrderInfo = {
         "clientcode": client_code,
         "uniqueorderid": order_id,
         "newordertype": "LIMIT",

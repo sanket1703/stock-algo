@@ -1,20 +1,3 @@
 {
-    "orders": [
-        {
-            "OrderID": "2200001WEALTH666",
-            "ClientCode": "WEALTH666",
-            "StockCode": "IDEA.NS",
-            "Direction": "Buy",
-            "Status": "Traded",
-            "Quantity": 14,
-            "QtyTraded": 14,
-            "LimitPrice": 6.77,
-            "TradePrice": 6.77,
-            "Order Type": "Limit",
-            "Message": "Order Data",
-            "ExchangeTradeID": "1100000013310722",
-            "Timestamp": "22nd November 2024",
-            "SyncStatus": ""
-        }
-    ]
+    "orders": []
 }
