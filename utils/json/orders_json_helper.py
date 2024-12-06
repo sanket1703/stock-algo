@@ -6,7 +6,7 @@ from loguru import logger
 from database.dto.orders import Order
 
 
-def update_order_list(order_id, client_code, stock_code, quantity, limit_price, direction, order_type, status, message, exchange_trade_id, qty_traded, trade_price, sync_status):
+def update_order_list(order_id, client_code, stock_code, quantity, limit_price, direction, order_type, status, message, exchange_trade_id, qty_traded, trade_price, sync_status, adhoc):
     order = Order(
         order_id=order_id,
         client_code=client_code,
@@ -21,7 +21,8 @@ def update_order_list(order_id, client_code, stock_code, quantity, limit_price, 
         timestamp=get_current_date(),
         qty_traded=qty_traded,
         trade_price=trade_price,
-        sync_status=sync_status
+        sync_status=sync_status,
+        adhoc=adhoc
         # Using an ISO format timestamp
     )
     file_path = "order_book/orders.json"
@@ -118,17 +119,5 @@ def update_sync_status(order_id):
 
 def get_current_date():
     # Get the current date
-    formatted_date = datetime.now().strftime("%d %B %Y")
-
-    # Determine the suffix for the day
-    day = datetime.now().day
-    if 4 <= day <= 20 or 24 <= day <= 30:
-        suffix = "th"
-    else:
-        suffix = ["st", "nd", "rd"][day % 10 - 1]
-
-    # Add suffix to the day
-    formatted_date_with_suffix = formatted_date.replace(
-        f"{day}", f"{day}{suffix}")
-
-    return formatted_date_with_suffix
+    formatted_date = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    return formatted_date

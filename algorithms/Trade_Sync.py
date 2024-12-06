@@ -60,7 +60,7 @@ class TradeSync:
                 # TODO:- qty will return random stuff if there is some error on the AB side -> handle that
                 turnover = (Decimal(qty)*Decimal(trade_price))
                 
-                if (order['Direction']=="Buy"):
+                if (order['Direction'] == "Buy" and order['IsAdhocOrder'] != "Adhoc"):
                 
                     update_holding(self.db, client_code, stock_code, Decimal(
                         qty), Decimal(trade_price), current_datetime)
@@ -75,7 +75,7 @@ class TradeSync:
                     logger.debug(f"Added trade log")
                     update_sync_status(order_id)
                 
-                elif (order['Direction'] == "Sell"):
+                elif (order['Direction'] == "Sell" and order['IsAdhocOrder'] != "Adhoc"):
                     
                     offload_holding(self.db, client_code, stock_code)
                     logger.debug(f"Holding of {stock_code} offloaded")
