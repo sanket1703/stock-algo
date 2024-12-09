@@ -53,6 +53,8 @@ class PositionSizingBuy:
             amount_to_invest = amount_to_invest/(1+self.calculate_brokerage())
             last_traded_price = get_last_traded_price(fetch_1d_stock_data(buy_stock))
             qty = math.floor(Decimal(amount_to_invest)/Decimal(last_traded_price))
+            if qty == 0:
+                 qty = 1
             # Last traded price is only to get an idea to estimate the quantity
             order_id = place_buy_order(self.client_code,buy_stock,qty,Mofsl)
             if order_id == '':

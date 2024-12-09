@@ -1,3 +1,68 @@
 {
-    "orders": []
+    "orders": [
+        {
+            "OrderID": "0500003DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "CDSL.NS",
+            "Direction": "Buy",
+            "Status": "Not Placed",
+            "Quantity": 9,
+            "QtyTraded": 0,
+            "LimitPrice": 1807.6,
+            "TradePrice": 0,
+            "Order Type": "Limit",
+            "Message": "Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin",
+            "ExchangeTradeID": "",
+            "Timestamp": "05th December 2024",
+            "SyncStatus": ""
+        },
+        {
+            "OrderID": "0500004DEEPAK17",
+            "ClientCode": "DEEPAK17",
+            "StockCode": "BDL.NS",
+            "Direction": "Buy",
+            "Status": "Not Placed",
+            "Quantity": 14,
+            "QtyTraded": 0,
+            "LimitPrice": 1202.4,
+            "TradePrice": 0,
+            "Order Type": "Limit",
+            "Message": "Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin",
+            "ExchangeTradeID": "",
+            "Timestamp": "05th December 2024",
+            "SyncStatus": ""
+        },
+        {
+            "OrderID": "0500003WEALTH666",
+            "ClientCode": "WEALTH666",
+            "StockCode": "CDSL.NS",
+            "Direction": "Buy",
+            "Status": "Not Placed",
+            "Quantity": 20,
+            "QtyTraded": 0,
+            "LimitPrice": 1807.6,
+            "TradePrice": 0,
+            "Order Type": "Limit",
+            "Message": "Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin",
+            "ExchangeTradeID": "",
+            "Timestamp": "05th December 2024",
+            "SyncStatus": ""
+        },
+        {
+            "OrderID": "0500004WEALTH666",
+            "ClientCode": "WEALTH666",
+            "StockCode": "BDL.NS",
+            "Direction": "Buy",
+            "Status": "Not Placed",
+            "Quantity": 30,
+            "QtyTraded": 0,
+            "LimitPrice": 1202.4,
+            "TradePrice": 0,
+            "Order Type": "Limit",
+            "Message": "Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin",
+            "ExchangeTradeID": "",
+            "Timestamp": "05th December 2024",
+            "SyncStatus": ""
+        }
+    ]
 }
