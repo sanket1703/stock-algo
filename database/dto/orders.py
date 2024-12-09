@@ -1,5 +1,5 @@
 class Order:
-    def __init__(self, order_id, client_code, stock_code, status, exchange_trade_id, quantity, qty_traded, limit_price, trade_price, order_type, message, direction, sync_status, timestamp):
+    def __init__(self, order_id, client_code, stock_code, status, exchange_trade_id, quantity, qty_traded, limit_price, trade_price, order_type, message, direction, sync_status, timestamp, adhoc):
         self.order_id = order_id
         self.client_code = client_code
         self.stock_code = stock_code
@@ -14,6 +14,7 @@ class Order:
         self.direction = direction
         self.sync_status = sync_status
         self.timestamp = timestamp
+        self.adhoc = adhoc
 
     def to_json(self):
         return {
@@ -30,5 +31,6 @@ class Order:
             "Message": self.message,
             "ExchangeTradeID": self.exchange_trade_id,
             "Timestamp": self.timestamp,
-            "SyncStatus": self.sync_status
+            "SyncStatus": self.sync_status,
+            "IsAdhocOrder": self.adhoc
         }

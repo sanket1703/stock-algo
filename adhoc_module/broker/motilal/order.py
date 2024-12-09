@@ -7,6 +7,7 @@ from brokers.motilal.login import client_login
 from brokers.motilal.order import get_modified_time, get_order_qty
 from notification.email.send_email import send_email
 from stock_data.symbols import get_symbol_token
+from utils.json.orders_json_helper import update_order_list
 
 
 def update_color(event):
@@ -43,6 +44,7 @@ def buy_action():
     qty = int(quantity_entry.get())
     limit_price = limit_price_entry.get()
     stock_code_ns = stock_code_entry.get()
+    is_trade_sync_enabled = trade_sync_var.get()
 
     # Return or print the values
     logger.debug("Client Code:", client_code)
@@ -91,6 +93,25 @@ def buy_action():
         notification("Buy", message, client_code, response['uniqueorderid'])
         show_response_window(client_code,response['status'],
                              response['message'], message, "BUY")
+        if limit_price == "MARKET":
+            limit_price = 0
+        if (response["status"] != "SUCCESS"):
+       
+            if ('uniqueorderid' in response):
+                if (is_trade_sync_enabled):
+                    update_order_list(response['uniqueorderid'], client_code,
+                                      stock_code_ns, qty, limit_price, "Buy", "Limit/Market", "Not Placed", response['message'], "", 0, 0, "", "Adhoc")
+                return response['uniqueorderid']
+            else:
+                if (is_trade_sync_enabled):
+                    update_order_list(response['uniqueorderid'], client_code,
+                                      stock_code_ns, qty, limit_price, "Buy", "Limit/Market", "FAILED", response['message'], "", 0, 0, "", "Adhoc")
+                return ''
+        else:
+            if (is_trade_sync_enabled):
+                update_order_list(response['uniqueorderid'], client_code,
+                                  stock_code_ns, qty, limit_price, "Buy", "Limit/Market", "Placed", response['message'], "", 0, 0, "", "Adhoc")
+        
         reset()
         # root.destroy()
     else:
@@ -104,6 +125,7 @@ def sell_action():
     qty = int(quantity_entry.get())
     limit_price = limit_price_entry.get()
     stock_code_ns = stock_code_entry.get()
+    is_trade_sync_enabled = trade_sync_var.get()
 
     # Return or print the values
     logger.debug("Client Code:", client_code)
@@ -154,6 +176,27 @@ def sell_action():
         notification("Sell", message, client_code, response['uniqueorderid'])
         show_response_window(client_code,response['status'],
                              response['message'], message, "SELL")
+        if limit_price != "MARKET":
+            limit_price = 0
+        if (response["status"] != "SUCCESS"):
+        
+            if ('uniqueorderid' in response):
+                if (is_trade_sync_enabled):
+                    update_order_list(response['uniqueorderid'], client_code,
+                                      stock_code_ns, int(qty), limit_price, "Sell", "Limit/Market", "Not Placed", response['message'], "", 0, 0, "", "Adhoc")
+
+                return response['uniqueorderid']
+            else:
+                if (is_trade_sync_enabled):
+                    update_order_list("", client_code,
+                                      stock_code_ns, int(qty), limit_price, "Sell", "Limit/Market", "FAILED", response['message'], "", 0, 0, "", "Adhoc")
+
+                return ''
+        else:
+            if (is_trade_sync_enabled):
+                update_order_list(response['uniqueorderid'], client_code,
+                                  stock_code_ns, int(qty), limit_price, "Sell", "Limit/Market", "Placed", response['message'], "", 0, 0, "", "Adhoc")
+        
         reset()
     else:
         reset()
@@ -378,10 +421,19 @@ def ahdoc_order_box():
         "Buy", "Sell", "Modify", "Status", "Cancel Order"])
     direction_dropdown.grid(row=5, column=1, padx=10, pady=5)
     direction_dropdown.bind("<<ComboboxSelected>>", update_color)
+    
+    # Checkbox for Trade Sync
+    tk.Label(root, text="Do you want to trade sync?").grid(
+        row=6, column=0, padx=10, pady=5, sticky="w")
+    global trade_sync_var
+    trade_sync_var = tk.BooleanVar()
+    trade_sync_checkbox = tk.Checkbutton(root, variable=trade_sync_var)
+    trade_sync_checkbox.grid(row=6, column=1, padx=10, pady=5, sticky="w")
+
 
     # Submit Button
     submit_button = tk.Button(root, text="Submit", command=execute_action)
-    submit_button.grid(row=6, column=0, columnspan=2, pady=20)
+    submit_button.grid(row=7, column=0, columnspan=2, pady=20)
 
     # Run the application
     root.mainloop()

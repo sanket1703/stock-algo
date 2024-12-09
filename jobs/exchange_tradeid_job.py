@@ -22,9 +22,12 @@ def exchange_tradeid_job():
     # Save trade IDs into a CSV file with SNO
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(["SNO", "Exchg Order ID"])  # Header for the CSV file
-        for index, trade_id in enumerate(trade_ids, start=1):
-            writer.writerow([index, f"'{trade_id}"])
+        # Header for the CSV file
+        writer.writerow(["SNO", "Exchg Order ID", "Adhoc"])
+        index=0
+        for trade_id in trade_ids:
+            index+=1
+            writer.writerow([index, f"'{trade_id[0]}", f"'{trade_id[1]}"])
 
     logger.info(f"Trade IDs with SNO have been saved in {filename}.")
 
@@ -44,5 +47,6 @@ def extract_trade_ids(order_data):
     trade_ids = []
     for order in order_data:
         if order["Status"] == "Traded" and order["ExchangeTradeID"]:
-            trade_ids.append(str(order["ExchangeTradeID"]))
+            trade_ids.append(
+                (str(order["ExchangeTradeID"]), order["IsAdhocOrder"]))
     return trade_ids

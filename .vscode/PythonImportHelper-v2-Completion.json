@@ -386,6 +386,62 @@
         "documentation": {}
     },
     {
+        "label": "update_order_list",
+        "importPath": "utils.json.orders_json_helper",
+        "description": "utils.json.orders_json_helper",
+        "isExtraImport": true,
+        "detail": "utils.json.orders_json_helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_order_list",
+        "importPath": "utils.json.orders_json_helper",
+        "description": "utils.json.orders_json_helper",
+        "isExtraImport": true,
+        "detail": "utils.json.orders_json_helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_order_list",
+        "importPath": "utils.json.orders_json_helper",
+        "description": "utils.json.orders_json_helper",
+        "isExtraImport": true,
+        "detail": "utils.json.orders_json_helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_status",
+        "importPath": "utils.json.orders_json_helper",
+        "description": "utils.json.orders_json_helper",
+        "isExtraImport": true,
+        "detail": "utils.json.orders_json_helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_sync_status",
+        "importPath": "utils.json.orders_json_helper",
+        "description": "utils.json.orders_json_helper",
+        "isExtraImport": true,
+        "detail": "utils.json.orders_json_helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_order_list",
+        "importPath": "utils.json.orders_json_helper",
+        "description": "utils.json.orders_json_helper",
+        "isExtraImport": true,
+        "detail": "utils.json.orders_json_helper",
+        "documentation": {}
+    },
+    {
+        "label": "update_status",
+        "importPath": "utils.json.orders_json_helper",
+        "description": "utils.json.orders_json_helper",
+        "isExtraImport": true,
+        "detail": "utils.json.orders_json_helper",
+        "documentation": {}
+    },
+    {
         "label": "calculate_ema",
         "importPath": "stock_data.indicators",
         "description": "stock_data.indicators",
@@ -979,54 +1035,6 @@
         "importPath": "math",
         "description": "math",
         "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "update_order_list",
-        "importPath": "utils.json.orders_json_helper",
-        "description": "utils.json.orders_json_helper",
-        "isExtraImport": true,
-        "detail": "utils.json.orders_json_helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_order_list",
-        "importPath": "utils.json.orders_json_helper",
-        "description": "utils.json.orders_json_helper",
-        "isExtraImport": true,
-        "detail": "utils.json.orders_json_helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_status",
-        "importPath": "utils.json.orders_json_helper",
-        "description": "utils.json.orders_json_helper",
-        "isExtraImport": true,
-        "detail": "utils.json.orders_json_helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_sync_status",
-        "importPath": "utils.json.orders_json_helper",
-        "description": "utils.json.orders_json_helper",
-        "isExtraImport": true,
-        "detail": "utils.json.orders_json_helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_order_list",
-        "importPath": "utils.json.orders_json_helper",
-        "description": "utils.json.orders_json_helper",
-        "isExtraImport": true,
-        "detail": "utils.json.orders_json_helper",
-        "documentation": {}
-    },
-    {
-        "label": "update_status",
-        "importPath": "utils.json.orders_json_helper",
-        "description": "utils.json.orders_json_helper",
-        "isExtraImport": true,
-        "detail": "utils.json.orders_json_helper",
         "documentation": {}
     },
     {
@@ -2539,7 +2547,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def buy_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "peekOfCode": "def buy_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    is_trade_sync_enabled = trade_sync_var.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2548,7 +2556,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def sell_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "peekOfCode": "def sell_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    is_trade_sync_enabled = trade_sync_var.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2557,7 +2565,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def modify_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    order_id = order_id_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Limit Price:\", limit_price)\n    logger.debug(\"Stock Code:\", stock_code_ns)",
+        "peekOfCode": "def modify_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    order_id = order_id_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    logger.debug(\"Limit Price:\", limit_price)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -4384,7 +4392,7 @@
         "kind": 6,
         "importPath": "database.dto.orders",
         "description": "database.dto.orders",
-        "peekOfCode": "class Order:\n    def __init__(self, order_id, client_code, stock_code, status, exchange_trade_id, quantity, qty_traded, limit_price, trade_price, order_type, message, direction, sync_status, timestamp):\n        self.order_id = order_id\n        self.client_code = client_code\n        self.stock_code = stock_code\n        self.status = status\n        self.exchange_trade_id = exchange_trade_id\n        self.quantity = quantity\n        self.qty_traded = qty_traded\n        self.limit_price = limit_price",
+        "peekOfCode": "class Order:\n    def __init__(self, order_id, client_code, stock_code, status, exchange_trade_id, quantity, qty_traded, limit_price, trade_price, order_type, message, direction, sync_status, timestamp, adhoc):\n        self.order_id = order_id\n        self.client_code = client_code\n        self.stock_code = stock_code\n        self.status = status\n        self.exchange_trade_id = exchange_trade_id\n        self.quantity = quantity\n        self.qty_traded = qty_traded\n        self.limit_price = limit_price",
         "detail": "database.dto.orders",
         "documentation": {}
     },
@@ -4438,7 +4446,7 @@
         "kind": 2,
         "importPath": "jobs.exchange_tradeid_job",
         "description": "jobs.exchange_tradeid_job",
-        "peekOfCode": "def extract_trade_ids(order_data):\n    trade_ids = []\n    for order in order_data:\n        if order[\"Status\"] == \"Traded\" and order[\"ExchangeTradeID\"]:\n            trade_ids.append(str(order[\"ExchangeTradeID\"]))\n    return trade_ids",
+        "peekOfCode": "def extract_trade_ids(order_data):\n    trade_ids = []\n    for order in order_data:\n        if order[\"Status\"] == \"Traded\" and order[\"ExchangeTradeID\"]:\n            trade_ids.append(\n                (str(order[\"ExchangeTradeID\"]), order[\"IsAdhocOrder\"]))\n    return trade_ids",
         "detail": "jobs.exchange_tradeid_job",
         "documentation": {}
     },
@@ -4897,7 +4905,7 @@
         "kind": 2,
         "importPath": "utils.json.orders_json_helper",
         "description": "utils.json.orders_json_helper",
-        "peekOfCode": "def update_order_list(order_id, client_code, stock_code, quantity, limit_price, direction, order_type, status, message, exchange_trade_id, qty_traded, trade_price, sync_status):\n    order = Order(\n        order_id=order_id,\n        client_code=client_code,\n        stock_code=stock_code,\n        quantity=quantity,\n        limit_price=limit_price,\n        direction=direction,\n        order_type=order_type,\n        status=status,",
+        "peekOfCode": "def update_order_list(order_id, client_code, stock_code, quantity, limit_price, direction, order_type, status, message, exchange_trade_id, qty_traded, trade_price, sync_status, adhoc):\n    order = Order(\n        order_id=order_id,\n        client_code=client_code,\n        stock_code=stock_code,\n        quantity=quantity,\n        limit_price=limit_price,\n        direction=direction,\n        order_type=order_type,\n        status=status,",
         "detail": "utils.json.orders_json_helper",
         "documentation": {}
     },
@@ -4924,7 +4932,7 @@
         "kind": 2,
         "importPath": "utils.json.orders_json_helper",
         "description": "utils.json.orders_json_helper",
-        "peekOfCode": "def get_current_date():\n    # Get the current date\n    formatted_date = datetime.now().strftime(\"%-d %B %Y\")\n    # Determine the suffix for the day\n    day = datetime.now().day\n    if 4 <= day <= 20 or 24 <= day <= 30:\n        suffix = \"th\"\n    else:\n        suffix = [\"st\", \"nd\", \"rd\"][day % 10 - 1]\n    # Add suffix to the day",
+        "peekOfCode": "def get_current_date():\n    # Get the current date\n    formatted_date = datetime.now().strftime(\"%d-%m-%Y %H:%M:%S\")\n    return formatted_date",
         "detail": "utils.json.orders_json_helper",
         "documentation": {}
     },
@@ -5113,7 +5121,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def buy(buy_stocks):\n    if (get_test_mode()):prepare_buy_testdata()\n    logger.info(f\"Stock list for buy :\\n{buy_stocks}\")\n    logger.info(f\"Buy stock list:- {buy_stocks}\")\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()\n    set_buy_orders(buy_orders)\n    logger.info(\n        f\"Consolidated Buy Orders details for each client:- {buy_orders}\")",
+        "peekOfCode": "def buy(buy_stocks):\n    # if (get_test_mode()):prepare_buy_testdata()\n    logger.info(f\"Stock list for buy :\\n{buy_stocks}\")\n    logger.info(f\"Buy stock list:- {buy_stocks}\")\n    buy_algo = MidcapBuyAlgorithm(buy_stocks)\n    buy_algo.allocate_slots()\n    buy_orders = buy_algo.order_executor()\n    set_buy_orders(buy_orders)\n    logger.info(\n        f\"Consolidated Buy Orders details for each client:- {buy_orders}\")",
         "detail": "lambda_function",
         "documentation": {}
     },
