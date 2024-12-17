@@ -264,7 +264,7 @@ if __name__ == "__main__":
     #######        Jobs       ###########
     #####################################
 
-    exchange_tradeid_job()
+    # exchange_tradeid_job()
     # check_login_job()
     # clean_order_jsons_job()
 
@@ -272,4 +272,4 @@ if __name__ == "__main__":
     #########      Adhoc Jobs    #########
     ######################################
     
-    # ahdoc_order_box()
+    ahdoc_order_box()

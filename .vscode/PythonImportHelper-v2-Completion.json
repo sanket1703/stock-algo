@@ -2451,7 +2451,7 @@
         "documentation": {}
     },
     {
-        "label": "AutoTokenizer",
+        "label": "AutoModelForCausalLM",
         "importPath": "transformers",
         "description": "transformers",
         "isExtraImport": true,
@@ -2459,7 +2459,7 @@
         "documentation": {}
     },
     {
-        "label": "AutoModelForSeq2SeqLM",
+        "label": "AutoTokenizer",
         "importPath": "transformers",
         "description": "transformers",
         "isExtraImport": true,
@@ -5261,20 +5261,11 @@
         "documentation": {}
     },
     {
-        "label": "generate_rest_request",
-        "kind": 2,
-        "importPath": "llm_request",
-        "description": "llm_request",
-        "peekOfCode": "def generate_rest_request(prompt):\n    \"\"\"\n    Generate a REST API request using Flan-T5.\n    \"\"\"\n    inputs = tokenizer(prompt, return_tensors=\"pt\")\n    outputs = model.generate(inputs.input_ids, max_length=100,\n                             num_beams=5, no_repeat_ngram_size=2, early_stopping=True)\n    return tokenizer.decode(outputs[0], skip_special_tokens=True)\n# Example usage\nprompt = \"\"\"You are a highly advanced AI assistant specializing in generating REST API requests based on natural language instructions. Your goal is to understand the user's request and create a complete and properly formatted REST API request with the required URL, HTTP method, headers, and body. Follow these rules:",
-        "detail": "llm_request",
-        "documentation": {}
-    },
-    {
         "label": "model_name",
         "kind": 5,
         "importPath": "llm_request",
         "description": "llm_request",
-        "peekOfCode": "model_name = \"google/flan-t5-base\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSeq2SeqLM.from_pretrained(model_name)\ndef generate_rest_request(prompt):\n    \"\"\"\n    Generate a REST API request using Flan-T5.\n    \"\"\"\n    inputs = tokenizer(prompt, return_tensors=\"pt\")\n    outputs = model.generate(inputs.input_ids, max_length=100,\n                             num_beams=5, no_repeat_ngram_size=2, early_stopping=True)",
+        "peekOfCode": "model_name = \"gpt2\"  # Replace with any free LLM\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForCausalLM.from_pretrained(model_name)\ninputs = tokenizer(\"Hello, world!\", return_tensors=\"pt\")\noutputs = model.generate(inputs[\"input_ids\"], max_length=50)\nprint(tokenizer.decode(outputs[0]))",
         "detail": "llm_request",
         "documentation": {}
     },
@@ -5283,7 +5274,7 @@
         "kind": 5,
         "importPath": "llm_request",
         "description": "llm_request",
-        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSeq2SeqLM.from_pretrained(model_name)\ndef generate_rest_request(prompt):\n    \"\"\"\n    Generate a REST API request using Flan-T5.\n    \"\"\"\n    inputs = tokenizer(prompt, return_tensors=\"pt\")\n    outputs = model.generate(inputs.input_ids, max_length=100,\n                             num_beams=5, no_repeat_ngram_size=2, early_stopping=True)\n    return tokenizer.decode(outputs[0], skip_special_tokens=True)",
+        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForCausalLM.from_pretrained(model_name)\ninputs = tokenizer(\"Hello, world!\", return_tensors=\"pt\")\noutputs = model.generate(inputs[\"input_ids\"], max_length=50)\nprint(tokenizer.decode(outputs[0]))",
         "detail": "llm_request",
         "documentation": {}
     },
@@ -5292,25 +5283,25 @@
         "kind": 5,
         "importPath": "llm_request",
         "description": "llm_request",
-        "peekOfCode": "model = AutoModelForSeq2SeqLM.from_pretrained(model_name)\ndef generate_rest_request(prompt):\n    \"\"\"\n    Generate a REST API request using Flan-T5.\n    \"\"\"\n    inputs = tokenizer(prompt, return_tensors=\"pt\")\n    outputs = model.generate(inputs.input_ids, max_length=100,\n                             num_beams=5, no_repeat_ngram_size=2, early_stopping=True)\n    return tokenizer.decode(outputs[0], skip_special_tokens=True)\n# Example usage",
+        "peekOfCode": "model = AutoModelForCausalLM.from_pretrained(model_name)\ninputs = tokenizer(\"Hello, world!\", return_tensors=\"pt\")\noutputs = model.generate(inputs[\"input_ids\"], max_length=50)\nprint(tokenizer.decode(outputs[0]))",
         "detail": "llm_request",
         "documentation": {}
     },
     {
-        "label": "prompt",
+        "label": "inputs",
         "kind": 5,
         "importPath": "llm_request",
         "description": "llm_request",
-        "peekOfCode": "prompt = \"\"\"You are a highly advanced AI assistant specializing in generating REST API requests based on natural language instructions. Your goal is to understand the user's request and create a complete and properly formatted REST API request with the required URL, HTTP method, headers, and body. Follow these rules:\n1. Identify the endpoint, method(GET, POST, etc.), and query or body parameters from the input.\n2. Include sample data for placeholders.\n3. Format the response in proper JSON format for easy integration.\n# Example:\nInput: \"Get the current stock price for Tesla.\"\nOutput:\n{\n    \"method\": \"GET\",\n    \"url\": \"https://api.example.com/stocks?symbol={{symbol}}}\",",
+        "peekOfCode": "inputs = tokenizer(\"Hello, world!\", return_tensors=\"pt\")\noutputs = model.generate(inputs[\"input_ids\"], max_length=50)\nprint(tokenizer.decode(outputs[0]))",
         "detail": "llm_request",
         "documentation": {}
     },
     {
-        "label": "rest_request",
+        "label": "outputs",
         "kind": 5,
         "importPath": "llm_request",
         "description": "llm_request",
-        "peekOfCode": "rest_request = generate_rest_request(prompt)\nprint(\"Generated REST Request:\")\nprint(rest_request)",
+        "peekOfCode": "outputs = model.generate(inputs[\"input_ids\"], max_length=50)\nprint(tokenizer.decode(outputs[0]))",
         "detail": "llm_request",
         "documentation": {}
     },
