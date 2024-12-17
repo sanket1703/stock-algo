@@ -1,0 +1,26 @@
+2024-12-12 11:49:04.603 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1100001FTCT1215 has been updated successfully.
+2024-12-12 11:49:04.604 | ERROR    | brokers.motilal.order:is_order_completed:129 - Could not fetch the order details. Either the order_id expired or could not call MOFSL
+2024-12-12 11:49:04.604 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:49:05.374 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1100001FTCT1211 has been updated successfully.
+2024-12-12 11:49:05.384 | ERROR    | brokers.motilal.order:is_order_completed:129 - Could not fetch the order details. Either the order_id expired or could not call MOFSL
+2024-12-12 11:49:05.385 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:49:05.425 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-12 11:49:06.154 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1100001DEEPAK17 has been updated successfully.
+2024-12-12 11:49:06.154 | ERROR    | brokers.motilal.order:is_order_completed:129 - Could not fetch the order details. Either the order_id expired or could not call MOFSL
+2024-12-12 11:49:06.154 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:49:06.252 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-12 11:49:07.053 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-12 11:49:07.867 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-12 11:49:08.647 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-12 11:49:09.752 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-12-12 11:49:09.757 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-12-12 11:49:09.762 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-12-12 11:49:09.763 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-12-12 11:49:09.769 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-12-12 11:49:09.771 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-12-12 11:49:09.771 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/orders.json has been reset successfully.
+2024-12-12 11:49:16.158 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-12-12 11:49:26.162 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-12-12 11:49:36.167 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-12-12 11:49:46.170 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
+2024-12-12 11:49:56.174 | INFO     | algorithms.Trade_Sync:validate_orders:36 - No orders placed. Nothing to process
