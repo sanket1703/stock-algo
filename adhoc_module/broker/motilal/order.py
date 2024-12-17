@@ -95,6 +95,9 @@ def buy_action():
                              response['message'], message, "BUY")
         if limit_price == "MARKET":
             limit_price = 0
+        else:
+            limit_price = round(float(limit_price), 4)
+            
         if (response["status"] != "SUCCESS"):
        
             if ('uniqueorderid' in response):
@@ -176,10 +179,11 @@ def sell_action():
         notification("Sell", message, client_code, response['uniqueorderid'])
         show_response_window(client_code,response['status'],
                              response['message'], message, "SELL")
-        if limit_price != "MARKET":
+        if limit_price == "MARKET":
             limit_price = 0
+        else:
+            limit_price = round(float(limit_price), 4)
         if (response["status"] != "SUCCESS"):
-        
             if ('uniqueorderid' in response):
                 if (is_trade_sync_enabled):
                     update_order_list(response['uniqueorderid'], client_code,
