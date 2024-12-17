@@ -37,15 +37,15 @@ def place_buy_order(client_code,stock_code_nse,qty,Mofsl):
         notification_error("BUY",response,client_code)
         if('uniqueorderid' in response):
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Buy", "Limit", "Not Placed", response['message'], "",0, 0, "")
+                              stock_code_nse, qty, ltp, "Buy", "Limit", "Not Placed", response['message'], "",0, 0, "", "FA13")
             return response['uniqueorderid']
         else: 
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, qty, ltp, "Buy", "Limit", "FAILED", response['message'], "", 0, 0, "")
+                              stock_code_nse, qty, ltp, "Buy", "Limit", "FAILED", response['message'], "", 0, 0, "","FA13")
             return ''
     else:
         update_order_list(response['uniqueorderid'], client_code,
-                      stock_code_nse, qty, ltp, "Buy", "Limit", "Placed", response['message'], "", 0, 0, "")
+                      stock_code_nse, qty, ltp, "Buy", "Limit", "Placed", response['message'], "", 0, 0, "","FA13")
     return response['uniqueorderid']
 
 def notification_error(direction,message_text,client):
@@ -88,17 +88,17 @@ def place_sell_order(client_code, stock_code_nse, Mofsl):
         notification_error("SELL",response,client_code)
         if('uniqueorderid' in response):
             update_order_list(response['uniqueorderid'], client_code,
-                              stock_code_nse, int(qty), ltp, "Sell", "Limit", "Not Placed", response['message'], "", 0, 0, "")
+                              stock_code_nse, int(qty), ltp, "Sell", "Limit", "Not Placed", response['message'], "", 0, 0, "","FA13")
 
             return response['uniqueorderid']
         else:
             update_order_list("", client_code,
-                              stock_code_nse, int(qty), ltp, "Sell", "Limit", "FAILED", response['message'], "", 0, 0, "")
+                              stock_code_nse, int(qty), ltp, "Sell", "Limit", "FAILED", response['message'], "", 0, 0, "","FA13")
 
             return ''
     else:
         update_order_list(response['uniqueorderid'], client_code,
-                      stock_code_nse, int(qty), ltp, "Sell", "Limit", "Placed", response['message'], "",0,0,"")
+                      stock_code_nse, int(qty), ltp, "Sell", "Limit", "Placed", response['message'], "",0,0,"","FA13")
 
     return response['uniqueorderid']
 

@@ -1,792 +1,110 @@
-2024-12-04 10:29:52             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:29:52             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:29:53             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:29:53             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:29:53             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:29:53             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:29:53             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
-2024-12-04 10:29:54             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:29:54             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:29:54             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:29:54             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:30:57             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:30:59             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:30:59             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
+2024-12-04 10:31:00             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:01             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:11             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
 2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
 2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
 2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
 2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilaize GetPosition request send
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             GetPosition request sent Successfully
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
+2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:12             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
 2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
 2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
 2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
 2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
 2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:31:13             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilaize GetPosition request send
+2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
 2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
 2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             GetPosition request sent Successfully
-2024-12-04 10:33:24             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:33:25             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:33:25             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:33:25             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:33:25             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:33:25             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:33:25             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:33:27             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:33:27             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:33:27             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:33:27             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:35:52             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:35:52             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:35:53             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:35:53             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:35:53             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:35:53             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:35:53             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:35:57             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:35:57             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:35:57             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:35:57             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:41:16             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:41:17             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:41:17             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:41:17             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:41:17             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:41:17             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:41:17             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
-2024-12-04 10:41:19             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:41:19             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:41:19             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:41:19             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:41:32             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:41:33             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:41:33             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:41:33             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:41:33             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:41:33             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:41:33             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:41:36             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:41:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:41:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:41:36             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:43:29             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:43:29             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:43:29             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:43:29             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:43:29             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:43:29             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:43:29             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:43:31             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:43:31             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:43:31             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:43:31             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:47:16             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:47:16             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:47:17             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:47:17             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:47:17             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:47:17             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:47:17             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:47:18             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:47:18             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:47:18             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:47:18             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:53:39             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:53:40             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:53:40             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:53:40             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:53:40             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:53:40             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:53:40             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:53:41             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:53:41             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:53:41             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:53:41             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:56:19             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:56:20             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:56:20             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:56:20             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:56:20             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:56:20             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:56:20             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:56:23             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:56:23             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:56:23             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:56:23             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 10:56:33             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 10:56:33             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 10:56:33             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 10:56:33             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 10:56:33             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:56:33             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:56:33             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 10:56:35             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 10:56:35             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 10:56:35             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 10:56:35             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 11:13:27             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:13:27             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:13:27             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:13:27             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:13:27             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:13:27             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:13:27             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
-2024-12-04 11:13:28             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 11:13:28             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:13:28             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:13:28             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 11:16:38             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:16:39             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:16:39             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:16:39             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:16:39             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:16:39             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:16:39             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:16:41             SUCCESS             MOFSLOPENAPI.py             Initilaize PlaceOrder request send
-2024-12-04 11:16:41             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:16:41             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:16:41             SUCCESS             MOFSLOPENAPI.py             PlaceOrder request sent Successfully
-2024-12-04 11:17:33             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:17:34             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:35             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:36             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:17:46             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:17:47             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:48             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:17:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:17:50             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:17:50             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:00             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:01             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:02             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:12             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:13             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:15             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:25             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:26             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:29             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:29             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:29             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:30             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:31             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:41             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:42             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:43             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:44             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:45             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:55             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:55             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:55             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:55             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:55             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:56             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:18:57             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:18:58             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:08             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:09             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:10             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:11             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:11             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:21             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:22             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:23             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:24             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:24             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:34             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:35             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:37             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:37             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:37             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:37             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:37             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:37             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:47             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:48             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:19:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:19:50             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:19:50             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:00             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:00             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:01             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:02             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:03             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:14             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:15             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:25             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:26             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:27             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:28             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:29             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:29             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
-2024-12-04 11:20:39             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
-2024-12-04 11:20:40             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:25:43             ERROR             MOFSLOPENAPI.py             Invalid TOTP Value | Please Provide Correct TOTP
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
-2024-12-04 11:25:43             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:31:13             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilaize GetPosition request send
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             GetPosition request sent Successfully
+2024-12-04 10:31:14             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilaize GetOrderDetailByUniqueorderID request send
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             GetManufacturerDELL
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             GetOrderDetailByUniqueorderID request sent Successfully
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilaize GetPosition request send
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2024-12-04 10:31:15             SUCCESS             MOFSLOPENAPI.py             GetPosition request sent Successfully

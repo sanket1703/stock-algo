@@ -25,6 +25,7 @@ def status_color(status):
         "Traded": "green",
         "Failed": "red",
         "Placed": "blue",
+        "Not Placed":"red",
     }.get(status, "lightgrey")
 
 # Get current date and last updated timestamp
@@ -110,7 +111,7 @@ def update_table(n):
             },
             'backgroundColor': status_color(status),
             'color': text_color
-        } for status in ["Traded", "Failed", "Placed"]
+        } for status in ["Traded", "Failed", "Placed","Not Placed"]
     ]
 
     # Header style change

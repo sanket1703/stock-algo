@@ -1,0 +1,105 @@
+2024-12-05 10:45:48.924 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-05 10:45:49.787 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-05 10:45:50.935 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-12-05 10:45:50.941 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-12-05 10:45:50.947 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-12-05 10:45:50.949 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-12-05 10:45:50.951 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-12-05 10:45:50.952 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-12-05 10:45:50.953 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/orders.json has been reset successfully.
+2024-12-05 10:46:35.106 | INFO     | lambda_function:buy:36 - Stock list for buy :
+['CDSL', 'BDL']
+2024-12-05 10:46:35.107 | INFO     | lambda_function:buy:38 - Buy stock list:- ['CDSL', 'BDL']
+2024-12-05 10:46:35.657 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['BEL.NS', 'BSE.NS', 'ZOMATO.NS', 'POLICYBZR.NS', 'APARINDS.NS', 'DIXON.NS', 'OFSS.NS', 'CDSL', 'BDL']
+2024-12-05 10:46:35.658 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:73 - Final buy list of Stocks :- ['CDSL', 'BDL']
+2024-12-05 10:46:35.658 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:74 - Total slots which were available before allocating slots:- 6
+2024-12-05 10:46:35.658 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-05 10:46:35.658 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-12-05 10:46:35.659 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-05 10:46:36.431 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for DEEPAK17
+2024-12-05 10:47:03.701 | INFO     | lambda_function:buy:36 - Stock list for buy :
+['CDSL', 'BDL']
+2024-12-05 10:47:03.702 | INFO     | lambda_function:buy:38 - Buy stock list:- ['CDSL', 'BDL']
+2024-12-05 10:47:04.238 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:65 - CDSL already present in the slots. Not buying CDSL
+2024-12-05 10:47:04.239 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:65 - BDL already present in the slots. Not buying BDL
+2024-12-05 10:47:04.264 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['BEL.NS', 'BSE.NS', 'ZOMATO.NS', 'POLICYBZR.NS', 'APARINDS.NS', 'DIXON.NS', 'OFSS.NS', 'CDSL', 'BDL']
+2024-12-05 10:47:04.264 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:73 - Final buy list of Stocks :- []
+2024-12-05 10:47:04.264 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:74 - Total slots which were available before allocating slots:- 4
+2024-12-05 10:47:04.265 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-05 10:47:04.265 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-12-05 10:47:04.265 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-05 10:47:04.999 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for DEEPAK17
+2024-12-05 10:47:05.283 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for DEEPAK17 completed.
+2024-12-05 10:47:05.283 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-05 10:47:05.284 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-12-05 10:47:05.285 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-05 10:47:06.019 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for WEALTH666
+2024-12-05 10:47:06.300 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for WEALTH666 completed.
+2024-12-05 10:47:06.302 | INFO     | lambda_function:buy:43 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [], 'date': '2024-12-05 10:47:06', 'WEALTH666': []}
+2024-12-05 10:48:20.213 | INFO     | lambda_function:buy:36 - Stock list for buy :
+['CDSL.NS', 'BDL.NS']
+2024-12-05 10:48:20.213 | INFO     | lambda_function:buy:38 - Buy stock list:- ['CDSL.NS', 'BDL.NS']
+2024-12-05 10:48:20.819 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['BEL.NS', 'BSE.NS', 'ZOMATO.NS', 'POLICYBZR.NS', 'APARINDS.NS', 'DIXON.NS', 'OFSS.NS', 'CDSL', 'BDL', 'CDSL.NS', 'BDL.NS']
+2024-12-05 10:48:20.820 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:73 - Final buy list of Stocks :- ['CDSL.NS', 'BDL.NS']
+2024-12-05 10:48:20.820 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:74 - Total slots which were available before allocating slots:- 4
+2024-12-05 10:48:20.820 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-05 10:48:20.821 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-12-05 10:48:20.821 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-05 10:48:21.577 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for DEEPAK17
+2024-12-05 10:48:24.531 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 14 CDSL.NS for DEEPAK17 
+2024-12-05 10:48:24.761 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:48:25.808 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500001DEEPAK17 added successfully to order list.
+2024-12-05 10:48:25.982 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 21 BDL.NS for DEEPAK17 
+2024-12-05 10:48:26.200 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:48:27.209 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500002DEEPAK17 added successfully to order list.
+2024-12-05 10:48:27.209 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for DEEPAK17 completed.
+2024-12-05 10:48:27.209 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-05 10:48:27.209 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-12-05 10:48:27.209 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-05 10:48:27.941 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for WEALTH666
+2024-12-05 10:48:28.298 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 31 CDSL.NS for WEALTH666 
+2024-12-05 10:48:28.527 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:48:29.573 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500001WEALTH666 added successfully to order list.
+2024-12-05 10:48:29.676 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 46 BDL.NS for WEALTH666 
+2024-12-05 10:48:29.906 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:48:30.912 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500002WEALTH666 added successfully to order list.
+2024-12-05 10:48:30.912 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for WEALTH666 completed.
+2024-12-05 10:48:30.915 | INFO     | lambda_function:buy:43 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('0500001DEEPAK17', 'CDSL.NS'), ('0500002DEEPAK17', 'BDL.NS')], 'date': '2024-12-05 10:48:30', 'WEALTH666': [('0500001WEALTH666', 'CDSL.NS'), ('0500002WEALTH666', 'BDL.NS')]}
+2024-12-05 10:51:34.686 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-05 10:51:35.493 | INFO     | jobs.mo_login_check_job:check_login_job:29 - {'status': 'SUCCESS', 'message': 'NO RECORDS FOUND', 'errorcode': '', 'data': None}
+2024-12-05 10:51:36.545 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/buy_orders.json has been reset successfully.
+2024-12-05 10:51:36.547 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/sell_orders.json has been reset successfully.
+2024-12-05 10:51:36.548 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_buy_orders.json has been reset successfully.
+2024-12-05 10:51:36.549 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/filled_orders/filled_sell_orders.json has been reset successfully.
+2024-12-05 10:51:36.550 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_buy_orders.json has been reset successfully.
+2024-12-05 10:51:36.552 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/unfilled_orders/unfilled_sell_orders.json has been reset successfully.
+2024-12-05 10:51:36.553 | INFO     | jobs.clean_json:empty_json:18 - Order JSON at order_book/orders.json has been reset successfully.
+2024-12-05 10:51:41.411 | INFO     | lambda_function:buy:36 - Stock list for buy :
+['CDSL.NS', 'BDL.NS']
+2024-12-05 10:51:41.412 | INFO     | lambda_function:buy:38 - Buy stock list:- ['CDSL.NS', 'BDL.NS']
+2024-12-05 10:51:41.968 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['BEL.NS', 'BSE.NS', 'ZOMATO.NS', 'POLICYBZR.NS', 'APARINDS.NS', 'DIXON.NS', 'OFSS.NS', 'CDSL.NS', 'BDL.NS']
+2024-12-05 10:51:41.969 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:73 - Final buy list of Stocks :- ['CDSL.NS', 'BDL.NS']
+2024-12-05 10:51:41.969 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:74 - Total slots which were available before allocating slots:- 6
+2024-12-05 10:51:41.970 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-05 10:51:41.970 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-12-05 10:51:41.970 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-05 10:51:42.714 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for DEEPAK17
+2024-12-05 10:51:43.340 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 9 CDSL.NS for DEEPAK17 
+2024-12-05 10:51:43.566 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:51:44.587 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500003DEEPAK17 added successfully to order list.
+2024-12-05 10:51:44.762 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 14 BDL.NS for DEEPAK17 
+2024-12-05 10:51:45.006 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:51:46.685 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500004DEEPAK17 added successfully to order list.
+2024-12-05 10:51:46.686 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for DEEPAK17 completed.
+2024-12-05 10:51:46.686 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-05 10:51:46.686 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-12-05 10:51:46.686 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-05 10:51:47.510 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for WEALTH666
+2024-12-05 10:51:47.872 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 20 CDSL.NS for WEALTH666 
+2024-12-05 10:51:48.144 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:51:49.144 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500003WEALTH666 added successfully to order list.
+2024-12-05 10:51:49.246 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 30 BDL.NS for WEALTH666 
+2024-12-05 10:51:49.470 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-05 10:51:50.486 | INFO     | utils.json.orders_json_helper:update_order_list:45 - Order 0500004WEALTH666 added successfully to order list.
+2024-12-05 10:51:50.486 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for WEALTH666 completed.
+2024-12-05 10:51:50.488 | INFO     | lambda_function:buy:43 - Consolidated Buy Orders details for each client:- {'DEEPAK17': [('0500003DEEPAK17', 'CDSL.NS'), ('0500004DEEPAK17', 'BDL.NS')], 'date': '2024-12-05 10:51:50', 'WEALTH666': [('0500003WEALTH666', 'CDSL.NS'), ('0500004WEALTH666', 'BDL.NS')]}

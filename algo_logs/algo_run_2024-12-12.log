@@ -1,0 +1,520 @@
+2024-12-12 11:49:56.593 | INFO     | lambda_function:buy:36 - Stock list for buy :
+['IRFC.NS']
+2024-12-12 11:49:56.593 | INFO     | lambda_function:buy:38 - Buy stock list:- ['IRFC.NS']
+2024-12-12 11:49:57.166 | INFO     | database.dao.slots_dao:update_slots:24 - Slots updated:- ['BEL.NS', 'BSE.NS', 'ZOMATO.NS', 'POLICYBZR.NS', 'APARINDS.NS', 'DIXON.NS', 'OFSS.NS', 'CDSL.NS', 'BDL.NS', 'HUDCO.NS', 'MCX.NS', 'KALYANKJIL.NS', 'IRFC.NS']
+2024-12-12 11:49:57.166 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:73 - Final buy list of Stocks :- ['IRFC.NS']
+2024-12-12 11:49:57.167 | INFO     | algorithms.Midcap_Buy_Algorithm:allocate_slots:74 - Total slots which were available before allocating slots:- 1
+2024-12-12 11:49:57.167 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-12 11:49:57.167 | INFO     | utils.helpers.print_client:print_client:5 - FTCT1219  FTCT1219    FTCT1219    FTCT1219    FTCT1219    FTCT1219    FTCT1219    FTCT1219    FTCT1219
+2024-12-12 11:49:57.168 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-12 11:49:57.910 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for FTCT1219
+2024-12-12 11:49:59.483 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 108 IRFC.NS for FTCT1219 
+2024-12-12 11:49:59.731 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-12-12 11:49:59.732 | INFO     | utils.json.orders_json_helper:update_order_list:46 - Order 1200001FTCT1219 added successfully to order list.
+2024-12-12 11:49:59.732 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for FTCT1219 completed.
+2024-12-12 11:49:59.733 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-12 11:49:59.733 | INFO     | utils.helpers.print_client:print_client:5 - FTCT1215  FTCT1215    FTCT1215    FTCT1215    FTCT1215    FTCT1215    FTCT1215    FTCT1215    FTCT1215
+2024-12-12 11:49:59.733 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-12 11:50:00.454 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for FTCT1215
+2024-12-12 11:50:00.792 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 132 IRFC.NS for FTCT1215 
+2024-12-12 11:50:01.041 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-12-12 11:50:01.042 | INFO     | utils.json.orders_json_helper:update_order_list:46 - Order 1200001FTCT1215 added successfully to order list.
+2024-12-12 11:50:01.042 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for FTCT1215 completed.
+2024-12-12 11:50:01.043 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-12 11:50:01.043 | INFO     | utils.helpers.print_client:print_client:5 - FTCT1211  FTCT1211    FTCT1211    FTCT1211    FTCT1211    FTCT1211    FTCT1211    FTCT1211    FTCT1211
+2024-12-12 11:50:01.043 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-12 11:50:01.760 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for FTCT1211
+2024-12-12 11:50:02.103 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 123 IRFC.NS for FTCT1211 
+2024-12-12 11:50:02.414 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Order Placed Successfully
+2024-12-12 11:50:02.415 | INFO     | utils.json.orders_json_helper:update_order_list:46 - Order 1200001FTCT1211 added successfully to order list.
+2024-12-12 11:50:02.415 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for FTCT1211 completed.
+2024-12-12 11:50:02.416 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-12 11:50:02.416 | INFO     | utils.helpers.print_client:print_client:5 - DEEPAK17  DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17    DEEPAK17
+2024-12-12 11:50:02.416 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-12 11:50:03.147 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for DEEPAK17
+2024-12-12 11:50:03.480 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 643 IRFC.NS for DEEPAK17 
+2024-12-12 11:50:03.665 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-12 11:50:04.698 | INFO     | utils.json.orders_json_helper:update_order_list:46 - Order 1200001DEEPAK17 added successfully to order list.
+2024-12-12 11:50:04.699 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for DEEPAK17 completed.
+2024-12-12 11:50:04.699 | INFO     | utils.helpers.print_client:print_client:4 - ############################################################################################
+2024-12-12 11:50:04.699 | INFO     | utils.helpers.print_client:print_client:5 - WEALTH666  WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666    WEALTH666
+2024-12-12 11:50:04.699 | INFO     | utils.helpers.print_client:print_client:6 - ############################################################################################
+2024-12-12 11:50:05.393 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:44 - Initiating Position sizing for WEALTH666
+2024-12-12 11:50:05.726 | INFO     | brokers.motilal.order:place_buy_order:15 - Placing buy order of 1375 IRFC.NS for WEALTH666 
+2024-12-12 11:50:05.930 | INFO     | brokers.motilal.order:place_buy_order:34 - PlaceOrder for Buy Message:- Oops Sorry! Request Cannot Be Processed Due To Insuffficient Margin
+2024-12-12 11:50:06.938 | INFO     | utils.json.orders_json_helper:update_order_list:46 - Order 1200001WEALTH666 added successfully to order list.
+2024-12-12 11:50:06.938 | INFO     | algorithms.Position_Sizing_Buy:position_sizing:65 - Position sizing for WEALTH666 completed.
+2024-12-12 11:50:06.940 | INFO     | lambda_function:buy:43 - Consolidated Buy Orders details for each client:- {'FTCT1219': [('1200001FTCT1219', 'IRFC.NS')], 'date': '2024-12-12 11:50:06', 'FTCT1215': [('1200001FTCT1215', 'IRFC.NS')], 'FTCT1211': [('1200001FTCT1211', 'IRFC.NS')], 'DEEPAK17': [('1200001DEEPAK17', 'IRFC.NS')], 'WEALTH666': [('1200001WEALTH666', 'IRFC.NS')]}
+2024-12-12 11:50:06.994 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:06.994 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:50:06.995 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:07.798 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:07.798 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:50:07.799 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:08.586 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:08.586 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:50:08.587 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:09.340 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:50:09.340 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:20.128 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:20.129 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:50:20.129 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:20.925 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:20.925 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:50:20.926 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:21.693 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:21.694 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:50:21.694 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:22.492 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:50:22.492 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:23.271 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:50:23.272 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:34.392 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:34.393 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:50:34.393 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:35.194 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:35.195 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:50:35.196 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:37.215 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:37.215 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:50:37.216 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:38.079 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:50:38.079 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:38.880 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:50:38.880 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:49.671 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:49.671 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:50:49.672 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:50.435 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:50.436 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:50:50.436 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:51.237 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:50:51.237 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:50:51.239 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:52.049 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:50:52.049 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:50:52.827 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:50:52.827 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:03.657 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:03.658 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:51:03.658 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:04.448 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:04.449 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:51:04.449 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:05.256 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:05.257 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:51:05.257 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:06.047 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:51:06.047 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:07.367 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:51:07.368 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:18.145 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:18.145 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:51:18.145 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:18.932 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:18.932 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:51:18.932 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:19.740 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:19.740 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:51:19.740 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:20.523 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:51:20.523 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:21.305 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:51:21.305 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:32.109 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:32.109 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:51:32.109 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:32.891 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:32.891 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:51:32.891 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:33.643 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:33.643 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:51:33.643 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:34.430 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:51:34.430 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:35.193 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:51:35.193 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:45.968 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:45.968 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:51:45.968 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:46.751 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:46.751 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:51:46.751 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:47.518 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:47.518 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:51:47.518 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:48.285 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:51:48.285 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:49.068 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:51:49.068 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:51:59.806 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:51:59.822 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:51:59.822 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:00.635 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:00.635 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:52:00.635 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:01.418 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:01.418 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:52:01.418 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:02.185 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:52:02.185 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:02.967 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:52:02.967 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:13.783 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:13.783 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:52:13.783 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:14.550 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:14.566 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:52:14.566 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:15.427 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:15.427 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:52:15.427 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:16.240 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:52:16.240 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:17.149 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:52:17.149 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:27.969 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:27.969 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:52:27.969 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:28.736 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:28.736 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:52:28.736 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:29.518 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:29.518 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:52:29.534 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:30.317 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:52:30.317 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:31.100 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:52:31.100 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:41.869 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:41.869 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:52:41.869 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:42.643 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:42.643 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:52:42.643 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:43.442 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:43.442 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:52:43.442 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:44.225 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:52:44.225 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:44.992 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:52:44.992 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:55.860 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:55.860 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:52:55.860 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:56.612 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:56.612 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:52:56.612 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:57.378 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:52:57.378 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:52:57.378 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:58.162 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:52:58.162 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:52:58.928 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:52:58.928 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:09.733 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:09.733 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:53:09.733 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:10.466 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:10.466 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:53:10.475 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:11.287 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:11.287 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:53:11.287 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:12.101 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:53:12.101 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:12.900 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:53:12.900 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:23.719 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:23.719 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:53:23.719 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:24.517 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:24.517 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:53:24.517 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:25.284 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:25.284 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:53:25.284 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:26.099 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:53:26.099 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:26.897 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:53:26.897 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:37.685 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:37.685 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:53:37.685 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:38.499 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:38.499 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:53:38.499 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:39.267 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:39.267 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:53:39.267 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:40.049 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:53:40.049 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:40.830 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:53:40.830 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:51.609 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:51.609 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:53:51.609 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:52.392 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:52.392 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:53:52.392 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:53.190 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:53:53.190 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:53:53.190 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:53.989 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:53:53.989 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:53:54.757 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:53:54.757 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:05.543 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:05.543 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:54:05.543 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:06.342 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:06.342 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:54:06.342 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:07.125 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:07.140 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:54:07.140 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:07.908 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:54:07.908 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:08.706 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:54:08.706 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:19.558 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:19.558 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:54:19.558 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:20.342 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:20.342 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:54:20.342 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:21.139 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:21.139 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:54:21.139 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:21.937 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:54:21.937 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:22.720 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:54:22.720 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:33.524 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:33.524 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:54:33.524 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:34.416 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:34.416 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:54:34.416 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:35.230 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:35.246 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:54:35.246 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:35.997 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:54:35.997 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:36.780 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:54:36.780 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:47.570 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:47.570 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:54:47.570 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:48.321 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:48.321 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:54:48.321 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:49.089 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:54:49.104 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:54:49.104 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:49.871 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:54:49.871 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:54:50.654 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:54:50.654 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:01.427 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:01.427 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:55:01.427 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:02.226 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:02.226 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:55:02.226 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:02.992 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:02.992 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:55:02.992 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:03.791 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:55:03.791 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:04.574 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:55:04.574 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:15.414 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:15.414 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:55:15.414 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:16.165 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:16.165 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:55:16.165 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:16.997 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:16.997 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:55:16.997 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:17.764 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:55:17.764 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:18.527 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:55:18.527 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:29.321 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:29.321 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:55:29.321 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:30.102 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:30.103 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:55:30.103 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:30.901 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:30.901 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:55:30.901 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:31.684 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:55:31.684 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:32.455 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:55:32.455 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:43.226 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:43.226 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:55:43.226 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:44.008 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:44.008 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:55:44.008 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:44.776 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:44.776 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:55:44.776 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:45.559 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:55:45.559 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:46.296 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:55:46.296 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:57.100 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:57.100 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:55:57.100 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:57.851 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:57.867 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:55:57.867 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:58.813 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:55:58.813 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:55:58.813 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:55:59.856 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:55:59.856 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:00.669 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:56:00.669 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:11.467 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:11.467 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:56:11.467 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:12.250 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:12.250 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:56:12.250 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:13.032 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:13.048 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:56:13.048 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:13.799 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:56:13.799 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:14.582 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:56:14.582 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:25.398 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:25.398 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:56:25.398 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:26.212 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:26.212 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:56:26.212 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:27.042 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:27.042 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:56:27.042 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:27.823 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:56:27.823 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:28.611 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:56:28.611 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:39.377 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:39.377 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:56:39.377 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:40.128 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:40.128 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:56:40.128 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:40.895 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:40.895 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:56:40.895 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:41.663 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:56:41.663 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:42.446 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:56:42.446 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:53.317 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:53.317 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:56:53.317 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:54.131 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:54.131 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:56:54.131 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:54.944 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:56:54.944 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:56:54.944 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:55.728 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:56:55.728 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:56:56.492 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:56:56.492 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:07.366 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:07.366 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:57:07.366 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:08.181 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:08.181 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:57:08.181 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:09.010 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:09.026 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:57:09.026 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:09.839 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:57:09.839 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:10.707 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:57:10.707 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:21.537 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:21.537 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:57:21.537 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:22.372 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:22.372 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:57:22.372 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:23.200 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:23.200 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:57:23.200 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:24.029 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:57:24.029 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:24.878 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:57:24.878 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:35.889 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:35.890 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:57:35.890 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:36.789 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:36.789 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:57:36.790 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:37.645 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:37.646 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:57:37.646 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:38.498 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:57:38.499 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:39.414 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:57:39.415 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:42.684 | INFO     | utils.json.orders_json_helper:update_sync_status:115 - Order with OrderID 1200001FTCT1219 has been Synced successfully.
+2024-12-12 11:57:42.841 | INFO     | utils.json.orders_json_helper:update_sync_status:115 - Order with OrderID 1200001FTCT1215 has been Synced successfully.
+2024-12-12 11:57:42.933 | INFO     | utils.json.orders_json_helper:update_sync_status:115 - Order with OrderID 1200001FTCT1211 has been Synced successfully.
+2024-12-12 11:57:46.956 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:10 - Extraction of Exchange Trade Id started.
+2024-12-12 11:57:46.958 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:32 - Trade IDs with SNO have been saved in order_book/trades/2024-12-12_TRADEID.csv.
+2024-12-12 11:57:46.958 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:40 - Sending email of the csv.
+2024-12-12 11:57:48.930 | INFO     | jobs.exchange_tradeid_job:exchange_tradeid_job:42 - Extraction of Exchange Trade Id completed.
+2024-12-12 11:57:50.268 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:50.269 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:57:50.269 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:51.114 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:51.115 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:57:51.115 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:51.965 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:57:51.966 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:57:51.967 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:52.817 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:57:52.818 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:57:53.683 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:57:53.683 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:05.132 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:58:05.148 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:58:05.148 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:06.004 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:58:06.004 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:58:06.004 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:06.822 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:58:06.835 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:58:06.835 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:07.673 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:58:07.673 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:08.651 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:58:08.652 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:19.480 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:58:19.481 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1219 has been updated successfully.
+2024-12-12 11:58:19.481 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:20.326 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:58:20.327 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1215 has been updated successfully.
+2024-12-12 11:58:20.327 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:21.171 | INFO     | brokers.motilal.order:is_order_completed:139 - Order is executed and the status is 'Traded'
+2024-12-12 11:58:21.172 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001FTCT1211 has been updated successfully.
+2024-12-12 11:58:21.172 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:22.020 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001DEEPAK17 has been updated successfully.
+2024-12-12 11:58:22.020 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
+2024-12-12 11:58:22.868 | INFO     | utils.json.orders_json_helper:update_status:85 - Order with OrderID 1200001WEALTH666 has been updated successfully.
+2024-12-12 11:58:22.868 | INFO     | utils.helpers.check_time:check_end_of_market:19 - It's before 3:25 PM IST. Modify Order will not be executed.
