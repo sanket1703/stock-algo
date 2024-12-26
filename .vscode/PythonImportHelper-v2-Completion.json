@@ -2547,7 +2547,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def buy_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    is_trade_sync_enabled = trade_sync_var.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)",
+        "peekOfCode": "def buy_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get().strip()\n    qty = int(quantity_entry.get().strip())\n    limit_price = limit_price_entry.get().strip()\n    stock_code_ns = stock_code_entry.get().strip()\n    is_trade_sync_enabled = trade_sync_var.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2556,7 +2556,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def sell_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    qty = int(quantity_entry.get())\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    is_trade_sync_enabled = trade_sync_var.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)",
+        "peekOfCode": "def sell_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get().strip()\n    qty = int(quantity_entry.get().strip())\n    limit_price = limit_price_entry.get().strip()\n    stock_code_ns = stock_code_entry.get().strip()\n    is_trade_sync_enabled = trade_sync_var.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Quantity:\", qty)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2565,7 +2565,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def modify_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get()\n    limit_price = limit_price_entry.get()\n    stock_code_ns = stock_code_entry.get()\n    order_id = order_id_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    logger.debug(\"Limit Price:\", limit_price)",
+        "peekOfCode": "def modify_action():\n    # Retrieve the values from each entry field\n    client_code = client_code_entry.get().strip()\n    limit_price = limit_price_entry.get().strip()\n    stock_code_ns = stock_code_entry.get().strip()\n    order_id = order_id_entry.get().strip()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    logger.debug(\"Limit Price:\", limit_price)",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2574,7 +2574,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def cancel_action():\n    client_code = client_code_entry.get()\n    order_id = order_id_entry.get()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id\", order_id)\n    Mofsl = client_login(client_code)\n    logger.debug(f\"Cancel {order_id} of {client_code} \")\n    yesno = messagebox.askyesno(\n        \"Confirmation\", \"Are you sure you want to proceed?\")",
+        "peekOfCode": "def cancel_action():\n    client_code = client_code_entry.get().strip()\n    order_id = order_id_entry.get().strip()\n    # Return or print the values\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id\", order_id)\n    Mofsl = client_login(client_code)\n    logger.debug(f\"Cancel {order_id} of {client_code} \")\n    yesno = messagebox.askyesno(\n        \"Confirmation\", \"Are you sure you want to proceed?\")",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -2583,7 +2583,7 @@
         "kind": 2,
         "importPath": "adhoc_module.broker.motilal.order",
         "description": "adhoc_module.broker.motilal.order",
-        "peekOfCode": "def status_action():\n    client_code = client_code_entry.get()\n    order_id = order_id_entry.get()\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    Mofsl = client_login(client_code)\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id, client_code)\n    stock_code = order_details['data'][0]['symbol']\n    qty = order_details['data'][0]['orderqty']\n    price = order_details['data'][0]['price']",
+        "peekOfCode": "def status_action():\n    client_code = client_code_entry.get().strip()\n    order_id = order_id_entry.get().strip()\n    logger.debug(\"Client Code:\", client_code)\n    logger.debug(\"Order Id:\", order_id)\n    Mofsl = client_login(client_code)\n    order_details = Mofsl.GetOrderDetailByUniqueorderID(order_id, client_code)\n    stock_code = order_details['data'][0]['symbol']\n    qty = order_details['data'][0]['orderqty']\n    price = order_details['data'][0]['price']",
         "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
@@ -5130,7 +5130,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def sell(sell_stocks):\n    if (get_test_mode()):prepare_sell_testdata(sell_stocks)\n    logger.info(f\"Stock list for sell : \\n{sell_stocks}\")\n    sell_algo = MidcapSellAlgorithm()\n    if (get_test_mode()):sell_algo.adhoc_sell(sell_stocks)\n    elif (not get_test_mode()):sell_algo.sell_logic()\n    sell_orders = sell_algo.order_executor()\n    set_sell_orders(sell_orders)\n    logger.info(\n        f\"Consolidated Sell Orders details for each client:- {sell_orders}\")",
+        "peekOfCode": "def sell(sell_stocks):\n    logger.info(f\"Stock list for sell : \\n{sell_stocks}\")\n    sell_algo = MidcapSellAlgorithm()\n    sell_algo.sell_logic(sell_stocks)\n    sell_orders = sell_algo.order_executor()\n    set_sell_orders(sell_orders)\n    logger.info(\n        f\"Consolidated Sell Orders details for each client:- {sell_orders}\")\n    logger.debug(\"Consolidated Sell Orders details saved locally.\")\n    return sell_orders",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -5319,7 +5319,7 @@
         "kind": 2,
         "importPath": "orders_dash",
         "description": "orders_dash",
-        "peekOfCode": "def status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",\n        \"Placed\": \"blue\",\n    }.get(status, \"lightgrey\")\n# Get current date and last updated timestamp\ndef get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")\ndef get_last_updated_time():",
+        "peekOfCode": "def status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",\n        \"Placed\": \"blue\",\n        \"Not Placed\":\"red\",\n    }.get(status, \"lightgrey\")\n# Get current date and last updated timestamp\ndef get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")",
         "detail": "orders_dash",
         "documentation": {}
     },

@@ -1,2 +1,8 @@
 node_modules
 .vscode/PythonImportHelper-v2-Completion.json
+token.json
+.vscode/PythonImportHelper-v2-Completion.json
+__pycache__/lambda_function.cpython-310.pyc
+adhoc_module/broker/motilal/__pycache__/order.cpython-310.pyc
+brokers/motilal/__pycache__/order.cpython-310.pyc
+*.log

@@ -40,10 +40,10 @@ def execute_action():
 
 def buy_action():
     # Retrieve the values from each entry field
-    client_code = client_code_entry.get()
-    qty = int(quantity_entry.get())
-    limit_price = limit_price_entry.get()
-    stock_code_ns = stock_code_entry.get()
+    client_code = client_code_entry.get().strip()
+    qty = int(quantity_entry.get().strip())
+    limit_price = limit_price_entry.get().strip()
+    stock_code_ns = stock_code_entry.get().strip()
     is_trade_sync_enabled = trade_sync_var.get()
 
     # Return or print the values
@@ -124,10 +124,10 @@ def buy_action():
 
 def sell_action():
     # Retrieve the values from each entry field
-    client_code = client_code_entry.get()
-    qty = int(quantity_entry.get())
-    limit_price = limit_price_entry.get()
-    stock_code_ns = stock_code_entry.get()
+    client_code = client_code_entry.get().strip()
+    qty = int(quantity_entry.get().strip())
+    limit_price = limit_price_entry.get().strip()
+    stock_code_ns = stock_code_entry.get().strip()
     is_trade_sync_enabled = trade_sync_var.get()
 
     # Return or print the values
@@ -208,10 +208,10 @@ def sell_action():
 
 def modify_action():
     # Retrieve the values from each entry field
-    client_code = client_code_entry.get()
-    limit_price = limit_price_entry.get()
-    stock_code_ns = stock_code_entry.get()
-    order_id = order_id_entry.get()
+    client_code = client_code_entry.get().strip()
+    limit_price = limit_price_entry.get().strip()
+    stock_code_ns = stock_code_entry.get().strip()
+    order_id = order_id_entry.get().strip()
 
     # Return or print the values
     logger.debug("Client Code:", client_code)
@@ -276,8 +276,8 @@ def modify_action():
 
 
 def cancel_action():
-    client_code = client_code_entry.get()
-    order_id = order_id_entry.get()
+    client_code = client_code_entry.get().strip()
+    order_id = order_id_entry.get().strip()
 
     # Return or print the values
     logger.debug("Client Code:", client_code)
@@ -306,8 +306,8 @@ def cancel_action():
 
 
 def status_action():
-    client_code = client_code_entry.get()
-    order_id = order_id_entry.get()
+    client_code = client_code_entry.get().strip()
+    order_id = order_id_entry.get().strip()
 
     logger.debug("Client Code:", client_code)
     logger.debug("Order Id:", order_id)
