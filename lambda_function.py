@@ -47,20 +47,18 @@ def buy(buy_stocks):
 
 
 def sell(sell_stocks):
-    
-    if (get_test_mode()):prepare_sell_testdata(sell_stocks)
-    
+
     logger.info(f"Stock list for sell : \n{sell_stocks}")
     sell_algo = MidcapSellAlgorithm()
-    
-    if (get_test_mode()):sell_algo.adhoc_sell(sell_stocks)
-    elif (not get_test_mode()):sell_algo.sell_logic()
-    
+
+    sell_algo.sell_logic(sell_stocks)
     sell_orders = sell_algo.order_executor()
     set_sell_orders(sell_orders)
+
     logger.info(
         f"Consolidated Sell Orders details for each client:- {sell_orders}")
     logger.debug("Consolidated Sell Orders details saved locally.")
+    
     return sell_orders
 
 def order_validator():

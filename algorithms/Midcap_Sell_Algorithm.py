@@ -40,6 +40,7 @@ class MidcapSellAlgorithm:
         return sell_orders
 
     def should_sell(self,stock):
+        return True
         data = fetch_stock_data(stock)
         try:
             ema = calculate_ema(data).iloc[-1]
@@ -52,11 +53,11 @@ class MidcapSellAlgorithm:
         except:
             return False
     
-    def sell_logic(self):
+    def sell_logic(self,sell_stock_list):
 
         self.slots = get_slots(self.db)
         for stock in self.slots:
-            if self.should_sell(stock):
+            if stock in sell_stock_list:
                 self.stocks_to_sell.append(stock)
             else:
                 self.stocks_to_keep.append(stock)
