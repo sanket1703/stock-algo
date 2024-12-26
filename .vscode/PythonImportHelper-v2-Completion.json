@@ -2169,6 +2169,161 @@
         "documentation": {}
     },
     {
+        "label": "ahdoc_order_box",
+        "importPath": "adhoc_module.broker.motilal.order",
+        "description": "adhoc_module.broker.motilal.order",
+        "isExtraImport": true,
+        "detail": "adhoc_module.broker.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "ahdoc_order_box",
+        "importPath": "adhoc_module.broker.motilal.order",
+        "description": "adhoc_module.broker.motilal.order",
+        "isExtraImport": true,
+        "detail": "adhoc_module.broker.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "ast",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ast",
+        "description": "ast",
+        "detail": "ast",
+        "documentation": {}
+    },
+    {
+        "label": "buy_order",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "buy_order_validator",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "order_validator",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "pre_run_checklist",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sell_order",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sell_order_validator",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "sync_orders",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "trade_sync",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "validate_orders",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "dash",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dash",
+        "description": "dash",
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "dcc",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "dash_table",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "Input",
+        "importPath": "dash.dependencies",
+        "description": "dash.dependencies",
+        "isExtraImport": true,
+        "detail": "dash.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "Output",
+        "importPath": "dash.dependencies",
+        "description": "dash.dependencies",
+        "isExtraImport": true,
+        "detail": "dash.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "dash_bootstrap_components",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dash_bootstrap_components",
+        "description": "dash_bootstrap_components",
+        "detail": "dash_bootstrap_components",
+        "documentation": {}
+    },
+    {
         "label": "Flask",
         "importPath": "flask",
         "description": "flask",
@@ -2270,95 +2425,6 @@
         "description": "database.dao.watchlist_dao",
         "isExtraImport": true,
         "detail": "database.dao.watchlist_dao",
-        "documentation": {}
-    },
-    {
-        "label": "ast",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "ast",
-        "description": "ast",
-        "detail": "ast",
-        "documentation": {}
-    },
-    {
-        "label": "buy_order",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "buy_order_validator",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "order_validator",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "pre_run_checklist",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "sell_order",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "sell_order_validator",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "sync_orders",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "trade_sync",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "validate_orders",
-        "importPath": "lambda_function",
-        "description": "lambda_function",
-        "isExtraImport": true,
-        "detail": "lambda_function",
-        "documentation": {}
-    },
-    {
-        "label": "ahdoc_order_box",
-        "importPath": "adhoc_module.broker.motilal.order",
-        "description": "adhoc_module.broker.motilal.order",
-        "isExtraImport": true,
-        "detail": "adhoc_module.broker.motilal.order",
         "documentation": {}
     },
     {
@@ -2464,64 +2530,6 @@
         "description": "transformers",
         "isExtraImport": true,
         "detail": "transformers",
-        "documentation": {}
-    },
-    {
-        "label": "dash",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "dash",
-        "description": "dash",
-        "detail": "dash",
-        "documentation": {}
-    },
-    {
-        "label": "dcc",
-        "importPath": "dash",
-        "description": "dash",
-        "isExtraImport": true,
-        "detail": "dash",
-        "documentation": {}
-    },
-    {
-        "label": "html",
-        "importPath": "dash",
-        "description": "dash",
-        "isExtraImport": true,
-        "detail": "dash",
-        "documentation": {}
-    },
-    {
-        "label": "dash_table",
-        "importPath": "dash",
-        "description": "dash",
-        "isExtraImport": true,
-        "detail": "dash",
-        "documentation": {}
-    },
-    {
-        "label": "Input",
-        "importPath": "dash.dependencies",
-        "description": "dash.dependencies",
-        "isExtraImport": true,
-        "detail": "dash.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "Output",
-        "importPath": "dash.dependencies",
-        "description": "dash.dependencies",
-        "isExtraImport": true,
-        "detail": "dash.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "dash_bootstrap_components",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "dash_bootstrap_components",
-        "description": "dash_bootstrap_components",
-        "detail": "dash_bootstrap_components",
         "documentation": {}
     },
     {
@@ -4991,6 +4999,159 @@
         "documentation": {}
     },
     {
+        "label": "bg_order_validator",
+        "kind": 2,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "def bg_order_validator():\n    # The orders keep on get validated in the background\n    while True:\n        order_validator()\n        time.sleep(10)\n# Function to execute selected function\ndef execute_function(selected_func, input_list, progress_label):\n    # Update progress label to show which function is in progress\n    progress_label.config(text=f\"Executing: {selected_func}\")\n    progress_label.update()",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "execute_function",
+        "kind": 2,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "def execute_function(selected_func, input_list, progress_label):\n    # Update progress label to show which function is in progress\n    progress_label.config(text=f\"Executing: {selected_func}\")\n    progress_label.update()\n    # Notify that function has started\n    messagebox.showinfo(\"Execution Started\", f\"Starting {selected_func}...\")\n    # Execute the function in a separate thread to avoid freezing the UI\n    def run(input_list):  # Ensure input_list is passed to the thread\n        try:\n            if selected_func == \"Buy Order\":",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Fortune Alpha 13\")\n# Dropdown for function selection\nfunction_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "function_choices",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "function_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "selected_func",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "selected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "dropdown",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "dropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "list_label",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "list_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "list_entry",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "list_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "progress_label",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "progress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg\nthreading.Thread(target=bg_order_validator, daemon=True).start()\n# Start the UI\nroot.mainloop()",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "execute_button",
+        "kind": 5,
+        "importPath": "a_func_ui",
+        "description": "a_func_ui",
+        "peekOfCode": "execute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg\nthreading.Thread(target=bg_order_validator, daemon=True).start()\n# Start the UI\nroot.mainloop()",
+        "detail": "a_func_ui",
+        "documentation": {}
+    },
+    {
+        "label": "load_json_data",
+        "kind": 2,
+        "importPath": "a_orders_dash",
+        "description": "a_orders_dash",
+        "peekOfCode": "def load_json_data():\n    with open(\"order_book/orders.json\", 'r') as f:\n        data = json.load(f)\n    # Assuming JSON structure {\"orders\": [ ... ]}\n    return pd.DataFrame(data[\"orders\"])\n# Define status color mapping\ndef status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",",
+        "detail": "a_orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "status_color",
+        "kind": 2,
+        "importPath": "a_orders_dash",
+        "description": "a_orders_dash",
+        "peekOfCode": "def status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",\n        \"Placed\": \"blue\",\n        \"Not Placed\":\"red\",\n    }.get(status, \"lightgrey\")\n# Get current date and last updated timestamp\ndef get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")",
+        "detail": "a_orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_date",
+        "kind": 2,
+        "importPath": "a_orders_dash",
+        "description": "a_orders_dash",
+        "peekOfCode": "def get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")\ndef get_last_updated_time():\n    return datetime.now().strftime(\"%d %B %Y %I:%M %p\")\n# Layout of the app\napp.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={",
+        "detail": "a_orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_updated_time",
+        "kind": 2,
+        "importPath": "a_orders_dash",
+        "description": "a_orders_dash",
+        "peekOfCode": "def get_last_updated_time():\n    return datetime.now().strftime(\"%d %B %Y %I:%M %p\")\n# Layout of the app\napp.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={\n                    'textAlign': 'center', 'color': 'white'}),\n            html.Div([",
+        "detail": "a_orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "update_table",
+        "kind": 2,
+        "importPath": "a_orders_dash",
+        "description": "a_orders_dash",
+        "peekOfCode": "def update_table(n):\n    # Load data\n    df = load_json_data()\n    # Dark theme only\n    background_color = \"#333333\"\n    text_color = \"white\"\n    # Set status colors for dark theme\n    status_colors = [\n        {\n            'if': {",
+        "detail": "a_orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "a_orders_dash",
+        "description": "a_orders_dash",
+        "peekOfCode": "app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])\n# Define a function to load JSON data\ndef load_json_data():\n    with open(\"order_book/orders.json\", 'r') as f:\n        data = json.load(f)\n    # Assuming JSON structure {\"orders\": [ ... ]}\n    return pd.DataFrame(data[\"orders\"])\n# Define status color mapping\ndef status_color(status):\n    return {",
+        "detail": "a_orders_dash",
+        "documentation": {}
+    },
+    {
+        "label": "app.layout",
+        "kind": 5,
+        "importPath": "a_orders_dash",
+        "description": "a_orders_dash",
+        "peekOfCode": "app.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={\n                    'textAlign': 'center', 'color': 'white'}),\n            html.Div([\n                html.Div(f\"Last Updated: {get_last_updated_time()}\", id=\"last-updated\", style={\n                         'color': 'white', 'fontSize': '18px', 'textAlign': 'left'})\n            ], style={'marginBottom': '20px'}),",
+        "detail": "a_orders_dash",
+        "documentation": {}
+    },
+    {
         "label": "keepAlive",
         "kind": 2,
         "importPath": "app",
@@ -5024,96 +5185,6 @@
         "description": "app",
         "peekOfCode": "app = Flask(__name__)\nCORS(app)\n@app.route('/keepAlive', methods=['GET'])\ndef keepAlive():\n    return \"I'm alive\"\n@app.route('/buy', methods=['GET'])\ndef buy():\n    # stocks = ['LUPIN.NS','INDHOTEL.NS','POLYCAB.NS','PERSISTENT.NS','CUMMINSIND.NS','ZYDUSLIFE.NS','RECLTD.NS','ABBOTINDIA.NS','TVSMOTOR.NS','AUBANK.NS','LTTS.NS','GUJGASLTD.NS','OFSS.NS','COFORGE.NS','ALKEM.NS','AUROPHARMA.NS','HONAUT.NS','ASTRAL.NS','MPHASIS.NS']\n    db = get_database()\n    stocks = get_watchlist(db)",
         "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "bg_order_validator",
-        "kind": 2,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "def bg_order_validator():\n    # The orders keep on get validated in the background\n    while True:\n        order_validator()\n        time.sleep(10)\n# Function to execute selected function\ndef execute_function(selected_func, input_list, progress_label):\n    # Update progress label to show which function is in progress\n    progress_label.config(text=f\"Executing: {selected_func}\")\n    progress_label.update()",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "execute_function",
-        "kind": 2,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "def execute_function(selected_func, input_list, progress_label):\n    # Update progress label to show which function is in progress\n    progress_label.config(text=f\"Executing: {selected_func}\")\n    progress_label.update()\n    # Notify that function has started\n    messagebox.showinfo(\"Execution Started\", f\"Starting {selected_func}...\")\n    # Execute the function in a separate thread to avoid freezing the UI\n    def run(input_list):  # Ensure input_list is passed to the thread\n        try:\n            if selected_func == \"Buy Order\":",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "root",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "root = tk.Tk()\nroot.title(\"Fortune Alpha 13\")\n# Dropdown for function selection\nfunction_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "function_choices",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "function_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "selected_func",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "selected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "dropdown",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "dropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "list_label",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "list_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "list_entry",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "list_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "progress_label",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "progress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg\nthreading.Thread(target=bg_order_validator, daemon=True).start()\n# Start the UI\nroot.mainloop()",
-        "detail": "func_ui",
-        "documentation": {}
-    },
-    {
-        "label": "execute_button",
-        "kind": 5,
-        "importPath": "func_ui",
-        "description": "func_ui",
-        "peekOfCode": "execute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))\nexecute_button.pack(pady=20)\n# Enable this if you want the order validator to be constantly running in the bg\nthreading.Thread(target=bg_order_validator, daemon=True).start()\n# Start the UI\nroot.mainloop()",
-        "detail": "func_ui",
         "documentation": {}
     },
     {
@@ -5303,69 +5374,6 @@
         "description": "llm_request",
         "peekOfCode": "outputs = model.generate(inputs[\"input_ids\"], max_length=50)\nprint(tokenizer.decode(outputs[0]))",
         "detail": "llm_request",
-        "documentation": {}
-    },
-    {
-        "label": "load_json_data",
-        "kind": 2,
-        "importPath": "orders_dash",
-        "description": "orders_dash",
-        "peekOfCode": "def load_json_data():\n    with open(\"order_book/orders.json\", 'r') as f:\n        data = json.load(f)\n    # Assuming JSON structure {\"orders\": [ ... ]}\n    return pd.DataFrame(data[\"orders\"])\n# Define status color mapping\ndef status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",",
-        "detail": "orders_dash",
-        "documentation": {}
-    },
-    {
-        "label": "status_color",
-        "kind": 2,
-        "importPath": "orders_dash",
-        "description": "orders_dash",
-        "peekOfCode": "def status_color(status):\n    return {\n        \"Traded\": \"green\",\n        \"Failed\": \"red\",\n        \"Placed\": \"blue\",\n        \"Not Placed\":\"red\",\n    }.get(status, \"lightgrey\")\n# Get current date and last updated timestamp\ndef get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")",
-        "detail": "orders_dash",
-        "documentation": {}
-    },
-    {
-        "label": "get_current_date",
-        "kind": 2,
-        "importPath": "orders_dash",
-        "description": "orders_dash",
-        "peekOfCode": "def get_current_date():\n    return datetime.now().strftime(\"%d %B %Y\")\ndef get_last_updated_time():\n    return datetime.now().strftime(\"%d %B %Y %I:%M %p\")\n# Layout of the app\napp.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={",
-        "detail": "orders_dash",
-        "documentation": {}
-    },
-    {
-        "label": "get_last_updated_time",
-        "kind": 2,
-        "importPath": "orders_dash",
-        "description": "orders_dash",
-        "peekOfCode": "def get_last_updated_time():\n    return datetime.now().strftime(\"%d %B %Y %I:%M %p\")\n# Layout of the app\napp.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={\n                    'textAlign': 'center', 'color': 'white'}),\n            html.Div([",
-        "detail": "orders_dash",
-        "documentation": {}
-    },
-    {
-        "label": "update_table",
-        "kind": 2,
-        "importPath": "orders_dash",
-        "description": "orders_dash",
-        "peekOfCode": "def update_table(n):\n    # Load data\n    df = load_json_data()\n    # Dark theme only\n    background_color = \"#333333\"\n    text_color = \"white\"\n    # Set status colors for dark theme\n    status_colors = [\n        {\n            'if': {",
-        "detail": "orders_dash",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "orders_dash",
-        "description": "orders_dash",
-        "peekOfCode": "app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])\n# Define a function to load JSON data\ndef load_json_data():\n    with open(\"order_book/orders.json\", 'r') as f:\n        data = json.load(f)\n    # Assuming JSON structure {\"orders\": [ ... ]}\n    return pd.DataFrame(data[\"orders\"])\n# Define status color mapping\ndef status_color(status):\n    return {",
-        "detail": "orders_dash",
-        "documentation": {}
-    },
-    {
-        "label": "app.layout",
-        "kind": 5,
-        "importPath": "orders_dash",
-        "description": "orders_dash",
-        "peekOfCode": "app.layout = html.Div([\n    dbc.Container([\n        # Header\n        html.Div([\n            html.H1(\"Order Status Dashboard\", style={\n                    'textAlign': 'center', 'color': 'white'}),\n            html.Div([\n                html.Div(f\"Last Updated: {get_last_updated_time()}\", id=\"last-updated\", style={\n                         'color': 'white', 'fontSize': '18px', 'textAlign': 'left'})\n            ], style={'marginBottom': '20px'}),",
-        "detail": "orders_dash",
         "documentation": {}
     }
 ]
