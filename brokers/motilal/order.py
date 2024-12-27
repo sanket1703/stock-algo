@@ -151,30 +151,29 @@ def is_order_completed(Mofsl, client_code, order_id):
 def modify_order_to_market(Mofsl,client_code,order_id):
     # ModifyOrder
     logger.debug(f"Modifying to market for {order_id} of {client_code} ")
+    qty = get_order_qty(Mofsl, client_code, order_id)
     ModifiedOrderInfo = {
         "clientcode":client_code,
         "uniqueorderid":order_id,
         "newordertype":"MARKET",
         "neworderduration":"DAY",   
-        "newquantityinlot":get_order_qty(Mofsl,client_code,order_id),
-        # "newdisclosedquantity":0,
+        "newquantityinlot":qty,
+        "newdisclosedquantity":qty,
         # "newprice":235.50,
         # "newtriggerprice":0,
         # "newgoodtilldate": 0,
         "lastmodifiedtime": get_modified_time(Mofsl,client_code,order_id),
-        "qtytradedtoday": 0
+        "qtytradedtoday": get_trade_qty(Mofsl, client_code, order_id)
     }
     response = Mofsl.ModifyOrder(ModifiedOrderInfo)
     logger.debug(f"Modify to Market Response:- {response}")
     logger.info(f"Modify to Market Message:- {response['message']}")
     
     if response['status'] ==  "SUCCESS": 
-        update_status(order_id, "Placed", response['message'],"Market",
-                      response['data'][0]['orderid'], response['data'][0]['averageprice'], "", response['data'][0]['qtytradedtoday'])
+        update_status(order_id, message=response['message'], order_type="Market")
         return True
     
     if(response["status"]!="SUCCESS"):
         notification_error("MODIFY MARKET",response,client_code)
-        update_status(order_id, "Placed", response['message'], "Market",
-                      "","","",0)
+        update_status(order_id, message=response['message'])
         return False

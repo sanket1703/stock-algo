@@ -3,7 +3,9 @@ from tkinter import messagebox
 import time
 import threading
 import ast
-from lambda_function import (buy_order, buy_order_validator, order_validator, pre_run_checklist,
+from database.dao.client_dao import (disable_all_and_enable_selected, disable_all_clients,
+    enable_all_clients)
+from lambda_function import (buy_order, buy_order_validator, modify_all, order_validator, pre_run_checklist,
     sell_order, sell_order_validator, sync_orders, trade_sync, validate_orders)
 from jobs.exchange_tradeid_job import exchange_tradeid_job
 
@@ -44,8 +46,22 @@ def execute_function(selected_func, input_list, progress_label):
                 else:
                     input_list = []  # Use an empty list if input is empty
                 result = sell_order(input_list)
+            elif selected_func == "Enable Specific Clients":
+                # Safely parse the input string to a list if not empty, otherwise use an empty list
+                if input_list.strip():
+                    # Parse input as a Python literal (list, etc.)
+                    input_list = ast.literal_eval(input_list)
+                else:
+                    input_list = []  # Use an empty list if input is empty
+                result = disable_all_and_enable_selected(input_list)
+            elif selected_func == "Enable All Clients":
+                result = enable_all_clients()
+            elif selected_func == "Disable All Clients":
+                result = disable_all_clients()
             elif selected_func == "Pre-Run Checklist":
                 result = pre_run_checklist()  # No input needed for function_2
+            elif selected_func == "Bulk Modify":
+                result = modify_all()
             elif selected_func == "Order Validator":
                 result = order_validator()
             elif selected_func == "Trade Sync":
@@ -70,7 +86,8 @@ root = tk.Tk()
 root.title("Fortune Alpha 13")
 
 # Dropdown for function selection
-function_choices = ["Pre-Run Checklist", "Buy Order", "Sell Order", "Order Validator", "Trade Sync", "Exchange Trade Id Job"]
+function_choices = ["Pre-Run Checklist", "Buy Order", "Sell Order",
+                    "Order Validator", "Trade Sync", "Bulk Modify", "Exchange Trade Id Job", "Disable All Clients", "Enable Specific Clients","Enable All Clients"]
 selected_func = tk.StringVar()
 selected_func.set(function_choices[0])  # Default selection
 
@@ -78,7 +95,8 @@ dropdown = tk.OptionMenu(root, selected_func, *function_choices)
 dropdown.pack(pady=20)
 
 # Input field for list (only relevant for Function 1)
-list_label = tk.Label(root, text="Enter a list (e.g., [\"IDEA.NS\",\"GTLINFRA.NS\"]):")
+list_label = tk.Label(
+    root, text="Enter a list (e.g., [\"IDEA.NS\",\"GTLINFRA.NS\"] or Clients [\"FTCT1216\",\"FTCT1220\"]):")
 list_label.pack(pady=5)
 
 list_entry = tk.Entry(root)

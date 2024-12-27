@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 from loguru import logger
 from brokers.motilal.login import client_login
-from brokers.motilal.order import get_modified_time, get_order_qty
+from brokers.motilal.order import get_modified_time, get_order_qty, get_trade_qty
 from notification.email.send_email import send_email
 from stock_data.symbols import get_symbol_token
 from utils.json.orders_json_helper import update_order_list
@@ -232,12 +232,12 @@ def modify_action():
         "newordertype": "MARKET",
         "neworderduration": "DAY",
         "newquantityinlot": qty,
-        "newdisclosedquantity": 1,
+        "newdisclosedquantity": qty,
         # "newprice": round(float(limit_price), 4),
         # "newtriggerprice":0,
         # "newgoodtilldate": 0,
         "lastmodifiedtime": get_modified_time(Mofsl, client_code, order_id),
-        "qtytradedtoday": 0
+        "qtytradedtoday": get_trade_qty(Mofsl, client_code, order_id)
 
     }
     else:
@@ -250,12 +250,12 @@ def modify_action():
         "newordertype": "LIMIT",
         "neworderduration": "DAY",
         "newquantityinlot": qty,
-        "newdisclosedquantity": 1,
+        "newdisclosedquantity": qty,
         "newprice": round(float(limit_price), 4),
         # "newtriggerprice":0,
         # "newgoodtilldate": 0,
         "lastmodifiedtime": get_modified_time(Mofsl, client_code, order_id),
-        "qtytradedtoday": 0
+        "qtytradedtoday": get_trade_qty(Mofsl, client_code, order_id)
 
     }
 
