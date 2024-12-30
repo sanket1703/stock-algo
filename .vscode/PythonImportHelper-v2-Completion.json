@@ -258,6 +258,14 @@
         "documentation": {}
     },
     {
+        "label": "client_login",
+        "importPath": "brokers.motilal.login",
+        "description": "brokers.motilal.login",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.login",
+        "documentation": {}
+    },
+    {
         "label": "get_modified_time",
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
@@ -267,6 +275,14 @@
     },
     {
         "label": "get_order_qty",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_trade_qty",
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
         "isExtraImport": true,
@@ -315,6 +331,14 @@
     },
     {
         "label": "is_order_completed",
+        "importPath": "brokers.motilal.order",
+        "description": "brokers.motilal.order",
+        "isExtraImport": true,
+        "detail": "brokers.motilal.order",
+        "documentation": {}
+    },
+    {
+        "label": "modify_order_to_market",
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
         "isExtraImport": true,
@@ -827,6 +851,30 @@
         "documentation": {}
     },
     {
+        "label": "disable_all_and_enable_selected",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "disable_all_clients",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "enable_all_clients",
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "isExtraImport": true,
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
@@ -1239,6 +1287,14 @@
     },
     {
         "label": "get_filled_sell_orders",
+        "importPath": "utils.json.helper",
+        "description": "utils.json.helper",
+        "isExtraImport": true,
+        "detail": "utils.json.helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_orders",
         "importPath": "utils.json.helper",
         "description": "utils.json.helper",
         "isExtraImport": true,
@@ -1904,6 +1960,14 @@
         "documentation": {}
     },
     {
+        "label": "ClientError",
+        "importPath": "botocore.exceptions",
+        "description": "botocore.exceptions",
+        "isExtraImport": true,
+        "detail": "botocore.exceptions",
+        "documentation": {}
+    },
+    {
         "label": "configparser",
         "kind": 6,
         "isExtraImport": true,
@@ -2203,6 +2267,14 @@
     },
     {
         "label": "buy_order_validator",
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "isExtraImport": true,
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "modify_all",
         "importPath": "lambda_function",
         "description": "lambda_function",
         "isExtraImport": true,
@@ -4112,7 +4184,7 @@
         "kind": 2,
         "importPath": "brokers.motilal.order",
         "description": "brokers.motilal.order",
-        "peekOfCode": "def modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    logger.debug(f\"Modifying to market for {order_id} of {client_code} \")\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   \n        \"newquantityinlot\":get_order_qty(Mofsl,client_code,order_id),\n        # \"newdisclosedquantity\":0,",
+        "peekOfCode": "def modify_order_to_market(Mofsl,client_code,order_id):\n    # ModifyOrder\n    logger.debug(f\"Modifying to market for {order_id} of {client_code} \")\n    qty = get_order_qty(Mofsl, client_code, order_id)\n    ModifiedOrderInfo = {\n        \"clientcode\":client_code,\n        \"uniqueorderid\":order_id,\n        \"newordertype\":\"MARKET\",\n        \"neworderduration\":\"DAY\",   \n        \"newquantityinlot\":qty,",
         "detail": "brokers.motilal.order",
         "documentation": {}
     },
@@ -4266,6 +4338,42 @@
         "importPath": "database.dao.client_dao",
         "description": "database.dao.client_dao",
         "peekOfCode": "def update_dynamodb_balance(client_code,new_balance):\n    aws_access_key_id = 'AKIAW3MEAN3TBZIFTCE6'\n    aws_secret_access_key = 'Ad2nS01Iioxl4cfqqDsXWBAoPd4SJRMqwdPpdFbj'\n    # Create a DynamoDB resource object with your credentials\n    dynamodb = boto3.resource(\n        'dynamodb',\n        region_name='ap-south-1',\n        aws_access_key_id=aws_access_key_id,\n        aws_secret_access_key=aws_secret_access_key)\n    clients = dynamodb.Table('clients'+ env)",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "update_client_status",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def update_client_status(client_code, value):\n    \"\"\"Update the enabled status for a specific client.\"\"\"\n    db = get_database()\n    print(client_code)\n    try:\n        clients = db.Table('clients' + env)\n        response = clients.scan(FilterExpression=boto3.dynamodb.conditions.Attr('client_code').eq(client_code))\n        response['Items'][0]['enabled'] = value\n        clients.put_item(Item=response['Items'][0])\n        print(",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "enable_all_clients",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def enable_all_clients():\n    \"\"\"Enable all clients in the table.\"\"\"\n    db = get_database()\n    client = db.Table('clients')\n    try:\n        response = client.scan(ProjectionExpression='client_code')\n        print(response)\n        for item in response['Items']:\n            update_client_status(item['client_code'], True)\n    except ClientError as e:",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "disable_all_clients",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def disable_all_clients():\n    \"\"\"Disable all clients in the table.\"\"\"\n    db = get_database()\n    client = db.Table('clients')\n    try:\n        response = client.scan(ProjectionExpression='client_code')\n        for item in response['Items']:\n            update_client_status(item['client_code'], False)\n    except ClientError as e:\n        print(f\"Error disabling all clients: {e}\")",
+        "detail": "database.dao.client_dao",
+        "documentation": {}
+    },
+    {
+        "label": "disable_all_and_enable_selected",
+        "kind": 2,
+        "importPath": "database.dao.client_dao",
+        "description": "database.dao.client_dao",
+        "peekOfCode": "def disable_all_and_enable_selected(client_codes_to_enable):\n    \"\"\"Disable all clients and enable only the specified ones.\"\"\"\n    try:\n        # First, disable all clients\n        disable_all_clients()\n        # Then, enable clients in the given list\n        for client_code in client_codes_to_enable:\n            update_client_status(client_code, True)\n    except ClientError as e:\n        print(f\"Error updating clients: {e}\")",
         "detail": "database.dao.client_dao",
         "documentation": {}
     },
@@ -5021,7 +5129,7 @@
         "kind": 5,
         "importPath": "a_func_ui",
         "description": "a_func_ui",
-        "peekOfCode": "root = tk.Tk()\nroot.title(\"Fortune Alpha 13\")\n# Dropdown for function selection\nfunction_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Fortune Alpha 13\")\n# Dropdown for function selection\nfunction_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\",\n                    \"Order Validator\", \"Trade Sync\", \"Bulk Modify\", \"Exchange Trade Id Job\", \"Disable All Clients\", \"Enable Specific Clients\",\"Enable All Clients\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)",
         "detail": "a_func_ui",
         "documentation": {}
     },
@@ -5030,7 +5138,7 @@
         "kind": 5,
         "importPath": "a_func_ui",
         "description": "a_func_ui",
-        "peekOfCode": "function_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\", \"Order Validator\", \"Trade Sync\", \"Exchange Trade Id Job\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)",
+        "peekOfCode": "function_choices = [\"Pre-Run Checklist\", \"Buy Order\", \"Sell Order\",\n                    \"Order Validator\", \"Trade Sync\", \"Bulk Modify\", \"Exchange Trade Id Job\", \"Disable All Clients\", \"Enable Specific Clients\",\"Enable All Clients\"]\nselected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(\n    root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"] or Clients [\\\"FTCT1216\\\",\\\"FTCT1220\\\"]):\")\nlist_label.pack(pady=5)",
         "detail": "a_func_ui",
         "documentation": {}
     },
@@ -5039,7 +5147,7 @@
         "kind": 5,
         "importPath": "a_func_ui",
         "description": "a_func_ui",
-        "peekOfCode": "selected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress",
+        "peekOfCode": "selected_func = tk.StringVar()\nselected_func.set(function_choices[0])  # Default selection\ndropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(\n    root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"] or Clients [\\\"FTCT1216\\\",\\\"FTCT1220\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)",
         "detail": "a_func_ui",
         "documentation": {}
     },
@@ -5048,7 +5156,7 @@
         "kind": 5,
         "importPath": "a_func_ui",
         "description": "a_func_ui",
-        "peekOfCode": "dropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)",
+        "peekOfCode": "dropdown = tk.OptionMenu(root, selected_func, *function_choices)\ndropdown.pack(pady=20)\n# Input field for list (only relevant for Function 1)\nlist_label = tk.Label(\n    root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"] or Clients [\\\"FTCT1216\\\",\\\"FTCT1220\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))",
         "detail": "a_func_ui",
         "documentation": {}
     },
@@ -5057,7 +5165,7 @@
         "kind": 5,
         "importPath": "a_func_ui",
         "description": "a_func_ui",
-        "peekOfCode": "list_label = tk.Label(root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(\n    selected_func.get(), list_entry.get(), progress_label))",
+        "peekOfCode": "list_label = tk.Label(\n    root, text=\"Enter a list (e.g., [\\\"IDEA.NS\\\",\\\"GTLINFRA.NS\\\"] or Clients [\\\"FTCT1216\\\",\\\"FTCT1220\\\"]):\")\nlist_label.pack(pady=5)\nlist_entry = tk.Entry(root)\nlist_entry.pack(pady=10)\n# Label to display progress\nprogress_label = tk.Label(root, text=\"No function running\", font=(\"Arial\", 12))\nprogress_label.pack(pady=20)\n# Execute button\nexecute_button = tk.Button(root, text=\"Execute\", command=lambda: execute_function(",
         "detail": "a_func_ui",
         "documentation": {}
     },
@@ -5210,7 +5318,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def order_validator():\n    trade_sync = TradeSync()\n    trade_sync.validate_orders()\ndef trade_sync():\n    trade_sync = TradeSync()\n    trade_sync.sync_trades()\ndef buy_order_validator():\n    buy_orders = get_buy_orders()\n    trade_sync = TradeSync(buy_orders)\n    filled, unfilled = trade_sync.check_buy_orders(buy_orders)",
+        "peekOfCode": "def order_validator():\n    trade_sync = TradeSync()\n    trade_sync.validate_orders()\ndef trade_sync():\n    trade_sync = TradeSync()\n    trade_sync.sync_trades()\ndef modify_all():\n    orders = get_orders()\n    for order in orders:\n        xchange_trade_id = order[\"ExchangeTradeID\"]",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -5219,7 +5327,16 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def trade_sync():\n    trade_sync = TradeSync()\n    trade_sync.sync_trades()\ndef buy_order_validator():\n    buy_orders = get_buy_orders()\n    trade_sync = TradeSync(buy_orders)\n    filled, unfilled = trade_sync.check_buy_orders(buy_orders)\n    if (not unfilled):\n        logger.info(\"All Buy orders filled\")\n        return",
+        "peekOfCode": "def trade_sync():\n    trade_sync = TradeSync()\n    trade_sync.sync_trades()\ndef modify_all():\n    orders = get_orders()\n    for order in orders:\n        xchange_trade_id = order[\"ExchangeTradeID\"]\n        if (xchange_trade_id == \"\" and order[\"Status\"] == \"Placed\"):\n            client_code = order['ClientCode']\n            order_id = order['OrderID']",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "modify_all",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def modify_all():\n    orders = get_orders()\n    for order in orders:\n        xchange_trade_id = order[\"ExchangeTradeID\"]\n        if (xchange_trade_id == \"\" and order[\"Status\"] == \"Placed\"):\n            client_code = order['ClientCode']\n            order_id = order['OrderID']\n            stock_code = order['StockCode']\n            Mofsl = client_login(client_code)\n            modify_order_to_market(Mofsl, client_code, order_id)",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -5309,7 +5426,16 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def pre_run_checklist():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    check_login_job()\n    clean_order_jsons_job()\n    return \"All Pre-Run checklists complete\"\ndef buy_order(buy_list):\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    order_executor(\"Buy\", buy_list)",
+        "peekOfCode": "def pre_run_checklist():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    check_login_job()\n    clean_order_jsons_job()\n    return \"All Pre-Run checklists complete\"\ndef bulk_modify():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    modify_all()",
+        "detail": "lambda_function",
+        "documentation": {}
+    },
+    {
+        "label": "bulk_modify",
+        "kind": 2,
+        "importPath": "lambda_function",
+        "description": "lambda_function",
+        "peekOfCode": "def bulk_modify():\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    modify_all()\ndef buy_order(buy_list):\n    warnings.filterwarnings(\"ignore\")\n    configure_log(level=\"DEBUG\")\n    order_executor(\"Buy\", buy_list)\n    return \"Buy Orders Placed\"\ndef sell_order(sell_list):",
         "detail": "lambda_function",
         "documentation": {}
     },

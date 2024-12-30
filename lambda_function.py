@@ -8,6 +8,7 @@ from algorithms.Midcap_Buy_Algorithm import MidcapBuyAlgorithm
 from algorithms.Midcap_Sell_Algorithm import MidcapSellAlgorithm
 from algorithms.Trade_Sync import TradeSync
 from brokers.motilal.helper.read_client_data import read_csv_to_dict
+from brokers.motilal.login import client_login
 from database.dao.watchlist_dao import get_watchlist
 from database.dynamodb import get_database
 from database.dao.client_dao import *
@@ -19,13 +20,14 @@ from utils.csv.helpers import save_buy_orders, save_sell_orders
 from utils.helpers.check_time import check_end_of_market
 from utils.helpers.get_config import get_test_mode
 from utils.helpers.take_confirmation import take_confirmation
-from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_filled_sell_orders, get_sell_orders,
+from utils.json.helper import (get_buy_orders, get_filled_buy_orders, get_filled_sell_orders, get_orders, get_sell_orders,
                                set_buy_orders, set_sell_orders)
 from utils.logging.configure import configure_log
 from utils.watchlist_filter import massage_watchlist
 import warnings
 from loguru import logger
 from jobs.clean_json import clean_order_jsons_job
+from brokers.motilal.order import modify_order_to_market
 
 
 
@@ -68,6 +70,19 @@ def order_validator():
 def trade_sync():
     trade_sync = TradeSync()
     trade_sync.sync_trades()
+    
+
+def modify_all():
+    orders = get_orders()
+    for order in orders:
+        xchange_trade_id = order["ExchangeTradeID"]
+        if (xchange_trade_id == "" and order["Status"] == "Placed"):
+            client_code = order['ClientCode']
+            order_id = order['OrderID']
+            stock_code = order['StockCode']
+            Mofsl = client_login(client_code)
+            modify_order_to_market(Mofsl, client_code, order_id)
+
     
 
 def buy_order_validator():
@@ -197,6 +212,11 @@ def pre_run_checklist():
     check_login_job()
     clean_order_jsons_job()
     return "All Pre-Run checklists complete"
+
+def bulk_modify():
+    warnings.filterwarnings("ignore")
+    configure_log(level="DEBUG")
+    modify_all()
     
 def buy_order(buy_list):
     warnings.filterwarnings("ignore")
@@ -270,4 +290,13 @@ if __name__ == "__main__":
     #########      Adhoc Jobs    #########
     ######################################
     
-    ahdoc_order_box()
+    # ahdoc_order_box()
+    
+    # enable_all_clients()
+
+    # # Disable all clients
+    # disable_all_clients()
+
+    # # Disable all and enable specific clients
+    # clients_to_enable = ['FTCT1218', 'FTCT1215']
+    # disable_all_and_enable_selected(clients_to_enable)
