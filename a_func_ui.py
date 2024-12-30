@@ -94,7 +94,7 @@ execute_button = tk.Button(root, text="Execute", command=lambda: execute_functio
 execute_button.pack(pady=20)
 
 # Enable this if you want the order validator to be constantly running in the bg
-threading.Thread(target=bg_order_validator, daemon=True).start()
+# threading.Thread(target=bg_order_validator, daemon=True).start()
 
 # Start the UI
 root.mainloop()

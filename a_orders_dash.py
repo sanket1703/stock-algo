@@ -44,11 +44,11 @@ app.layout = html.Div([
     dbc.Container([
         # Header
         html.Div([
-            html.H1("Order Status Dashboard", style={
+            html.H1("THE FORTUNE TREE FASTDASH", style={
                     'textAlign': 'center', 'color': 'white'}),
             html.Div([
                 html.Div(f"Last Updated: {get_last_updated_time()}", id="last-updated", style={
-                         'color': 'white', 'fontSize': '18px', 'textAlign': 'left'})
+                         'color': 'white', 'fontSize': '18px', 'textAlign': 'center'})
             ], style={'marginBottom': '20px'}),
         ], id="header", style={'padding': '20px', 'backgroundColor': '#333333', 'borderRadius': '8px'}),
 
@@ -71,7 +71,7 @@ app.layout = html.Div([
                           'fontWeight': 'bold', 'color': 'white', 'textAlign': 'center'},
             style_table={'overflowX': 'auto', 'borderRadius': '10px',
                          'boxShadow': '0px 0px 10px rgba(0, 0, 0, 0.5)'},
-            page_size=15,
+            page_size=100,
             style_data={'backgroundColor': '#333333',
                         'border': '1px solid #444444'},
         ),
