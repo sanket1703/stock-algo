@@ -76,12 +76,12 @@ def modify_all():
     orders = get_orders()
     for order in orders:
         xchange_trade_id = order["ExchangeTradeID"]
-        if (xchange_trade_id == "" and order["Status"] != "Placed"):
+        if (xchange_trade_id == "" and order["Status"] == "Placed"):
             client_code = order['ClientCode']
             order_id = order['OrderID']
             stock_code = order['StockCode']
             Mofsl = client_login(client_code)
-            modify_order_to_market(Mofsl, stock_code, order_id,)
+            modify_order_to_market(Mofsl, client_code, order_id)
 
     
 
@@ -298,5 +298,5 @@ if __name__ == "__main__":
     # disable_all_clients()
 
     # # Disable all and enable specific clients
-    clients_to_enable = ['FTCT1218', 'FTCT1215']
-    disable_all_and_enable_selected(clients_to_enable)
+    # clients_to_enable = ['FTCT1218', 'FTCT1215']
+    # disable_all_and_enable_selected(clients_to_enable)

@@ -5327,7 +5327,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def trade_sync():\n    trade_sync = TradeSync()\n    trade_sync.sync_trades()\ndef modify_all():\n    orders = get_orders()\n    for order in orders:\n        xchange_trade_id = order[\"ExchangeTradeID\"]\n        if (xchange_trade_id == \"\" and order[\"Status\"] != \"Placed\"):\n            client_code = order['ClientCode']\n            order_id = order['OrderID']",
+        "peekOfCode": "def trade_sync():\n    trade_sync = TradeSync()\n    trade_sync.sync_trades()\ndef modify_all():\n    orders = get_orders()\n    for order in orders:\n        xchange_trade_id = order[\"ExchangeTradeID\"]\n        if (xchange_trade_id == \"\" and order[\"Status\"] == \"Placed\"):\n            client_code = order['ClientCode']\n            order_id = order['OrderID']",
         "detail": "lambda_function",
         "documentation": {}
     },
@@ -5336,7 +5336,7 @@
         "kind": 2,
         "importPath": "lambda_function",
         "description": "lambda_function",
-        "peekOfCode": "def modify_all():\n    orders = get_orders()\n    for order in orders:\n        xchange_trade_id = order[\"ExchangeTradeID\"]\n        if (xchange_trade_id == \"\" and order[\"Status\"] != \"Placed\"):\n            client_code = order['ClientCode']\n            order_id = order['OrderID']\n            stock_code = order['StockCode']\n            Mofsl = client_login(client_code)\n            modify_order_to_market(Mofsl, stock_code, order_id,)",
+        "peekOfCode": "def modify_all():\n    orders = get_orders()\n    for order in orders:\n        xchange_trade_id = order[\"ExchangeTradeID\"]\n        if (xchange_trade_id == \"\" and order[\"Status\"] == \"Placed\"):\n            client_code = order['ClientCode']\n            order_id = order['OrderID']\n            stock_code = order['StockCode']\n            Mofsl = client_login(client_code)\n            modify_order_to_market(Mofsl, client_code, order_id)",
         "detail": "lambda_function",
         "documentation": {}
     },
