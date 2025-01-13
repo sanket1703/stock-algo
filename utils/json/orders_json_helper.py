@@ -104,7 +104,7 @@ def update_sync_status(order_id):
     # Iterate through the orders and update the status for the matching client_code
     for order in data.get("orders", []):
         if order["OrderID"] == order_id:
-            order["SSyncStatustatus"] = "Synced"
+            order["SyncStatus"] = "Synced"
             order_found = True
             break
 

@@ -41,6 +41,13 @@ class TradeSync:
             is_order_completed(Mofsl, client, order_id)
             if (check_end_of_market() and order["ExchangeTradeID"]==""):
                 modify_order_to_market(Mofsl, client, order_id)
+
+    def calculate_brokerage(self,client_code):
+        client_brokerage = get_client_brokerage(self.db,client_code)
+        # print(f"Brokerage fixed for client {self.client_code} is {client_brokerage}")
+        brokerage = Decimal(0.00119171) + (Decimal(1.18)*client_brokerage/100)
+        # print(f"Brokerage charge Calculated during buy {brokerage}")
+        return brokerage
                 
     def sync_trades(self):
         
@@ -66,6 +73,8 @@ class TradeSync:
                         qty), Decimal(trade_price), current_datetime)
                     logger.debug(f"Added Holding of {qty} {stock_code}")
 
+                    turnover =  Decimal(turnover)*(1+self.calculate_brokerage(client_code))
+
                     reduce_balance(self.db, client_code, Decimal(turnover))
                     logger.debug(
                         f"Reduce balance of {turnover} from buy of {stock_code}")
@@ -79,6 +88,8 @@ class TradeSync:
                     
                     offload_holding(self.db, client_code, stock_code)
                     logger.debug(f"Holding of {stock_code} offloaded")
+
+                    turnover =  Decimal(turnover)*(1-self.calculate_brokerage(client_code))
 
                     add_balance(self.db, client_code, Decimal(turnover))
                     logger.debug(

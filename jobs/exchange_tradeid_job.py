@@ -17,7 +17,7 @@ def exchange_tradeid_job():
 
     # Get today's date to create the filename
     today_date = datetime.today().strftime('%Y-%m-%d')
-    filename = f"order_book/trades/{today_date}_TRADEID.csv"
+    filename = f"order_book/trades/{today_date}_EXCH_ID.csv"
 
     # Save trade IDs into a CSV file with SNO
     with open(filename, mode='w', newline='') as file:
